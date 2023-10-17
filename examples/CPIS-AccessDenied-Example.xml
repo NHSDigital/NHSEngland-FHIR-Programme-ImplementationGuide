@@ -1,5 +1,5 @@
 <OperationOutcome xmlns="http://hl7.org/fhir">
-    <id value="57073625-1428-49e7-9ac5-abf1910cc58b" />
+    <id value="CPIS-AccessDenied-Example" />
     <issue>
         <severity value="error" />
         <code value="forbidden" />
