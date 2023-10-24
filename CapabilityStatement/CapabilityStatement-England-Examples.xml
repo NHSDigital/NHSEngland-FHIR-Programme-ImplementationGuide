@@ -2,7 +2,7 @@
 	<id value="apim-conformance"/>
 	<url value="https://fhir.hl7.org.uk/CapabilityStatement/England-FHIRExamples-conformance"/>
 	<version value="3.2.0"/>
-	<name value="EnglandFHIRExamples-conformance"/>
+	<name value="EnglandFHIRExamplesconformance"/>
 	<status value="active"/>
 	<date value="2022-12-16T00:00:00+00:00"/>
 	<publisher value="HL7 UK"/>
