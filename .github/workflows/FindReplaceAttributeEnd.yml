@@ -1,4 +1,4 @@
-name: Replace tab with 2 spaces
+name: add space at end of attributes
 on: [push, pull_request]
 jobs:
   build:
