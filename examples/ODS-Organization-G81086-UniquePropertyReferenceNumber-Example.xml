@@ -1,5 +1,11 @@
 <Organization xmlns="http://hl7.org/fhir">
-	<id value="ODS-Organization-Example" />
+	<id value="ODS-Organization-G81086-UniquePropertyReferenceNumber-Example" />
+	<meta>
+		<versionId value="3" />
+		<lastUpdated value="2023-08-23T10:14:07.820+00:00" />
+		<source value="#ebc280a474cb23ad" />
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+	</meta>
 	<extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-DateTime">
 		<extension url="type">
 			<valueCoding>
@@ -9,7 +15,7 @@
 			</valueCoding>
 		</extension>
 		<extension url="dateTime">
-			<valueDateTime value="2020-09-24" />
+			<valueDateTime value="2023-08-22" />
 		</extension>
 	</extension>
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-TypedPeriod">
@@ -22,7 +28,7 @@
 		</extension>
 		<extension url="period">
 			<valuePeriod>
-				<start value="2015-05-11T00:00:00+00:00" />
+				<start value="1974-04-01T00:00:00+00:00" />
 			</valuePeriod>
 		</extension>
 	</extension>
@@ -36,21 +42,45 @@
 		</extension>
 		<extension url="period">
 			<valuePeriod>
-				<start value="2015-05-11T00:00:00+00:00" />
+				<start value="1974-04-01T00:00:00+00:00" />
 			</valuePeriod>
 		</extension>
 	</extension>
 	<identifier>
 		<use value="official" />
 		<system value="https://fhir.nhs.uk/Id/ods-organization-code" />
-		<value value="RO94" />
+		<value value="G81086" />
 	</identifier>
-	<name value="ATOS MEDICAL" />
+	<type>
+		<coding>
+			<system value="https://ods-prototype/role" />
+			<code value="RO177" />
+			<display value="PRESCRIBING COST CENTRE" />
+		</coding>
+	</type>
+	<name value="BIRD-IN-EYE SURGERY" />
+	<telecom>
+		<system value="phone" />
+		<value value="01825 763196" />
+	</telecom>
 	<address>
-		<line value="LONGFIELDS COURT" />
-		<line value="WHARNCLIFFE BUSINESS PARK" />
-		<city value="BARNSLEY" />
-		<postalCode value="S71 3GN" />
+		<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey">
+			<extension url="type">
+				<valueCoding>
+					<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKeyType" />
+					<code value="UPRN" />
+					<display value="Unique Property Reference Number" />
+				</valueCoding>
+			</extension>
+			<extension url="value">
+				<valueString value="10091054340" />
+			</extension>
+		</extension>
+		<line value="UCKFIELD COMMUNITY HOSPITAL" />
+		<line value="FRAMFIELD ROAD" />
+		<city value="UCKFIELD" />
+		<district value="EAST SUSSEX" />
+		<postalCode value="TN22 5AW" />
 		<country value="ENGLAND" />
 	</address>
 </Organization>

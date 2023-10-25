@@ -1,5 +1,11 @@
 <Organization xmlns="http://hl7.org/fhir">
-	<id value="ODS-Organization-Example" />
+	<id value="ODS-Organization-4VE03-Example" />
+	<meta>
+		<versionId value="4" />
+		<lastUpdated value="2023-09-23T10:14:07.820+00:00" />
+		<source value="#ebc280a474cb23ad" />
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+	</meta>
 	<extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-DateTime">
 		<extension url="type">
 			<valueCoding>
@@ -9,7 +15,7 @@
 			</valueCoding>
 		</extension>
 		<extension url="dateTime">
-			<valueDateTime value="2020-09-24" />
+			<valueDateTime value="2002-03-31" />
 		</extension>
 	</extension>
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-TypedPeriod">
@@ -22,7 +28,8 @@
 		</extension>
 		<extension url="period">
 			<valuePeriod>
-				<start value="2015-05-11T00:00:00+00:00" />
+				<start value="1999-04-01T00:00:00+00:00" />
+				<end value="2002-03-31T00:00:00+00:00" />
 			</valuePeriod>
 		</extension>
 	</extension>
@@ -36,21 +43,36 @@
 		</extension>
 		<extension url="period">
 			<valuePeriod>
-				<start value="2015-05-11T00:00:00+00:00" />
+				<start value="1999-04-01T00:00:00+00:00" />
+				<end value="2002-03-31T00:00:00+00:00" />
 			</valuePeriod>
 		</extension>
 	</extension>
 	<identifier>
 		<use value="official" />
 		<system value="https://fhir.nhs.uk/Id/ods-organization-code" />
-		<value value="RO94" />
+		<value value="4VE03" />
 	</identifier>
-	<name value="ATOS MEDICAL" />
+	<active value="false" />
+	<name value="HIGH WEALD PCG" />
 	<address>
-		<line value="LONGFIELDS COURT" />
-		<line value="WHARNCLIFFE BUSINESS PARK" />
-		<city value="BARNSLEY" />
-		<postalCode value="S71 3GN" />
+		<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey">
+			<extension url="type">
+				<valueCoding>
+					<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKeyType" />
+					<code value="UPRN" />
+					<display value="Unique Property Reference Number" />
+				</valueCoding>
+			</extension>
+			<extension url="value">
+				<valueString value="10091054340" />
+			</extension>
+		</extension>
+		<line value="ROTHER HOUSE" />
+		<line value="THE OFFICE VILLAGE, RIVER WAY" />
+		<city value="UCKFIELD" />
+		<district value="EAST SUSSEX" />
+		<postalCode value="TN22 1SL" />
 		<country value="ENGLAND" />
 	</address>
 </Organization>

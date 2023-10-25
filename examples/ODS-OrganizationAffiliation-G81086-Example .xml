@@ -1,0 +1,69 @@
+<OrganizationAffiliation xmlns="http://hl7.org/fhir">
+	<id value="ODS-OrganizationAffiliation-Example" />
+	<meta>
+		<versionId value="1" />
+		<lastUpdated value="2023-06-24T14:25:39.819+00:00" />
+		<source value="#835f11346e5f058b" />
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-OrganizationAffiliation" />
+	</meta>
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-TypedPeriod">
+		<extension url="dataType">
+			<valueCoding>
+				<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PeriodType" />
+				<code value="legal" />
+				<display value="Legal" />
+			</valueCoding>
+		</extension>
+		<extension url="period">
+			<valuePeriod>
+				<start value="1999-04-01T00:00:00+00:00" />
+				<end value="2002-03-31T00:00:00+00:00" />
+			</valuePeriod>
+		</extension>
+	</extension>
+	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-TypedPeriod">
+		<extension url="dataType">
+			<valueCoding>
+				<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PeriodType" />
+				<code value="operational" />
+				<display value="Operational" />
+			</valueCoding>
+		</extension>
+		<extension url="period">
+			<valuePeriod>
+				<start value="1999-04-01T00:00:00+00:00" />
+				<end value="2002-03-31T00:00:00+00:00" />
+			</valuePeriod>
+		</extension>
+	</extension>
+	<identifier>
+		<use value="official" />
+		<system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+		<value value="G81086" />
+	</identifier>
+	<organization>
+		<reference value="Organization/ODS-Organization-G81086-UniquePropertyReferenceNumber-Example" />
+		<type value="Organization" />
+		<identifier>
+			<use value="official" />
+			<system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+			<value value="G81086" />
+		</identifier>
+	</organization>
+	<participatingOrganization>
+		<reference value="Organization/ODS-Organization-4VE03-Example" />
+		<type value="Organization" />
+		<identifier>
+			<use value="official" />
+			<system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+			<value value="4VE03" />
+		</identifier>
+	</participatingOrganization>
+	<code>
+		<coding>
+			<system value="https://ods-prototype/relationship" />
+			<code value="RE4" />
+			<display value="IS COMMISSIONED BY" />
+		</coding>
+	</code>
+</OrganizationAffiliation>
