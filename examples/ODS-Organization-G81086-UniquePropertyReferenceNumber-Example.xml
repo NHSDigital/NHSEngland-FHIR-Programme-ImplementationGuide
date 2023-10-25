@@ -1,11 +1,5 @@
 <Organization xmlns="http://hl7.org/fhir">
 	<id value="ODS-Organization-G81086-UniquePropertyReferenceNumber-Example" />
-	<meta>
-		<versionId value="3" />
-		<lastUpdated value="2023-08-23T10:14:07.820+00:00" />
-		<source value="#ebc280a474cb23ad" />
-		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-	</meta>
 	<extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-DateTime">
 		<extension url="type">
 			<valueCoding>

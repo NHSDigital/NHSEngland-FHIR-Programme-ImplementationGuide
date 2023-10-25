@@ -1,11 +1,5 @@
 <OrganizationAffiliation xmlns="http://hl7.org/fhir">
 	<id value="ODS-OrganizationAffiliation-G81086-Example" />
-	<meta>
-		<versionId value="1" />
-		<lastUpdated value="2023-06-24T14:25:39.819+00:00" />
-		<source value="#835f11346e5f058b" />
-		<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-OrganizationAffiliation" />
-	</meta>
 	<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-TypedPeriod">
 		<extension url="dataType">
 			<valueCoding>
