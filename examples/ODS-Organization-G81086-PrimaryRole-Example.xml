@@ -70,18 +70,11 @@
 	</identifier>
 	<type>
 		<coding>
-			<system value="http://terminology.hl7.org/CodeSystem/organization-type" />
-			<code value="prov" />
-			<display value="Healthcare Provider" />
-		</coding>
-	</type>
-	<!--<type>
-		<coding>
 			<system value="https://ods-prototype/role" />
 			<code value="RO177" />
 			<display value="PRESCRIBING COST CENTRE" />
 		</coding>
-	</type>-->
+	</type>
 	<name value="BIRD-IN-EYE SURGERY" />
 	<telecom>
 		<system value="phone" />
