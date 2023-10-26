@@ -36,7 +36,7 @@
 		<value value="G81086" />
 	</identifier>
 	<organization>
-		<reference value="Organization/ODS-Organization-G81086-UniquePropertyReferenceNumber-Example" />
+		<reference value="Organization/ODS-Organization-G81086-PrimaryRole-Example" />
 		<type value="Organization" />
 		<identifier>
 			<use value="official" />

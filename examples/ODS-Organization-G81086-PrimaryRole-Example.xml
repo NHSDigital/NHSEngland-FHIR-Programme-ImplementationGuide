@@ -1,5 +1,28 @@
 <Organization xmlns="http://hl7.org/fhir">
-	<id value="ODS-Organization-G81086-UniquePropertyReferenceNumber-Example" />
+	<id value="ODS-Organization-G81086-PrimaryRole-Example" />
+	<extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-OrganisationRole">
+		<extension url="primaryRole">
+			<valueBoolean value="true" />
+		</extension>
+		<extension url="instanceID">
+			<valueInteger value="103262" />
+		</extension>
+		<extension url="code">
+			<valueCoding>
+				<system value="https://fhir.nhs.uk/England/CodeSystem/England-ODSOrganisationRole" />
+				<code value="community-surgery" />
+				<display value="Community Surgery" />
+			</valueCoding>
+		</extension>
+		<extension url="period">
+			<valuePeriod>
+				<start value="1974-04-01T00:00:00+00:00" />
+			</valuePeriod>
+		</extension>
+		<extension url="active">
+			<valueBoolean value="true" />
+		</extension>
+	</extension>
 	<extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-DateTime">
 		<extension url="type">
 			<valueCoding>
