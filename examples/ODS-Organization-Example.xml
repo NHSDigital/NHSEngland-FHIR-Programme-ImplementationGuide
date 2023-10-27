@@ -22,7 +22,7 @@
 		</extension>
 		<extension url="period">
 			<valuePeriod>
-				<start value="2015-05-11T00:00:00+00:00" />
+				<start value="2015-05-11" />
 			</valuePeriod>
 		</extension>
 	</extension>
@@ -36,7 +36,7 @@
 		</extension>
 		<extension url="period">
 			<valuePeriod>
-				<start value="2015-05-11T00:00:00+00:00" />
+				<start value="2015-05-11" />
 			</valuePeriod>
 		</extension>
 	</extension>

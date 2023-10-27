@@ -16,7 +16,7 @@
 		</extension>
 		<extension url="period">
 			<valuePeriod>
-				<start value="1974-04-01T00:00:00+00:00" />
+				<start value="1974-04-01" />
 			</valuePeriod>
 		</extension>
 		<extension url="active">
@@ -45,7 +45,7 @@
 		</extension>
 		<extension url="period">
 			<valuePeriod>
-				<start value="1974-04-01T00:00:00+00:00" />
+				<start value="1974-04-01" />
 			</valuePeriod>
 		</extension>
 	</extension>
@@ -59,7 +59,7 @@
 		</extension>
 		<extension url="period">
 			<valuePeriod>
-				<start value="1974-04-01T00:00:00+00:00" />
+				<start value="1974-04-01" />
 			</valuePeriod>
 		</extension>
 	</extension>
@@ -73,6 +73,13 @@
 			<system value="https://ods-prototype/role" />
 			<code value="RO177" />
 			<display value="PRESCRIBING COST CENTRE" />
+		</coding>
+	</type>
+	<type>
+		<coding>
+			<system value="https://ods-prototype/recordClass" />
+			<code value="RC1" />
+			<display value="HSCOrg" />
 		</coding>
 	</type>
 	<name value="BIRD-IN-EYE SURGERY" />
