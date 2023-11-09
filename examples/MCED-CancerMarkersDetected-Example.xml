@@ -350,6 +350,9 @@
       <!--primary site observation-->
       <Observation xmlns="http://hl7.org/fhir">
         <id value="dacb177a-9501-4dcc-8b22-b941791ae0db"/>
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation"/>
+        </meta>        
         <identifier>
           <system value="https://grail.com/grail-id"/>
           <value value="${sample.orderingGrailId} NHS9123123"/>
@@ -412,6 +415,9 @@
       <!--secondary site obseravtion-->
       <Observation xmlns="http://hl7.org/fhir">
         <id value="3f9730c8-5527-4f58-9865-55aef4dfa11f"/>
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation"/>
+        </meta>        
         <identifier>
           <system value="https://grail.com/grail-id"/>
           <value value="${sample.orderingGrailId} NHS9123123"/>
