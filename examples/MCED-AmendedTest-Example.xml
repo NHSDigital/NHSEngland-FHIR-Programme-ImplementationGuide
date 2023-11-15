@@ -34,7 +34,7 @@
           <reference value="urn:uuid:d6407de7-0e86-45eb-93cb-035094aaa49e"/>
         </sender>
         <source>
-          <endpoint value="${GrailMeshMailboxId}"/>
+          <endpoint value="${SendingMeshMailboxId}"/>
         </source>
         <focus>
           <!--Goes to the DiagnosticReport-->
@@ -46,7 +46,7 @@
   <entry>
     <fullUrl value="urn:uuid:d6407de7-0e86-45eb-93cb-035094aaa49e"/>
     <resource>
-      <!--GRAIL org-->
+      <!--Screening org-->
       <Organization>
         <id value="d6407de7-0e86-45eb-93cb-035094aaa49e"/>
         <meta>
@@ -54,11 +54,11 @@
         </meta>
         <identifier>
           <system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
-          <value value="8KG14"/>
+          <value value="ABC123"/>
         </identifier>
-        <name value="GRAIL BIO UK LTD"/>
+        <name value="Screening Organisation Ltd"/>
         <address>
-          <text value="TBD"/>
+          <text value="Screening Organisation Ltd, Floor 1, High Rise, Anytown, AT5 5TT"/>
         </address>
       </Organization>
     </resource>
@@ -74,13 +74,13 @@
         </meta>
         <identifier>
           <system value="http://terminology.hl7.org/NamingSystem/CLIA"/>
-          <value value="${lab.cliaId} 34D2231294"/>
+          <value value="${lab.cliaId} ScreeningLab34D2231294"/>
         </identifier>
         <identifier>
           <system value="http://terminology.hl7.org/NamingSystem/CAP"/>
-          <value value="${lab.cap} GRAIL6793"/>
+          <value value="${lab.cap} ScreeningLab6793"/>
         </identifier>
-        <name value="${lab.name} GRAIL, LLC"/>
+        <name value="${lab.name} Screening Lab"/>
         <telecom>
           <system value="phone"/>
           <value value="+18336942553"/>
@@ -91,10 +91,10 @@
         </telecom>
         <telecom>
           <system value="email"/>
-          <value value="customerservice@grail.com"/>
+          <value value="customerservice@screeninglab.com"/>
         </telecom>
         <address>
-          <text value="${lab.name}GRAIL RTP, ${lab.location} 4001 E NC 54 Hwy Assembly, Suite 1100"/>
+          <text value="${lab.name}Screening Lab, ${lab.location} The Lab, Anytown, AT66 7TY"/>
         </address>
         <contact>
           <name>
@@ -142,8 +142,7 @@
           <value value="3415870223"/>
         </identifier>
         <name>
-          <text value="${orderingProvider.fullName} Prof Peter Johnson"/>
-          <suffix value="${orderingProvider.credentials} CBE"/>
+          <text value="${orderingProvider.fullName} Dr. Daniel Davies"/>
         </name>
         <address>
           <text value="NHS England, Wellington House, 133-155 Waterloo Road, London, SE1 8UG, UK"/>
@@ -160,7 +159,7 @@
           <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient"/>
         </meta>
         <identifier>
-          <system value="https://grail.com/patient-id"/>
+          <system value="https://ScreeningOrg/patient-id"/>
           <value value="NHS-AB12-CD34"/>
         </identifier>
       </Patient>
@@ -175,8 +174,8 @@
           <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest"/>
         </meta>
         <identifier>
-          <system value="http://grail.com/grail-id"/>
-          <value value="${sample.orderingGrailId} NHS9123123"/>
+          <system value="http://ScreeningOrg/request-id"/>
+          <value value="${sample.orderingScreeningOrgId} NHS9123123"/>
         </identifier>
         <status value="active"/>
         <intent value="order"/>
@@ -193,11 +192,11 @@
         </subject>
         <requester>
           <reference value="urn:uuid:f25e9d63-6a4e-4de6-b9dc-c912fda62b01"/>
-          <display value="Peter Johnson"/>
+          <display value="Dr. Daniel Davies"/>
         </requester>
         <performer>
           <reference value="urn:uuid:e78b5421-8d55-4f61-8cbf-bee1c69513f1"/>
-          <display value="GRAIL RTP"/>
+          <display value="Screening Lab"/>
         </performer>
       </ServiceRequest>
     </resource>
@@ -213,7 +212,7 @@
         </meta>
         <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.note">
           <valueAnnotation>
-            <text value="This AMENDED Report replaces the Report issued on 2023-10-01 to change the Date of Birth from 1956-11-03 to 1956-11-04. The test results have not changed."/>
+            <text value="${testResult.labComments}"/>
           </valueAnnotation>
         </extension>
         <basedOn>
@@ -234,7 +233,7 @@
         <issued value="2020-09-25T16:00:00+00:00"/>
         <performer>
           <reference value="urn:uuid:e78b5421-8d55-4f61-8cbf-bee1c69513f1"/>
-          <display value="GRAIL RTP"/>
+          <display value="Screening Lab"/>
         </performer>
         <specimen>
           <reference value="urn:uuid:756a8361-79ce-4561-afcb-a91fe19df123"/>
@@ -263,8 +262,8 @@
           <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation"/>
         </meta>
         <identifier>
-          <system value="https://grail.com/grail-id"/>
-          <value value="${sample.orderingGrailId} NHS9123123"/>
+          <system value="http://ScreeningOrg/request-id"/>
+          <value value="${sample.orderingScreeningOrgId} NHS9123123"/>
         </identifier>
         <status value="final"/>
         <code>
@@ -280,14 +279,12 @@
         </subject>
         <issued value="2020-09-25T16:00:00+00:00"/>
         <performer>
-          <reference value="urn:uuid:d6407de7-0e86-45eb-93cb-035094aaa49e"/>
-          <display value="GRAIL RTP"/>
+          <reference value="urn:uuid:e78b5421-8d55-4f61-8cbf-bee1c69513f1"/>
+          <display value="Screening Lab"/>
         </performer>
-        <note>
-          <text value="${testResult.labComments}"/>
-        </note>
         <specimen>
           <reference value="urn:uuid:756a8361-79ce-4561-afcb-a91fe19df123"/>
+          <display value="NHS9123123"/>          
         </specimen>
         <!--the overall detected / not detected-->
         <hasMember>
@@ -313,8 +310,8 @@
           <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation"/>
         </meta>
         <identifier>
-          <system value="https://grail.com/grail-id"/>
-          <value value="${sample.orderingGrailId} NHS9123123"/>
+          <system value="http://ScreeningOrg/request-id"/>
+          <value value="${sample.orderingScreeningOrgId} NHS9123123"/>
         </identifier>
         <basedOn>
           <reference value="urn:uuid:d9df1431-22ac-462a-946a-f195f6c639af"/>
@@ -333,8 +330,8 @@
         </subject>
         <issued value="2020-09-25T16:00:00+00:00"/>
         <performer>
-          <reference value="urn:uuid:d6407de7-0e86-45eb-93cb-035094aaa49e"/>
-          <display value="GRAIL RTP"/>
+          <reference value="urn:uuid:e78b5421-8d55-4f61-8cbf-bee1c69513f1"/>
+          <display value="Screening Lab"/>
         </performer>
         <valueCodeableConcept>
           <coding>
@@ -345,6 +342,7 @@
         </valueCodeableConcept>
         <specimen>
           <reference value="urn:uuid:756a8361-79ce-4561-afcb-a91fe19df123"/>
+          <display value="NHS9123123"/>          
         </specimen>
       </Observation>
     </resource>
@@ -359,15 +357,15 @@
           <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation"/>
         </meta>
         <identifier>
-          <system value="https://grail.com/grail-id"/>
-          <value value="${sample.orderingGrailId} NHS9123123"/>
+          <system value="http://ScreeningOrg/request-id"/>
+          <value value="${sample.orderingScreeningOrgId} NHS9123123"/>
         </identifier>
         <status value="final"/>
         <code>
           <coding>
             <system value="http://snomed.info/sct"/>
             <code value="TBC"/>
-            <display value="Multi-cancer early detection predicted highest probability cancer signal origin by machine learning-based classifier"/>
+            <display value="Multi-cancer early detection predicted first cancer signal origin by machine learning-based classifier"/>
           </coding>
         </code>
         <subject>
@@ -376,8 +374,8 @@
         </subject>
         <issued value="2019-01-29T16:00:00+00:00"/>
         <performer>
-          <reference value="urn:uuid:d6407de7-0e86-45eb-93cb-035094aaa49e"/>
-          <display value="GRAIL RTP"/>
+          <reference value="urn:uuid:e78b5421-8d55-4f61-8cbf-bee1c69513f1"/>
+          <display value="Screening Lab"/>
         </performer>
         <component>
           <code>
@@ -424,15 +422,15 @@
           <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation"/>
         </meta>
         <identifier>
-          <system value="https://grail.com/grail-id"/>
-          <value value="${sample.orderingGrailId} NHS9123123"/>
+          <system value="http://ScreeningOrg/request-id"/>
+          <value value="${sample.orderingScreeningOrgId} NHS9123123"/>
         </identifier>
         <status value="final"/>
         <code>
           <coding>
             <system value="http://snomed.info/sct"/>
             <code value="TBC"/>
-            <display value="Multi-cancer early detection predicted second highest probability cancer signal origin by machine learning-based classifier"/>
+            <display value="Multi-cancer early detection predicted second cancer signal origin by machine learning-based classifier"/>
           </coding>
         </code>
         <subject>
@@ -441,8 +439,8 @@
         </subject>
         <issued value="2019-01-29T16:00:00+00:00"/>
         <performer>
-          <reference value="urn:uuid:d6407de7-0e86-45eb-93cb-035094aaa49e"/>
-          <display value="GRAIL RTP"/>
+          <reference value="urn:uuid:e78b5421-8d55-4f61-8cbf-bee1c69513f1"/>
+          <display value="Screening Lab"/>
         </performer>
         <component>
           <code>
@@ -472,8 +470,8 @@
           <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen"/>
         </meta>
         <identifier>
-          <system value="http://grail.com/grail-id"/>
-          <value value="${sample.orderingGrailId} NHS9123123"/>
+          <system value="http://ScreeningOrg/request-id"/>
+          <value value="${sample.orderingScreeningOrgId} NHS9123123"/>
         </identifier>
         <status value="available"/>
         <type>
