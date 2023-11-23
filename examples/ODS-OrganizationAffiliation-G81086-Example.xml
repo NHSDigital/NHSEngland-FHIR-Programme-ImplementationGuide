@@ -1,7 +1,7 @@
 <OrganizationAffiliation xmlns="http://hl7.org/fhir">
   <id value="ODS-OrganizationAffiliation-G81086-Example" />
   <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-TypedPeriod">
-    <extension url="dataType">
+    <extension url="dateType">
       <valueCoding>
         <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PeriodType" />
         <code value="legal" />
@@ -16,7 +16,7 @@
     </extension>
   </extension>
   <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-TypedPeriod">
-    <extension url="dataType">
+    <extension url="dateType">
       <valueCoding>
         <system value="https://fhir.nhs.uk/England/CodeSystem/England-PeriodType" />
         <code value="operational" />
@@ -30,11 +30,7 @@
       </valuePeriod>
     </extension>
   </extension>
-  <identifier>
-    <use value="official" />
-    <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
-    <value value="G81086" />
-  </identifier>
+  <active value="false"/>
   <organization>
     <reference value="Organization/ODS-Organization-G81086-PrimaryRole-Example" />
     <type value="Organization" />
@@ -55,7 +51,7 @@
   </participatingOrganization>
   <code>
     <coding>
-      <system value="https://ods-prototype/relationship" />
+      <system value="https://ord.nhs.uk/CodeSystem/relationship" />
       <code value="RE4" />
       <display value="IS COMMISSIONED BY" />
     </coding>
