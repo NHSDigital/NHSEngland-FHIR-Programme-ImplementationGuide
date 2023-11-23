@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="MCED-CancelledTest-Example" />
+  <id value="MCED-CancerMarkersDetected-Example" />
   <meta>
     <lastUpdated value="2020-09-20T10:22:00+00:00" />
     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle" />
@@ -38,7 +38,7 @@
         </source>
         <focus>
           <!--Goes to the DiagnosticReport-->
-          <reference value="urn:uuid:821bee1c-367f-484b-a02b-ec625afef0df" />
+          <reference value="urn:uuid:3d2f37fd-ca19-4199-9f72-4871cfe12df1" />
         </focus>
       </MessageHeader>
     </resource>
@@ -166,7 +166,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:239336bc-734c-47b8-9c72-6239556b46ad" />
+    <fullUrl value="urn:uuid:d9df1431-22ac-462a-946a-f195f6c639af" />
     <resource>
       <ServiceRequest>
         <id value="d9df1431-22ac-462a-946a-f195f6c639af" />
@@ -202,24 +202,22 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:821bee1c-367f-484b-a02b-ec625afef0df" />
+    <fullUrl value="urn:uuid:3d2f37fd-ca19-4199-9f72-4871cfe12df1" />
     <resource>
-      <!--for a cancelled test, the DiagnosticReport.status will be set to "cancelled", and the cancel reason in the UK Core extension-DiagnosticReport.note-->
-      <!--no Observations are included (so no <result> element is included)-->
       <DiagnosticReport>
-        <id value="821bee1c-367f-484b-a02b-ec625afef0df" />
+        <id value="3d2f37fd-ca19-4199-9f72-4871cfe12df1" />
         <meta>
           <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
         </meta>
         <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.note">
           <valueAnnotation>
-            <text value="Unable to perform testing.  Specimen tube was compromised during shipping. To receive a test result, please provide another specimen for testing. " />
+            <text value="Some Lab Comments" />
           </valueAnnotation>
         </extension>
         <basedOn>
-          <reference value="urn:uuid:239336bc-734c-47b8-9c72-6239556b46ad" />
+          <reference value="urn:uuid:d9df1431-22ac-462a-946a-f195f6c639af" />
         </basedOn>
-        <status value="cancelled" />
+        <status value="final" />
         <code>
           <coding>
             <system value="http://snomed.info/sct" />
@@ -240,6 +238,10 @@
           <reference value="urn:uuid:756a8361-79ce-4561-afcb-a91fe19df123" />
           <display value="NHS9123123" />
         </specimen>
+        <!--result is the Observation grouper-->
+        <result>
+          <reference value="urn:uuid:9f7babcd-19cb-4063-b96b-61a20b2e07e6" />
+        </result>
         <conclusion value="The Galleri test results report PDF document is the official source of the test result and contains important information regarding the Galleri test and the patient&#39;s test results. Please read the official report for complete results." />
         <!--The PDF report goes here-->
         <presentedForm>
@@ -247,6 +249,216 @@
           <data value="VGhlIEdSQUlMIFBERiBnb2VzIGhlcmU=" />
         </presentedForm>
       </DiagnosticReport>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:9f7babcd-19cb-4063-b96b-61a20b2e07e6" />
+    <resource>
+      <!--the grouper Observation-->
+      <Observation>
+        <id value="9f7babcd-19cb-4063-b96b-61a20b2e07e6" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+        </meta>
+        <identifier>
+          <system value="http://ScreeningOrg/request-id" />
+          <value value="NHS9123123" />
+        </identifier>
+        <status value="final" />
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1148754001" />
+            <display value="Screening for neoplasm" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09" />
+          <display value="NHS-AB12-CD34" />
+        </subject>
+        <issued value="2020-09-25T16:00:00+00:00" />
+        <performer>
+          <reference value="urn:uuid:e78b5421-8d55-4f61-8cbf-bee1c69513f1" />
+          <display value="Screening Lab" />
+        </performer>
+        <specimen>
+          <reference value="urn:uuid:756a8361-79ce-4561-afcb-a91fe19df123" />
+          <display value="NHS9123123" />
+        </specimen>
+        <!--the overall detected / not detected-->
+        <hasMember>
+          <reference value="urn:uuid:efae5859-28df-4e7d-be91-6df56d8215e4" />
+        </hasMember>
+        <!--primary site-->
+        <hasMember>
+          <reference value="urn:uuid:dacb177a-9501-4dcc-8b22-b941791ae0db" />
+        </hasMember>
+        <!--secondary site-->
+        <hasMember>
+          <reference value="urn:uuid:3f9730c8-5527-4f58-9865-55aef4dfa11f" />
+        </hasMember>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:efae5859-28df-4e7d-be91-6df56d8215e4" />
+    <resource>
+      <!--marker detected Observation-->
+      <Observation>
+        <id value="efae5859-28df-4e7d-be91-6df56d8215e4" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+        </meta>
+        <identifier>
+          <system value="http://ScreeningOrg/request-id" />
+          <value value="NHS9123123" />
+        </identifier>
+        <basedOn>
+          <reference value="urn:uuid:d9df1431-22ac-462a-946a-f195f6c639af" />
+        </basedOn>
+        <status value="final" />
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="TBC" />
+            <display value="Qualitative result of cancer methylation profile in cell free deoxyribonucleic acid by next generation sequencing" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09" />
+          <display value="NHS-AB12-CD34" />
+        </subject>
+        <issued value="2020-09-25T16:00:00+00:00" />
+        <performer>
+          <reference value="urn:uuid:e78b5421-8d55-4f61-8cbf-bee1c69513f1" />
+          <display value="Screening Lab" />
+        </performer>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="TBC" />
+            <display value="Multi-cancer early detection signal detected" />
+          </coding>
+        </valueCodeableConcept>
+        <specimen>
+          <reference value="urn:uuid:756a8361-79ce-4561-afcb-a91fe19df123" />
+          <display value="NHS9123123" />
+        </specimen>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:dacb177a-9501-4dcc-8b22-b941791ae0db" />
+    <resource>
+      <!--primary site observation-->
+      <Observation xmlns="http://hl7.org/fhir">
+        <id value="dacb177a-9501-4dcc-8b22-b941791ae0db" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+        </meta>        
+        <identifier>
+          <system value="http://ScreeningOrg/request-id" />
+          <value value="NHS9123123" />
+        </identifier>
+        <status value="final" />
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="TBC" />
+            <display value="Multi-cancer early detection predicted first cancer signal origin by machine learning-based classifier" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09" />
+          <display value="NHS-AB12-CD34" />
+        </subject>
+        <issued value="2019-01-29T16:00:00+00:00" />
+        <performer>
+          <reference value="urn:uuid:e78b5421-8d55-4f61-8cbf-bee1c69513f1" />
+          <display value="Screening Lab" />
+        </performer>
+        <component>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct" />
+              <code value="123037004" />
+              <display value="Body structure" />
+            </coding>
+          </code>
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://snomed.info/sct" />
+              <code value="89837001" />
+              <display value="Urinary bladder structure" />
+            </coding>
+          </valueCodeableConcept>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct" />
+              <code value="123037004" />
+              <display value="Body structure" />
+            </coding>
+          </code>
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://snomed.info/sct" />
+              <code value="57789003" />
+              <display value="Structure of urothelium" />
+            </coding>
+          </valueCodeableConcept>
+        </component>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:3f9730c8-5527-4f58-9865-55aef4dfa11f" />
+    <resource>
+      <!--secondary site obseravtion-->
+      <Observation xmlns="http://hl7.org/fhir">
+        <id value="3f9730c8-5527-4f58-9865-55aef4dfa11f" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+        </meta>        
+        <identifier>
+          <system value="http://ScreeningOrg/request-id" />
+          <value value="NHS9123123" />
+        </identifier>
+        <status value="final" />
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="TBC" />
+            <display value="Multi-cancer early detection predicted second cancer signal origin by machine learning-based classifier" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09" />
+          <display value="NHS-AB12-CD34" />
+        </subject>
+        <issued value="2019-01-29T16:00:00+00:00" />
+        <performer>
+          <reference value="urn:uuid:e78b5421-8d55-4f61-8cbf-bee1c69513f1" />
+          <display value="Screening Lab" />
+        </performer>
+        <component>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct" />
+              <code value="123037004" />
+              <display value="Body structure" />
+            </coding>
+          </code>
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://snomed.info/sct" />
+              <code value="64033007" />
+              <display value="Kidney structure" />
+            </coding>
+          </valueCodeableConcept>
+        </component>
+      </Observation>
     </resource>
   </entry>
   <entry>
