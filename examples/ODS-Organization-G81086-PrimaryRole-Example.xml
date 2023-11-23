@@ -6,12 +6,12 @@
     </extension>
     <extension url="roleCode">
       <valueCodeableConcept>
-		  <coding>
-			<system value="https://ord.nhs.uk/CodeSystem/role" />
-			<code value="RO94" />
-			<display value="APPLIANCE CONTRACTOR" />
-		  </coding>
-	  </valueCodeableConcept>
+      <coding>
+      <system value="https://ord.nhs.uk/CodeSystem/role" />
+      <code value="RO94" />
+      <display value="APPLIANCE CONTRACTOR" />
+      </coding>
+    </valueCodeableConcept>
     </extension>
     <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-TypedPeriod">
       <extension url="dateType">

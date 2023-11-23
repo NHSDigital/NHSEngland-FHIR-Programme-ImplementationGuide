@@ -30,7 +30,7 @@
       </valuePeriod>
     </extension>
   </extension>
-  <active value="false"/>
+  <active value="false" />
   <organization>
     <reference value="Organization/ODS-Organization-G81086-PrimaryRole-Example" />
     <type value="Organization" />
