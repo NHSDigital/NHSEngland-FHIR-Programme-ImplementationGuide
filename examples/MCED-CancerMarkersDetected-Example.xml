@@ -320,7 +320,7 @@
         <code>
           <coding>
             <system value="http://snomed.info/sct" />
-            <code value="TBC" />
+            <code value="1854971000000106" />
             <display value="Qualitative result of cancer methylation profile in cell free deoxyribonucleic acid by next generation sequencing" />
           </coding>
         </code>
@@ -336,7 +336,7 @@
         <valueCodeableConcept>
           <coding>
             <system value="http://snomed.info/sct" />
-            <code value="TBC" />
+            <code value="1854981000000108" />
             <display value="Multi-cancer early detection signal detected" />
           </coding>
         </valueCodeableConcept>
@@ -364,8 +364,8 @@
         <code>
           <coding>
             <system value="http://snomed.info/sct" />
-            <code value="TBC" />
-            <display value="Multi-cancer early detection predicted first cancer signal origin by machine learning-based classifier" />
+            <code value="1873921000000106" />
+            <display value="Multi-cancer early detection highest probability cancer signal origin by machine learning-based classifier" />
           </coding>
         </code>
         <subject>
@@ -429,8 +429,8 @@
         <code>
           <coding>
             <system value="http://snomed.info/sct" />
-            <code value="TBC" />
-            <display value="Multi-cancer early detection predicted second cancer signal origin by machine learning-based classifier" />
+            <code value="1873931000000108" />
+            <display value="Multi-cancer early detection second highest probability cancer signal origin by machine learning-based classifier" />
           </coding>
         </code>
         <subject>
