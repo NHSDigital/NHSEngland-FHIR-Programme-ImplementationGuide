@@ -242,7 +242,7 @@
         <result>
           <reference value="urn:uuid:9f7babcd-19cb-4063-b96b-61a20b2e07e6" />
         </result>
-        <conclusion value="The Galleri test results report PDF document is the official source of the test result and contains important information regarding the Galleri test and the patient&#39;s test results. Please read the official report for complete results." />
+        <conclusion value="The test results report PDF document is the official source of the test result and contains important information regarding the test and the patient&#39;s test results. Please read the official report for complete results." />
         <!--The PDF report goes here-->
         <presentedForm>
           <contentType value="application/pdf" />
