@@ -25,8 +25,8 @@
     <format value="json" />
     <messaging>
       <supportedMessage>
-        <mode value="receiver"/>
-        <definition value="https://fhir.nhs.uk/England/MessageDefinition/England-MCED-TestReport"/>
+        <mode value="receiver" />
+        <definition value="https://fhir.nhs.uk/England/MessageDefinition/England-MCED-TestReport" />
       </supportedMessage>      
     </messaging>
 </CapabilityStatement>
