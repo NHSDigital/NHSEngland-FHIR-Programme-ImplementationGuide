@@ -1,0 +1,65 @@
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+  <id value="CPIS-FHIR-API-Consumer" />
+  <url value="https://fhir.nhs.uk/CapabilityStatement/CPIS-FHIR-API-Consumer" />
+  <version value="1.0.0" />
+  <name value="CPISFHIRAPIConsumer" />
+  <title value="CPIS FHIR API Consumer" />
+  <status value="draft" />
+  <experimental value="false" />
+  <date value="2023-10-02" />
+  <publisher value="NHS England" />
+  <contact>
+    <name value="NHS England" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="Conformance requirements for NHS England CPIS FHIR API Consumer Implementation Guide" />
+  <purpose value="Conformance requirements for NHS England CPIS FHIR API Consumer Implementation Guide" />
+  <copyright value="Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the &amp;quot;License&amp;quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &amp;quot;AS IS&amp;quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <kind value="requirements" />
+  <fhirVersion value="4.0.1" />
+  <format value="json" />
+  <rest>
+    <mode value="client" />
+    <security>
+      <cors value="false" />
+      <service>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/restful-security-service" />
+          <code value="OAuth" />
+        </coding>
+      </service>
+      <description value="OIDC and OAuth2 via user present CIS2" />
+    </security>
+    <resource>
+      <type value="CareTeam" />
+      <profile value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
+      <interaction>
+        <code value="read" />
+      </interaction>
+      <searchParam>
+        <name value="patient" />
+        <definition value="http://hl7.org/fhir/SearchParameter/clinical-patient" />
+        <type value="token" />
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="AuditEvent" />
+      <profile value="http://hl7.org/fhir/StructureDefinition/AuditEvent" />
+      <interaction>
+        <code value="read" />
+      </interaction>
+      <searchInclude value="PractitionerRole" />
+      <searchParam>
+        <name value="patient" />
+        <definition value="http://hl7.org/fhir/SearchParameter/clinical-patient" />
+        <type value="token" />
+        <documentation value="AuditEvent.agent.who.where(resolve() is Patient) | AuditEvent.entity.what.where(resolve() is Patient)" />
+      </searchParam>
+    </resource>
+  </rest>
+</CapabilityStatement>
