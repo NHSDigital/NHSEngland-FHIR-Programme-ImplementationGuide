@@ -1,0 +1,36 @@
+<CapabilityStatement xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/Users/JOGE/OneDrive%20-%20NHS/SchemasR4/fhir-all-xsd/capabilitystatement.xsd">
+	<id value="England-ODS-Conformance"/>
+	<url value="https://fhir.hl7.org.uk/CapabilityStatement/England-ODS-Conformance"/>
+	<version value="1.0.0"/>
+	<name value="EnglandODSConformance"/>
+	<status value="active"/>
+	<date value="2023-12-11T00:00:00+00:00"/>
+	<publisher value="NHS England"/>
+	<contact>
+		<name value="NHS England"/>
+		<telecom>
+			<system value="email"/>
+			<value value="interoperabilityteam@nhs.net"/>
+			<use value="work"/>
+			<rank value="1"/>
+		</telecom>
+	</contact>
+	<description value="Conformance requirements for NHS England ODS FHIR API Implementation Guide"/>
+	<purpose value="Conformance requirements for NHS England CPIS FHIR API Consumer Implementation Guide"/>
+	<copyright value="Copyright &#169; 2023+ NHS England Licensed under the Apache License, Version 2.0 (the &amp;quot;License&amp;quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &amp;quot;AS IS&amp;quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
+	<kind value="requirements"/>
+	<fhirVersion value="4.0.1"/>
+	<format value="application/fhir+json"/>
+	<format value="application/fhir+xml"/>
+	<rest>
+		<mode value="server"/>
+		<resource>
+			<type value="Organization"/>
+			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization"/>
+		</resource>
+		<resource>
+			<type value="UKCore-OrganizationAffiliation"/>
+			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-OrganizationAffiliation"/>
+		</resource>
+	</rest>
+</CapabilityStatement>
