@@ -114,9 +114,9 @@
       <extension url="type">
         <valueCodeableConcept>
           <coding>
-            <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKeyType"/>
-            <code value="UPRN"/>
-            <display value="Unique Property Reference Number"/>
+            <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKeyType" />
+            <code value="UPRN" />
+            <display value="Unique Property Reference Number" />
           </coding>
         </valueCodeableConcept>
       </extension>
