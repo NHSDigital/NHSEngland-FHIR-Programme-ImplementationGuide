@@ -24,9 +24,50 @@
 	<format value="application/fhir+xml"/>
 	<rest>
 		<mode value="server"/>
+		<security>
+            <cors value="false" />
+            <service>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/restful-security-service" />
+                    <code value="OAuth" />
+                </coding>
+            </service>
+            <description value="This API is application-restricted, meaning we authenticate the calling application but not the end user. 
+We are using OAuth 2.0. To use this access mode, you will be provided with a client id and client secret. 
+These are currently set to expire after 24 hours, after which time you will need to request a new token. 
+A client credentials token is necessary to obtain to authenticate with the Terminology Server. A free tool like Postman can be used to obtain tokens and issue requests, or any other RESTful client" />
+        </security>
 		<resource>
 			<type value="Organization"/>
 			<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization"/>
+			<interaction>
+                <code value="read" />
+            </interaction>
+            <searchParam>
+                <name value="name" />
+                <definition value="http://hl7.org/fhir/SearchParameter/name" />
+                <type value="token" />
+            </searchParam>
+            <searchParam>
+                <name value="address" />
+                <definition value="http://hl7.org/fhir/SearchParameter/address" />
+                <type value="token" />
+            </searchParam>    
+            <searchParam>
+                <name value="address-city" />
+                <definition value="http://hl7.org/fhir/SearchParameter/address-city" />
+                <type value="token" />
+            </searchParam>
+            <searchParam>
+                <name value="address-postalCode" />
+                <definition value="http://hl7.org/fhir/SearchParameter/address-postalCode" />
+                <type value="token" />
+            </searchParam>
+            <searchParam>
+                <name value="address-country" />
+                <definition value="http://hl7.org/fhir/SearchParameter/address-country" />
+                <type value="token" />
+            </searchParam>
 		</resource>
 		<resource>
 			<type value="UKCore-OrganizationAffiliation"/>
