@@ -20,7 +20,6 @@
   <code value="ods-role"/>
 	<base value="Organization"/>
 	<type value="token"/>
-	<description value="A search parameter to query on the role of an ODS Organization."/>
 	<expression value="Organization.extension('https://fhir.nhs.uk/England/StructureDefinition/Extension-England-OrganisationRole').extension('roleCode')"/>
 	<xpath value="f:Organization/f:extension[@url='https://fhir.nhs.uk/England/StructureDefinition/Extension-England-OrganisationRole']/f:extension[@url='roleCode']"/>
 	<xpathUsage value="normal"/>
