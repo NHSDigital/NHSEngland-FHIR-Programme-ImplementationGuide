@@ -1,8 +1,5 @@
 <Organization xmlns="http://hl7.org/fhir">
   <id value="ODS-Organization-NOEXTENSION-Pass" />
-  <meta>
-    <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Organization-ODS" />
-  </meta>
   <identifier>
     <use value="official" />
     <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
