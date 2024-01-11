@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SearchParameter xmlns="http://hl7.org/fhir">
   <id value="England-SearchParameter-ODS-Period" />
-	<url value="https://fhir.nhs.uk/England/SearchParameter/England-SearchParameter-ODS-Period"/>
-	<version value="0.0.1"/>
-	<name value="EnglandSearchParameterODSPeriod"/>
-	<status value="draft"/>
-	<date value="2024-01-11"/>
-  <publisher value="NHS England"/>
+  <url value="https://fhir.nhs.uk/England/SearchParameter/England-SearchParameter-ODS-Period" />
+  <version value="0.0.1" />
+  <name value="EnglandSearchParameterODSPeriod" />
+  <status value="draft" />
+  <date value="2024-01-11" />
+  <publisher value="NHS England" />
   <contact>
-    <name value="NHS England"/>
+    <name value="NHS England" />
     <telecom>
-      <system value="email"/>
-      <value value="interoperabilityteam@nhs.net"/>
-      <use value="work"/>
-      <rank value="1"/>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+      <rank value="1" />
     </telecom>
   </contact>
-  <description value="SearchParameter for NHS England ODS FHIR API fopr querying TypedPeriod extension, period sub element"/>
-  <code value="ods-period"/>
-	<base value="Organization"/>
-	<base value="OrganizationAffiliation"/>
-	<type value="token"/>
-	<expression value="OrganizationAffiliation.extension('https://fhir.nhs.uk/England/StructureDefinition/Extension-England-TypedPeriod').extension('period') |  Organization.extension('https://fhir.nhs.uk/England/StructureDefinition/Extension-England-TypedPeriod').extension('period')"/>
-	<xpathUsage value="normal"/>
-	<comparator value="eq"/>
-	<modifier value="exact"/>
+  <description value="SearchParameter for NHS England ODS FHIR API fopr querying TypedPeriod extension, period sub element" />
+  <code value="ods-period" />
+  <base value="Organization" />
+  <base value="OrganizationAffiliation" />
+  <type value="token" />
+  <expression value="OrganizationAffiliation.extension('https://fhir.nhs.uk/England/StructureDefinition/Extension-England-TypedPeriod').extension('period') |  Organization.extension('https://fhir.nhs.uk/England/StructureDefinition/Extension-England-TypedPeriod').extension('period')" />
+  <xpathUsage value="normal" />
+  <comparator value="eq" />
+  <modifier value="exact" />
 </SearchParameter>
