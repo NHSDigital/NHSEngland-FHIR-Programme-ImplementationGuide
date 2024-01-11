@@ -69,17 +69,17 @@ A client credentials token is necessary to obtain to authenticate with the Termi
         <type value="token"/>
       </searchParam>
       <searchParam>
-        <name value="role"/>
+        <name value="ods-role"/>
         <definition value="https://fhir.nhs.uk/England/SearchParameter/England-SearchParameter-ODS-Role"/>
         <type value="token"/>
       </searchParam>
       <searchParam>
-        <name value="period"/>
+        <name value="ods-period"/>
         <definition value="https://fhir.nhs.uk/England/SearchParameter/England-SearchParameter-ODS-Period"/>
         <type value="token"/>
       </searchParam>
       <searchParam>
-        <name value="lastChangeDate"/>
+        <name value="ods-lastChangeDate"/>
         <definition value="https://fhir.nhs.uk/England/SearchParameter/England-SearchParameter-ODS-LastChangeDate"/>
         <type value="token"/>
       </searchParam>
@@ -111,12 +111,12 @@ A client credentials token is necessary to obtain to authenticate with the Termi
         <type value="reference"/>
       </searchParam>
       <searchParam>
-        <name value="relationship"/>
-        <definition value="http://hl7.org/fhir/SearchParameter/code"/>
+        <name value="ods-relationship"/>
+        <definition value="https://fhir.nhs.uk/England/SearchParameter/England-SearchParameter-ODS-Relationship"/>
         <type value="token"/>
       </searchParam>
       <searchParam>
-        <name value="period"/>
+        <name value="ods-period"/>
         <definition value="https://fhir.nhs.uk/England/SearchParameter/England-SearchParameter-ODS-Period"/>
         <type value="token"/>
       </searchParam>
