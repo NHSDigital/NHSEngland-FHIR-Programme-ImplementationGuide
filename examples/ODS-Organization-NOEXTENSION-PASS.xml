@@ -6,7 +6,6 @@
     <value value="4VE03" />
   </identifier>
   <active value="false" />
-  <name value="HIGH WEALD PCG" />
   <address>
     <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey">
       <extension url="type">
@@ -27,6 +26,5 @@
     <city value="UCKFIELD" />
     <district value="EAST SUSSEX" />
     <postalCode value="TN22 1SL" />
-    <country value="ENGLAND" />
   </address>
 </Organization>
