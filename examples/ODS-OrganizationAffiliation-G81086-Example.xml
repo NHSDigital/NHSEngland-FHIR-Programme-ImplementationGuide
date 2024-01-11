@@ -1,5 +1,8 @@
 <OrganizationAffiliation xmlns="http://hl7.org/fhir">
   <id value="ODS-OrganizationAffiliation-G81086-Example" />
+  <meta>
+    <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Organization-ODS" />
+  </meta>
   <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-TypedPeriod">
     <extension url="dateType">
       <valueCoding>
