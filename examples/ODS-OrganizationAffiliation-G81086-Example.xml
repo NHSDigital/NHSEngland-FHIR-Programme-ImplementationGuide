@@ -4,7 +4,7 @@
     <extension url="dateType">
       <valueCoding>
         <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PeriodType" />
-        <code value="legal" />
+        <code value="Legal" />
         <display value="Legal" />
       </valueCoding>
     </extension>
@@ -19,7 +19,7 @@
     <extension url="dateType">
       <valueCoding>
         <system value="https://fhir.nhs.uk/England/CodeSystem/England-PeriodType" />
-        <code value="operational" />
+        <code value="Operational" />
         <display value="Operational" />
       </valueCoding>
     </extension>
