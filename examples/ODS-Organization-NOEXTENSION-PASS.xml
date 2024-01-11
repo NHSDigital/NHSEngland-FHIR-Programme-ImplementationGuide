@@ -1,0 +1,32 @@
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="ODS-Organization-NOEXTENSION-Pass" />
+  <identifier>
+    <use value="official" />
+    <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+    <value value="4VE03" />
+  </identifier>
+  <active value="false" />
+  <name value="HIGH WEALD PCG" />
+  <address>
+    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey">
+      <extension url="type">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKeyType" />
+            <code value="UPRN" />
+            <display value="Unique Property Reference Number" />
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <extension url="value">
+        <valueString value="10091054340" />
+      </extension>
+    </extension>
+    <line value="ROTHER HOUSE" />
+    <line value="THE OFFICE VILLAGE, RIVER WAY" />
+    <city value="UCKFIELD" />
+    <district value="EAST SUSSEX" />
+    <postalCode value="TN22 1SL" />
+    <country value="ENGLAND" />
+  </address>
+</Organization>
