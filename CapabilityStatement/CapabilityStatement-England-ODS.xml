@@ -70,24 +70,23 @@ A client credentials token is necessary to obtain to authenticate with the Termi
       </searchParam>
       <searchParam>
         <name value="role"/>
-        <definition value="https://fhir.nhs.uk/England/SearchParameter/England-SearchParemeter-ODS-Role"/>
+        <definition value="https://fhir.nhs.uk/England/SearchParameter/England-SearchParameter-ODS-Role"/>
         <type value="token"/>
       </searchParam>
       <searchParam>
         <name value="period"/>
-        <definition value="https://fhir.nhs.uk/England/SearchParameter/England-SearchParemeter-ODS-Period"/>
+        <definition value="https://fhir.nhs.uk/England/SearchParameter/England-SearchParameter-ODS-Period"/>
         <type value="token"/>
       </searchParam>
       <searchParam>
         <name value="lastChangeDate"/>
-        <definition value="https://fhir.nhs.uk/England/SearchParameter/England-SearchParemeter-ODS-LastChangeDate"/>
+        <definition value="https://fhir.nhs.uk/England/SearchParameter/England-SearchParameter-ODS-LastChangeDate"/>
         <type value="token"/>
       </searchParam>
     </resource>
     <resource>
-      <type value="UKCore-OrganizationAffiliation"/>
+      <type value="OrganizationAffiliation"/>
       <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-OrganizationAffiliation"/>
-    </resource>
       <interaction>
         <code value="read"/>
       </interaction>
@@ -118,8 +117,9 @@ A client credentials token is necessary to obtain to authenticate with the Termi
       </searchParam>
       <searchParam>
         <name value="period"/>
-        <definition value="https://fhir.nhs.uk/England/SearchParameter/England-SearchParemeter-ODS-Period"/>
+        <definition value="https://fhir.nhs.uk/England/SearchParameter/England-SearchParameter-ODS-Period"/>
         <type value="token"/>
       </searchParam>
+    </resource>
   </rest>
 </CapabilityStatement>
