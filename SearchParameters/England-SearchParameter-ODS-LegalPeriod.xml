@@ -8,12 +8,12 @@
 	<date value="2024-01-11"/>
   <publisher value="NHS England"/>
   <contact>
-    <name value="NHS England"/>
+    <name value="NHS England" />
     <telecom>
-      <system value="email"/>
-      <value value="interoperabilityteam@nhs.net"/>
-      <use value="work"/>
-      <rank value="1"/>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+      <rank value="1" />
     </telecom>
   </contact>
   <description value="SearchParameter for NHS England ODS FHIR API fopr querying TypedPeriod extension, period sub element, where dateType is Legal"/>
