@@ -66,7 +66,7 @@ A client credentials token is necessary to obtain to authenticate with the Termi
       <searchParam>
         <name value="address-country" />
         <definition value="http://hl7.org/fhir/SearchParameter/address-country" />
-        <type value="token" />
+        <type value="string" />
       </searchParam>
       <searchParam>
         <name value="ods-role" />
