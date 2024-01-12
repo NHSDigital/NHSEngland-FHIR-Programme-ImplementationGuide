@@ -74,14 +74,14 @@ A client credentials token is necessary to obtain to authenticate with the Termi
         <type value="token" />
       </searchParam>
       <searchParam>
-        <name value="ods-legalPeriod"/>
-        <definition value="https://fhir.nhs.uk/England/SearchParameter/England-SearchParameter-ODS-LegalPeriod"/>
-        <type value="token"/>
+        <name value="ods-legalPeriod" />
+        <definition value="https://fhir.nhs.uk/England/SearchParameter/England-SearchParameter-ODS-LegalPeriod" />
+        <type value="token" />
       </searchParam>
       <searchParam>
-        <name value="ods-operationalPeriod"/>
-        <definition value="https://fhir.nhs.uk/England/SearchParameter/England-SearchParameter-ODS-OperationalPeriod"/>
-        <type value="token"/>
+        <name value="ods-operationalPeriod" />
+        <definition value="https://fhir.nhs.uk/England/SearchParameter/England-SearchParameter-ODS-OperationalPeriod" />
+        <type value="token" />
       </searchParam>
       <searchParam>
         <name value="ods-lastChangeDate" />
@@ -89,14 +89,14 @@ A client credentials token is necessary to obtain to authenticate with the Termi
         <type value="token" />
       </searchParam>
       <searchParam>
-        <name value="ods-refOnly"/>
-        <definition value="https://fhir.nhs.uk/England/SearchParameter/England-SearchParameter-ODS-RefOnly"/>
-        <type value="token"/>
+        <name value="ods-refOnly" />
+        <definition value="https://fhir.nhs.uk/England/SearchParameter/England-SearchParameter-ODS-RefOnly" />
+        <type value="token" />
       </searchParam>
       <searchParam>
-        <name value="ods-recordClass"/>
-        <definition value="https://fhir.nhs.uk/England/SearchParameter/England-SearchParameter-ODS-RecordClass"/>
-        <type value="token"/>
+        <name value="ods-recordClass" />
+        <definition value="https://fhir.nhs.uk/England/SearchParameter/England-SearchParameter-ODS-RecordClass" />
+        <type value="token" />
       </searchParam>
       <searchParam>
         <name value="ods-activeRole"/>
@@ -136,14 +136,14 @@ A client credentials token is necessary to obtain to authenticate with the Termi
         <type value="token" />
       </searchParam>
       <searchParam>
-        <name value="ods-legalPeriod"/>
-        <definition value="https://fhir.nhs.uk/England/SearchParameter/England-SearchParameter-ODS-LegalPeriod"/>
-        <type value="token"/>
+        <name value="ods-legalPeriod" />
+        <definition value="https://fhir.nhs.uk/England/SearchParameter/England-SearchParameter-ODS-LegalPeriod" />
+        <type value="token" />
       </searchParam>
       <searchParam>
-        <name value="ods-operationalPeriod"/>
-        <definition value="https://fhir.nhs.uk/England/SearchParameter/England-SearchParameter-ODS-OperationalPeriod"/>
-        <type value="token"/>
+        <name value="ods-operationalPeriod" />
+        <definition value="https://fhir.nhs.uk/England/SearchParameter/England-SearchParameter-ODS-OperationalPeriod" />
+        <type value="token" />
       </searchParam>
     </resource>
   </rest>

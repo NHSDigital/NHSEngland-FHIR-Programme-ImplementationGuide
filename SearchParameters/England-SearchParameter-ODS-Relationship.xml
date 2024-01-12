@@ -16,12 +16,12 @@
       <rank value="1" />
     </telecom>
   </contact>
-  <description value="SearchParameter for NHS England ODS FHIR API for querying code element for relationship records"/>
-  <code value="ods-relationship"/>
-	<base value="OrganizationAffiliation"/>
-	<type value="token"/>
-	<expression value="OrganizationAffiliation.code.coding.where(system='https://digital.nhs.uk/services/organisation-data-service/CodeSystem/ODSRelationship')"/>
-	<xpathUsage value="normal"/>
-	<comparator value="eq"/>
-	<modifier value="exact"/>
+  <description value="SearchParameter for NHS England ODS FHIR API for querying code element for relationship records" />
+  <code value="ods-relationship" />
+  <base value="OrganizationAffiliation" />
+  <type value="token" />
+  <expression value="OrganizationAffiliation.code.coding.where(system='https://digital.nhs.uk/services/organisation-data-service/CodeSystem/ODSRelationship')" />
+  <xpathUsage value="normal" />
+  <comparator value="eq" />
+  <modifier value="exact" />
 </SearchParameter>
