@@ -19,9 +19,9 @@
   <description value="Conformance requirements for NHS England ODS FHIR API Implementation Guide" />
   <jurisdiction> 
     <coding> 
-      <system value="urn:iso:std:iso:3166:-2"/> 
-      <code value="GB-ENG"/> 
-      <display value="England"/> 
+      <system value="urn:iso:std:iso:3166:-2" /> 
+      <code value="GB-ENG" /> 
+      <display value="England" /> 
     </coding> 
   </jurisdiction> 
   <purpose value="Conformance requirements for NHS England ODS FHIR API Implementation Guide, to specify the RESTFul interactions, supported profiles, and expected minimum SearchParamneters." />
