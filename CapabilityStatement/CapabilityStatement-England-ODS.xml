@@ -30,7 +30,7 @@
   <fhirVersion value="4.0.1" />
   <format value="application/fhir+json" />
   <format value="application/fhir+xml" />
-  <implementationGuide value="https://simplifier.net/guide/organisational-data-services?version=current"/> 
+  <implementationGuide value="https://simplifier.net/guide/organisational-data-services?version=current" /> 
   <rest>
     <mode value="server" />
     <security>
