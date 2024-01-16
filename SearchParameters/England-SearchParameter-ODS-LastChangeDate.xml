@@ -20,8 +20,8 @@
   <code value="ods-lastChangeDate" />
   <base value="Organization" />
   <base value="OrganizationAffiliation" />
-  <type value="token" />
-  <expression value="Organization.extension('https://fhir.nhs.uk/England/StructureDefinition/Extension-England-TypedDateTime').extension('dateTime') | OrganizationAffiliation.extension('https://fhir.nhs.uk/England/StructureDefinition/Extension-England-TypedDateTime').extension('dateTime')" />
+  <type value="date" />
+  <expression value="Organization.extension('https://fhir.nhs.uk/England/StructureDefinition/Extension-England-TypedDateTime').extension('dateTime').value | OrganizationAffiliation.extension('https://fhir.nhs.uk/England/StructureDefinition/Extension-England-TypedDateTime').extension('dateTime').value" />
   <xpathUsage value="normal" />
   <comparator value="eq" />
   <modifier value="exact" />
