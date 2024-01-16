@@ -112,7 +112,7 @@
 	<rank value="1" />
   </telecom>
   <telecom>
-    <system>
+    <system value="other">
 	  <extension url="otherContactSystem" >
 		  <valueCodeableConcept>
 			<coding>
@@ -122,9 +122,8 @@
 			</coding>
 		  </valueCodeableConcept>
 	  </extension>
-	  <code value="other" />
-	  <rank value="2" />
 	</system>
+	<rank value="2" />
   </telecom> <!-- Telecommunication Address -->
   <gender value="male" /> <!-- Person Gender - Note: The gender might not match the biological sex as determined by genetics or the individual's preferred identification. -->
   <birthDate value="1970-09-11" /> <!-- Person Birth Date -->
