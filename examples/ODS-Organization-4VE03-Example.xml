@@ -9,14 +9,14 @@
       </valueCoding>
     </extension>
     <extension url="dateTime">
-      <valueDateTime value="2002-03-31" />
+      <valueDateTime value="2023-12-31" />
     </extension>
   </extension>
   <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-TypedPeriod">
     <extension url="dateType">
       <valueCoding>
         <system value="https://fhir.nhs.uk/England/CodeSystem/England-PeriodType" />
-        <code value="legal" />
+        <code value="Legal" />
         <display value="Legal" />
       </valueCoding>
     </extension>
@@ -31,7 +31,7 @@
     <extension url="dateType">
       <valueCoding>
         <system value="https://fhir.nhs.uk/England/CodeSystem/England-PeriodType" />
-        <code value="operational" />
+        <code value="Operational" />
         <display value="Operational" />
       </valueCoding>
     </extension>
