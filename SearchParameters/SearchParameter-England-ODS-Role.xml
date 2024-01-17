@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <SearchParameter xmlns="http://hl7.org/fhir">
-  <id value="England-SearchParameter-ODS-Role" />
-  <url value="https://fhir.nhs.uk/England/SearchParameter/England-SearchParameter-ODS-Role" />
+  <id value="England-ODS-Role" />
+  <url value="https://fhir.nhs.uk/England/SearchParameter/England-ODS-Role" />
   <version value="0.0.1" />
-  <name value="EnglandSearchParameterODSRole" />
+  <name value="EnglandODSRole" />
   <status value="draft" />
   <date value="2024-01-11" />
   <publisher value="NHS England" />

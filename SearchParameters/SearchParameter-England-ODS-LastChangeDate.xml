@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <SearchParameter xmlns="http://hl7.org/fhir">
-  <id value="England-SearchParameter-ODS-LastChangeDate" />
-  <url value="https://fhir.nhs.uk/England/SearchParameter/England-SearchParameter-ODS-LastChangeDate" />
+  <id value="England-ODS-LastChangeDate" />
+  <url value="https://fhir.nhs.uk/England/SearchParameter/England-ODS-LastChangeDate" />
   <version value="0.0.1" />
-  <name value="EnglandSearchParameterODSLastChangeDate" />
+  <name value="EnglandODSLastChangeDate" />
   <status value="draft" />
   <date value="2024-01-11" />
   <publisher value="NHS England" />
