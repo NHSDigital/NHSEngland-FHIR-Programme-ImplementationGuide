@@ -30,51 +30,51 @@
   <derivation value="constraint"/>
   <differential>
     <element id="OrganizationAffiliation.extension">
-      <path value="OrganizationAffiliation.extension"/>
-      <min value="1"/>
+      <path value="OrganizationAffiliation.extension" />
+      <min value="1" />
     </element>
     <element id="OrganizationAffiliation.extension:extensionEnglandTypedDateTime">
-      <path value="OrganizationAffiliation.extension"/>
-      <sliceName value="extensionEnglandTypedDateTime"/>
-      <min value="1"/>
+      <path value="OrganizationAffiliation.extension" />
+      <sliceName value="extensionEnglandTypedDateTime" />
+      <min value="1" />
       <type>
-        <code value="Extension"/>
-        <profile value="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-TypedDateTime"/>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-TypedDateTime" />
       </type>
-      <isModifier value="false"/>
+      <isModifier value="false" />
     </element>
     <element id="OrganizationAffiliationextension:extensionEnglandTypedPeriod">
-      <path value="OrganizationAffiliation.extension"/>
-      <sliceName value="extensionEnglandTypedPeriod"/>
+      <path value="OrganizationAffiliation.extension" />
+      <sliceName value="extensionEnglandTypedPeriod" />
       <type>
-        <code value="Extension"/>
-        <profile value="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-TypedPeriod"/>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-TypedPeriod" />
       </type>
-      <isModifier value="false"/>
+      <isModifier value="false" />
     </element>
     <element id="OrganizationAffiliation.identifier">
-      <path value="OrganizationAffiliation.identifier"/>
-      <min value="1"/>
+      <path value="OrganizationAffiliation.identifier" />
+      <min value="1" />
     </element>
     <element id="OrganizationAffiliation.active">
-      <path value="OrganizationAffiliation.active"/>
-      <min value="1"/>
+      <path value="OrganizationAffiliation.active" />
+      <min value="1" />
     </element>
     <element id="OrganizationAffiliation.period">
-      <path value="OrganizationAffiliation.period"/>
-      <max value="0"/>
+      <path value="OrganizationAffiliation.period" />
+      <max value="0" />
     </element>
     <element id="OrganizationAffiliation.organization">
-      <path value="OrganizationAffiliation.organization"/>
-      <min value="1"/>
+      <path value="OrganizationAffiliation.organization" />
+      <min value="1" />
     </element>
     <element id="OrganizationAffiliation.participatingOrganization">
-      <path value="OrganizationAffiliation.participatingOrganization"/>
-      <min value="1"/>
+      <path value="OrganizationAffiliation.participatingOrganization" />
+      <min value="1" />
     </element>
     <element id="OrganizationAffiliation.code">
-      <path value="OrganizationAffiliation.code"/>
-      <min value="1"/>
+      <path value="OrganizationAffiliation.code" />
+      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>
