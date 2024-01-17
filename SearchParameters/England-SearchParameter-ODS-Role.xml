@@ -16,13 +16,11 @@
       <rank value="1" />
     </telecom>
   </contact>
-  <description value="SearchParameter for NHS England ODS FHIR API fopr querying OrganisationRole extension, roleCode sub element" />
+  <description value="SearchParameter for NHS England ODS FHIR API for querying OrganisationRole extension, roleCode sub element" />
   <code value="ods-role" />
   <base value="Organization" />
   <type value="token" />
   <expression value="Organization.extension('https://fhir.nhs.uk/England/StructureDefinition/Extension-England-OrganisationRole').extension('roleCode')" />
-  <xpath value="f:Organization/f:extension[@url='https://fhir.nhs.uk/England/StructureDefinition/Extension-England-OrganisationRole']/f:extension[@url='roleCode']" />
-  <xpathUsage value="normal" />
   <comparator value="eq" />
   <modifier value="exact" />
 </SearchParameter>
