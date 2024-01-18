@@ -139,11 +139,11 @@
     </resource>
     <resource>
       <type value="Organization" />
-      <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Organization-ODS" />
+      <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
     </resource>
     <resource>
       <type value="OrganizationAffiliation" />
-      <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-OrganizationAffiliation-ODS" />
+      <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-OrganizationAffiliation" />
     </resource>
     <resource>
       <type value="Patient" />
