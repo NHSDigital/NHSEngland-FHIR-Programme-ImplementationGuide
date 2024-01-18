@@ -1,0 +1,30 @@
+{
+    "resourceType": "MessageDefinition",
+    "id": "5b461301-3ace-448f-aa55-c34dd41a6141",
+    "url": "https://fhir.nhs.uk/MessageDefinition/laboratory-order",
+    "identifier":  [
+        {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "5b461301-3ace-448f-aa55-c34dd41a6141"
+        }
+    ],
+    "version": "1.0.0",
+    "name": "EnglandLaboratoryOrder",
+    "title": "Laboratory Order",
+    "status": "active",
+    "date": "2024-01-04",
+    "eventCoding": {
+        "system": "https://fhir.nhs.uk/CodeSystem/message-event",
+        "code": "laboratory-order"
+    },
+    "category": "notification",
+    "focus":  [
+        {
+            "code": "ServiceRequest",
+            "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Lab",
+            "min": 1,
+            "max": "*"
+        }
+    ],
+    "responseRequired": "on-error"
+}

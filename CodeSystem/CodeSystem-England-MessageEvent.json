@@ -1,0 +1,54 @@
+{
+    "resourceType": "CodeSystem",
+    "id": "message-events",
+    "url": "https://fhir.nhs.uk/CodeSystem/message-event",
+    "identifier":  [
+        {
+            "system": "https://fhir.nhs.uk/identifier/CodeSystem",
+            "value": "message-events"
+        }
+    ],
+    "version": "1.0.20",
+    "name": "NHSEnglandMessageEvent",
+    "title": "Message Events",
+    "status": "draft",
+    "date": "2022-03-25",
+    "publisher": "NHS England",
+    "contact":  [
+        {
+            "name": "NHS England",
+            "telecom":  [
+                {
+                    "system": "email",
+                    "value": "interoperabilityteam@nhs.net",
+                    "use": "work"
+                }
+            ]
+        }
+    ],
+    "description": "Common messaging events.",
+    "copyright": "Copyright © 2019 NHS Digital",
+    "caseSensitive": true,
+    "content": "complete",
+    "concept":  [
+        {
+            "code": "prescription-order",
+            "display": "Prescription Order",
+            "definition": "Pharmacy/treatment encoded order"
+        },
+        {
+            "code": "dispense-notification",
+            "display": "Dispense Notification",
+            "definition": "Dispense Notification"
+        },
+        {
+            "code": "unsolicited-observations",
+            "display": "Unsolicited Observations (HL7 v2 ORU_R01)"
+        },
+        {
+            "code": "laboratory-order",
+            "display": "Laboratory Order",
+            "definition": "Laboratory Order (HL7 v2 OML_O21)"
+        }
+    ]
+}

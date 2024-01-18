@@ -1,0 +1,33 @@
+{
+    "resourceType": "MessageDefinition",
+    "id": "prescription-order",
+    "url": "https://fhir.nhs.uk/MessageDefinition/prescription-order",
+    "identifier":  [
+        {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "c81b88dc-760e-4b1e-9cdb-c5f853630664"
+        }
+    ],
+    "version": "1.1.0",
+    "name": "NHSDigitalPrescriptionOrder",
+    "title": "Pharmacy/Treatment Order",
+    "status": "active",
+    "date": "2020-05-27",
+    "base": "https://fhir.hl7.org.uk/MessageDefinition/prescription-order",
+    "eventCoding": {
+        "system": "https://fhir.nhs.uk/CodeSystem/message-event",
+        "code": "prescription-order",
+        "display": "Prescription Order"
+    },
+    "description": "Ordering of medications",
+    "category": "consequence",
+    "focus":  [
+        {
+            "code": "MedicationRequest",
+            "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest",
+            "min": 1,
+            "max": "*"
+        }
+    ],
+    "responseRequired": "on-error"
+}

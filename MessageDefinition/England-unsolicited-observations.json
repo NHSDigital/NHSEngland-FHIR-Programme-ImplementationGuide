@@ -1,0 +1,31 @@
+{
+    "resourceType": "MessageDefinition",
+    "id": "1daf7d82-13f7-4dcc-8934-21e855defdd9",
+    "url": "https://fhir.nhs.uk/MessageDefinition/unsolicited-observations",
+    "identifier":  [
+        {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "1daf7d82-13f7-4dcc-8934-21e855defdd9"
+        }
+    ],
+    "version": "1.0.0",
+    "name": "EnglandUnsolicitedObservations",
+    "title": "Observation messages",
+    "status": "active",
+    "date": "2021-07-07",
+    "eventCoding": {
+        "system": "https://fhir.nhs.uk/CodeSystem/message-event",
+        "code": "unsolicited-observations"
+    },
+    "description": "Unsolicited transmission of an observation message. If a Patient resource is not supplied, a NHS Number must be present in the DiaganosticReport and Observations",
+    "category": "notification",
+    "focus":  [
+        {
+            "code": "DiagnosticReport",
+            "profile": "https://fhir.nhs.uk/England/StructureDefinition/DiagnosticReport-Lab-Message",
+            "min": 1,
+            "max": "*"
+        }
+    ],
+    "responseRequired": "on-error"
+}

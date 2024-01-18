@@ -1,0 +1,31 @@
+{
+    "resourceType": "MessageDefinition",
+    "id": "bf729ea8-280b-4109-b2f5-02ce8e51d870",
+    "url": "https://fhir.nhs.uk/MessageDefinition/dispense-notification",
+    "identifier":  [
+        {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "bf729ea8-280b-4109-b2f5-02ce8e51d870"
+        }
+    ],
+    "version": "1.0.0",
+    "name": "NHSDigitalDispenseNotification",
+    "title": "Pharmacy/Treatment Dispense",
+    "status": "active",
+    "date": "2020-10-02",
+    "eventCoding": {
+        "system": "https://fhir.nhs.uk/CodeSystem/message-event",
+        "code": "dispense-notification",
+        "display": "Dispense Notification"
+    },
+    "description": "Notification of dispensed medication",
+    "category": "notification",
+    "focus":  [
+        {
+            "code": "MedicationDispense",
+            "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationDispense",
+            "min": 1,
+            "max": "*"
+        }
+    ]
+}
