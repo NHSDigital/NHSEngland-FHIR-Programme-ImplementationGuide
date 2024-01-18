@@ -16,8 +16,8 @@
       </valueCodeableConcept>
     </extension>
     -->
-	<!--
-	<extension url="PreferredContactTimes">
+  <!--
+  <extension url="PreferredContactTimes">
       <valueTiming>
         <repeat>
           <frequency value="1" />
@@ -31,8 +31,8 @@
       </valueTiming>
     </extension>
     -->
-	<!--
-	<extension url="PreferredWrittenCommunicationFormat">
+  <!--
+  <extension url="PreferredWrittenCommunicationFormat">
       <valueCodeableConcept>
         <coding>
           <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredWrittenCommunicationFormat" />
@@ -86,8 +86,8 @@
   <identifier> <!-- Alternative Patient Identifier -->
     <use value="secondary" />
     <system value="http://hospital.smarthealthit.org" />
-	<value value="2083266" />
-	<assigner reference="Organization/UKCore-Organization-LeedsTeachingHospital-Example" />
+  <value value="2083266" />
+  <assigner reference="Organization/UKCore-Organization-LeedsTeachingHospital-Example" />
   </identifier>
   
   <name> <!-- Person Name -->
@@ -98,22 +98,22 @@
   <telecom> <!-- Telecommunication Address -->
     <system value="phone" />
     <value value="+44 7700 900077" />
-	<use value="mobile" />
-	<rank value="1" />
+  <use value="mobile" />
+  <rank value="1" />
   </telecom>
   <telecom>
     <system value="other">
-	  <extension url="otherContactSystem" >
-		  <valueCodeableConcept>
-			<coding>
-			  <system value="https://fhir.hl7.org.uk/ValueSet/UKCore-OtherContactSystem" />
-			  <code value="textphone" />
-			  <display value="Minicom (Textphone)" />
-			</coding>
-		  </valueCodeableConcept>
-	  </extension>
-	</system>
-	<rank value="2" />
+    <extension url="otherContactSystem" >
+      <valueCodeableConcept>
+      <coding>
+        <system value="https://fhir.hl7.org.uk/ValueSet/UKCore-OtherContactSystem" />
+        <code value="textphone" />
+        <display value="Minicom (Textphone)" />
+      </coding>
+      </valueCodeableConcept>
+    </extension>
+  </system>
+  <rank value="2" />
   </telecom> <!-- Telecommunication Address -->
   <gender value="male" /> <!-- Person Gender - Note: The gender might not match the biological sex as determined by genetics or the individual's preferred identification. -->
   <birthDate value="1970-09-11" /> <!-- Person Birth Date -->
@@ -169,7 +169,7 @@
         <system value="http://snomed.info/sct" />
         <code value="703963007" />
         <display value="Makaton vocabulary" />
-	  </coding>
+    </coding>
     </language>
   </communication>
 </Patient>
