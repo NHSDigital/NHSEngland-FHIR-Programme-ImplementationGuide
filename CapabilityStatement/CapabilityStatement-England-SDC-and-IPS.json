@@ -19,6 +19,12 @@
       "mode": "server",
       "resource": [
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile",
+              "valueCanonical": "http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips"
+            }
+          ],
           "type": "AllergyIntolerance",
           "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance"
         },
@@ -47,10 +53,22 @@
           "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Communication"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile",
+              "valueCanonical": "http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips"
+            }
+          ],
           "type": "Composition",
           "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Composition"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile",
+              "valueCanonical": "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"
+            }
+          ],
           "type": "Condition",
           "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition"
         },
@@ -59,20 +77,26 @@
           "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile",
+              "valueCanonical": "http://hl7.org/fhir/uv/ips/StructureDefinition/Device-uv-ips"
+            }
+          ],
           "type": "Device",
           "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile",
+              "valueCanonical": "http://hl7.org/fhir/uv/ips/StructureDefinition/DiagnosticReport-uv-ips"
+            }
+          ],
           "type": "DiagnosticReport",
           "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport",
           "supportedProfile": [
             "https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Lab"
-          ],
-          "extension": [
-            { 
-              "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile",
-              "valueCanonical": "http://hl7.org/fhir/uv/ips/StructureDefinition/DiagnosticReport-uv-ips"
-            }
           ]
         },
         {
@@ -100,10 +124,22 @@
           "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-HealthcareService"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile",
+              "valueCanonical": "http://hl7.org/fhir/uv/ips/StructureDefinition/ImagingStudy-uv-ips"
+            }
+          ],
           "type": "ImagingStudy",
           "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-ImagingStudy"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile",
+              "valueCanonical": "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"
+            }
+          ],
           "type": "Immunization",
           "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Immunization"
         },
@@ -116,6 +152,12 @@
           "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile",
+              "valueCanonical": "http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips"
+            }
+          ],
           "type": "Medication",
           "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication"
         },
@@ -128,10 +170,22 @@
           "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationDispense"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile",
+              "valueCanonical": "http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationRequest-uv-ips"
+            }
+          ],
           "type": "MedicationRequest",
           "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile",
+              "valueCanonical": "http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"
+            }
+          ],
           "type": "MedicationStatement",
           "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationStatement"
         },
@@ -140,41 +194,72 @@
           "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MessageHeader"
         },
         {
+          "extension": [
+            { 
+              "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile",
+              "valueCanonical": "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-uv-ips"
+            }
+          ],
           "type": "Observation",
           "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation",
           "supportedProfile": [
             "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup",
             "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab",
             "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns"
-          ],
-          "extension": [
-            { 
-              "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile",
-              "valueCanonical": "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-uv-ips"
-            }
           ]
+          
         },
         {
           "type": "OperationOutcome",
           "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-OperationOutcome"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile",
+              "valueCanonical": "http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-uv-ips"
+            }
+          ],
           "type": "Organization",
           "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile",
+              "valueCanonical": "http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"
+            }
+          ],
           "type": "Patient",
           "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile",
+              "valueCanonical": "http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"
+            }
+          ],
           "type": "Practitioner",
           "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile",
+              "valueCanonical": "http://hl7.org/fhir/uv/ips/StructureDefinition/PractitionerRole-uv-ips"
+            }
+          ],
           "type": "PractitionerRole",
           "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile",
+              "valueCanonical": "http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips"
+            }
+          ],
           "type": "Procedure",
           "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure"
         },
@@ -183,10 +268,22 @@
           "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Provenance"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile",
+              "valueCanonical": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"
+            }
+          ],
           "type": "Questionnaire",
           "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Questionnaire"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile",
+              "valueCanonical": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse"
+            }
+          ],
           "type": "QuestionnaireResponse",
           "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse"
         },
@@ -211,6 +308,12 @@
           "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Slot"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile",
+              "valueCanonical": "http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips"
+            }
+          ],
           "type": "Specimen",
           "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen"
         },
