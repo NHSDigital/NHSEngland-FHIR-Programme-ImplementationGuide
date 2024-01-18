@@ -77,7 +77,36 @@
     </element>
     <element id="Organization.type">
       <path value="Organization.type" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="coding.system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="2" />
+    </element>
+    <element id="Organization.type:odsRecordClass">
+      <path value="Organization.type" />
+      <sliceName value="odsRecordClass" />
       <min value="1" />
+      <max value="1" />
+      <fixedCodeableConcept>
+        <coding>
+          <system value="https://digital.nhs.uk/services/organisation-data-service/CodeSystem/ODSRecordClass" />
+        </coding>
+      </fixedCodeableConcept>
+    </element>
+    <element id="Organization.type:odsRecordUseType">
+      <path value="Organization.type" />
+      <sliceName value="odsRecordUseType" />
+      <min value="1" />
+      <max value="1" />
+      <fixedCodeableConcept>
+        <coding>
+          <system value="https://fhir.nhs.uk/England/CodeSystem/England-ODSRecordUseType" />
+        </coding>
+      </fixedCodeableConcept>
     </element>
     <element id="Organization.name">
       <path value="Organization.name" />
