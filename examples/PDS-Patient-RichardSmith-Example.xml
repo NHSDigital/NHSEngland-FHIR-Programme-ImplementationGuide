@@ -3,17 +3,7 @@
     <versionId value="1" /> <!-- Serial Change Number -->
   </meta>
   <id value="UKCore-Patient-RichardSmith-Example" />
-  <!--
-  <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory">
-    <valueCodeableConcept>
-      <coding>
-        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryEngland" />
-        <code value="G" />
-        <display value="Mixed - Any other mixed background" />
-      </coding>
-    </valueCodeableConcept>
-  </extension>
-  -->
+
   <!--
   <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactPreference">
     <extension url="PreferredContactMethod">
