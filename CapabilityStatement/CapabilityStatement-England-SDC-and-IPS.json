@@ -22,6 +22,10 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile",
+              "valueCanonical": "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-allergyintolerance"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile",
               "valueCanonical": "http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips"
             }
           ],
@@ -66,6 +70,10 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile",
+              "valueCanonical": "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-condition"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile",
               "valueCanonical": "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"
             }
           ],
@@ -100,6 +108,12 @@
           ]
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile",
+              "valueCanonical": "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-documentreference"
+            }
+          ],
           "type": "DocumentReference",
           "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference"
         },
@@ -138,6 +152,10 @@
             {
               "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile",
               "valueCanonical": "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile",
+              "valueCanonical": "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-immunization"
             }
           ],
           "type": "Immunization",
@@ -174,6 +192,10 @@
             {
               "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile",
               "valueCanonical": "http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationRequest-uv-ips"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile",
+              "valueCanonical": "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-medicationrequest"
             }
           ],
           "type": "MedicationRequest",
@@ -184,6 +206,10 @@
             {
               "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile",
               "valueCanonical": "http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile",
+              "valueCanonical": "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-medicationstatement"
             }
           ],
           "type": "MedicationStatement",
@@ -198,6 +224,10 @@
             { 
               "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile",
               "valueCanonical": "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-uv-ips"
+            },
+            { 
+              "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile",
+              "valueCanonical": "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-observation"
             }
           ],
           "type": "Observation",
@@ -228,6 +258,10 @@
             {
               "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile",
               "valueCanonical": "http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile",
+              "valueCanonical": "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-patient"
             }
           ],
           "type": "Patient",

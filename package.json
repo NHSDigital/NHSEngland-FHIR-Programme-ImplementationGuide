@@ -10,7 +10,8 @@
     "fhir.r4.ukcore.stu3.currentbuild": "0.0.8-pre-release",
     "fhir.r4.nhsengland.stu1": "1.1.0",
     "hl7.fhir.uv.ips": "1.1.0",
-    "hl7.fhir.uv.sdc": "3.0.0"
+    "hl7.fhir.uv.sdc": "3.0.0",
+    "hl7.fhir.uv.ipa": "1.0.0"
   },
   "jurisdiction" : "urn:iso:std:iso:3166:-2:GB-ENG"
 }
