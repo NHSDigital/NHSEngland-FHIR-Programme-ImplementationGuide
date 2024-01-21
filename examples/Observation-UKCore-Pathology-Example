@@ -1,0 +1,56 @@
+{
+    "resourceType": "Observation",
+    "id": "ad717ae8-cb35-4d66-ba51-e22a76b1d158",
+    "identifier": [
+        {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "2af46949-4938-4c57-bad4-c4363e1965d5"
+        }
+    ],
+    "status": "final",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "laboratory",
+                    "display": "Laboratory"
+                }
+            ]
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "999791000000106",
+                "display": "Haemoglobin A1c level - International Federation of Clinical Chemistry and Laboratory Medicine standardised"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4",
+        "display": "WELSH, Joel"
+    },
+    "issued": "2022-01-30T12:48:00+00:00",
+    "performer": [
+        {
+            "reference": "urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338",
+            "display": "TD008362 PATH LAB 001"
+        }
+    ],
+    "valueQuantity": {
+        "value": 54,
+        "unit": "mmol/mol",
+        "system": "http://unitsofmeasure.org",
+        "code": "mmol/mol"
+    },
+    "specimen": {
+        "reference": "urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d"
+    },
+    "referenceRange": [
+        {
+            "text": "DIAGNOSIS OF DIABETES MELLITUS:\nHbA1c of 48 mmol/mol and above is diagnostic of DM (WHO 2011)\n42 - 47 mmol/mol indicates high risk of DM (NICE Guidance PH38 2012)\n\nMONITORING OF DIABETES MELLITUS (ADULTS):\nType 2 target values: 48 mmol/mol – 57 mmol/mol (NICE Guidelines NG28)\nType 1 target values: 48 mmol/mol or lower (NICE Guidelines NG17)"
+        }
+    ]
+}
