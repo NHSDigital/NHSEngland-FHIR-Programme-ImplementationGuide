@@ -57,12 +57,6 @@
           "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Communication"
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile",
-              "valueCanonical": "http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips"
-            }
-          ],
           "type": "Composition",
           "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Composition"
         },
