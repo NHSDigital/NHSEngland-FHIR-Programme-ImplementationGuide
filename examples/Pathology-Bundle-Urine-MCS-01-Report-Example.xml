@@ -44,6 +44,7 @@
           <!-- DiagnosticReport -->
           <reference value="urn:uuid:35d46ca1-f253-4c97-b7ee-fb5fccdf6c20" />
         </focus>
+        <defintion value="https://fhir.nhs.uk/England/MessageDefinition/England-Pathology-Report" />
       </MessageHeader>
     </resource>
   </entry>
@@ -366,8 +367,8 @@
           <coding>
             <!-- TBC - awaiting creation of SNOMED CT concept -->
             <system value="http://snomed.info/sct" />
-            <code value="TBC" />
-            <display value="Qualitative result of casts in mid-stream urine microscopy" />
+            <code value="51761000237101 " />
+            <display value="Qualitative result of hyaline casts in mid-stream urine microscopy" />
           </coding>
         </code>
         <subject>

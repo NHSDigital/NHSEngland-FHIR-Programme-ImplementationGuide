@@ -1,5 +1,4 @@
 <DiagnosticReport>
-  <!-- The logical identifier for the resource instance. -->
   <id value="Pathology-DiagnosticReport-Lab-Sn-Example" />
   <!-- The canonical URL for the UKCore-DiagnosticReport-Lab profile. -->
   <meta>
