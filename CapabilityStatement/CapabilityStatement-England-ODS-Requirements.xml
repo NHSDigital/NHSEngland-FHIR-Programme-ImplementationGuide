@@ -51,6 +51,8 @@ A client credentials token is necessary to obtain to authenticate with the Termi
       <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       <interaction>
         <code value="read" />
+      </interaction>
+      <interaction>
         <code value="search-type" />
       </interaction>
       <searchParam>
@@ -99,6 +101,8 @@ A client credentials token is necessary to obtain to authenticate with the Termi
       <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-OrganizationAffiliation" />
       <interaction>
         <code value="read" />
+      </interaction>
+      <interaction>
         <code value="search-type" />
       </interaction>
       <searchParam>
