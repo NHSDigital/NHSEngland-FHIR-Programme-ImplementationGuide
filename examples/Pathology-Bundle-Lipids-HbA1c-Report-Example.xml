@@ -129,8 +129,8 @@
           <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
             <valueCodeableConcept>
               <coding>
-                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus" />
-                <code value="number-present-and-verified" />
+                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatusEngland" />
+                <code value="01" />
                 <display value="Number present and verified" />
               </coding>
             </valueCodeableConcept>
@@ -341,7 +341,7 @@
         <!-- Test group Observation for Serum lipid levels -->
         <id value="4e4410fd-27d3-413e-901a-380caa78b411" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Group-Lab" />
         </meta>
         <identifier>
           <system value="https://tools.ietf.org/html/rfc4122" />
@@ -534,7 +534,6 @@
           <unit value="1/1" />
           <system value="http://unitsofmeasure.org" />
           <!-- UCUM code for ratios TBC -->
-          <system value="http://snomed.info/sct" />
           <code value="TBC" />
         </valueQuantity>
         <specimen>

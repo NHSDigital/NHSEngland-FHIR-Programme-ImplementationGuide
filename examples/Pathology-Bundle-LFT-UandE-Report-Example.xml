@@ -341,7 +341,7 @@
         <!-- Test group Observation for Hepatic function panel -->
         <id value="33a88119-6dbc-4bdf-809a-c1d822b74e90" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Group-Lab" />
         </meta>
         <identifier>
           <system value="https://tools.ietf.org/html/rfc4122" />
@@ -642,7 +642,7 @@
         <!-- Test group Observation for Urea and electrolytes -->
         <id value="a5c7f5e2-eb95-469b-b588-f7861c260ccb" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Group-Lab" />
         </meta>
         <identifier>
           <system value="https://tools.ietf.org/html/rfc4122" />

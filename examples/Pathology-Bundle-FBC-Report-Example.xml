@@ -288,7 +288,7 @@
         <!-- Test group Observation for Full Blood Count -->
         <id value="ad717ae8-cb35-4d66-ba51-e22a76b1d158" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Group-Lab" />
         </meta>
         <identifier>
           <system value="https://tools.ietf.org/html/rfc4122" />

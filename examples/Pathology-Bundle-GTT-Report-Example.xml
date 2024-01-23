@@ -375,7 +375,7 @@
         <!-- Test group Observation for Glucose Tolerance Test -->
         <id value="2a48660b-8d45-4735-acaa-3d9918b6b902" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Group-Lab" />
         </meta>
         <identifier>
           <system value="https://tools.ietf.org/html/rfc4122" />
