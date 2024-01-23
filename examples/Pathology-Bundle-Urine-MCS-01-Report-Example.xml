@@ -368,7 +368,7 @@
             <!-- TBC - awaiting creation of SNOMED CT concept -->
             <system value="http://snomed.info/sct" />
             <code value="51761000237101" />
-            <display value="Qualitative result of hyaline casts in mid-stream urine microscopy" />
+            <display value="Hyaline casts in mid-stream urine microscopy qualitative result" />
           </coding>
         </code>
         <subject>

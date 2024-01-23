@@ -327,7 +327,7 @@
         </subject>
         <receivedTime value="2022-07-05T15:17:00+00:00" />
         <request>
-          <reference value="urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d" />
+          <reference value="urn:uuid:1c38d507-9ad7-4b49-ba91-7da204842cac" />
         </request>
         <collection>
           <collectedDateTime value="2022-07-05T08:52:00+00:00" />
@@ -532,10 +532,10 @@
         </performer>
         <valueQuantity>
           <value value="4.2" />
-          <unit value="1/1" />
+          <unit value="/{tot}" />
           <system value="http://unitsofmeasure.org" />
           <!-- UCUM code for ratios TBC -->
-          <code value="TBC" />
+          <code value="per total count" />
         </valueQuantity>
         <specimen>
           <reference value="urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d" />
