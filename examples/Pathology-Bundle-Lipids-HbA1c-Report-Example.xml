@@ -532,10 +532,10 @@
         </performer>
         <valueQuantity>
           <value value="4.2" />
-          <unit value="/{tot}" />
+          <unit value="per total count" />
           <system value="http://unitsofmeasure.org" />
           <!-- UCUM code for ratios TBC -->
-          <code value="per total count" />
+          <code value="/{tot}" />
         </valueQuantity>
         <specimen>
           <reference value="urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d" />
