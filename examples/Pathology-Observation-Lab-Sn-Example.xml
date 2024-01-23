@@ -1,5 +1,4 @@
 <Observation>
-  <!-- The logical identifier for the resource instance. -->
   <id value="Pathology-Observation-Lab-Sn-Example" />
   <!-- The canonical URL for the UKCore-Observation-Lab profile. -->
   <meta>
@@ -43,13 +42,6 @@
     <reference value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />
     <display value="TD008362 PATH LAB 001" />
   </performer>
-  <!-- The test result value. -->
-  <valueQuantity>
-    <value value="13.76" />
-    <unit value="10*9/L" />
-    <system value="http://unitsofmeasure.org" />
-    <code value="10^9/L" />
-  </valueQuantity>
   <!-- The reason why a test result value has been omitted. -->
   <dataAbsentReason>
     <coding>

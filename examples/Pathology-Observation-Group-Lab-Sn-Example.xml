@@ -1,5 +1,4 @@
 <Observation>
-  <!-- The logical identifier for the resource instance. -->
   <id value="Pathology-Observation-Group-Lab-Sn-Example" />
   <!-- The canonical URL for the UKCore-Observation-Group-Lab profile. -->
   <meta>

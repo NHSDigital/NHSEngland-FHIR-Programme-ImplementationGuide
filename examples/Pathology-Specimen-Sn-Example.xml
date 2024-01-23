@@ -1,5 +1,4 @@
 <Specimen>
-  <!-- The logical identifier for the profile. -->
   <id value="Pathology-Specimen-Sn-Example" />
   <!-- The canonical URL for the UKCore-Specimen profile. -->
   <meta>
@@ -71,7 +70,7 @@
   <!-- The state of the specimen. -->
   <condition>
     <coding>
-      <system value=" http://terminology.hl7.org/CodeSystem/v2-0493" />
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0493" />
       <code value="HEM" />
       <display value="Hemolyzed" />
     </coding>

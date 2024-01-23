@@ -10,10 +10,10 @@
   </identifier>
   <type value="message" />
   <entry>
-    <fullUrl value="urn:uuid:c4409d7c-b613-477c-b623-87e60406c2h2" />
+    <fullUrl value="urn:uuid:7f883ed3-d19d-4edf-972e-03052cb94113" />
     <resource>
       <MessageHeader>
-        <id value="c4409d7c-b613-477c-b623-87e60406c2h2" />
+        <id value="7f883ed3-d19d-4edf-972e-03052cb94113" />
         <meta>
           <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MessageHeader" />
         </meta>
@@ -89,10 +89,10 @@
   </entry>
   <!--Requesting Practitioner: Dr Jane Green, GP.-->
   <entry>
-    <fullUrl value="urn:uuid:g25e9d63-6a4e-4de6-b9dc-c912fda62c02" />
+    <fullUrl value="urn:uuid:2c9793d4-aa5e-419f-9f4e-b61736d01d35" />
     <resource>
       <Practitioner>
-        <id value="g25e9d63-6a4e-4de6-b9dc-c912fda62c02" />
+        <id value="2c9793d4-aa5e-419f-9f4e-b61736d01d35" />
         <meta>
           <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
         </meta>
@@ -112,10 +112,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:9d6c2cd5-0eec-496a-88d0-3785a135dg10" />
+    <fullUrl value="urn:uuid:aa098351-1f2b-4b97-acec-44b528d443fd" />
     <resource>
       <Patient>
-        <id value="9d6c2cd5-0eec-496a-88d0-3785a135dg10" />
+        <id value="aa098351-1f2b-4b97-acec-44b528d443fd" />
         <meta>
           <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
         </meta>
@@ -143,10 +143,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:e1df1431-22ac-462a-946a-f195f6c640bh" />
+    <fullUrl value="urn:uuid:8fcba023-12e9-4f22-94b6-03cab7c0777a" />
     <resource>
       <ServiceRequest>
-        <id value="e1df1431-22ac-462a-946a-f195f6c640bh" />
+        <id value="8fcba023-12e9-4f22-94b6-03cab7c0777a" />
         <meta>
           <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
         </meta>
@@ -164,11 +164,11 @@
           </coding>
         </code>
         <subject>
-          <reference value="urn:uuid:9d6c2cd5-0eec-496a-88d0-3785a135dg10" />
+          <reference value="urn:uuid:aa098351-1f2b-4b97-acec-44b528d443fd" />
           <display value="STANNER, Lisa" />
         </subject>
         <requester>
-          <reference value="urn:uuid:g25e9d63-6a4e-4de6-b9dc-c912fda62c02" />
+          <reference value="urn:uuid:2c9793d4-aa5e-419f-9f4e-b61736d01d35" />
           <display value="GREEN" />
         </requester>
         <performer>
@@ -192,7 +192,7 @@
           <value value="5234355" />
         </identifier>
         <basedOn>
-          <reference value="urn:uuid:e1df1431-22ac-462a-946a-f195f6c640bh" />
+          <reference value="urn:uuid:8fcba023-12e9-4f22-94b6-03cab7c0777a" />
         </basedOn>
         <status value="final" />
         <code>
@@ -203,7 +203,7 @@
           </coding>
         </code>
         <subject>
-          <reference value="urn:uuid:9d6c2cd5-0eec-496a-88d0-3785a135dg10" />
+          <reference value="urn:uuid:aa098351-1f2b-4b97-acec-44b528d443fd" />
           <display value="STANNER, Lisa" />
         </subject>
         <issued value="2019-11-04T12:00:00+00:00" />
@@ -212,7 +212,7 @@
           <display value="Midtown District Hospital (Blood Sciences)" />
         </performer>
         <specimen>
-          <reference value="urn:uuid:866a8361-79ce-4561-afcb-a91fe19dg234" />
+          <reference value="urn:uuid:9d3e52ff-b39b-4cef-9957-7bdac97d8e13" />
         </specimen>
         <result>
           <reference value="urn:uuid:ebcb177a-9501-4dcc-8b22-b941791ae1ec" />
@@ -221,10 +221,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:866a8361-79ce-4561-afcb-a91fe19dg234" />
+    <fullUrl value="urn:uuid:9d3e52ff-b39b-4cef-9957-7bdac97d8e13" />
     <resource>
       <Specimen>
-        <id value="866a8361-79ce-4561-afcb-a91fe19dg234" />
+        <id value="9d3e52ff-b39b-4cef-9957-7bdac97d8e13" />
         <meta>
           <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen" />
         </meta>
@@ -245,7 +245,7 @@
           </coding>
         </type>
         <subject>
-          <reference value="urn:uuid:9d6c2cd5-0eec-496a-88d0-3785a135dg10" />
+          <reference value="urn:uuid:aa098351-1f2b-4b97-acec-44b528d443fd" />
           <display value="STANNER, Lisa" />
         </subject>
         <receivedTime value="2019-11-01T15:00:00+00:00" />
@@ -278,7 +278,7 @@
           </coding>
         </code>
         <subject>
-          <reference value="urn:uuid:9d6c2cd5-0eec-496a-88d0-3785a135dg10" />
+          <reference value="urn:uuid:aa098351-1f2b-4b97-acec-44b528d443fd" />
           <display value="STANNER, Lisa" />
         </subject>
         <effectiveDateTime value="2019-11-01T15:00:00+00:00" />
@@ -287,12 +287,12 @@
           <display value="Midtown District Hospital (Blood Sciences)" />
         </performer>
         <specimen>
-          <reference value="urn:uuid:866a8361-79ce-4561-afcb-a91fe19dg234" />
+          <reference value="urn:uuid:9d3e52ff-b39b-4cef-9957-7bdac97d8e13" />
         </specimen>
         <!--Component of Test of Battery 1-->
         <hasMember>
           <!--Sodium substance concentration in serum-->
-          <reference value="urn:uuid:6c1be8a9-bba0-4941-bb77-93d9fd3b1gbc" />
+          <reference value="urn:uuid:6690bbb3-9a74-4426-9787-35d0caeab76d" />
         </hasMember>
         <hasMember>
           <!--Potassium substance concentration in serum-->
@@ -315,10 +315,10 @@
   </entry>
   <!--Renal function test: Sodium substance concentration in serum-->
   <entry>
-    <fullUrl value="urn:uuid:6c1be8a9-bba0-4941-bb77-93d9fd3b1gbc" />
+    <fullUrl value="urn:uuid:6690bbb3-9a74-4426-9787-35d0caeab76d" />
     <resource>
       <Observation>
-        <id value="6c1be8a9-bba0-4941-bb77-93d9fd3b1gbc" />
+        <id value="6690bbb3-9a74-4426-9787-35d0caeab76d" />
         <meta>
           <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
         </meta>
@@ -335,7 +335,7 @@
           </coding>
         </code>
         <subject>
-          <reference value="urn:uuid:9d6c2cd5-0eec-496a-88d0-3785a135dg10" />
+          <reference value="urn:uuid:aa098351-1f2b-4b97-acec-44b528d443fd" />
           <display value="STANNER, Lisa" />
         </subject>
         <effectiveDateTime value="2019-11-01T15:00:00+00:00" />
@@ -350,7 +350,7 @@
           <code value="mmol/L" />
         </valueQuantity>
         <specimen>
-          <reference value="urn:uuid:866a8361-79ce-4561-afcb-a91fe19dg234" />
+          <reference value="urn:uuid:9d3e52ff-b39b-4cef-9957-7bdac97d8e13" />
         </specimen>
         <referenceRange>
           <low>
@@ -385,7 +385,7 @@
           </coding>
         </code>
         <subject>
-          <reference value="urn:uuid:9d6c2cd5-0eec-496a-88d0-3785a135dg10" />
+          <reference value="urn:uuid:aa098351-1f2b-4b97-acec-44b528d443fd" />
           <display value="STANNER, Lisa" />
         </subject>
         <effectiveDateTime value="2019-11-01T15:00:00+00:00" />
@@ -400,7 +400,7 @@
           <code value="mmol/L" />
         </valueQuantity>
         <specimen>
-          <reference value="urn:uuid:866a8361-79ce-4561-afcb-a91fe19dg234" />
+          <reference value="urn:uuid:9d3e52ff-b39b-4cef-9957-7bdac97d8e13" />
         </specimen>
         <referenceRange>
           <low>
@@ -435,7 +435,7 @@
           </coding>
         </code>
         <subject>
-          <reference value="urn:uuid:9d6c2cd5-0eec-496a-88d0-3785a135dg10" />
+          <reference value="urn:uuid:aa098351-1f2b-4b97-acec-44b528d443fd" />
           <display value="STANNER, Lisa" />
         </subject>
         <effectiveDateTime value="2019-11-01T15:00:00+00:00" />
@@ -450,7 +450,7 @@
           <code value="mmol/L" />
         </valueQuantity>
         <specimen>
-          <reference value="urn:uuid:866a8361-79ce-4561-afcb-a91fe19dg234" />
+          <reference value="urn:uuid:9d3e52ff-b39b-4cef-9957-7bdac97d8e13" />
         </specimen>
         <referenceRange>
           <low>
@@ -485,7 +485,7 @@
           </coding>
         </code>
         <subject>
-          <reference value="urn:uuid:9d6c2cd5-0eec-496a-88d0-3785a135dg10" />
+          <reference value="urn:uuid:aa098351-1f2b-4b97-acec-44b528d443fd" />
           <display value="STANNER, Lisa" />
         </subject>
         <effectiveDateTime value="2019-11-01T15:00:00+00:00" />
@@ -500,7 +500,7 @@
           <code value="umol/L" />
         </valueQuantity>
         <specimen>
-          <reference value="urn:uuid:866a8361-79ce-4561-afcb-a91fe19dg234" />
+          <reference value="urn:uuid:9d3e52ff-b39b-4cef-9957-7bdac97d8e13" />
         </specimen>
         <referenceRange>
           <low>
@@ -535,7 +535,7 @@
           </coding>
         </code>
         <subject>
-          <reference value="urn:uuid:9d6c2cd5-0eec-496a-88d0-3785a135dg10" />
+          <reference value="urn:uuid:aa098351-1f2b-4b97-acec-44b528d443fd" />
           <display value="STANNER, Lisa" />
         </subject>
         <effectiveDateTime value="2019-11-01T15:00:00+00:00" />
@@ -553,7 +553,7 @@
           <text value="The EGFR quoted must be multiplied by 1.2 if the patient is of Afro-Caribbean origin." />
         </note>
         <specimen>
-          <reference value="urn:uuid:866a8361-79ce-4561-afcb-a91fe19dg234" />
+          <reference value="urn:uuid:9d3e52ff-b39b-4cef-9957-7bdac97d8e13" />
         </specimen>
       </Observation>
     </resource>
