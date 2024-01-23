@@ -34,7 +34,7 @@
     <element id="Organization.extension:organizationPeriod">
       <path value="Organization.extension" />
       <sliceName value="organizationPeriod" />
-      <max value="0" />
+      <definition value="The date range that this organization SHOULD be considered available. For ODS Legal and Operational periods, consider using the ExetensionEnglandTypedPeriod instead." />
     </element>
     <element id="Organization.extension:extensionEnglandOrganisationRole">
       <path value="Organization.extension" />
