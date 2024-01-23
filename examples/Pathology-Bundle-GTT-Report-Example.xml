@@ -566,7 +566,7 @@
         <!-- Glucose substance concentration at 120 minutes -->
         <extension url="http://hl7.org/fhir/StructureDefinition/observation-sequelTo">
           <valueReference>
-            <reference value="1dbcb7a9-4506-40f9-9908-fa0d32deeaa4" />
+            <reference value="urn:uuid:1dbcb7a9-4506-40f9-9908-fa0d32deeaa4" />
           </valueReference>
         </extension>
         <id value="1346248c-8c09-4312-a0b9-898de1cc16f5" />
