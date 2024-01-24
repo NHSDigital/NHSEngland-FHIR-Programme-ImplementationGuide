@@ -1,0 +1,795 @@
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+  <id value="England-NPS-Requirements" />
+  <url value="https://fhir.nhs.uk/England/CapabilityStatement/England-Personal-Demographics-Service" />
+  <version value="0.0.1" />
+  <name value="NHSEnglandPersonalDemographicsService" />
+  <status value="draft" />
+  <publisher value="NHS England" />
+  <contact>
+    <name value="NHS England" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+    <title value="NHS Englan Personal Demographics Service (FHIR) API">
+    </title>
+    <status value="unknown">
+    </status>
+    <date value="2024-01-24T14:18:47+00:00">
+    </date>
+    <description value="## Overview 
+  Use this API to access the [Personal Demographics Service (PDS)](https://digital.nhs.uk/services/demographics) - the national electronic database of NHS patient details such as name, address, date of birth, related people, registered GP and NHS number.
+  
+  You can:
+  * search for patients
+  * get patient details
+  * update patient details
+  * verify an NHS number for a patient
+  
+  You cannot currently use this API to:
+  * create a new record for a birth - use [PDS HL7 V3 API](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-hl7-v3)
+  * receive birth notifications - use [PDS HL7 V3 API](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-hl7-v3) or [PDS Notifications FHIR API](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-notifications-fhir) 
+  * create a record for a new patient - use [PDS HL7 V3 API](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-hl7-v3)
+  * register a new patient at a GP Practice - use [NHAIS GP Links API](https://digital.nhs.uk/developer/api-catalogue/nhais-gp-links)
+  * receive patient death notifications - use [PDS Notifications FHIR API](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-notifications-fhir) 
+  * receive notifications about a patient's change of address - use [PDS Notifications FHIR API](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-notifications-fhir) 
+  * receive notifications about a patient's change of GP - use [PDS Notifications FHIR API](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-notifications-fhir) 
+  * receive notifications about any PDS record change - use [PDS Notifications FHIR API](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-notifications-fhir) 
+  
+  You can read and update the following data:
+  * NHS number (read only)
+  * name
+  * gender
+  * addresses and contact details
+  * birth information
+  * death information
+  * registered GP
+  * nominated pharmacy
+  * dispensing doctor pharmacy
+  * medical appliance supplier pharmacy
+  * related people, such as next of kin (read only - update coming soon)
+  
+  ### Patients included in PDS
+  Regardless of nationality, or where they live now, PDS includes all patients who have ever been registered with a GP practice, or treated by a health or care organisation (even as a visitor or migrant) in England, Wales, the Isle of Man, or in a UK Defence Medical Services unit anywhere in the world. 
+  
+  All patients in PDS have an NHS number which is unique. The 10-digit NHS number is used in England, Wales, the Isle of Man, Scotland and Northern Ireland, but not the Channel Islands. Scotland and Northern Ireland have their own distinct number ranges.
+  
+  ### Access modes
+  This API has three access modes:
+  
+  | Access mode                    | Functions          | Availability |
+  | ------------------------------ | ------------------ | ------------ |
+  | [Application-restricted access](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation#application-restricted-apis)  |Search for a patient (single result).&amp;lt;br&amp;gt;Get patient details.                                    | Available in production ([stable](https://digital.nhs.uk/developer/guides-and-documentation/reference-guide#api-status)) |
+  | [Healthcare worker access](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation#user-restricted-apis)              |Search for patients (multiple results).&amp;lt;br&amp;gt;Get patient details.&amp;lt;br&amp;gt;Update patient details.    | Available in production ([beta](https://digital.nhs.uk/developer/guides-and-documentation/reference-guide#api-status))   |
+  | [Patient access](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation#user-restricted-apis)                        |Get own details.&amp;lt;br&amp;gt;Update own details (limited).                                                 | Available in production ([beta](https://digital.nhs.uk/developer/guides-and-documentation/reference-guide#api-status))   |
+  
+  For further details about the access modes for this API, see [Security and authorisation](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir#api-description__security-and-authorisation) below.
+  
+  ## Who can use this API
+  This API can only be used where there is a [legal basis](http://digital.nhs.uk/services/demographics/access-data-on-the-personal-demographics-service) to do so. Make sure you have a valid use case before you go too far with your development.  You must demonstrate you have a [valid use case](https://digital.nhs.uk/services/demographics/access-data-on-the-personal-demographics-service) as part of digital onboarding. 
+  
+  You must do this before you can go live (see &amp;lsquo;Onboarding&amp;rsquo; below).
+  
+  ### Who can access PDS records
+  Health and care organisations in England and the Isle of Man can access PDS records. Legitimate direct care examples include NHS organisations delivering healthcare, local authorities delivering care, third sector and private sector health and care organisations, and developers delivering systems to health and care organisations. 
+  
+  Health and care organisations in Wales access their own version of PDS called the Welsh Demographics Service (WDS) which is connected to PDS behind the scenes. 
+  
+  Health and care organisations in Scotland, Northern Ireland and the Channel Islands access their own equivalents of PDS.
+  
+  Patients who receive health and social care or make use of NHS services in England, Wales, the Isle of Man, Scotland, Northern Ireland and the Channel Islands.
+  
+  ### Existing API users
+  To find out which healthcare software development organisations and products are already using this API, see [PDS FHIR API - integrated products](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir/integrated-products).
+  
+  ## Related APIs
+  The following APIs also give access to the Personal Demographics Service:
+  - [Personal Demographics Service (SMSP) API](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-smsp) - this API is now deprecated.
+  - [Personal Demographics Service (HL7 V3) API](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-hl7-v3) - use this if you want to use functions that are not yet available on the FHIR API, such as creating a new record for a birth, receiving birth notifications, or creating a record for a new patient (except when registering a new patient at a GP Practice, use [NHAIS](https://digital.nhs.uk/services/nhais)). For birth notifications, another option is [PDS Notifications - FHIR API](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-notifications-fhir).
+  
+  Once our roadmap is complete, the above APIs will become redundant.
+  
+  The following APIs are also related to this API:
+  - [Personal Demographics Service Notifications - FHIR API](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-notifications-fhir) - use this to subscribe to be notified of a set of patient record changes, including any record update, birth, death, change of address and change of GP.
+  - [Organisation Data Service FHIR API](https://developer.nhs.uk/apis/ods/) - use this to get full details for the organisations related to the patient, such as their registered GP or nominated pharmacy.
+  - [Ordnance Survey (OS Places) API](https://digital.nhs.uk/developer/api-catalogue/ordnance-survey-places-api) - use this to identify, look up and verify addresses prior to a PDS update.
+  
+  ## API status and roadmap
+  ### Application-restricted access
+  This access mode is [in production](https://digital.nhs.uk/developer/guides-and-documentation/reference-guide#statuses):
+  * you should strongly consider it as the primary choice for PDS integration
+  * we do not make routine breaking changes, if it cannot be avoided, for example, for security reasons, we will give advance notice
+   
+  ### Healthcare worker access
+  This access mode is [in production, beta](https://digital.nhs.uk/developer/guides-and-documentation/reference-guide#statuses), meaning:
+  - we might make breaking changes, but only if we cannot avoid it, and we will give advance notice
+  
+  If you would like to be involved in our beta programme, [contact us](https://digital.nhs.uk/developer/help-and-support).
+      
+  ### Patient access
+  This access mode is [in production, beta](https://digital.nhs.uk/developer/guides-and-documentation/reference-guide#statuses), meaning:
+  - we might make breaking changes, but only if we cannot avoid it, and we will give advance notice
+  
+  If you would like to be involved in our beta programme, [contact us](https://digital.nhs.uk/developer/help-and-support).
+  
+  ### Roadmap
+  To see our roadmap, or to suggest, comment or vote on features for this API, see our [interactive product backlog](https://nhs-digital-api-management.featureupvote.com/?order=popular&amp;amp;filter=allexceptdone&amp;amp;tag=pds-fhir-api).
+  
+  If you have any other queries, please [contact us](https://digital.nhs.uk/developer/help-and-support).
+  
+  ## Service level
+  
+  This API is a platinum service, meaning it is operational and supported 24 hours a day, 365 days a year.
+  
+  For more details, see [service levels](https://digital.nhs.uk/developer/guides-and-documentation/reference-guide#service-levels).
+  
+  ## Technology
+  This API is [RESTful](https://digital.nhs.uk/developer/guides-and-documentation/our-api-technologies#basic-rest).
+  
+  It conforms to the [FHIR](https://digital.nhs.uk/developer/guides-and-documentation/our-api-technologies#fhir) global standard for health care data exchange, specifically to [FHIR R4 (v4.0.1)](https://hl7.org/fhir/r4/), except that it does not support the [capabilities](http://hl7.org/fhir/R4/http.html#capabilities) interaction.
+  
+  It includes some country-specific FHIR extensions, which are built against [FHIR UK Core](https://digital.nhs.uk/services/fhir-uk-core), specifically [UK.core.r4 1.0.0](https://simplifier.net/packages/uk.core.r4/1.0.0).
+  
+  You do not need to know much about FHIR to use this API - FHIR APIs are just RESTful APIs that follow specific rules.
+  In particular:
+  - resource names are capitalised and singular, for example `/Patient` not `/patients`
+  - array names are singular, for example `line` not `lines` for address lines
+  - data items that are country-specific and thus not included in the FHIR global base resources are usually wrapped in an `extension` object
+  
+  There are [libraries and SDKs available](https://digital.nhs.uk/developer/guides-and-documentation/api-technologies-at-nhs-digital#fhir-libraries-and-sdks) to help with FHIR API integration.
+  
+  ## Network access
+  This API is available on the internet and, indirectly, on the [Health and Social Care Network (HSCN)](https://digital.nhs.uk/services/health-and-social-care-network).
+  
+  To use this API with [NHS smartcards](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/nhs-smartcards-for-developers), the end user needs an HSCN connection, although internet-facing alternatives to smartcards are available.
+  
+  For more details see [Network access for APIs](https://digital.nhs.uk/developer/guides-and-documentation/network-access-for-apis).
+  
+  ## Security and authorisation
+  
+  This API has three access modes:
+  - application-restricted access
+  - healthcare worker access
+  - patient access
+  
+  ### Application-restricted access
+  Use this access mode if you need to:
+  * search for a patient &amp;ndash; and only get a result if there is a unique match
+  * get a single patient's details
+  
+  This access mode is [application-restricted](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation#application-restricted-apis), meaning we authenticate the calling application but not the end user.
+  
+  The end user could be:
+  * a healthcare worker - in which case you must ensure they are authenticated and suitably authorised locally
+  * a patient - in which case you must ensure they are authenticated locally
+  * not present at all - for example as part of a back end process to check NHS numbers for data flowing from one system to another
+  
+  To use this access mode, use the following security pattern:
+  * [Application-restricted RESTful API - signed JWT authentication](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/application-restricted-restful-apis-signed-jwt-authentication)
+  
+  ### Healthcare worker access
+  Use this access mode if the end user is a healthcare worker and you need to: 
+  * search for patients &amp;ndash; and be able to present a list of matches for the user to choose from 
+  * get patient details 
+  * update patient details 
+  
+  This access mode is [user-restricted](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation#user-restricted-apis), meaning an end user must be present, authenticated and authorised.
+  
+  The end user must be:
+  * a healthcare worker
+  * strongly authenticated, using either an [NHS smartcard or a modern alternative](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/nhs-smartcards-for-developers)
+  * authorised, using [national role-based access control (RBAC)](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/national-rbac-for-developers)
+  
+  To use this access mode, use one of the following security patterns:
+  
+  |	Security pattern		                                                                                                                                                                                                  |	Technical details	                                             |	Advantages                                                              | Disadvantages                                                             |
+  |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ---------------------------------------------------------| -------------------------------------------------------------------------|---------------------------------------------------------------------------|
+  |[NHS CIS2 - combined authentication and authorisation](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-combined-authentication-and-authorisation) |OAuth 2.0 authorisation code flow with API key and secret |No need to integrate and onboard separately with NHS CIS2.                |No access to user information.&amp;lt;br&amp;gt; Not recommended for use in GP software.     |
+  |[NHS CIS2 - separate authentication and authorisation](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-separate-authentication-and-authorisation) |OAuth 2.0 token exchange with signed JWT                  |Gives access to user information.&amp;lt;br&amp;gt;Recommended for use in GP software.     |Need to integrate and onboard separately with NHS CIS2.                    |
+  
+  ### Patient access
+  Use this access mode if the end user is a patient and you need to: 
+  * get the patient&amp;rsquo;s own details
+  * update the patient&amp;rsquo;s own details
+  
+  This access mode is [user-restricted](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation#user-restricted-apis), meaning an end user must be present, authenticated and authorised.
+  
+  The end user must be:
+  * a patient who receives health and social care or makes use of NHS services
+  * strongly authenticated, using [NHS login](https://digital.nhs.uk/services/nhs-login)
+  
+  To use this access mode, use one of the following security patterns:
+  
+  |	Security pattern		                                                                                                                                                                                                          |	Technical details	                                  |	Advantages	                                                | Disadvantages                                           |
+  |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ----------------------------------------------------| ------------------------------------------------------------|---------------------------------------------------------|
+  |[NHS login - combined authentication and authorisation](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-login-combined-authentication-and-authorisation) |OAuth 2.0 authorisation code with API key and secret |No need to integrate and onboard separately with NHS login.  |No access to user information.                           |
+  |[NHS login - separate authentication and authorisation](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-login-separate-authentication-and-authorisation) |OAuth 2.0 token exchange with signed JWT             |Gives access to user information.                            |Need to integrate and onboard separately with NHS login. |
+  
+  ## Errors
+  We use standard HTTP status codes to show whether an API request succeeded or not. They are usually in the range:
+  
+  * 200 to 299 if it succeeded, including code 202 if it was accepted by an API that needs to wait for further action
+  * 400 to 499 if it failed because of a client error by your application
+  * 500 to 599 if it failed because of an error on our server
+  
+  Errors specific to each API are shown in the Endpoints section, under Response. See our [reference guide](https://digital.nhs.uk/developer/guides-and-documentation/reference-guide#http-status-codes) for more on errors.
+  
+  ## Open source
+  You might find the following [open source](https://digital.nhs.uk/developer/guides-and-documentation/reference-guide#open-source) resources useful:
+  
+  | Resource                  | Description                                                          | Links                                                                          |
+  |---------------------------|----------------------------------------------------------------------|--------------------------------------------------------------------------------|
+  | PDS FHIR API              | Source code for the API proxy, sandbox and specification.            | [GitHub repo](https://github.com/NHSDigital/personal-demographics-service-api) |
+  | FHIR libraries and SDKs   | Various open source libraries for integrating with FHIR APIs.        | [FHIR libraries and SDKs](https://digital.nhs.uk/developer/guides-and-documentation/api-technologies-at-nhs-digital#fhir-libraries-and-sdks) |
+  | nhs-number                | Python package containing utilities for NHS numbers including validity checks, normalisation and generation. | [GitHub repo](https://github.com/uk-fci/nhs-number) \| [Python Package index](https://pypi.org/project/nhs-number/) \| [Docs](https://nhs-number.uk-fci.tech/) |
+  
+  We currently don't have any open source client libraries or sample code for this API. If you think this would be useful, you can [upvote the suggestion on our Interactive Product Backlog](https://nhs-digital-api-management.featureupvote.com/suggestions/107439/client-libraries-and-reference-implementations).
+  
+  The source code for the PDS FHIR back end (the Core Spine source code) is not currently in the open. If you think this would be useful, you can [upvote the suggestion on our Interactive Product Backlog](https://nhs-digital-api-management.featureupvote.com/suggestions/466692/open-source-core-spine-including-pds-eps-scr-and-more).
+  
+  ## Environments and testing
+  
+  | Environment       | Base URL                                                               |
+  | ----------------- | ---------------------------------------------------------------------- |
+  | Sandbox           | `https://sandbox.api.service.nhs.uk/personal-demographics/FHIR/R4/`    |
+  | Integration test  | `https://int.api.service.nhs.uk/personal-demographics/FHIR/R4/`        |
+  | Production        | `https://api.service.nhs.uk/personal-demographics/FHIR/R4/`            |
+  
+  ### Sandbox testing
+  Our [sandbox environment](https://digital.nhs.uk/developer/guides-and-documentation/testing#sandbox-testing):
+  * is for early developer testing
+  * only covers a limited set of scenarios
+  * is stateless, so does not actually persist any updates
+  * is open access, so does not allow you to test authorisation
+  
+  For details of sandbox test scenarios, or to try out the sandbox using our 'Try this API' feature, see the documentation for each endpoint.
+  
+  Alternatively, you can try out the sandbox using our Postman collection:
+  
+  [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/14719036-953f067f-30b9-4552-8252-7cc10b21dad3)
+  
+  ### Integration testing
+  Our [integration test environment](https://digital.nhs.uk/developer/guides-and-documentation/testing#integration-testing):
+  * is for formal integration testing
+  * is stateful, so persists updates
+  * includes authorisation, with options for user-restricted access (with or without [smartcards](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/nhs-smartcards-for-developers) and application-restricted access
+       
+  For read-only testing, you can either use our [PDS FHIR API test data packs](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir/pds-fhir-api-test-data) or set up your own test data.
+  
+  To test updating patient details, you must set up your own test data.
+  
+  For more details see [integration testing with our RESTful APIs](https://digital.nhs.uk/developer/guides-and-documentation/testing#integration-testing-with-our-restful-apis).
+  
+  ### Production smoke testing
+  You must not use real patient data for smoke testing in the production environment.
+  
+  Rather, use our [production test patient](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir/pds-fhir-api-test-data#production-smoke-testing).
+  
+  ## Onboarding
+  You need to get your software approved by us before it can go live with this API. We call this onboarding. The onboarding process can sometimes be quite long, so it&amp;rsquo;s worth planning well ahead.
+  
+  As part of this process, you need to demonstrate your technical conformance to the requirements for this API. For more details according to your access mode, see:
+  * [PDS FHIR API technical conformance - application-restricted access mode](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir/pds-fhir-technical-conformance---application-restricted-access-mode)
+  * [PDS FHIR API technical conformance - healthcare worker access mode](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir/pds-fhir-technical-conformance---healthcare-worker-access-mode)
+  
+  You also need to demonstrate that you can manage risks. This might impact the design of your software. For details, see [Onboarding support information](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir/onboarding-support-information).
+  
+  To understand how our online digital onboarding process works, see [digital onboarding](https://digital.nhs.uk/developer/guides-and-documentation/digital-onboarding). 
+  
+  &amp;lt;div class=&amp;quot;nhsd-m-emphasis-box nhsd-m-emphasis-box--emphasis nhsd-!t-margin-bottom-6&amp;quot; aria-label=&amp;quot;Highlighted Information&amp;quot;&amp;gt;
+      &amp;lt;div class=&amp;quot;nhsd-a-box nhsd-a-box--border-blue&amp;quot;&amp;gt;
+          &amp;lt;div class=&amp;quot;nhsd-m-emphasis-box__image-box&amp;quot;&amp;gt;
+              &amp;lt;figure class=&amp;quot;nhsd-a-image&amp;quot;&amp;gt;
+                  &amp;lt;picture class=&amp;quot;nhsd-a-image__picture&amp;quot;&amp;gt;
+                      &amp;lt;img src=&amp;quot;http://digital.nhs.uk/binaries/content/gallery/icons/play-circle.svg?colour=231f20&amp;quot; alt=&amp;quot;&amp;quot; style=&amp;quot;object-fit:fill&amp;quot;&amp;gt;
+                  &amp;lt;/picture&amp;gt;
+              &amp;lt;/figure&amp;gt;
+          &amp;lt;/div&amp;gt;
+          &amp;lt;div class=&amp;quot;nhsd-m-emphasis-box__content-box&amp;quot;&amp;gt;
+              &amp;lt;div data-uipath=&amp;quot;website.contentblock.emphasis.content&amp;quot; class=&amp;quot;nhsd-t-word-break&amp;quot;&amp;gt;&amp;lt;p class=&amp;quot;nhsd-t-body&amp;quot;&amp;gt;To get started, sign in or create a &amp;lt;a href=&amp;quot;https://onboarding.prod.api.platform.nhs.uk/&amp;quot;&amp;gt;developer account&amp;lt;/a&amp;gt;, then select 'product onboarding'.&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;            
+          &amp;lt;/div&amp;gt;
+      &amp;lt;/div&amp;gt;
+  &amp;lt;/div&amp;gt; 
+  ">
+  </description>
+  <kind value="requirements">
+  </kind>
+  <fhirVersion value="4.0.1">
+  </fhirVersion>
+  <format value="application/fhir+json">
+  </format>
+  <rest>
+    <mode value="server">
+    </mode>
+    <resource>
+      <type value="Patient">
+      </type>
+      <interaction>
+        <code value="search-type">
+        </code>
+        <documentation value="## Overview
+  Use this endpoint to search for a patient in PDS.
+  
+  You can search using various combinations of:
+    * given name
+    * family name
+    * gender
+    * postcode
+    * date of birth - which can be a range
+    * date of death - which can be a range
+    * registered GP practice
+    * email address
+    * phone number
+  
+    
+  There are various search options, such as fuzzy search, exact match, history and wildcards.
+  
+  The behaviour of this endpoint depends on which access mode you are using:
+  
+  | Access mode                    | Behaviour                                  |
+  | ------------------------------ | ------------------------------------------ |
+  | Application-restricted access  | Only a single unique match returned        |
+  | Healthcare worker access       | Up to 50 matching patient records returned |
+  | Patient access                 | Not yet available                          |
+  
+  ## Search options
+  The following sections explain the various search options.
+  Which options you choose depends very much on your use case, and getting it right is really important.
+  If you need help, [contact us](https://digital.nhs.uk/developer/help-and-support).
+  
+  ### Application-restricted access mode
+  In this access mode, you only get a single matching patient record, and only if it's a unique match.
+  
+  Use search options that are likely to find a unique match. In our experience, the following is a good starting point:
+    * search on given name, family name, postcode and date of birth - this combination should uniquely identify a patient
+    * for given name, use the first three characters and a wildcard, for example to search for `Annabel`, use `Ann*` - this caters for different name spellings and abbreviations
+    * for postcode, use the first two characters and a wildcard, for example to search for `LS11 6AD`, use `LS*` - this caters for people who have moved locally but not updated PDS
+    * use a non-fuzzy search - this reduces the chance of multiple matches
+    * use a non-exact match - an exact match does not work with wildcards
+    * include history - this increases the chance of a match
+  
+  For more details, see the following sections.
+  
+  ### Healthcare worker access mode
+  In this access mode - where the end user is a strongly authenticated healthcare worker - you can get up to 50 matching patient records.
+  This allows the end user to choose the best match.
+  
+  Use search parameters that are relevant to your use case - for example date of death is not always appropriate.
+  
+  To protect patient privacy, design your search to minimise the number of matching patients.
+  For example, you could:
+    * encourage users to enter as many search parameters as they can
+    * force users to try a non-fuzzy search first and then only offer a fuzzy search if they cannot find the patient
+  
+  For more details, see the following sections.
+  
+  ### Non-fuzzy search
+  A non-fuzzy search:
+    * allows wildcards in names and postcodes
+    * does not match homophones or transposed names
+    * can optionally search history, such as previous names and addresses
+  
+  It is less likely to return multiple matches than a fuzzy search, so is more suitable for finding a unique match.
+  
+  The minimum search parameters are:
+    * family name - which can include wildcards
+    * date of birth - which can be a range
+  
+    
+  ### Fuzzy search
+  A fuzzy search:
+    * matches common homophones, such as `Smith` and `Smythe`, using the [Soundex](https://en.wikipedia.org/wiki/Soundex) algorithm
+    * checks for transposed names, such as `Adam Thomas` and `Thomas Adam`
+    * always searches history, such as previous names and addresses
+  
+  It is more likely to include multiple matches than a non-fuzzy search, so is not ideal for finding a unique match.
+  
+  It is also more likely to include false positives - other patients that match the search criteria.
+  Therefore, for privacy reasons, it is better to use it only if a non-fuzzy match has failed.
+  
+  You must use one of the following search parameter combinations:
+    * given name, family name and date of birth
+    * family name, date of birth, gender and postcode
+    * given name, date of birth, gender and postcode
+  
+  If you include the date of death or registered GP practice query parameters, they are not used in the search. However they do affect the patient's matching score - a mismatch reduces the returned score.
+  
+  ### History
+  PDS holds historic information, including previous names and addresses.
+  
+  A fuzzy search always includes history. For a non-fuzzy search, you can request to include history.
+  
+  Searching history can match patients when only a previous name or address is known, or if a patient provides a previous name or address on the assumption that their record hasn&amp;rsquo;t been updated. When a search done on historic data results in a match, the patient's current data will be returned in the response message, not the historic data used to identify the match.
+  
+  ### Exact match
+  You can request an exact match.
+  This might be useful if you are verifying an NHS number against details you already believe to be correct.
+  It is unlikely to work well with wildcards or fuzzy search.
+  
+  ### Names
+  Matching names can be difficult due to:
+    * multiple given names, such as in `Jane Anne Smith`
+    * [compound given names](https://en.wikipedia.org/wiki/Given_name#Compound), such as in `John Paul Smith`
+    * multiple or double-barrelled surnames, such as in `Michael Smith-Jones`
+    * homophones, such as `Smith` and `Smythe` or `Ann` and `Anne`
+    * abbreviated names, such as `Bob` instead of `Robert`
+    * transposed names, such as `Adam Thomas` instead of `Thomas Adam`
+    * previous names, such as maiden names
+    * special characters such as in `O'Reilly`, `Jones-Smith` or `Kociński`
+    * spelling mistakes, either in the search criteria or in PDS
+  
+  To deal with some of these issues:
+    * we search across all types of name - usual, nickname and temporary
+    * a fuzzy search matches homophones, transposed names and previous names
+    * for a non fuzzy search, you can optionally search previous names and use wildcards. Wildcards will match against the start of the name string, for example the start of a compound name.
+  
+  ### Gender
+  PDS has four options for gender - `male`, `female`, `other` and `unknown`.
+  For some people, the gender held in PDS might not match the gender they identify with.
+  
+  In these cases, searching by gender might not find the patient.
+  These are edge cases but are important to consider because gender can be a sensitive issue for the people in question.
+  
+  In general, we recommend not including gender as a search parameter.
+    
+  ### Date of birth and death
+  Sometimes, the exact date of birth or death is not known when doing a search.
+  Sometimes, the date of birth or death is not accurate in PDS.
+  For example, if only the year of birth is known, the day and month of birth might be recorded as the first of January - for example, `01/01/1932`.
+  
+  In such cases, searching a range of dates can help. This can result in multiple matches, so might not work well when searching for a unique match.
+  
+  ### Postcode
+  People sometimes move locally, meaning the postcode in PDS is out of date, but does at least match on the first two characters.
+  
+  Searching for the first two characters of the postcode and a wildcard can work well. For example, to search for `LS11 6AD`, use `LS*`.
+  This is only possible for a non-fuzzy search.
+  
+  This can result in multiple matches, but it has been known to work well in some cases - even for unique matches.
+  
+  ### General practitioner
+  This is an ODS code. If you use it, it must match exactly.
+  
+  ### Phone number and email address
+  If you use phone number and/or email address, only exact matches will be returned.
+    * Wildcards are not supported
+    * Only current data will be searched, unless a history search is also requested in which case the match will take into account both current and historic data
+    * Email addresses are not case-sensitive.
+  
+  ## Patient data returned
+  The patient data returned on a search is not the full set of data that is returned on a retrieval by NHS number. The following data is included:
+  * NHS number
+  * names - usual, nickname and temporary
+  * gender
+  * birth information, apart from place of birth
+  * death information
+  * address - home address
+  * contact details
+  * registered GP
+  * restricted patient flag
+  
+  The following data is excluded:
+  * place of birth
+  * names, apart from usual, nickname and temporary 
+  * addresses, apart from home address
+  * pharmacy details
+  * communication details
+  * contact preferences
+  
+  ### Restricted patients
+  Some patients are tagged as [restricted](https://digital.nhs.uk/services/demographics/restricting-access-to-a-patients-demographic-record) and are sometimes known as sensitive patients. When performing a search, restricted patients can be returned; however, location sensitive fields such as `address`, `telecom`, `contact` and `generalPractitioner` are removed.
+  
+  If `address-postalcode`, `address-postcode`, or `general-practitioner` are included in the search parameters, no restricted patients are returned even if a match is identified.
+  
+  The restricted flag can be found in the data under `meta/security` on the patient resource.
+  
+  ### Invalidated patients
+  Some patients are marked as invalidated in PDS - also known as `redacted` in FHIR terminology. Invalidated patient records are not returned in search results.
+  If an invalidated patient record has been superseded, the superseding record is returned.
+  
+  ## Scoring
+  Every matched patient in the result list includes a score to indicate how closely the patient matched the search parameters.
+  
+  A score of 1.0 indicates an exact match. A score of less than 1.0 indicates a partial match.
+  
+  The result list is sorted in descending score order - best match first.
+  
+  Use the `_exact-match` query parameter to return exact matches only - where the score is 1.0.
+  
+  ## Clinical safety and privacy
+  This endpoint can return multiple matching patients for a given search, including partial matches.
+  
+  Ensure that you design your software to minimise the following risks:
+  * an end user selects the wrong patient from the results presented, so there is a risk of clinical harm; for example due to retrieval of the wrong clinical data
+  * the end user has access to patients&amp;rsquo; personal data, so there is a risk to patient privacy
+  
+  Note that:
+  * we record an access request in our audit trail for all patients matched in a PDS search
+  * it is almost certainly a good idea to display search results in descending score order - best match first
+  
+  Please consider the information your application returns to users. For example a patient's temporary address can be used to perform a successful search. The home address will be included in the response. For citizen facing services please be aware of this behaviour and do not present a different address to the patient, unless they are logged in at a sufficiently high proof point.
+  
+  ## Sandbox testing
+  You can test the following scenarios in our sandbox environment:
+  
+  | Scenario                                | Request                                                                                                                                                         | Response                                                                |
+  | ----------------------------------------| ----------------------------------------------------------------------------------------------------------------------------------------------------------------| ------------------------------------------------------------------------|
+  | Basic search with phone &amp;amp; email positive| `family`=`Smith`, `gender`=`female`, `birthdate`=`eq2010-10-22`, `email`=`jane.smith@example.com`, `phone`=`01632960587`                                        | HTTP Status 200 with single search result.                              |
+  | Basic search with phone &amp;amp; email negative| `family`=`Smith`, `gender`=`female`, `birthdate`=`eq2010-10-22`, `email`=`deb.trotter@example.com`, `phone`=`0121111111`                                        | HTTP Status 200 with no search results
+  | Wildcard search without phone/email     | `family`=`Sm*`, `gender`=`female`, `birthdate`=`eq2010-10-22`                                                                                                   | HTTP Status 200 with search result of two.                              |
+  | Wildcard search with email and phone    | `family`=`Sm*`, `gender`=`female`, `birthdate`=`eq2010-10-22`, `email`=`jane.smith@example.com`, `phone`=`01632960587`                                          | HTTP Status 200 with single search result.                              |
+  | Search with limited results             | `family`=`Sm*`, `gender`=`female`, `birthdate`=`eq2010-10-22`, `email`=`jane.smith@example.com`, `phone`=`01632960587`, `_max-results`=`1`                      | HTTP Status 200 with single search result.                              |
+  | Search with date range                  | `family`=`Smith`, `gender`=`female`, `birthdate`=`ge2010-10-21`, `birthdate`=`le2010-10-23`, `email`=`jane.smith@example.com`, `phone`=`01632960587`            | HTTP Status 200 with single search result.                              |
+  | Fuzzy search with phone and email       | `family`=`Smith`, `given`=`Jane`, `gender`=`female`, `birthdate`=`eq2010-10-22`, `email`=`jane.smith@example.com`, `phone`=`01632960587`, `_fuzzy-match`=`true` | HTTP Status 200 with single search result.                              |
+  | Fuzzy search without phone or email     | `family`=`Smith`, `given`=`Jane`, `gender`=`female`, `birthdate`=`eq2010-10-22`                                                                                 | HTTP Status 200 with search result of two.
+  | Restricted patient search               | `family`=`Smythe`, `given`=`Janet`, `gender`=`female`, `birthdate`=`eq2005-06-16`, `email`=`janet.smythe@example.com`, `phone`=`01632960587`                    | HTTP Status 200 with single search result with restricted data omitted. |
+  | Compound name search                    | `family`=`Smith`, `given`=`John Paul`, `given`=`James`, `gender`=`female`, `birthdate`=`eq2010-10-22`, `email`=`johnp.smith@example.com`, `phone`=`01632960587` | HTTP Status 200 with single search result.                              |
+  | Unsuccessful search                     | Any other valid search query parameters                                                                                                                         | HTTP Status 200 with no search results                                  |
+  | Valid/invalid search criteria           | `family`=`Sm*`, `gender`=`female`, 'invalidParam'='123', `birthdate`=`eq2010-10-22`, `email`=`j.smith@example.com`, `phone`=`0163`                              | HTTP Status 400 with problem description                                |
+  | Unsuccessful search on email/phone only | `email`=`j.smith@example.com`, `phone`=`0163`                                                                                                                   | HTTP Status 400 with problem description                                |
+  | Invalid date format                     | `birthdate` or `death-date` query parameters with values not in format `YYYY-MM-DD`                                                                             | HTTP Status 400 with problem description                                |
+  | Too few search parameters               | Any invalid combination of query parameters                                                                                                                     | HTTP Status 400 with problem description                                |
+  | Missing X-Request-ID                    | `id`=`9000000009` (or any other valid NHS number)                                                                                                               | HTTP Status 400 with problem description                                |
+  
+  You can try out the sandbox using the 'Try this API' feature on this page.
+  
+  Alternatively, you can try out the sandbox using our Postman collection:
+  
+  
+  [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/a1ce1b055839caa384a8?action=collection%2Fimport)
+  ">
+      </documentation>
+    </interaction>
+    <interaction>
+      <code value="read">
+      </code>
+      <documentation value="## Overview
+  Use this endpoint to get patient details from PDS for a given NHS number.
+  
+  You cannot get a patient's related people details, use the RelatedPerson endpoint instead.
+  
+  ## Superseded patients
+  Some patients are marked as superseded, this means that for some reason the original resource is no longer valid and has been replaced with a different resource.
+  
+  On retrieval of a superseded resource, the new resource is automatically returned in place of the requested resource. You can spot a superseded resource when the `id` is not the same as the one requested.
+  
+  When retrieving a superseding resource you must update your system with the new resource and remove the superseded resource, ensuring that the same `id` does not exist against another resource in your system.
+  
+  ## Restricted patients
+  Some patients are tagged as [restricted](https://digital.nhs.uk/services/demographics/restricting-access-to-a-patients-demographic-record) and are sometimes known as sensitive patients. Restricted patients can be retrieved; however, location sensitive fields such as `address`, `telecom` and `generalPractitioner` are removed.
+  
+  The restricted flag can be found in the data under `meta/security` on the patient resource.
+  
+  ## Sandbox test scenarios
+  You can test the following scenarios in our sandbox environment:
+  
+  | Scenario                         | Request                                           | Response                                                                                                                                      |
+  | -------------------------------- | ------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+  | Patient exists                   | `id`=`9000000009`                                 | HTTP Status 200 with patient data in response                                                                                                 |
+  | Sensitive patient exists         | `id`=`9000000025`                                 | HTTP Status 200 with patient data in response with the restricted data removed                                                                |
+  | Patient exists with minimal data | `id`=`9000000033`                                 | HTTP Status 200 with patient data in response, there will be very little data so can be used as an example of a patient with bad data quality |
+  | Patient does not exist           | `id`=`9111231130` (or any other valid NHS number) | HTTP Status 404 with problem description                                                                                                      |
+  | Invalid NHS number               | `id`=`9000000000` (or any invalid NHS number)     | HTTP Status 400 with problem description                                                                                                      |
+  | Missing X-Request-ID             | `id`=`9000000009` (or any other valid NHS number) | HTTP Status 400 with problem description                                                                                                      |
+  
+  You can try out the sandbox using the 'Try this API' feature on this page.
+  
+  Alternatively, you can try out the sandbox using our Postman collection:
+  
+  [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/14719036-953f067f-30b9-4552-8252-7cc10b21dad3)
+  ">
+    </documentation>
+  </interaction>
+  <searchParam>
+    <name value="_fuzzy-match">
+    </name>
+    <type value="string">
+    </type>
+    <documentation value="A fuzzy search is performed, including checks for homophones, transposed names and historic information.
+  
+  You cannot use wildcards with a fuzzy search.
+  ">
+    </documentation>
+  </searchParam>
+  <searchParam>
+    <name value="_exact-match">
+    </name>
+    <type value="string">
+    </type>
+    <documentation value="The search only returns results where the `score` field is 1.0. Use this with care - it is unlikely to work with fuzzy search or wildcards.">
+    </documentation>
+  </searchParam>
+  <searchParam>
+    <name value="_history">
+    </name>
+    <type value="string">
+    </type>
+    <documentation value="The search looks for matches in historic information such as previous names and addresses.
+  
+  This parameter has no effect for a fuzzy search, which always includes historic information.
+  ">
+    </documentation>
+  </searchParam>
+  <searchParam>
+    <name value="_max-results">
+    </name>
+    <type value="string">
+    </type>
+    <documentation value="The maximum number of matching patients to return. For healthcare worker access, this must be between 1 and 50, and the default is 50.
+  For application-restricted access, this must be 1, and the default is 1.
+  If too many patients match the search criteria, we return a `TOO_MANY_MATCHES` error.
+  ">
+    </documentation>
+  </searchParam>
+  <searchParam>
+    <name value="family">
+    </name>
+    <type value="string">
+    </type>
+    <documentation value="The patient's family name (surname).
+  
+  Not case sensitive. Max 35 characters.
+  Use `*` as a wildcard but not in the first two characters and not in fuzzy search mode.
+  Must be [URL encoded](https://en.wikipedia.org/wiki/Percent-encoding), for example a space must be represented by either `%20` or `+` and a wildcard must be encoded as `%2A`.
+  ">
+    </documentation>
+  </searchParam>
+  <searchParam>
+    <name value="given">
+    </name>
+    <type value="string">
+    </type>
+    <documentation value="The patient's given names.
+  
+  Not case sensitive. Max 35 characters.
+  Use `*` as a wildcard but not in the first two characters and not in fuzzy search mode.
+  Wildcard searches will match the start of the first given name and not subsequent given names, for example the given names &amp;quot;Alan Michael&amp;quot; can be searched with &amp;quot;Ala*&amp;quot; but not &amp;quot;Mic*&amp;quot;.
+  Must be [URL encoded](https://en.wikipedia.org/wiki/Percent-encoding), for example a space must be represented by either `%20` or `+` and a wildcard must be encoded as `%2A`.
+  
+  A patient may have more than one given name. Subsequent given names are commonly referred to as 'middle names'.
+  Specify multiple given names by repeating this parameter.
+  To search for  `Jane Anne Smith` use `given=Jane&amp;amp;given=Anne&amp;amp;family=Smith`.
+  
+  The first given name may be a [compound name](https://en.wikipedia.org/wiki/Given_name#Compound), for example `John Paul`.
+  To search for `John Paul James Smith` (where `John Paul` is the first given name, `James` is the second given name, and `Smith` the family name) use `given=John%20Paul&amp;amp;given=James&amp;amp;family=Smith`.
+  
+  Note that it is not necessary to specify subsequent given (middle) names, and that doing so may impact your search results in the case they are not recorded in the demographics system.
+  ">
+    </documentation>
+  </searchParam>
+  <searchParam>
+    <name value="gender">
+    </name>
+    <type value="string">
+    </type>
+    <documentation value="Gender with which the patient most strongly identifies.">
+    </documentation>
+  </searchParam>
+  <searchParam>
+    <name value="birthdate">
+    </name>
+    <type value="string">
+    </type>
+    <documentation value="Date of birth in the format `&amp;lt;eq|ge|le&amp;gt;yyyy-mm-dd`. To specify a range, use `birthdate=geyyyy-mm-dd&amp;amp;birthdate=leyyyy-mm-dd`.">
+    </documentation>
+  </searchParam>
+  <searchParam>
+    <name value="death-date">
+    </name>
+    <type value="date">
+    </type>
+    <documentation value="Date of death in the format `&amp;lt;eq|ge|le&amp;gt;yyyy-mm-dd`. To specify a range, use `death-date=geyyyy-mm-dd&amp;amp;death-date=leyyyy-mm-dd`.
+  
+  For a fuzzy search, this is ignored for matching but included in the score calculation.
+  ">
+    </documentation>
+  </searchParam>
+  <searchParam>
+    <name value="address-postalcode">
+    </name>
+    <type value="string">
+    </type>
+    <documentation value="The postcode of any of the patient&amp;rsquo;s known addresses.
+  
+  Not case sensitive.
+  Spaces are ignored, for example `LS16AE` and `LS1 6AE` both match `LS1 6AE`.
+  Use `*` as a wildcard but not in the first two characters and not in fuzzy search mode.
+  Must be [URL encoded](https://en.wikipedia.org/wiki/Percent-encoding), for example a space must be represented by either `%20` or `+` and a wildcard must be encoded as `%2A`.
+  ">
+    </documentation>
+  </searchParam>
+  <searchParam>
+    <name value="address-postcode">
+    </name>
+    <type value="string">
+    </type>
+    <documentation value="**N.B. that address-postcode will be deprecated in the future, address-postalcode should be used instead. 
+  If both address-postcode and address-postalcode are provided, an INVALID_SEARCH_DATA error will be returned.**
+  The postcode of any of the patient&amp;rsquo;s known addresses.
+  
+  Not case sensitive.
+  Spaces are ignored, for example `LS16AE` and `LS1 6AE` both match `LS1 6AE`.
+  Use `*` as a wildcard but not in the first two characters and not in fuzzy search mode.
+  Must be [URL encoded](https://en.wikipedia.org/wiki/Percent-encoding), for example a space must be represented by either `%20` or `+` and a wildcard must be encoded as `%2A`.
+  ">
+    </documentation>
+  </searchParam>
+  <searchParam>
+    <name value="general-practitioner">
+    </name>
+    <type value="string">
+    </type>
+    <documentation value="The Organisation Data Service (ODS) code of the patient's registered GP practice.
+  
+  Not case sensitive.
+  For a fuzzy search, this is ignored for matching but included in the score calculation.
+  ">
+    </documentation>
+  </searchParam>
+  <searchParam>
+    <name value="email">
+    </name>
+    <type value="string">
+    </type>
+    <documentation value="Email address
+  ">
+    </documentation>
+  </searchParam>
+  <searchParam>
+    <name value="phone">
+    </name>
+    <type value="string">
+    </type>
+    <documentation value="Phone number
+  ">
+    </documentation>
+  </searchParam>
+  </resource>
+  <resource>
+  <type value="RelatedPerson">
+  </type>
+  <interaction>
+    <code value="search-type">
+    </code>
+    <documentation value="## Overview
+  Use this endpoint to get a patient's related people details from PDS for a given NHS number. This is a list of people who can be contacted, and how, regarding the patient. These details may be useful for a practitioner to get in contact with a next of kin or guardian.
+  
+  ## Restricted patients
+  Some patients are tagged as [restricted](https://digital.nhs.uk/services/demographics/restricting-access-to-a-patients-demographic-record) and are sometimes known as sensitive patients. Related people are not returned for a restricted patient and an empty bundle is returned.
+  
+  If a related person only contains a patient reference, and when the patient is retrieved, it is restricted; location sensitive fields such as `address` and `telecom` are removed.
+  
+  ## Sandbox test scenarios
+  You can test the following scenarios in our sandbox environment:
+  
+  | Scenario                        | Request                                       | Response                                                      |
+  | ------------------------------- | --------------------------------------------- | ------------------------------------------------------------- |
+  | Multiple related people exists  | `id`=`9000000009`                             | HTTP Status 200 with related person data in a response Bundle |
+  | Single related person exists    | `id`=`9000000017`                             | HTTP Status 200 with related person data in a response Bundle |
+  | Related people do not exist     | `id`=`9000000025`                             | HTTP Status 200 with an empty bundle                          |
+  | Missing X-Request-ID            | `id`=`9000000009` (or any other valid NHS number) | HTTP Status 400 with problem description                  |
+  
+  You can try out the sandbox using the 'Try this API' feature on this page.
+  
+  Alternatively, you can try out the sandbox using our Postman collection:
+  
+  [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/14719036-953f067f-30b9-4552-8252-7cc10b21dad3)
+  ">
+  </documentation>
+  </interaction>
+  <searchParam>
+  <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+    <valueCode value="SHALL">
+    </valueCode>
+  </extension>
+  <name value="patient">
+  </name>
+  <type value="token">
+  </type>
+  </searchParam>
+  </resource>
+  </rest>
+  </CapabilityStatement>
