@@ -3,7 +3,6 @@
   <url value="https://fhir.nhs.uk/England/CapabilityStatement/England-Personal-Demographics-Service" />
   <version value="0.0.1" />
   <name value="NHSEnglandPersonalDemographicsService" />
-  <status value="draft" />
   <publisher value="NHS England" />
   <contact>
     <name value="NHS England" />
@@ -14,7 +13,7 @@
       <rank value="1" />
     </telecom>
   </contact>
-    <title value="NHS Englan Personal Demographics Service (FHIR) API">
+    <title value="NHS England Personal Demographics Service (FHIR) API">
     </title>
     <status value="unknown">
     </status>
@@ -295,8 +294,14 @@
   &amp;lt;/div&amp;gt; 
   ">
   </description>
-  <kind value="requirements">
+  <kind value="instance">
   </kind>
+  <software>
+    <name value="NHS England Personal Demographics Service (FHIR) API"/>
+  </software>
+  <implementation>
+        <description value="Test Instance"/>
+  </implementation>
   <fhirVersion value="4.0.1">
   </fhirVersion>
   <format value="application/fhir+json">

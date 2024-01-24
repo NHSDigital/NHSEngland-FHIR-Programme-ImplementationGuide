@@ -27,8 +27,14 @@
   </date>
   <description value="This is an Open API specification for the Validated Relationship Service.">
   </description>
-  <kind value="requirements">
+  <kind value="instance">
   </kind>
+  <software>
+    <name value="NHS England Validated Relationship Service"/>
+  </software>
+  <implementation>
+        <description value="Test Instance"/>  
+  </implementation>
   <fhirVersion value="4.0.1">
   </fhirVersion>
   <format value="application/fhir+json">
