@@ -570,16 +570,6 @@
                             "extension": [
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHOULD"
-                                }
-                            ],
-                            "name": "role",
-                            "documentation": "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\nThe server **SHALL** support both."
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
                                     "valueCode": "MAY"
                                 }
                             ],
@@ -1566,6 +1556,7 @@
                                 }
                             ],
                             "name": "date",
+                            "type": "date",
                             "documentation": "A client **SHALL** provide a value precise to the *second + time offset*.\n\nA server **SHALL** support a value precise to the *second + time offset*."
                         },
                         {
