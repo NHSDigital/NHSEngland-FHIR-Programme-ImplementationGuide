@@ -63,7 +63,7 @@
                 "valueCode" : "SHOULD"
               }],
               "name": "identifier",
-              "type": "string",
+              "type": "token",
               "documentation": "The proxy's NHS number.   "
             },
             {
@@ -72,7 +72,7 @@
                 "valueCode" : "SHOULD"
               }],
               "name": "patient:identifier",
-              "type": "string",
+              "type": "token",
               "documentation": "The patient's NHS number.   "
             }
           ]
