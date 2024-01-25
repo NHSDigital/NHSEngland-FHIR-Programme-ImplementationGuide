@@ -311,8 +311,8 @@
     </mode>
     <resource>
       <type value="Patient">
-      <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
       </type>
+      <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
       <interaction>
         <code value="search-type">
         </code>
@@ -756,8 +756,8 @@
   </resource>
   <resource>
   <type value="RelatedPerson">
-  <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
   </type>
+   <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
   <interaction>
     <code value="search-type">
     </code>
