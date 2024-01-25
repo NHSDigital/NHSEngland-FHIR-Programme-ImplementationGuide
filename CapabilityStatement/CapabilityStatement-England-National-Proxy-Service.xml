@@ -44,6 +44,7 @@
     </mode>
     <resource>
       <type value="RelatedPerson">
+      <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
       </type>
       <interaction>
         <code value="search-type">
