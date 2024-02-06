@@ -1,8 +1,8 @@
 <SearchParameter xmlns="http://hl7.org/fhir">
-  <id value="England-ODS-ActiveRole" />
-  <url value="https://fhir.nhs.uk/England/SearchParameter/England-ODS-ActiveRole" />
+  <id value="England-OrganisationRole-ActiveRole" />
+  <url value="https://fhir.nhs.uk/England/SearchParameter/England-OrganisationRole-ActiveRole" />
   <version value="0.0.1" />
-  <name value="EnglandODSActiveRole" />
+  <name value="EnglandOrganisationRoleActiveRole" />
   <status value="draft" />
   <date value="2024-01-11" />
   <publisher value="NHS England" />
@@ -16,7 +16,7 @@
     </telecom>
   </contact>
   <description value="SearchParameter for NHS England ODS FHIR API for querying OrganisationRole extension, roleCode sub element, where they are active" />
-  <code value="ods-activeRole" />
+  <code value="activeRole" />
   <base value="Organization" />
   <type value="token" />
   <expression value="Organization.extension('https://fhir.nhs.uk/England/StructureDefinition/Extension-England-OrganisationRole').where(extension('active').value=true).extension('roleCode').value" />

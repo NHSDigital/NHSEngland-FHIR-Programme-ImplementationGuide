@@ -1,8 +1,8 @@
 <SearchParameter xmlns="http://hl7.org/fhir">
-  <id value="England-ODS-LastChangeDate" />
-  <url value="https://fhir.nhs.uk/England/SearchParameter/England-ODS-LastChangeDate" />
+  <id value="England-LastChangeDate" />
+  <url value="https://fhir.nhs.uk/England/SearchParameter/England-LastChangeDate" />
   <version value="0.0.1" />
-  <name value="EnglandODSLastChangeDate" />
+  <name value="EnglandLastChangeDate" />
   <status value="draft" />
   <date value="2024-01-11" />
   <publisher value="NHS England" />
@@ -16,7 +16,7 @@
     </telecom>
   </contact>
   <description value="SearchParameter for NHS England ODS FHIR API for querying TypedDateTime extension, dateTime sub element" />
-  <code value="ods-lastChangeDate" />
+  <code value="lastChangeDate" />
   <base value="Organization" />
   <base value="OrganizationAffiliation" />
   <type value="date" />

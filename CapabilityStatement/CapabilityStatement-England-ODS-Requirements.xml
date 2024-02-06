@@ -81,18 +81,18 @@ A client credentials token is necessary to obtain to authenticate with the Termi
         <type value="string" />
       </searchParam>
       <searchParam>
-        <name value="ods-role" />
-        <definition value="https://fhir.nhs.uk/England/SearchParameter/England-ODS-Role" />
+        <name value="role" />
+        <definition value="https://fhir.nhs.uk/England/SearchParameter/England-OrganisationRole-Role" />
         <type value="token" />
       </searchParam>
       <searchParam>
-        <name value="ods-lastChangeDate" />
-        <definition value="https://fhir.nhs.uk/England/SearchParameter/England-ODS-LastChangeDate" />
+        <name value="lastChangeDate" />
+        <definition value="https://fhir.nhs.uk/England/SearchParameter/England-LastChangeDate" />
         <type value="date" />
       </searchParam>
       <searchParam>
-        <name value="ods-activeRole" />
-        <definition value="https://fhir.nhs.uk/England/SearchParameter/England-ODS-ActiveRole" />
+        <name value="activeRole" />
+        <definition value="https://fhir.nhs.uk/England/SearchParameter/England-OrganisationRole-ActiveRole" />
         <type value="token" />
       </searchParam>
     </resource>
