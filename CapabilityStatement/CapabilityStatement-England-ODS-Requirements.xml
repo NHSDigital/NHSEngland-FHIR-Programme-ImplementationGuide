@@ -91,8 +91,8 @@ A client credentials token is necessary to obtain to authenticate with the Termi
         <type value="date" />
       </searchParam>
       <searchParam>
-        <name value="activeRole" />
-        <definition value="https://fhir.nhs.uk/England/SearchParameter/England-Extension-OrganisationRole-ActiveRole" />
+        <name value="activeRoleCode" />
+        <definition value="https://fhir.nhs.uk/England/SearchParameter/England-Extension-OrganisationRole-ActiveRoleCode" />
         <type value="token" />
       </searchParam>
     </resource>
