@@ -1,11 +1,11 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
   <id value="England-ODS-Requirements" />
   <url value="https://fhir.nhs.uk/England/CapabilityStatement/England-ODS-Requirements" />
-  <version value="0.0.1" />
+  <version value="0.0.2" />
   <name value="EnglandODSRequirements" />
   <title value="England ODS Requirements" />
   <status value="draft" />
-  <date value="2024-01-11" />
+  <date value="2024-02-14" />
   <publisher value="NHS England" />
   <contact>
     <name value="NHS England" />
@@ -81,18 +81,18 @@ A client credentials token is necessary to obtain to authenticate with the Termi
         <type value="string" />
       </searchParam>
       <searchParam>
-        <name value="role" />
-        <definition value="https://fhir.nhs.uk/England/SearchParameter/England-OrganisationRole-Role" />
+        <name value="roleCode" />
+        <definition value="https://fhir.nhs.uk/England/SearchParameter/England-Extension-OrganisationRole-RoleCode" />
         <type value="token" />
       </searchParam>
       <searchParam>
         <name value="lastChangeDate" />
-        <definition value="https://fhir.nhs.uk/England/SearchParameter/England-LastChangeDate" />
+        <definition value="https://fhir.nhs.uk/England/SearchParameter/England-Extension-TypedDateTime-LastChangeDate" />
         <type value="date" />
       </searchParam>
       <searchParam>
         <name value="activeRole" />
-        <definition value="https://fhir.nhs.uk/England/SearchParameter/England-OrganisationRole-ActiveRole" />
+        <definition value="https://fhir.nhs.uk/England/SearchParameter/England-Extension-OrganisationRole-ActiveRole" />
         <type value="token" />
       </searchParam>
     </resource>
