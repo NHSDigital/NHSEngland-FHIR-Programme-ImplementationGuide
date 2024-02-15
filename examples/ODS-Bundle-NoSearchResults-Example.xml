@@ -4,6 +4,6 @@
     <total value="0" />
     <link>
         <relation value="self" />
-        <url value="https://baseurl/Organization?lastChangeDate=2023-08-20"/>
+        <url value="https://baseurl/Organization?lastChangeDate=2023-08-20" />
     </link>
 </Bundle>
