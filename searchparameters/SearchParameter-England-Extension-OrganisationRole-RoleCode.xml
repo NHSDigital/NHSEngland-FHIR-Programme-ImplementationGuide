@@ -2,7 +2,7 @@
   <id value="England-Extension-OrganisationRole-RoleCode" />
   <url value="https://fhir.nhs.uk/England/SearchParameter/England-Extension-OrganisationRole-RoleCode" />
   <version value="0.0.2" />
-  <name value="EnglandExtensionOrganisationRoleRole" />
+  <name value="EnglandExtensionOrganisationRoleRoleCode" />
   <status value="draft" />
   <date value="2024-02-14" />
   <publisher value="NHS England" />
