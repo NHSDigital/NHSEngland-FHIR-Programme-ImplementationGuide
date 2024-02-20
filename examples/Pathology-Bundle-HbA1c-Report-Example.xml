@@ -13,7 +13,7 @@
     <fullUrl value="urn:uuid:f18a2226-c0ab-480d-b80a-b6561fe8f9c4" />
     <resource>
       <MessageHeader>
-			  <!-- Added test comment -->
+        <!-- Added test comment -->
         <!-- TBC Review content of MessageHeader -->
         <id value="f18a2226-c0ab-480d-b80a-b6561fe8f9c4" />
         <meta>
