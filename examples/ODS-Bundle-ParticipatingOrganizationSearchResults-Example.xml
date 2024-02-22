@@ -1,5 +1,5 @@
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="ODS-Bundle-ParticipatingSearchResults-Example" />
+  <id value="ODS-Bundle-ParticipatingOrganizationSearchResults-Example" />
   <type value="searchset" />
   <total value="1" />
   <link>
