@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="England-ServiceRequestLab-MCED" />
+  <url value="https://fhir.nhs.uk/England/StructureDefinition/England-ServiceRequestLab-MCED" />
+  <version value="0.0.1" />
+  <name value="EnglandServiceRequestLabMCED" />
+  <title value="England Service Request Lab MCED" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2024-02-27" />
+  <publisher value="NHS England" />
+  <contact>
+    <name value="NHS England" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <purpose value="This profile is made available to assist implementers who are creating and sending Organization FHIR instances to test that the created instances conform to the ODS FHIR implementation guide. It may also assist receivers testing that received instances are conformant with the ODS FHIR implementation guide." />
+  <copyright value="Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the \&amp;quot;License\&amp;quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \&amp;quot;AS IS\&amp;quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="ServiceRequest" />
+  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest-Lab" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="ServiceRequest.code">
+      <path value="ServiceRequest.code" />
+      <min value="1" />
+    </element>
+    <element id="ServiceRequest.code.coding.system">
+      <path value="ServiceRequest.code.coding.system" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="ServiceRequest.code.coding.code">
+      <path value="ServiceRequest.code.coding.code" />
+      <fixedCode value="1148754001" />
+    </element>
+    <element id="ServiceRequest.code.coding.display">
+      <path value="ServiceRequest.code.coding.display" />
+      <fixedString value="Screening for neoplasm" />
+    </element>
+  </differential>
+</StructureDefinition>
