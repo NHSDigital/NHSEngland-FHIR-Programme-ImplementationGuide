@@ -51,7 +51,7 @@
       <Organization>
         <id value="d6407de7-0e86-45eb-93cb-035094aaa49e" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+          <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Organization-MCED" />
         </meta>
         <identifier>
           <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
@@ -71,7 +71,7 @@
       <Organization>
         <id value="e78b5421-8d55-4f61-8cbf-bee1c69513f1" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+          <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Organization-MCED" />
         </meta>
         <identifier>
           <system value="http://terminology.hl7.org/NamingSystem/CLIA" />
@@ -112,7 +112,7 @@
       <Organization>
         <id value="bf7a76d3-5b44-4194-a9e0-d1cc1ea5e50e" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+          <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Organization-MCED" />
         </meta>
         <identifier>
           <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
@@ -157,7 +157,7 @@
       <Patient>
         <id value="8d6c2cd5-0eec-496a-88d0-3785a135df09" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+          <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Patient-MCED" />
         </meta>
         <identifier>
           <system value="https://ScreeningOrg/patient-id" />
@@ -172,7 +172,7 @@
       <ServiceRequest>
         <id value="d9df1431-22ac-462a-946a-f195f6c639af" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
+          <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-ServiceRequestLab-MCED" />
         </meta>
         <identifier>
           <system value="http://ScreeningOrg/request-id" />
@@ -209,7 +209,7 @@
       <DiagnosticReport>
         <id value="3d2f37fd-ca19-4199-9f72-4871cfe12df1" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
+          <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-DiagnosticReportLab-MCED" />
         </meta>       
         <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.note">
           <valueAnnotation>
@@ -260,7 +260,7 @@
       <Observation>
         <id value="9f7babcd-19cb-4063-b96b-61a20b2e07e6" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+          <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Observation-MCED" />
         </meta>
         <identifier>
           <system value="http://ScreeningOrg/request-id" />
@@ -309,7 +309,7 @@
       <Observation>
         <id value="efae5859-28df-4e7d-be91-6df56d8215e4" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+          <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Observation-MCED" />
         </meta>
         <identifier>
           <system value="http://ScreeningOrg/request-id" />
@@ -356,7 +356,7 @@
       <Observation>
         <id value="dacb177a-9501-4dcc-8b22-b941791ae0db" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+          <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Observation-MCED" />
         </meta>
         <identifier>
           <system value="http://ScreeningOrg/request-id" />
@@ -405,7 +405,7 @@
       <Observation>
         <id value="3f9730c8-5527-4f58-9865-55aef4dfa11f" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+          <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Observation-MCED" />
         </meta>
         <identifier>
           <system value="http://ScreeningOrg/request-id" />
@@ -453,7 +453,7 @@
       <Specimen>
         <id value="756a8361-79ce-4561-afcb-a91fe19df123" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen" />
+          <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Specimen-MCED" />
         </meta>
         <identifier>
           <system value="http://ScreeningOrg/request-id" />
