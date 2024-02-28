@@ -29,14 +29,17 @@
   <differential>
     <element id="DiagnosticReport.code.coding.system">
       <path value="DiagnosticReport.code.coding.system" />
+      <min value="1" />
       <fixedUri value="http://snomed.info/sct" />
     </element>
     <element id="DiagnosticReport.code.coding.code">
       <path value="DiagnosticReport.code.coding.code" />
+      <min value="1" />
       <fixedCode value="721981007" />
     </element>
     <element id="DiagnosticReport.code.coding.display">
       <path value="DiagnosticReport.code.coding.display" />
+      <min value="1" />
       <fixedString value="Diagnostic studies report" />
     </element>
     <element id="DiagnosticReport.issued">
@@ -51,6 +54,10 @@
       <path value="DiagnosticReport.presentedForm" />
       <min value="1" />
       <max value="1" />
+    </element>
+    <element id="DiagnosticReport.presentedForm.data">
+      <path value="DiagnosticReport.presentedForm.data" />
+      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>
