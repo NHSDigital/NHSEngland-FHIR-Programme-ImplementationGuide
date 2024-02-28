@@ -40,53 +40,11 @@
     <element id="Organization.name">
       <path value="Organization.name" />
       <min value="1" />
-      <fixedString value="NHS ENGLAND - X26" />
     </element>
     <element id="Organization.address">
       <path value="Organization.address" />
       <min value="1" />
       <max value="1" />
-    </element>
-    <element id="Organization.address.line">
-      <path value="Organization.address.line" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="$this" />
-        </discriminator>
-        <ordered value="true" />
-        <rules value="open" />
-      </slicing>
-      <min value="2" />
-      <max value="2" />
-    </element>
-    <element id="Organization.address.line:line1">
-      <path value="Organization.address.line" />
-      <sliceName value="line1" />
-      <min value="1" />
-      <max value="1" />
-      <fixedString value="THE LEEDS GOVERNMENT HUB" />
-    </element>
-    <element id="Organization.address.line:line2">
-      <path value="Organization.address.line" />
-      <sliceName value="line2" />
-      <min value="1" />
-      <max value="1" />
-      <fixedString value="7-8 WELLINGTON PLACE" />
-    </element>
-    <element id="Organization.address.city">
-      <path value="Organization.address.city" />
-      <fixedString value="LEEDS" />
-    </element>
-    <element id="Organization.address.postalCode">
-      <path value="Organization.address.postalCode" />
-      <min value="1" />
-      <fixedString value="LS1 4AP" />
-    </element>
-    <element id="Organization.address.country">
-      <path value="Organization.address.country" />
-      <min value="1" />
-      <fixedString value="ENGLAND" />
     </element>
   </differential>
 </StructureDefinition>
