@@ -40,10 +40,10 @@
   </valueQuantity>
   <interpretation> 
     <coding> 
-      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/> 
-      <code value="L"/> 
-			<display value="Low"/> 
-		</coding> 
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation" /> 
+      <code value="L" /> 
+      <display value="Low" /> 
+    </coding> 
   </interpretation>
   <specimen>
     <reference value="urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d" />
