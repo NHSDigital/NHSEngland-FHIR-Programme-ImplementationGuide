@@ -1,6 +1,6 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="England-MECDSignalResult" />
-  <url value="https://fhir.nhs.uk/England/StructureDefinition/England-MECDSignalResult" />
+  <url value="https://fhir.nhs.uk/England/ValueSet/England-MECDSignalResult" />
   <version value="0.0.1" />
   <name value="EnglandMECDSignalResult" />
   <title value="England MECD Signal Result" />

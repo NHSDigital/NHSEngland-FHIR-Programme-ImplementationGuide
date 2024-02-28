@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="England-Patient-MCED" />
-  <url value="https://fhir.nhs.uk/England/StructureDefinition/EnglandPatientMCED" />
+  <url value="https://fhir.nhs.uk/England/StructureDefinition/England-Patient-MCED" />
   <version value="0.0.1" />
   <name value="EnglandPatientMCED" />
   <title value="England Patient MCED" />
