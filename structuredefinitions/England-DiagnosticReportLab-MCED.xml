@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="England-ServiceRequestLab-MCED" />
-  <url value="https://fhir.nhs.uk/England/StructureDefinition/England-ServiceRequestLab-MCED" />
+  <id value="England-DiagnosticReportLab-MCED" />
+  <url value="https://fhir.nhs.uk/England/StructureDefinition/England-DiagnosticReportLab-MCED" />
   <version value="0.0.1" />
-  <name value="EnglandServiceRequestLabMCED" />
-  <title value="England Service Request Lab MCED" />
+  <name value="EnglandDiagnosticReportLabMCED" />
+  <title value="England Diagnostic Report Lab MCED" />
   <status value="draft" />
   <experimental value="true" />
   <date value="2024-02-27" />
@@ -14,6 +14,7 @@
     <telecom>
       <system value="email" />
       <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
       <rank value="1" />
     </telecom>
   </contact>
@@ -22,28 +23,34 @@
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
-  <type value="ServiceRequest" />
-  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest-Lab" />
+  <type value="DiagnosticReport" />
+  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Lab" />
   <derivation value="constraint" />
   <differential>
-    <element id="ServiceRequest.code">
-      <path value="ServiceRequest.code" />
-      <min value="1" />
-    </element>
-    <element id="ServiceRequest.code.coding.system">
-      <path value="ServiceRequest.code.coding.system" />
-      <min value="1" />
+    <element id="DiagnosticReport.code.coding.system">
+      <path value="DiagnosticReport.code.coding.system" />
       <fixedUri value="http://snomed.info/sct" />
     </element>
-    <element id="ServiceRequest.code.coding.code">
-      <path value="ServiceRequest.code.coding.code" />
-      <min value="1" />
-      <fixedCode value="1148754001" />
+    <element id="DiagnosticReport.code.coding.code">
+      <path value="DiagnosticReport.code.coding.code" />
+      <fixedCode value="721981007" />
     </element>
-    <element id="ServiceRequest.code.coding.display">
-      <path value="ServiceRequest.code.coding.display" />
+    <element id="DiagnosticReport.code.coding.display">
+      <path value="DiagnosticReport.code.coding.display" />
+      <fixedString value="Diagnostic studies report" />
+    </element>
+    <element id="DiagnosticReport.issued">
+      <path value="DiagnosticReport.issued" />
       <min value="1" />
-      <fixedString value="Screening for neoplasm" />
+    </element>
+    <element id="DiagnosticReport.conclusion">
+      <path value="DiagnosticReport.conclusion" />
+      <min value="1" />
+    </element>
+    <element id="DiagnosticReport.presentedForm">
+      <path value="DiagnosticReport.presentedForm" />
+      <min value="1" />
+      <max value="1" />
     </element>
   </differential>
 </StructureDefinition>

@@ -43,14 +43,17 @@
     </element>
     <element id="Observation.code:primarySite.coding.system">
       <path value="Observation.code.coding.system" />
+      <min value="1" />
       <fixedUri value="http://snomed.info/sct" />
     </element>
     <element id="Observation.code:primarySite.coding.code">
       <path value="Observation.code.coding.code" />
+      <min value="1" />
       <fixedCode value="1873921000000106" />
     </element>
     <element id="Observation.code:primarySite.coding.display">
       <path value="Observation.code.coding.display" />
+      <min value="1" />
       <fixedString value="Multi-cancer early detection highest probability cancer signal origin by machine learning-based classifier" />
     </element>
     <element id="Observation.code:secondarySite">
@@ -59,14 +62,17 @@
     </element>
     <element id="Observation.code:secondarySite.coding.system">
       <path value="Observation.code.coding.system" />
+      <min value="1" />
       <fixedUri value="http://snomed.info/sct" />
     </element>
     <element id="Observation.code:secondarySite.coding.code">
       <path value="Observation.code.coding.code" />
+      <min value="1" />
       <fixedCode value="1873921000000106" />
     </element>
     <element id="Observation.code:secondarySite.coding.display">
       <path value="Observation.code.coding.display" />
+      <min value="1" />
       <fixedString value="Multi-cancer early detection highest probability cancer signal origin by machine learning-based classifier" />
     </element>
     <element id="Observation.component.code.coding.system">
