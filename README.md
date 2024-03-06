@@ -9,8 +9,10 @@ The CapabilityStatement is used by the validation tool to check which profile to
 ## FHIR Validation
 
 This repo uses the customised HAPI FHIR Validation to ensure all assets and examples are valida FHIR, including any codes held within the ontoology server.  
+
 More information on FHIR validation can be found on the Interoperability Standards team [Confluence page](https://nhsd-confluence.digital.nhs.uk/display/IOPS/FHIR+Conformance+and+Testing)  
-More information on the FHIR validation service can be found within the Interoperability Standards team [IOPS-Test-Scripts]() repository.
+More information on the FHIR validation service can be found within the Interoperability Standards team [IOPS-Test-Scripts]() repository.  
+
 To set up the validation service within a fork add the following secrets:
 - ONTO_CLIENT_ID
 - ONTO_CLIENT_SECRET
