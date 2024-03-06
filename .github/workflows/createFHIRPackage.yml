@@ -32,8 +32,6 @@ jobs:
           find ./examples -type f -name "${{github.event.inputs.fileWildcard}}" | xargs -I {} cp {} temp/example/
           #find ./examples -type f -exec grep -l '${{github.event.inputs.fileWildcard}}' {} + | xargs -I {} cp {} temp/example/
 
-      - name: check folders
-        run: find . -type d
       - name: Find and convert XML files to JSON
         run: |
           post_xml_files() {
@@ -51,8 +49,8 @@ jobs:
               echo "File $file deleted"
             done
           }
-          post_xml_files ./test/package
-          post_xml_files ./test/example
+          post_xml_files ./temp/package
+          post_xml_files ./temp/example
 
       - name: tarbell package
         run: |
