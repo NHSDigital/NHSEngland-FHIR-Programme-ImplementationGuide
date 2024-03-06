@@ -1,0 +1,1085 @@
+{
+  "resourceType": "Bundle",
+  "id": "Pathology-Bundle-FBC-Report-Example",
+  "meta": {
+    "lastUpdated": "2022-02-09T11:17:00+00:00",
+    "profile": [ "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle" ]
+  },
+  "identifier": {
+    "system": "https://tools.ietf.org/html/rfc4122",
+    "value": "866e3e7a-2142-4af2-8461-2d2e876e8521"
+  },
+  "type": "message",
+  "entry": [ {
+    "fullUrl": "urn:uuid:f18a2226-c0ab-480d-b80a-b6561fe8f9c4",
+    "resource": {
+      "resourceType": "MessageHeader",
+      "meta": {
+        "profile": [ "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MessageHeader" ]
+      },
+      "eventCoding": {
+        "system": "http://snomed.info/sct",
+        "code": "371528001",
+        "display": "Pathology report"
+      },
+      "destination": [ {
+        "name": "PICKERING MEDICAL PRACTICE",
+        "endpoint": "TBC",
+        "receiver": {
+          "reference": "urn:uuid:3c43b5b3-06d6-445f-ae9a-48d5f05df434"
+        }
+      } ],
+      "sender": {
+        "reference": "urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338"
+      },
+      "source": {
+        "endpoint": "TBC"
+      },
+      "focus": [ {
+        "reference": "urn:uuid:35d46ca1-f253-4c97-b7ee-fb5fccdf6c20"
+      } ],
+      "definition": "https://fhir.nhs.uk/England/MessageDefinition/England-Pathology-Report"
+    }
+  }, {
+    "fullUrl": "urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338",
+    "resource": {
+      "resourceType": "Organization",
+      "meta": {
+        "profile": [ "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" ]
+      },
+      "identifier": [ {
+        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+        "value": "Y8J7D"
+      } ],
+      "name": "TD008362 PATH LAB 001",
+      "address": [ {
+        "line": [ "PATHOLOGY LAB", "7-8 WELLINGTON PLACE" ],
+        "city": "LEEDS",
+        "district": "WEST YORKSHIRE",
+        "postalCode": "LS1 4AP"
+      } ]
+    }
+  }, {
+    "fullUrl": "urn:uuid:3c43b5b3-06d6-445f-ae9a-48d5f05df434",
+    "resource": {
+      "resourceType": "Organization",
+      "meta": {
+        "profile": [ "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" ]
+      },
+      "identifier": [ {
+        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+        "value": "B82033"
+      } ],
+      "name": "PICKERING MEDICAL PRACTICE",
+      "address": [ {
+        "line": [ "SOUTHGATE" ],
+        "city": "PICKERING",
+        "district": "NORTH YORKSHIRE",
+        "postalCode": "YO18 8BL"
+      } ]
+    }
+  }, {
+    "fullUrl": "urn:uuid:9a835acf-d715-4d84-8dcf-a8435f6417fe",
+    "resource": {
+      "resourceType": "Practitioner",
+      "meta": {
+        "profile": [ "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" ]
+      },
+      "identifier": [ {
+        "system": "https://fhir.nhs.uk/Id/sds-user-id",
+        "value": "TBC"
+      } ],
+      "name": [ {
+        "use": "official",
+        "family": "GASKELL",
+        "given": [ "Gale" ],
+        "prefix": [ "Dr" ]
+      } ]
+    }
+  }, {
+    "fullUrl": "urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4",
+    "resource": {
+      "resourceType": "Patient",
+      "meta": {
+        "profile": [ "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" ]
+      },
+      "identifier": [ {
+        "extension": [ {
+          "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus",
+          "valueCodeableConcept": {
+            "coding": [ {
+              "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatusEngland",
+              "code": "01",
+              "display": "Number present and verified"
+            } ]
+          }
+        } ],
+        "system": "https://fhir.nhs.uk/Id/nhs-number",
+        "value": "9727710859"
+      } ],
+      "name": [ {
+        "use": "official",
+        "family": "MOXEY",
+        "given": [ "Judy" ]
+      } ],
+      "gender": "female",
+      "birthDate": "2004-05-06",
+      "address": [ {
+        "line": [ "1 CASTLEGATE" ],
+        "city": "PICKERING",
+        "district": "NORTH YORKSHIRE",
+        "postalCode": "YO18 7AY"
+      } ]
+    }
+  }, {
+    "fullUrl": "urn:uuid:1c38d507-9ad7-4b49-ba91-7da204842cac",
+    "resource": {
+      "resourceType": "ServiceRequest",
+      "meta": {
+        "profile": [ "https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest-Lab" ]
+      },
+      "identifier": [ {
+        "system": "http://B82033-pickeringmedicalpractice.com/labrequest",
+        "value": "REQ-20220129-000012"
+      } ],
+      "status": "active",
+      "intent": "order",
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "26604007",
+          "display": "Full blood count"
+        } ]
+      },
+      "subject": {
+        "reference": "urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4",
+        "display": "MOXEY, Judy"
+      },
+      "authoredOn": "2022-02-07T09:17:00+00:00",
+      "requester": {
+        "reference": "urn:uuid:9a835acf-d715-4d84-8dcf-a8435f6417fe",
+        "display": "GASKELL, Dr Gale"
+      },
+      "performer": [ {
+        "reference": "urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338",
+        "display": "TD008362 PATH LAB 001"
+      } ],
+      "note": [ {
+        "text": "Tired all the time, shortness of breath, arrhythmia"
+      } ]
+    }
+  }, {
+    "fullUrl": "urn:uuid:35d46ca1-f253-4c97-b7ee-fb5fccdf6c20",
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "meta": {
+        "profile": [ "https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Lab" ]
+      },
+      "identifier": [ {
+        "system": "http://Y8J7D-pathlab001.com/report",
+        "value": "REP-20220209-001369"
+      } ],
+      "basedOn": [ {
+        "reference": "urn:uuid:1c38d507-9ad7-4b49-ba91-7da204842cac"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "721981007",
+          "display": "Diagnostic studies report"
+        } ]
+      },
+      "subject": {
+        "reference": "urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4",
+        "display": "MOXEY, Judy"
+      },
+      "issued": "2022-02-09T11:17:00+00:00",
+      "performer": [ {
+        "reference": "urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338",
+        "display": "TD008362 PATH LAB 001"
+      } ],
+      "specimen": [ {
+        "reference": "urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d"
+      } ],
+      "result": [ {
+        "reference": "urn:uuid:ad717ae8-cb35-4d66-ba51-e22a76b1d158"
+      } ]
+    }
+  }, {
+    "fullUrl": "urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d",
+    "resource": {
+      "resourceType": "Specimen",
+      "meta": {
+        "profile": [ "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen" ]
+      },
+      "identifier": [ {
+        "system": "http://B82033-pickeringmedicalpractice.com/specimen",
+        "value": "SPC-REQ-20220208-000016"
+      } ],
+      "accessionIdentifier": {
+        "system": "http://Y8J7D-pathlab001.com/specimen",
+        "value": "SPC-LAB-20220208-001397"
+      },
+      "status": "available",
+      "type": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "122555007",
+          "display": "Venous blood specimen"
+        } ]
+      },
+      "subject": {
+        "reference": "urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4",
+        "display": "MOXEY, Judy"
+      },
+      "receivedTime": "2022-02-08T16:03:00+00:00",
+      "request": [ {
+        "reference": "urn:uuid:1c38d507-9ad7-4b49-ba91-7da204842cac"
+      } ],
+      "collection": {
+        "collectedDateTime": "2022-02-08T10:23:00+00:00"
+      }
+    }
+  }, {
+    "fullUrl": "urn:uuid:ad717ae8-cb35-4d66-ba51-e22a76b1d158",
+    "resource": {
+      "resourceType": "Observation",
+      "meta": {
+        "profile": [ "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Group-Lab" ]
+      },
+      "identifier": [ {
+        "system": "https://tools.ietf.org/html/rfc4122",
+        "value": "2af46949-4938-4c57-bad4-c4363e1965d5"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "26604007",
+          "display": "Full blood count"
+        } ]
+      },
+      "subject": {
+        "reference": "urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4",
+        "display": "MOXEY, Judy"
+      },
+      "issued": "2022-02-09T11:17:00+00:00",
+      "performer": [ {
+        "reference": "urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338",
+        "display": "TD008362 PATH LAB 001"
+      } ],
+      "specimen": {
+        "reference": "urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d"
+      },
+      "hasMember": [ {
+        "reference": "urn:uuid:f8c185fc-0993-4b80-9d33-4c9ae11c3afe"
+      }, {
+        "reference": "urn:uuid:78afe41f-4689-41a2-b10d-351a991b261a"
+      }, {
+        "reference": "urn:uuid:b7849f25-3c44-4542-805f-ba769b7cfe04"
+      }, {
+        "reference": "urn:uuid:b483a0bf-c332-4dde-b606-ec29aab33583"
+      }, {
+        "reference": "urn:uuid:9e44a75d-e676-4497-aeb3-da72a08a3641"
+      }, {
+        "reference": "urn:uuid:ba423cce-bf8c-440c-8061-086055a1799b"
+      }, {
+        "reference": "urn:uuid:af52170f-763a-40a6-9363-dc58cd72602e"
+      }, {
+        "reference": "urn:uuid:298306aa-4a5e-4442-8f60-9153c19c6333"
+      }, {
+        "reference": "urn:uuid:69d08add-5ab8-46a3-be08-fb15e550da75"
+      }, {
+        "reference": "urn:uuid:d5995ac0-55d8-4f2f-9058-6235a13fc1fe"
+      }, {
+        "reference": "urn:uuid:42d1c079-777a-4878-b568-af6f297dbecb"
+      }, {
+        "reference": "urn:uuid:56f9a606-221b-462b-b134-154c72db9c66"
+      }, {
+        "reference": "urn:uuid:d719524b-993c-455c-9c18-36e3dfe6f71e"
+      } ]
+    }
+  }, {
+    "fullUrl": "urn:uuid:f8c185fc-0993-4b80-9d33-4c9ae11c3afe",
+    "resource": {
+      "resourceType": "Observation",
+      "meta": {
+        "profile": [ "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" ]
+      },
+      "identifier": [ {
+        "system": "https://tools.ietf.org/html/rfc4122",
+        "value": "2af46949-4938-4c57-bad4-c4363e1965d5"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "1110441000000100",
+          "display": "White blood cell count in blood"
+        } ]
+      },
+      "subject": {
+        "reference": "urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4",
+        "display": "MOXEY, Judy"
+      },
+      "issued": "2022-02-09T11:17:00+00:00",
+      "performer": [ {
+        "reference": "urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338",
+        "display": "TD008362 PATH LAB 001"
+      } ],
+      "valueQuantity": {
+        "value": 4.76,
+        "unit": "10*9/L",
+        "system": "http://unitsofmeasure.org",
+        "code": "10^9/L"
+      },
+      "specimen": {
+        "reference": "urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d"
+      },
+      "referenceRange": [ {
+        "low": {
+          "value": 4.00,
+          "unit": "10*9/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "10^9/L"
+        },
+        "high": {
+          "value": 11.00,
+          "unit": "10*9/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "10^9/L"
+        }
+      } ]
+    }
+  }, {
+    "fullUrl": "urn:uuid:78afe41f-4689-41a2-b10d-351a991b261a",
+    "resource": {
+      "resourceType": "Observation",
+      "meta": {
+        "profile": [ "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" ]
+      },
+      "identifier": [ {
+        "system": "https://tools.ietf.org/html/rfc4122",
+        "value": "2af46949-4938-4c57-bad4-c4363e1965d5"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "1022451000000103",
+          "display": "Red blood cell count"
+        } ]
+      },
+      "subject": {
+        "reference": "urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4",
+        "display": "MOXEY, Judy"
+      },
+      "issued": "2022-02-09T11:17:00+00:00",
+      "performer": [ {
+        "reference": "urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338",
+        "display": "TD008362 PATH LAB 001"
+      } ],
+      "valueQuantity": {
+        "value": 3.63,
+        "unit": "10*12/L",
+        "system": "http://unitsofmeasure.org",
+        "code": "10^12/L"
+      },
+      "specimen": {
+        "reference": "urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d"
+      },
+      "referenceRange": [ {
+        "low": {
+          "value": 4.10,
+          "unit": "10*12/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "10^12/L"
+        },
+        "high": {
+          "value": 5.10,
+          "unit": "10*12/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "10^12/L"
+        }
+      } ]
+    }
+  }, {
+    "fullUrl": "urn:uuid:b7849f25-3c44-4542-805f-ba769b7cfe04",
+    "resource": {
+      "resourceType": "Observation",
+      "meta": {
+        "profile": [ "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" ]
+      },
+      "identifier": [ {
+        "system": "https://tools.ietf.org/html/rfc4122",
+        "value": "2af46949-4938-4c57-bad4-c4363e1965d5"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "1107511000000100",
+          "display": "Haemoglobin mass concentration in blood"
+        } ]
+      },
+      "subject": {
+        "reference": "urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4",
+        "display": "MOXEY, Judy"
+      },
+      "issued": "2022-02-09T11:17:00+00:00",
+      "performer": [ {
+        "reference": "urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338",
+        "display": "TD008362 PATH LAB 001"
+      } ],
+      "valueQuantity": {
+        "value": 108,
+        "unit": "g/L",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/L"
+      },
+      "specimen": {
+        "reference": "urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d"
+      },
+      "referenceRange": [ {
+        "low": {
+          "value": 120,
+          "unit": "g/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "g/L"
+        },
+        "high": {
+          "value": 150,
+          "unit": "g/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "g/L"
+        }
+      } ]
+    }
+  }, {
+    "fullUrl": "urn:uuid:b483a0bf-c332-4dde-b606-ec29aab33583",
+    "resource": {
+      "resourceType": "Observation",
+      "meta": {
+        "profile": [ "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" ]
+      },
+      "identifier": [ {
+        "system": "https://tools.ietf.org/html/rfc4122",
+        "value": "2af46949-4938-4c57-bad4-c4363e1965d5"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "1111571000000101",
+          "display": "Haematocrit volume fraction of blood"
+        } ]
+      },
+      "subject": {
+        "reference": "urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4",
+        "display": "MOXEY, Judy"
+      },
+      "issued": "2022-02-09T11:17:00+00:00",
+      "performer": [ {
+        "reference": "urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338",
+        "display": "TD008362 PATH LAB 001"
+      } ],
+      "valueQuantity": {
+        "value": 0.352,
+        "unit": "l/l",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      },
+      "specimen": {
+        "reference": "urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d"
+      },
+      "referenceRange": [ {
+        "low": {
+          "value": 0.360,
+          "unit": "l/l",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        },
+        "high": {
+          "value": 0.460,
+          "unit": "l/l",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        }
+      } ]
+    }
+  }, {
+    "fullUrl": "urn:uuid:9e44a75d-e676-4497-aeb3-da72a08a3641",
+    "resource": {
+      "resourceType": "Observation",
+      "meta": {
+        "profile": [ "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" ]
+      },
+      "identifier": [ {
+        "system": "https://tools.ietf.org/html/rfc4122",
+        "value": "2af46949-4938-4c57-bad4-c4363e1965d5"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "1491000237105",
+          "display": "Erythrocytes MCV (mean corpuscular volume) in blood"
+        } ]
+      },
+      "subject": {
+        "reference": "urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4",
+        "display": "MOXEY, Judy"
+      },
+      "issued": "2022-02-09T11:17:00+00:00",
+      "performer": [ {
+        "reference": "urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338",
+        "display": "TD008362 PATH LAB 001"
+      } ],
+      "valueQuantity": {
+        "value": 97.0,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      },
+      "specimen": {
+        "reference": "urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d"
+      },
+      "referenceRange": [ {
+        "low": {
+          "value": 80.0,
+          "unit": "fL",
+          "system": "http://unitsofmeasure.org",
+          "code": "fL"
+        },
+        "high": {
+          "value": 100.0,
+          "unit": "fL",
+          "system": "http://unitsofmeasure.org",
+          "code": "fL"
+        }
+      } ]
+    }
+  }, {
+    "fullUrl": "urn:uuid:ba423cce-bf8c-440c-8061-086055a1799b",
+    "resource": {
+      "resourceType": "Observation",
+      "meta": {
+        "profile": [ "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" ]
+      },
+      "identifier": [ {
+        "system": "https://tools.ietf.org/html/rfc4122",
+        "value": "2af46949-4938-4c57-bad4-c4363e1965d5"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "1022471000000107",
+          "display": "MCH - Mean corpuscular haemoglobin"
+        } ]
+      },
+      "subject": {
+        "reference": "urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4",
+        "display": "MOXEY, Judy"
+      },
+      "issued": "2022-02-09T11:17:00+00:00",
+      "performer": [ {
+        "reference": "urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338",
+        "display": "TD008362 PATH LAB 001"
+      } ],
+      "valueQuantity": {
+        "value": 29.8,
+        "unit": "pg",
+        "system": "http://unitsofmeasure.org",
+        "code": "pg"
+      },
+      "specimen": {
+        "reference": "urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d"
+      },
+      "referenceRange": [ {
+        "low": {
+          "value": 27.0,
+          "unit": "pg",
+          "system": "http://unitsofmeasure.org",
+          "code": "pg"
+        },
+        "high": {
+          "value": 32.0,
+          "unit": "pg",
+          "system": "http://unitsofmeasure.org",
+          "code": "pg"
+        }
+      } ]
+    }
+  }, {
+    "fullUrl": "urn:uuid:af52170f-763a-40a6-9363-dc58cd72602e",
+    "resource": {
+      "resourceType": "Observation",
+      "meta": {
+        "profile": [ "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" ]
+      },
+      "identifier": [ {
+        "system": "https://tools.ietf.org/html/rfc4122",
+        "value": "2af46949-4938-4c57-bad4-c4363e1965d5"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "1022481000000109",
+          "display": "MCHC - Mean corpuscular haemoglobin concentration"
+        } ]
+      },
+      "subject": {
+        "reference": "urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4",
+        "display": "MOXEY, Judy"
+      },
+      "issued": "2022-02-09T11:17:00+00:00",
+      "performer": [ {
+        "reference": "urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338",
+        "display": "TD008362 PATH LAB 001"
+      } ],
+      "valueQuantity": {
+        "value": 307,
+        "unit": "g/L",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/L"
+      },
+      "specimen": {
+        "reference": "urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d"
+      },
+      "referenceRange": [ {
+        "low": {
+          "value": 315,
+          "unit": "g/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "g/L"
+        },
+        "high": {
+          "value": 345,
+          "unit": "g/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "g/L"
+        }
+      } ]
+    }
+  }, {
+    "fullUrl": "urn:uuid:298306aa-4a5e-4442-8f60-9153c19c6333",
+    "resource": {
+      "resourceType": "Observation",
+      "meta": {
+        "profile": [ "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" ]
+      },
+      "identifier": [ {
+        "system": "https://tools.ietf.org/html/rfc4122",
+        "value": "2af46949-4938-4c57-bad4-c4363e1965d5"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "1108041000000107",
+          "display": "Platelet count in blood"
+        } ]
+      },
+      "subject": {
+        "reference": "urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4",
+        "display": "MOXEY, Judy"
+      },
+      "issued": "2022-02-09T11:17:00+00:00",
+      "performer": [ {
+        "reference": "urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338",
+        "display": "TD008362 PATH LAB 001"
+      } ],
+      "valueQuantity": {
+        "value": 143,
+        "unit": "10*9/L",
+        "system": "http://unitsofmeasure.org",
+        "code": "10^9/L"
+      },
+      "specimen": {
+        "reference": "urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d"
+      },
+      "referenceRange": [ {
+        "low": {
+          "value": 140,
+          "unit": "10*9/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "10^9/L"
+        },
+        "high": {
+          "value": 400,
+          "unit": "10*9/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "10^9/L"
+        }
+      } ]
+    }
+  }, {
+    "fullUrl": "urn:uuid:69d08add-5ab8-46a3-be08-fb15e550da75",
+    "resource": {
+      "resourceType": "Observation",
+      "meta": {
+        "profile": [ "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" ]
+      },
+      "identifier": [ {
+        "system": "https://tools.ietf.org/html/rfc4122",
+        "value": "2af46949-4938-4c57-bad4-c4363e1965d5"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "1108071000000101",
+          "display": "Neutrophil count in blood"
+        } ]
+      },
+      "subject": {
+        "reference": "urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4",
+        "display": "MOXEY, Judy"
+      },
+      "issued": "2022-02-09T11:17:00+00:00",
+      "performer": [ {
+        "reference": "urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338",
+        "display": "TD008362 PATH LAB 001"
+      } ],
+      "valueQuantity": {
+        "value": 2.66,
+        "unit": "10*9/L",
+        "system": "http://unitsofmeasure.org",
+        "code": "10^9/L"
+      },
+      "specimen": {
+        "reference": "urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d"
+      },
+      "referenceRange": [ {
+        "low": {
+          "value": 2.00,
+          "unit": "10*9/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "10^9/L"
+        },
+        "high": {
+          "value": 7.00,
+          "unit": "10*9/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "10^9/L"
+        }
+      } ]
+    }
+  }, {
+    "fullUrl": "urn:uuid:d5995ac0-55d8-4f2f-9058-6235a13fc1fe",
+    "resource": {
+      "resourceType": "Observation",
+      "meta": {
+        "profile": [ "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" ]
+      },
+      "identifier": [ {
+        "system": "https://tools.ietf.org/html/rfc4122",
+        "value": "2af46949-4938-4c57-bad4-c4363e1965d5"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "67541000237108",
+          "display": "Lymphocyte count in blood"
+        } ]
+      },
+      "subject": {
+        "reference": "urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4",
+        "display": "MOXEY, Judy"
+      },
+      "issued": "2022-02-09T11:17:00+00:00",
+      "performer": [ {
+        "reference": "urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338",
+        "display": "TD008362 PATH LAB 001"
+      } ],
+      "valueQuantity": {
+        "value": 0.70,
+        "unit": "10*9/L",
+        "system": "http://unitsofmeasure.org",
+        "code": "10^9/L"
+      },
+      "specimen": {
+        "reference": "urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d"
+      },
+      "referenceRange": [ {
+        "low": {
+          "value": 1.00,
+          "unit": "10*9/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "10^9/L"
+        },
+        "high": {
+          "value": 3.00,
+          "unit": "10*9/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "10^9/L"
+        }
+      } ]
+    }
+  }, {
+    "fullUrl": "urn:uuid:42d1c079-777a-4878-b568-af6f297dbecb",
+    "resource": {
+      "resourceType": "Observation",
+      "meta": {
+        "profile": [ "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" ]
+      },
+      "identifier": [ {
+        "system": "https://tools.ietf.org/html/rfc4122",
+        "value": "2af46949-4938-4c57-bad4-c4363e1965d5"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "1107991000000100",
+          "display": "Monocyte count in blood"
+        } ]
+      },
+      "subject": {
+        "reference": "urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4",
+        "display": "MOXEY, Judy"
+      },
+      "issued": "2022-02-09T11:17:00+00:00",
+      "performer": [ {
+        "reference": "urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338",
+        "display": "TD008362 PATH LAB 001"
+      } ],
+      "valueQuantity": {
+        "value": 1.30,
+        "unit": "10*9/L",
+        "system": "http://unitsofmeasure.org",
+        "code": "10^9/L"
+      },
+      "specimen": {
+        "reference": "urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d"
+      },
+      "referenceRange": [ {
+        "low": {
+          "value": 0.20,
+          "unit": "10*9/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "10^9/L"
+        },
+        "high": {
+          "value": 1.00,
+          "unit": "10*9/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "10^9/L"
+        }
+      } ]
+    }
+  }, {
+    "fullUrl": "urn:uuid:56f9a606-221b-462b-b134-154c72db9c66",
+    "resource": {
+      "resourceType": "Observation",
+      "meta": {
+        "profile": [ "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" ]
+      },
+      "identifier": [ {
+        "system": "https://tools.ietf.org/html/rfc4122",
+        "value": "2af46949-4938-4c57-bad4-c4363e1965d5"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "1107391000000104",
+          "display": "Eosinophil count in blood"
+        } ]
+      },
+      "subject": {
+        "reference": "urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4",
+        "display": "MOXEY, Judy"
+      },
+      "issued": "2022-02-09T11:17:00+00:00",
+      "performer": [ {
+        "reference": "urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338",
+        "display": "TD008362 PATH LAB 001"
+      } ],
+      "valueQuantity": {
+        "value": 0.07,
+        "unit": "10*9/L",
+        "system": "http://unitsofmeasure.org",
+        "code": "10^9/L"
+      },
+      "specimen": {
+        "reference": "urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d"
+      },
+      "referenceRange": [ {
+        "low": {
+          "value": 0.02,
+          "unit": "10*9/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "10^9/L"
+        },
+        "high": {
+          "value": 0.50,
+          "unit": "10*9/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "10^9/L"
+        }
+      } ]
+    }
+  }, {
+    "fullUrl": "urn:uuid:d719524b-993c-455c-9c18-36e3dfe6f71e",
+    "resource": {
+      "resourceType": "Observation",
+      "meta": {
+        "profile": [ "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" ]
+      },
+      "identifier": [ {
+        "system": "https://tools.ietf.org/html/rfc4122",
+        "value": "2af46949-4938-4c57-bad4-c4363e1965d5"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "Laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "1106091000000103",
+          "display": "Basophil count in blood"
+        } ]
+      },
+      "subject": {
+        "reference": "urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4",
+        "display": "MOXEY, Judy"
+      },
+      "issued": "2022-02-09T11:17:00+00:00",
+      "performer": [ {
+        "reference": "urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338",
+        "display": "TD008362 PATH LAB 001"
+      } ],
+      "valueQuantity": {
+        "value": 0.03,
+        "unit": "10*9/L",
+        "system": "http://unitsofmeasure.org",
+        "code": "10^9/L"
+      },
+      "specimen": {
+        "reference": "urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d"
+      },
+      "referenceRange": [ {
+        "low": {
+          "value": 0.01,
+          "unit": "10*9/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "10^9/L"
+        },
+        "high": {
+          "value": 0.10,
+          "unit": "10*9/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "10^9/L"
+        }
+      } ]
+    }
+  } ]
+}

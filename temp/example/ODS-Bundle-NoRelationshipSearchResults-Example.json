@@ -1,0 +1,10 @@
+{
+  "resourceType": "Bundle",
+  "id": "ODS-Bundle-NoRelationshipSearchResults-Example",
+  "type": "searchset",
+  "total": 0,
+  "link": [ {
+    "relation": "self",
+    "url": "https://baseurl/OrganizationAffiliation?participating-organization=https://fhir.nhs.uk/Id/ods-organization-code|X999"
+  } ]
+}

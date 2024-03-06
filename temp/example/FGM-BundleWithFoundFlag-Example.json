@@ -1,0 +1,38 @@
+{
+  "resourceType": "Bundle",
+  "id": "FGM-BundleWithFoundFlag-Example",
+  "type": "searchset",
+  "total": 1,
+  "link": [ {
+    "relation": "self",
+    "url": "https:baseurl/Flag?patient:identifier=https://fhir.nhs.uk/Id/nhs-number|9000000009"
+  } ],
+  "entry": [ {
+    "fullUrl": "https://baseurl/Flag/218755",
+    "resource": {
+      "resourceType": "Flag",
+      "id": "a6a6a92a-8247-4250-b1c7-10cda16f0310",
+      "status": "active",
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "902961000000107",
+          "display": "Family history of FGM (female genital mutilation)"
+        } ],
+        "text": "Family history of FGM (female genital mutilation)"
+      },
+      "subject": {
+        "identifier": {
+          "system": "https://fhir.nhs.uk/Id/nhs-number",
+          "value": "9000000009"
+        }
+      },
+      "period": {
+        "start": "2019-12-10"
+      }
+    },
+    "search": {
+      "mode": "match"
+    }
+  } ]
+}

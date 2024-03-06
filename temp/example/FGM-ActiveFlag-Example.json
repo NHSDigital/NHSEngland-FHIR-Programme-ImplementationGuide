@@ -1,0 +1,22 @@
+{
+  "resourceType": "Flag",
+  "id": "FGM-ActiveFlag-Example",
+  "status": "active",
+  "code": {
+    "coding": [ {
+      "system": "http://snomed.info/sct",
+      "code": "902961000000107",
+      "display": "Family history of FGM (female genital mutilation)"
+    } ],
+    "text": "Family history of FGM (female genital mutilation)"
+  },
+  "subject": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9000000009"
+    }
+  },
+  "period": {
+    "start": "2019-12-10"
+  }
+}
