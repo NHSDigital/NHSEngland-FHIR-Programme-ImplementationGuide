@@ -4,9 +4,9 @@ name: Create FHIR Package
 on:
   workflow_dispatch:
     inputs:
-      fileWildcard:
-        default: "*"
-#### TODO set input as branch name
+      branch:
+        description: 'Branch name'
+        required: true
       
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -20,7 +20,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: ${{ github.event.inputs.branch }}
 
       - name: Check package.json mandatory requirements
         run: |
@@ -82,4 +82,11 @@ jobs:
           tar_filename="${name} ${version}.tar.gz"
           tar -czvf "$tar_filename" temp/package temp/example
 
-#### TODO commit to branch
+      # Commit all changed files back to the repository
+      - uses: planetscale/ghcommit-action@v0.1.13
+        with:
+          commit_message: "GitHub Action: Find and Replace"
+          repo: ${{ github.repository }}
+          branch: ${{ github.head_ref || github.ref_name }}
+        env:
+          GITHUB_TOKEN: ${{secrets.createPackagePAT}} #uses PAT rather than GITHUB_TOKEN due to not running actions once merged https://github.com/orgs/community/discussions/25702
