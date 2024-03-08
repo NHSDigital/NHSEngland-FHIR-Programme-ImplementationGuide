@@ -1,4 +1,4 @@
-name: Create FHIR Package
+name: Create Branch
 
 # Controls when the workflow will run
 on:
