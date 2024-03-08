@@ -16,19 +16,22 @@ jobs:
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:   
+    steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
         with:
           ref: ${{ github.event.inputs.branch }}
 
       - name: Check package.json mandatory requirements
         run: |
           check_attribute() {
-            if [[ -z "$(jq -r ".$1" package.json)" ]]; then
+            local value=$(jq -r ".$1" package.json)
+            if [[ -z "$value" ]]; then
               echo "Error: '$1' attribute is missing or empty in package.json"
               exit 2
             fi
+          }
 
           # Check if package.json exists
           if [ ! -f "package.json" ]; then
@@ -43,17 +46,15 @@ jobs:
           check_attribute "author"
 
           echo "All required attributes are present and non-empty in package.json"
-      
+
       - name: create package folder and copy files
         run: |
           mkdir -p temp
           mkdir -p temp/package/
-          find . -type f \( -name "*.json" -o -name "*.xml" \) -not -path "./examples/*" -name "${{github.event.inputs.fileWildcard}}" | xargs -I {} cp {} temp/package/ #
-          #find . -type f \( -name "*.json" -o -name "*.xml" \) -not -path "./examples/*" ! -name "package.json" -exec grep -l '${{github.event.inputs.fileWildcard}}' {} + | xargs -I {} cp {} temp/package/
+          find . -type f \( -name "*.json" -o -name "*.xml" \) -not -path "./examples/*" -name "${{github.event.inputs.fileWildcard}}" | xargs -I {} cp {} temp/package/
           cp package.json temp/package/
           mkdir -p temp/example
           find ./examples -type f -name "${{github.event.inputs.fileWildcard}}" | xargs -I {} cp {} temp/example/
-          #find ./examples -type f -exec grep -l '${{github.event.inputs.fileWildcard}}' {} + | xargs -I {} cp {} temp/example/
 
       - name: Find and convert XML files to JSON
         run: |
@@ -83,10 +84,11 @@ jobs:
           tar -czvf "$tar_filename" temp/package temp/example
 
       # Commit all changed files back to the repository
-      - uses: planetscale/ghcommit-action@v0.1.13
+      - name: Commit changes
+        uses: planetscale/ghcommit-action@v0.1.13
         with:
           commit_message: "GitHub Action: Find and Replace"
           repo: ${{ github.repository }}
           branch: ${{ github.head_ref || github.ref_name }}
         env:
-          GITHUB_TOKEN: ${{secrets.createPackagePAT}} #uses PAT rather than GITHUB_TOKEN due to not running actions once merged https://github.com/orgs/community/discussions/25702
+          GITHUB_TOKEN: ${{ secrets.createPackagePAT }} #uses PAT rather than GITHUB_TOKEN due to not running actions once merged https://github.com/orgs/community/discussions/25702
