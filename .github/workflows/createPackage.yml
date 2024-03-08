@@ -45,6 +45,7 @@ jobs:
           check_attribute "version"
           check_attribute "description"
           check_attribute "author"
+          check_attribute "version"
 
           echo "All required attributes are present and non-empty in package.json"
 
