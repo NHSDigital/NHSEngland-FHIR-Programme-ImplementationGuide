@@ -1,0 +1,10 @@
+{
+  "resourceType": "Bundle",
+  "id": "CPIS-GetCareTeamNoResults-Example",
+  "type": "searchset",
+  "total": 0,
+  "link": [ {
+    "relation": "self",
+    "url": "https://int.api.service.nhs.uk/cpis/FHIR/R4/CareTeam?patient:identifier=https://fhir.nhs.uk/Id/nhs-number|9912003890"
+  } ]
+}

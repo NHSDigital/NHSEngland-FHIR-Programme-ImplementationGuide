@@ -1,0 +1,15 @@
+{
+  "resourceType": "OperationOutcome",
+  "id": "ODS-OperationOutcome-AccessDenied-Example",
+  "issue": [ {
+    "severity": "error",
+    "code": "forbidden",
+    "details": {
+      "coding": [ {
+        "system": "https://fhir.nhs.uk/CodeSystem/England-SpineErrorOrWarningCode",
+        "code": "ACCESS_DENIED",
+        "display": "Access has been denied to process this request"
+      } ]
+    }
+  } ]
+}

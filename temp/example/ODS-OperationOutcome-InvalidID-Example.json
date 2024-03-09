@@ -1,0 +1,16 @@
+{
+  "resourceType": "OperationOutcome",
+  "id": "ODS-OperationOutcome-InvalidID-Example",
+  "issue": [ {
+    "severity": "error",
+    "code": "value",
+    "details": {
+      "coding": [ {
+        "system": "https://fhir.nhs.uk/CodeSystem/England-SpineErrorOrWarningCode",
+        "code": "INVALID_VALUE",
+        "display": "Invalid value"
+      } ]
+    },
+    "diagnostics": "Invalid Organization ID"
+  } ]
+}

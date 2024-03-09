@@ -1,0 +1,45 @@
+{
+  "resourceType": "Observation",
+  "id": "Pathology-Observation-Nitrofurantoin-Susceptibility-Example",
+  "meta": {
+    "profile": [ "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" ]
+  },
+  "identifier": [ {
+    "system": "https://tools.ietf.org/html/rfc4122",
+    "value": "a8cde339-9608-4e33-b465-e06a711f11a5"
+  } ],
+  "status": "final",
+  "category": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code": "laboratory",
+      "display": "Laboratory"
+    } ]
+  } ],
+  "code": {
+    "coding": [ {
+      "system": "http://snomed.info/sct",
+      "code": "53851000237109",
+      "display": "Organism susceptibility to nitrofurantoin"
+    } ]
+  },
+  "subject": {
+    "reference": "urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4",
+    "display": "MOXEY, Judy"
+  },
+  "issued": "2022-02-25T13:47:00+00:00",
+  "performer": [ {
+    "reference": "urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338",
+    "display": "TD008362 PATH LAB 001"
+  } ],
+  "valueCodeableConcept": {
+    "coding": [ {
+      "system": "http://snomed.info/sct",
+      "code": "30714006",
+      "display": "Resistant"
+    } ]
+  },
+  "specimen": {
+    "reference": "urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d"
+  }
+}

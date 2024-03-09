@@ -1,0 +1,26 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "England-Extension-OrganisationRole-RoleCode",
+  "url": "https://fhir.nhs.uk/England/SearchParameter/England-Extension-OrganisationRole-RoleCode",
+  "version": "0.0.2",
+  "name": "EnglandExtensionOrganisationRoleRoleCode",
+  "status": "draft",
+  "date": "2024-02-14",
+  "publisher": "NHS England",
+  "contact": [ {
+    "name": "NHS England",
+    "telecom": [ {
+      "system": "email",
+      "value": "interoperabilityteam@nhs.net",
+      "use": "work",
+      "rank": 1
+    } ]
+  } ],
+  "description": "SearchParameter for NHS England ODS FHIR API for querying OrganisationRole extension, roleCode sub element",
+  "code": "roleCode",
+  "base": [ "Organization" ],
+  "type": "token",
+  "expression": "Organization.extension('https://fhir.nhs.uk/England/StructureDefinition/Extension-England-OrganisationRole').extension('roleCode').value",
+  "comparator": [ "eq" ],
+  "modifier": [ "exact" ]
+}

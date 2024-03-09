@@ -1,0 +1,10 @@
+{
+  "resourceType": "Bundle",
+  "id": "ODS-Bundle-NoOrganisationSearchResults-Example",
+  "type": "searchset",
+  "total": 0,
+  "link": [ {
+    "relation": "self",
+    "url": "https://baseurl/Organization?lastChangeDate=eq2023-08-20"
+  } ]
+}

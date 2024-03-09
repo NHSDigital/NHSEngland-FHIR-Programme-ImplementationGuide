@@ -1,0 +1,39 @@
+{
+  "resourceType": "Observation",
+  "id": "Pathology-Observation-Aerobic-Culture-Example",
+  "meta": {
+    "profile": [ "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" ]
+  },
+  "identifier": [ {
+    "system": "https://tools.ietf.org/html/rfc4122",
+    "value": "60b90d3d-2967-4b10-a208-27a5336c9a81"
+  } ],
+  "status": "final",
+  "category": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code": "laboratory",
+      "display": "Laboratory"
+    } ]
+  } ],
+  "code": {
+    "coding": [ {
+      "system": "http://snomed.info/sct",
+      "code": "1009761000000105",
+      "display": "Aerobic culture"
+    } ]
+  },
+  "subject": {
+    "reference": "urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4",
+    "display": "MOXEY, Judy"
+  },
+  "issued": "2022-04-14T11:17:00+00:00",
+  "performer": [ {
+    "reference": "urn:uuid:d687c3ef-f4f1-4149-930d-f7fdb0acb7aa",
+    "display": "TD008362 PATH LAB 001"
+  } ],
+  "valueString": "No growth detected after 5 days incubation",
+  "specimen": {
+    "reference": "urn:uuid:2bd8336b-ad88-42fb-b66d-d1ad3e6ea7fb"
+  }
+}

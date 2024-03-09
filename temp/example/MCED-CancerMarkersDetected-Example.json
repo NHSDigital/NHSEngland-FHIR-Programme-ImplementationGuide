@@ -1,0 +1,437 @@
+{
+  "resourceType": "Bundle",
+  "id": "MCED-CancerMarkersDetected-Example",
+  "meta": {
+    "lastUpdated": "2020-09-20T10:22:00+00:00",
+    "profile": [ "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle" ]
+  },
+  "identifier": {
+    "system": "https://tools.ietf.org/html/rfc4122",
+    "value": "f36927ef-7703-45ed-b0e5-6ec6723cf0f6"
+  },
+  "type": "message",
+  "entry": [ {
+    "fullUrl": "urn:uuid:a4409d7c-b613-477c-b623-87e60406c2f0",
+    "resource": {
+      "resourceType": "MessageHeader",
+      "meta": {
+        "profile": [ "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MessageHeader" ]
+      },
+      "eventCoding": {
+        "system": "http://snomed.info/sct",
+        "code": "371528001",
+        "display": "Pathology report"
+      },
+      "destination": [ {
+        "name": "Executive Agency - NHS ENGLAND - X26",
+        "endpoint": "mesh-mailbox-nhs",
+        "receiver": {
+          "reference": "urn:uuid:bf7a76d3-5b44-4194-a9e0-d1cc1ea5e50e"
+        }
+      } ],
+      "sender": {
+        "reference": "urn:uuid:d6407de7-0e86-45eb-93cb-035094aaa49e"
+      },
+      "source": {
+        "endpoint": "mesh-mailbox-ScreeningOrg"
+      },
+      "focus": [ {
+        "reference": "urn:uuid:3d2f37fd-ca19-4199-9f72-4871cfe12df1"
+      } ],
+      "definition": "https://fhir.nhs.uk/England/MessageDefinition/England-MCED-TestReport"
+    }
+  }, {
+    "fullUrl": "urn:uuid:d6407de7-0e86-45eb-93cb-035094aaa49e",
+    "resource": {
+      "resourceType": "Organization",
+      "meta": {
+        "profile": [ "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" ]
+      },
+      "identifier": [ {
+        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+        "value": "ABC123"
+      } ],
+      "name": "Screening Organisation Ltd",
+      "address": [ {
+        "text": "Screening Organisation Ltd, Floor 1, High Rise, Anytown, AT5 5TT"
+      } ]
+    }
+  }, {
+    "fullUrl": "urn:uuid:e78b5421-8d55-4f61-8cbf-bee1c69513f1",
+    "resource": {
+      "resourceType": "Organization",
+      "meta": {
+        "profile": [ "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" ]
+      },
+      "identifier": [ {
+        "system": "http://terminology.hl7.org/NamingSystem/CLIA",
+        "value": "ScreeningLab34D2231294CLIA"
+      }, {
+        "system": "http://terminology.hl7.org/NamingSystem/CAP",
+        "value": "ScreeningLab6793CAP"
+      } ],
+      "name": "Screening Lab Name",
+      "telecom": [ {
+        "system": "phone",
+        "value": "+18336942553"
+      }, {
+        "system": "fax",
+        "value": "+16509999000"
+      }, {
+        "system": "email",
+        "value": "customerservice@screeninglab.com"
+      } ],
+      "address": [ {
+        "text": "Screening Lab Name, The Lab, Anytown, AT66 7TY"
+      } ],
+      "contact": [ {
+        "name": {
+          "text": "Ms Lab DIRECTOR"
+        }
+      } ]
+    }
+  }, {
+    "fullUrl": "urn:uuid:bf7a76d3-5b44-4194-a9e0-d1cc1ea5e50e",
+    "resource": {
+      "resourceType": "Organization",
+      "meta": {
+        "profile": [ "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" ]
+      },
+      "identifier": [ {
+        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+        "value": "X26"
+      } ],
+      "name": "Executive Agency - NHS ENGLAND - X26",
+      "address": [ {
+        "line": [ "THE LEEDS GOVERNMENT HUB", "7-8 WELLINGTON PLACE" ],
+        "city": "LEEDS",
+        "district": "WEST YORKSHIRE",
+        "postalCode": "LS1 4AP"
+      } ]
+    }
+  }, {
+    "fullUrl": "urn:uuid:f25e9d63-6a4e-4de6-b9dc-c912fda62b01",
+    "resource": {
+      "resourceType": "Practitioner",
+      "meta": {
+        "profile": [ "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" ]
+      },
+      "identifier": [ {
+        "system": "https://fhir.nhs.uk/Id/sds-user-id",
+        "value": "3415870223"
+      } ],
+      "name": [ {
+        "text": "Dr. Daniel Davies"
+      } ],
+      "address": [ {
+        "text": "NHS England, Wellington House, 133-155 Waterloo Road, London, SE1 8UG, UK"
+      } ]
+    }
+  }, {
+    "fullUrl": "urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09",
+    "resource": {
+      "resourceType": "Patient",
+      "meta": {
+        "profile": [ "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" ]
+      },
+      "identifier": [ {
+        "system": "https://ScreeningOrg/patient-id",
+        "value": "NHS-AB12-CD34"
+      } ]
+    }
+  }, {
+    "fullUrl": "urn:uuid:d9df1431-22ac-462a-946a-f195f6c639af",
+    "resource": {
+      "resourceType": "ServiceRequest",
+      "meta": {
+        "profile": [ "https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" ]
+      },
+      "identifier": [ {
+        "system": "http://ScreeningOrg/request-id",
+        "value": "NHS9123123"
+      } ],
+      "status": "active",
+      "intent": "order",
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "1148754001",
+          "display": "Screening for neoplasm"
+        } ]
+      },
+      "subject": {
+        "reference": "urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09",
+        "display": "NHS-AB12-CD34"
+      },
+      "requester": {
+        "reference": "urn:uuid:f25e9d63-6a4e-4de6-b9dc-c912fda62b01",
+        "display": "Dr. Daniel Davies"
+      },
+      "performer": [ {
+        "reference": "urn:uuid:e78b5421-8d55-4f61-8cbf-bee1c69513f1",
+        "display": "Screening Lab"
+      } ]
+    }
+  }, {
+    "fullUrl": "urn:uuid:3d2f37fd-ca19-4199-9f72-4871cfe12df1",
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "meta": {
+        "profile": [ "https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" ]
+      },
+      "extension": [ {
+        "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.note",
+        "valueAnnotation": {
+          "text": "Some Lab Comments"
+        }
+      } ],
+      "basedOn": [ {
+        "reference": "urn:uuid:d9df1431-22ac-462a-946a-f195f6c639af"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "721981007",
+          "display": "Diagnostic studies report"
+        } ]
+      },
+      "subject": {
+        "reference": "urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09",
+        "display": "NHS-AB12-CD34"
+      },
+      "issued": "2020-09-25T16:00:00+00:00",
+      "performer": [ {
+        "reference": "urn:uuid:e78b5421-8d55-4f61-8cbf-bee1c69513f1",
+        "display": "Screening Lab"
+      } ],
+      "specimen": [ {
+        "reference": "urn:uuid:756a8361-79ce-4561-afcb-a91fe19df123",
+        "display": "NHS9123123"
+      } ],
+      "result": [ {
+        "reference": "urn:uuid:9f7babcd-19cb-4063-b96b-61a20b2e07e6"
+      } ],
+      "conclusion": "The test results report PDF document is the official source of the test result and contains important information regarding the test and the patient's test results. Please read the official report for complete results.",
+      "presentedForm": [ {
+        "contentType": "application/pdf",
+        "data": "VGhlIEdSQUlMIFBERiBnb2VzIGhlcmU="
+      } ]
+    }
+  }, {
+    "fullUrl": "urn:uuid:9f7babcd-19cb-4063-b96b-61a20b2e07e6",
+    "resource": {
+      "resourceType": "Observation",
+      "meta": {
+        "profile": [ "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" ]
+      },
+      "identifier": [ {
+        "system": "http://ScreeningOrg/request-id",
+        "value": "NHS9123123"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "1148754001",
+          "display": "Screening for neoplasm"
+        } ]
+      },
+      "subject": {
+        "reference": "urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09",
+        "display": "NHS-AB12-CD34"
+      },
+      "issued": "2020-09-25T16:00:00+00:00",
+      "performer": [ {
+        "reference": "urn:uuid:e78b5421-8d55-4f61-8cbf-bee1c69513f1",
+        "display": "Screening Lab"
+      } ],
+      "specimen": {
+        "reference": "urn:uuid:756a8361-79ce-4561-afcb-a91fe19df123",
+        "display": "NHS9123123"
+      },
+      "hasMember": [ {
+        "reference": "urn:uuid:efae5859-28df-4e7d-be91-6df56d8215e4"
+      }, {
+        "reference": "urn:uuid:dacb177a-9501-4dcc-8b22-b941791ae0db"
+      }, {
+        "reference": "urn:uuid:3f9730c8-5527-4f58-9865-55aef4dfa11f"
+      } ]
+    }
+  }, {
+    "fullUrl": "urn:uuid:efae5859-28df-4e7d-be91-6df56d8215e4",
+    "resource": {
+      "resourceType": "Observation",
+      "meta": {
+        "profile": [ "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" ]
+      },
+      "identifier": [ {
+        "system": "http://ScreeningOrg/request-id",
+        "value": "NHS9123123"
+      } ],
+      "basedOn": [ {
+        "reference": "urn:uuid:d9df1431-22ac-462a-946a-f195f6c639af"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "1854971000000106",
+          "display": "Qualitative result of cancer methylation profile in cell free deoxyribonucleic acid by next generation sequencing"
+        } ]
+      },
+      "subject": {
+        "reference": "urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09",
+        "display": "NHS-AB12-CD34"
+      },
+      "issued": "2020-09-25T16:00:00+00:00",
+      "performer": [ {
+        "reference": "urn:uuid:e78b5421-8d55-4f61-8cbf-bee1c69513f1",
+        "display": "Screening Lab"
+      } ],
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "1854981000000108",
+          "display": "Multi-cancer early detection signal detected"
+        } ]
+      },
+      "specimen": {
+        "reference": "urn:uuid:756a8361-79ce-4561-afcb-a91fe19df123",
+        "display": "NHS9123123"
+      }
+    }
+  }, {
+    "fullUrl": "urn:uuid:dacb177a-9501-4dcc-8b22-b941791ae0db",
+    "resource": {
+      "resourceType": "Observation",
+      "meta": {
+        "profile": [ "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" ]
+      },
+      "identifier": [ {
+        "system": "http://ScreeningOrg/request-id",
+        "value": "NHS9123123"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "1873921000000106",
+          "display": "Multi-cancer early detection highest probability cancer signal origin by machine learning-based classifier"
+        } ]
+      },
+      "subject": {
+        "reference": "urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09",
+        "display": "NHS-AB12-CD34"
+      },
+      "issued": "2019-01-29T16:00:00+00:00",
+      "performer": [ {
+        "reference": "urn:uuid:e78b5421-8d55-4f61-8cbf-bee1c69513f1",
+        "display": "Screening Lab"
+      } ],
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://snomed.info/sct",
+            "code": "123037004",
+            "display": "Body structure"
+          } ]
+        },
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "http://snomed.info/sct",
+            "code": "89837001",
+            "display": "Urinary bladder structure"
+          } ]
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://snomed.info/sct",
+            "code": "123037004",
+            "display": "Body structure"
+          } ]
+        },
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "http://snomed.info/sct",
+            "code": "57789003",
+            "display": "Structure of urothelium"
+          } ]
+        }
+      } ]
+    }
+  }, {
+    "fullUrl": "urn:uuid:3f9730c8-5527-4f58-9865-55aef4dfa11f",
+    "resource": {
+      "resourceType": "Observation",
+      "meta": {
+        "profile": [ "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" ]
+      },
+      "identifier": [ {
+        "system": "http://ScreeningOrg/request-id",
+        "value": "NHS9123123"
+      } ],
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "1873931000000108",
+          "display": "Multi-cancer early detection second highest probability cancer signal origin by machine learning-based classifier"
+        } ]
+      },
+      "subject": {
+        "reference": "urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09",
+        "display": "NHS-AB12-CD34"
+      },
+      "issued": "2019-01-29T16:00:00+00:00",
+      "performer": [ {
+        "reference": "urn:uuid:e78b5421-8d55-4f61-8cbf-bee1c69513f1",
+        "display": "Screening Lab"
+      } ],
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://snomed.info/sct",
+            "code": "123037004",
+            "display": "Body structure"
+          } ]
+        },
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "http://snomed.info/sct",
+            "code": "64033007",
+            "display": "Kidney structure"
+          } ]
+        }
+      } ]
+    }
+  }, {
+    "fullUrl": "urn:uuid:756a8361-79ce-4561-afcb-a91fe19df123",
+    "resource": {
+      "resourceType": "Specimen",
+      "meta": {
+        "profile": [ "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen" ]
+      },
+      "identifier": [ {
+        "system": "http://ScreeningOrg/request-id",
+        "value": "NHS9123123"
+      } ],
+      "status": "available",
+      "type": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "119297000",
+          "display": "Blood specimen"
+        } ]
+      },
+      "subject": {
+        "reference": "urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09",
+        "display": "NHS-AB12-CD34"
+      },
+      "collection": {
+        "collectedDateTime": "2020-09-23T11:00:00+00:00"
+      }
+    }
+  } ]
+}

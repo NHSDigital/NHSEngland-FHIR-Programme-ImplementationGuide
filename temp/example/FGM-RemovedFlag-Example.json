@@ -1,0 +1,29 @@
+{
+  "resourceType": "Flag",
+  "id": "FGM-RemovedFlag-Example",
+  "extension": [ {
+    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-England-FGMRemovalReason",
+    "valueCodeableConcept": {
+      "coding": [ {
+        "system": "https://fhir.nhs.uk/CodeSystem/England-FGMRemovalReason",
+        "code": "0",
+        "display": "Added in error - this child does not have a family history of FGM"
+      } ]
+    }
+  } ],
+  "status": "entered-in-error",
+  "code": {
+    "coding": [ {
+      "system": "http://snomed.info/sct",
+      "code": "902961000000107",
+      "display": "Family history of FGM (female genital mutilation)"
+    } ],
+    "text": "Family history of FGM (female genital mutilation)"
+  },
+  "subject": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9000000009"
+    }
+  }
+}
