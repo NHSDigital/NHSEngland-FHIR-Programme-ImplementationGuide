@@ -6,7 +6,7 @@
   <status value="active" />
   <date value="2022-12-16T00:00:00+00:00" />
   <publisher value="HL7 UK" />
-  <description value="Conformance requirements for NHSEngland FHIR Examples" />
+  <description value="Conformance requirements for NHS England FHIR Examples" />
   <kind value="requirements" />
   <fhirVersion value="4.0.1" />
   <format value="application/fhir+json" />

@@ -182,6 +182,9 @@
     <resource>
       <DiagnosticReport>
         <id value="3d2f37fd-ca19-4199-9f72-4871cfe12df1" />
+        <meta>
+          <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-DiagnosticReport-MCED" />
+        </meta>
         <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.note">
           <valueAnnotation>
             <text value="Some Lab Comments" />

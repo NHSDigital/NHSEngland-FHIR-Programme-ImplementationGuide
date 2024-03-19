@@ -184,6 +184,9 @@
       <!--no Observations are included (so no <result> element is included)-->
       <DiagnosticReport>
         <id value="821bee1c-367f-484b-a02b-ec625afef0df" />
+        <meta>
+          <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-DiagnosticReport-MCED" />
+        </meta>
         <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.note">
           <valueAnnotation>
             <text value="Unable to perform testing.  Specimen tube was compromised during shipping. To receive a test result, please provide another specimen for testing. " />

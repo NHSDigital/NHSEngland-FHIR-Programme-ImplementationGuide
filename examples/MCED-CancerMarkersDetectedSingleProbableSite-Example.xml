@@ -208,7 +208,7 @@
       <DiagnosticReport>
         <id value="871032f5-a59e-4e11-954a-867519e0e640" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
+          <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-DiagnosticReport-MCED" />
         </meta>
         <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.note">
           <valueAnnotation>
@@ -260,9 +260,6 @@
         <id value="a7d5aec0-e404-4fd7-90d5-0c3b5df77ea1" />
         <meta>
           <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Observation-MCED-Screening" />
-        </meta>
-        <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
         </meta>
         <identifier>
           <system value="http://ScreeningOrg/request-id" />
