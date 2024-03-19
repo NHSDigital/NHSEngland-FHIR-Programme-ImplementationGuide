@@ -150,7 +150,7 @@
     <resource>
       <type value="OrganizationAffiliation" />
       <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-OrganizationAffiliation" />
-      <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-OrganizationAffiliation-ODS" />
+      <supportedProfile value="https://fhir.nhs.uk/England/StructureDefinition/England-OrganizationAffiliation-ODS" />
     </resource>
     <resource>
       <type value="Patient" />
