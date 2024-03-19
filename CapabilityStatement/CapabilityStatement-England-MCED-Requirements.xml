@@ -1,12 +1,12 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
-  <id value="England-Pathology-Requirements" />
-  <url value="https://fhir.hl7.org.uk/CapabilityStatement/England-Pathology-Requirements" />
+  <id value="England-MCED-Requirements" />
+  <url value="https://fhir.hl7.org.uk/CapabilityStatement/England-MCED-Requirements" />
   <version value="0.0.1" />
-  <name value="EnglandPathologyRequirements" />
+  <name value="EnglandMCEDRequirements" />
   <status value="draft" />
   <date value="2024-01-23" />
   <publisher value="HL7 UK" />
-  <description value="Conformance requirements for NHS England Pathology FHIR Examples" />
+  <description value="Conformance requirements for NHS England MCED FHIR Examples" />
   <kind value="requirements" />
   <fhirVersion value="4.0.1" />
   <format value="application/fhir+json" />
