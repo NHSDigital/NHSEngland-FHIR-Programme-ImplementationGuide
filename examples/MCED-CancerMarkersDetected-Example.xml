@@ -230,6 +230,9 @@
       <!--the grouper Observation-->
       <Observation>
         <id value="9f7babcd-19cb-4063-b96b-61a20b2e07e6" />
+        <meta>
+          <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Observation-MCED-Screening" />
+        </meta>
         <identifier>
           <system value="http://ScreeningOrg/request-id" />
           <value value="NHS9123123" />
@@ -276,6 +279,9 @@
       <!--marker detected Observation-->
       <Observation>
         <id value="efae5859-28df-4e7d-be91-6df56d8215e4" />
+        <meta>
+          <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Observation-MCED-Result" />
+        </meta>
         <identifier>
           <system value="http://ScreeningOrg/request-id" />
           <value value="NHS9123123" />
@@ -319,7 +325,10 @@
     <resource>
       <!--primary site observation-->
       <Observation xmlns="http://hl7.org/fhir">
-        <id value="dacb177a-9501-4dcc-8b22-b941791ae0db" />        
+        <id value="dacb177a-9501-4dcc-8b22-b941791ae0db" />   
+        <meta>
+          <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Observation-MCED-Site" />
+        </meta>     
         <identifier>
           <system value="http://ScreeningOrg/request-id" />
           <value value="NHS9123123" />
@@ -382,6 +391,9 @@
       <!--secondary site obseravtion-->
       <Observation xmlns="http://hl7.org/fhir">
         <id value="3f9730c8-5527-4f58-9865-55aef4dfa11f" />  
+        <meta>
+          <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Observation-MCED-Site" />
+        </meta>
         <identifier>
           <system value="http://ScreeningOrg/request-id" />
           <value value="NHS9123123" />
