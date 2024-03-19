@@ -29,43 +29,43 @@
   <derivation value="constraint" />
   <differential>
     <element id="Observation.code.coding">
-      <path value="Observation.code.coding"/>
-      <min value="1"/>
-      <max value="1"/>
+      <path value="Observation.code.coding" />
+      <min value="1" />
+      <max value="1" />
     </element>
     <element id="Observation.code.coding.system">
-      <path value="Observation.code.coding.system"/>
-      <fixedUri value="http://snomed.info/sct"/>
+      <path value="Observation.code.coding.system" />
+      <fixedUri value="http://snomed.info/sct" />
     </element>
     <element id="Observation.code.coding.code">
-      <path value="Observation.code.coding.code"/>
-      <fixedCode value="1148754001"/>
+      <path value="Observation.code.coding.code" />
+      <fixedCode value="1148754001" />
     </element>
     <element id="Observation.code.coding.display">
-      <path value="Observation.code.coding.display"/>
-      <fixedString value="Screening for neoplasm"/>
+      <path value="Observation.code.coding.display" />
+      <fixedString value="Screening for neoplasm" />
     </element>
     <element id="Observation.subject">
-      <path value="Observation.subject"/>
-      <min value="1"/>
-      <max value="1"/>
+      <path value="Observation.subject" />
+      <min value="1" />
+      <max value="1" />
     </element>
     <element id="Observation.issued">
-      <path value="Observation.issued"/>
-      <min value="1"/>
+      <path value="Observation.issued" />
+      <min value="1" />
     </element>
     <element id="Observation.performer">
-      <path value="Observation.performer"/>
-      <min value="1"/>
-      <max value="1"/>
+      <path value="Observation.performer" />
+      <min value="1" />
+      <max value="1" />
     </element>
     <element id="Observation.specimen">
-      <path value="Observation.specimen"/>
-      <min value="1"/>
+      <path value="Observation.specimen" />
+      <min value="1" />
     </element>
     <element id="Observation.hasMember">
-      <path value="Observation.hasMember"/>
-      <min value="1"/>
+      <path value="Observation.hasMember" />
+      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>
