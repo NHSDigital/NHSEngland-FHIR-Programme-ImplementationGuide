@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="England-DiagnosticReportLab-MCED" />
-  <url value="https://fhir.nhs.uk/England/StructureDefinition/England-DiagnosticReportLab-MCED" />
+  <id value="England-DiagnosticReport-MCED" />
+  <url value="https://fhir.nhs.uk/England/StructureDefinition/England-DiagnosticReport-MCED" />
   <version value="0.0.1" />
-  <name value="EnglandDiagnosticReportLabMCED" />
-  <title value="England Diagnostic Report Lab MCED" />
+  <name value="EnglandDiagnosticReportMCED" />
+  <title value="England Diagnostic Report MCED" />
   <status value="draft" />
   <experimental value="true" />
-  <date value="2024-02-27" />
+  <date value="2024-03-19" />
   <publisher value="NHS England" />
   <contact>
     <name value="NHS England" />
@@ -25,7 +25,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="DiagnosticReport" />
-  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Lab" />
+  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
   <derivation value="constraint" />
   <differential>
     <element id="DiagnosticReport.code.coding.system">

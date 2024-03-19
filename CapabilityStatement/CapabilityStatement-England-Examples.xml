@@ -61,7 +61,7 @@
       <type value="DiagnosticReport" />
       <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
       <supportedProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Lab" />
-      <supportedProfile value="https://fhir.nhs.uk/England/StructureDefinition/England-DiagnosticReportLab-MCED" />
+      <supportedProfile value="https://fhir.nhs.uk/England/StructureDefinition/England-DiagnosticReport-MCED" />
     </resource>
     <resource>
       <type value="DocumentReference" />
@@ -143,7 +143,8 @@
     </resource>
     <resource>
       <type value="Organization" />
-      <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Organization-MCED" />
+      <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+      <supportedProfile value="https://fhir.nhs.uk/England/StructureDefinition/England-Organization-MCED" />
     </resource>
     <resource>
       <type value="OrganizationAffiliation" />
