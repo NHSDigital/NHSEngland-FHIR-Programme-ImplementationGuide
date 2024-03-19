@@ -56,7 +56,19 @@
   </focus>
   <focus>
     <code value="Observation" />
-    <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Observation-MCED" />
+    <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Observation-MCED-Screening" />
+    <min value="1" />
+    <max value="1" />
+  </focus>
+  <focus>
+    <code value="Observation" />
+    <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Observation-MCED-Result" />
+    <min value="1" />
+    <max value="1" />
+  </focus>
+  <focus>
+    <code value="Observation" />
+    <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Observation-MCED-Site" />
     <min value="0" />
     <max value="*" />
   </focus>

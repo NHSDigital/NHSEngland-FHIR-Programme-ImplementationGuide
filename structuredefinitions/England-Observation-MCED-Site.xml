@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="England-Observation-MCED" />
-  <url value="https://fhir.nhs.uk/England/StructureDefinition/England-Observation-MCED" />
+  <id value="England-Observation-MCED-Site" />
+  <url value="https://fhir.nhs.uk/England/StructureDefinition/England-Observation-MCED-Site" />
   <version value="0.0.1" />
-  <name value="EnglandObservationMCED" />
-  <title value="England Observation MCED" />
+  <name value="EnglandObservationMCEDSite" />
+  <title value="England Observation MCED Site" />
   <status value="draft" />
   <experimental value="true" />
-  <date value="2024-02-27" />
+  <date value="2024-03-19" />
   <publisher value="NHS England" />
   <contact>
     <name value="NHS England" />
@@ -35,8 +35,10 @@
           <type value="value" />
           <path value="code" />
         </discriminator>
-        <rules value="open" />
+        <rules value="closed" />
       </slicing>
+      <min value="1"/>
+      <max value="1"/>
     </element>
     <element id="Observation.code.coding:primarySite">
       <path value="Observation.code.coding" />
@@ -70,6 +72,10 @@
       <path value="Observation.code.coding.display" />
       <fixedString value="Multi-cancer early detection second highest probability cancer signal origin by machine learning-based classifier" />
     </element>
+    <element id="Observation.component">
+      <path value="Observation.component" />
+      <min value="1"/>
+    </element>
     <element id="Observation.component.code.coding.system">
       <path value="Observation.component.code.coding.system" />
       <fixedUri value="http://snomed.info/sct" />
@@ -89,9 +95,10 @@
       </type>
       <binding>
         <strength value="required" />
-        <description value="To state whether a multi-cancer early signal was detected or not" />
-        <valueSet value="https://fhir.nhs.uk/England/StructureDefinition/England-MECDSignalResult" />
+        <description value="To state the body site where a multi-cancer early signal was detected" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodySite" />
       </binding>
+      <min value="1"/>
     </element>
   </differential>
 </StructureDefinition>
