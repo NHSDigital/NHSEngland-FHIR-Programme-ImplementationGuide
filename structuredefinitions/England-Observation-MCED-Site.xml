@@ -37,8 +37,8 @@
         </discriminator>
         <rules value="closed" />
       </slicing>
-      <min value="1"/>
-      <max value="1"/>
+      <min value="1" />
+      <max value="1" />
     </element>
     <element id="Observation.code.coding:primarySite">
       <path value="Observation.code.coding" />
@@ -74,7 +74,7 @@
     </element>
     <element id="Observation.component">
       <path value="Observation.component" />
-      <min value="1"/>
+      <min value="1" />
     </element>
     <element id="Observation.component.code.coding.system">
       <path value="Observation.component.code.coding.system" />
@@ -98,7 +98,7 @@
         <description value="To state the body site where a multi-cancer early signal was detected" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodySite" />
       </binding>
-      <min value="1"/>
+      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>
