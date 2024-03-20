@@ -220,6 +220,13 @@
           <reference value="urn:uuid:d9df1431-22ac-462a-946a-f195f6c639af" />
         </basedOn>
         <status value="final" />
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0074" />
+            <code value="LAB" />
+            <display value="Laboratory" />
+          </coding>
+        </category>
         <code>
           <coding>
             <system value="http://snomed.info/sct" />
