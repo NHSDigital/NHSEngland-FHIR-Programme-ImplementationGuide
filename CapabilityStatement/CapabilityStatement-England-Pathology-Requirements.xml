@@ -1,10 +1,10 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
   <id value="England-Pathology-Requirements" />
   <url value="https://fhir.hl7.org.uk/CapabilityStatement/England-Pathology-Requirements" />
-  <version value="0.0.1" />
+  <version value="0.0.2" />
   <name value="EnglandPathologyRequirements" />
   <status value="draft" />
-  <date value="2024-01-23" />
+  <date value="2024-03-20" />
   <publisher value="HL7 UK" />
   <description value="Conformance requirements for NHS England Pathology FHIR Examples" />
   <kind value="requirements" />
@@ -28,7 +28,7 @@
     <resource>
       <type value="Observation" />
       <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
-      <supportedProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup" />
+      <supportedProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Group-Lab" />
       <supportedProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
     </resource>
     <resource>
