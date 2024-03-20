@@ -359,7 +359,7 @@
             <coding>
               <system value="http://snomed.info/sct" />
               <code value="123037004" />
-              <display value="Body structure (body structure)" />
+              <display value="Body structure" />
             </coding>
           </code>
           <valueCodeableConcept>

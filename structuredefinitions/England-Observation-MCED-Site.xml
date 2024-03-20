@@ -96,7 +96,7 @@
       <binding>
         <strength value="required" />
         <description value="To state the body site where a multi-cancer early signal was detected" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodySite" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-SpecimenBodySite" />
       </binding>
       <min value="1" />
     </element>
