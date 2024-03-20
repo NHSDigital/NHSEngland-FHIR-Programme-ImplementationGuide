@@ -362,7 +362,7 @@
           <coding>
             <system value="http://snomed.info/sct" />
             <code value="1873921000000106" />
-            <display value="Multi-cancer early detection highest probability cancer signal origin by machine learning-based classifier" />
+            <display value="Multi-cancer early detection highest scored cancer signal origin by machine learning-based classifier" />
           </coding>
         </code>
         <subject>
