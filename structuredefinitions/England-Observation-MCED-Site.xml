@@ -2,12 +2,12 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="England-Observation-MCED-Site" />
   <url value="https://fhir.nhs.uk/England/StructureDefinition/England-Observation-MCED-Site" />
-  <version value="0.0.1" />
+  <version value="0.0.2" />
   <name value="EnglandObservationMCEDSite" />
   <title value="England Observation MCED Site" />
   <status value="draft" />
   <experimental value="true" />
-  <date value="2024-03-19" />
+  <date value="2024-03-21" />
   <publisher value="NHS England" />
   <contact>
     <name value="NHS England" />
@@ -96,7 +96,7 @@
       <binding>
         <strength value="required" />
         <description value="To state the body site where a multi-cancer early signal was detected" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-SpecimenBodySite" />
+        <valueSet value="https://fhir.nhs.uk/England/ValueSet/England-BodyStructure" />
       </binding>
       <min value="1" />
     </element>
