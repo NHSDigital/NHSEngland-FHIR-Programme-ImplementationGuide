@@ -1,12 +1,12 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
-  <id value="apim-conformance" />
-  <url value="https://fhir.hl7.org.uk/CapabilityStatement/England-FHIRExamples-conformance" />
+  <id value="England-FHIRExamples-Conformance" />
+  <url value="https://fhir.nhs.uk/England/CapabilityStatement/England-FHIRExamples-Conformance" />
   <version value="3.2.0" />
-  <name value="EnglandFHIRExamplesconformance" />
+  <name value="EnglandFHIRExamplesConformance" />
   <status value="active" />
   <date value="2022-12-16T00:00:00+00:00" />
   <publisher value="HL7 UK" />
-  <description value="Conformance requirements for NHS England FHIR Examples" />
+  <description value="Basic conformance requirements for NHS England FHIR Examples" />
   <kind value="requirements" />
   <fhirVersion value="4.0.1" />
   <format value="application/fhir+json" />

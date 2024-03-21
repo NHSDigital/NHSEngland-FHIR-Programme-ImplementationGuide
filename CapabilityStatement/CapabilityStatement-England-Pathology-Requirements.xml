@@ -1,6 +1,6 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
   <id value="England-Pathology-Requirements" />
-  <url value="https://fhir.hl7.org.uk/CapabilityStatement/England-Pathology-Requirements" />
+  <url value="https://fhir.hl7.org.uk/England/CapabilityStatement/England-Pathology-Requirements" />
   <version value="0.0.2" />
   <name value="EnglandPathologyRequirements" />
   <status value="draft" />
@@ -14,11 +14,11 @@
   <messaging> 
     <supportedMessage> 
       <mode value="receiver" /> 
-      <definition value="MessageDefinition/England-Pathology-Report" /> 
+      <definition value="https://fhir.hl7.org.uk/England/MessageDefinition/England-Pathology-Report" /> 
     </supportedMessage> 
     <supportedMessage> 
       <mode value="receiver" /> 
-      <definition value="MessageDefinition/England-Pathology-Request" /> 
+      <definition value="https://fhir.hl7.org.uk/England/MessageDefinition/England-Pathology-Request" /> 
     </supportedMessage> 
   </messaging> 
 </CapabilityStatement>
