@@ -203,9 +203,9 @@
         <resource>
             <DiagnosticReport>
                 <id value="1ba48cf0-77a4-48b5-b4dd-bf0d1f2f973d" />
-                <meta>
-                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
-                </meta>
+        <meta>
+          <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-DiagnosticReport-MCED" />
+        </meta>
                 <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.note">
                     <valueAnnotation>
                         <text value="Some Lab Comments" />
@@ -253,9 +253,9 @@
         <resource>
             <Observation>
                 <id value="bcf61153-9f23-4b56-bfab-2650ee01878e" />
-                <meta>
-                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
-                </meta>
+        <meta>
+          <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Observation-MCED-Screening" />
+        </meta>
                 <identifier>
                     <system value="http://ScreeningOrg/request-id" />
                     <value value="NHS9123123" />
@@ -293,9 +293,9 @@
         <resource>
             <Observation>
                 <id value="4a26bdd2-bb57-4f69-8f03-00ac6f1f8351" />
-                <meta>
-                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
-                </meta>
+        <meta>
+          <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Observation-MCED-Result" />
+        </meta>
                 <identifier>
                     <system value="http://ScreeningOrg/request-id" />
                     <value value="NHS9123123" />
