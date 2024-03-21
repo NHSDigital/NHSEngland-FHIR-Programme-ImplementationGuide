@@ -292,7 +292,7 @@
         <!-- Microscopy results group -->
         <id value="bd867909-49ca-4a4b-b02f-162790b6800f" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Group-Lab" />
         </meta>
         <identifier>
           <system value="https://tools.ietf.org/html/rfc4122" />
@@ -560,7 +560,7 @@
         <!-- Staphylococcus aureus - culture and sensitivity results group -->
         <id value="70af0ca7-a77a-4daa-8aa2-1740433b1c3e" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Group-Lab" />
         </meta>
         <identifier>
           <system value="https://tools.ietf.org/html/rfc4122" />
@@ -660,7 +660,7 @@
         <!-- Staphylococcus aureus - sensitivities group -->
         <id value="329c8c3f-461f-4b61-b93d-374d354d0c98" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Group-Lab" />
         </meta>
         <identifier>
           <system value="https://tools.ietf.org/html/rfc4122" />

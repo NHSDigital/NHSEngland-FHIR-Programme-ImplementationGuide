@@ -342,7 +342,7 @@
         <!-- Test group Observation for Serum lipid levels -->
         <id value="4e4410fd-27d3-413e-901a-380caa78b411" />
         <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-LabGroup" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Group-Lab" />
         </meta>
         <identifier>
           <system value="https://tools.ietf.org/html/rfc4122" />
