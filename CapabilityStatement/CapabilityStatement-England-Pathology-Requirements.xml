@@ -13,12 +13,12 @@
   <format value="application/fhir+xml" />
   <messaging> 
     <supportedMessage> 
-      <mode value="receiver"/> 
-      <definition value="MessageDefinition/England-Pathology-Report"/> 
+      <mode value="receiver" /> 
+      <definition value="MessageDefinition/England-Pathology-Report" /> 
     </supportedMessage> 
     <supportedMessage> 
-      <mode value="receiver"/> 
-      <definition value="MessageDefinition/England-Pathology-Request"/> 
+      <mode value="receiver" /> 
+      <definition value="MessageDefinition/England-Pathology-Request" /> 
     </supportedMessage> 
   </messaging> 
 </CapabilityStatement>

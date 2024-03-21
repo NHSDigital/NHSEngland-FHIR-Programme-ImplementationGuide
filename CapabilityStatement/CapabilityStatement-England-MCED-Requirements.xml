@@ -13,8 +13,8 @@
   <format value="application/fhir+xml" />
   <messaging> 
     <supportedMessage> 
-      <mode value="receiver"/> 
-      <definition value="MessageDefinition/England-MCED-TestReport"/> 
+      <mode value="receiver" /> 
+      <definition value="MessageDefinition/England-MCED-TestReport" /> 
     </supportedMessage> 
   </messaging> 
 </CapabilityStatement>
