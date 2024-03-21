@@ -54,7 +54,7 @@
     </element>
     <element id="Observation.code.coding:primarySite.display">
       <path value="Observation.code.coding.display" />
-      <fixedString value="Multi-cancer early detection highest probability cancer signal origin by machine learning-based classifier" />
+      <fixedString value="Multi-cancer early detection highest scored cancer signal origin by machine learning-based classifier" />
     </element>
     <element id="Observation.code.coding:secondaySite">
       <path value="Observation.code.coding" />
@@ -70,7 +70,7 @@
     </element>
     <element id="Observation.code.coding:secondaySite.display">
       <path value="Observation.code.coding.display" />
-      <fixedString value="Multi-cancer early detection second highest probability cancer signal origin by machine learning-based classifier" />
+      <fixedString value="Multi-cancer early detection second highest scored cancer signal origin by machine learning-based classifier" />
     </element>
     <element id="Observation.component">
       <path value="Observation.component" />
