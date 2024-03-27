@@ -46,7 +46,7 @@
         <key value="England-Obs-MCED-003" />
         <severity value="error" />
         <human value="If the code is 1873921000000106 | MCED highest scored cancer signal origin... or 1873931000000108 | MCED second highest scored cancer signal origin..., the site SHALL be in component.code and component.value[x]" />
-        <expression value="(code.coding.code = 1873921000000106 or code.coding.code = 1873921000000106) implies (component.code.exists() and component.value.exists())" />
+        <expression value="(code.coding.code = 1873921000000106 or code.coding.code = 1873931000000108) implies (component.code.exists() and component.value.exists())" />
       </constraint>
     </element>
     <element id="Observation.basedOn">
