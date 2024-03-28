@@ -47,7 +47,6 @@
       <!--Screening org-->
       <Organization>
         <id value="d6407de7-0e86-45eb-93cb-035094aaa49e" />
-        <meta>
         <identifier>
           <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
           <value value="ABC123" />
