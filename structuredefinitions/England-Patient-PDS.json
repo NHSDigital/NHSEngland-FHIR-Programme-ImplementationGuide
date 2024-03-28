@@ -6,6 +6,7 @@
   "name": "EnglandPatientPDSAllMandatoryFields",
   "title": "England Patient PDS All Mandatory Fields",
   "status": "draft",
+  "experimental": true,
   "date": "2024-03-05",
   "publisher": "NHS England",
   "contact": [
@@ -33,28 +34,6 @@
   "differential": {
     "element": [
       {
-        "id": "Patient.extension",
-        "path": "Patient.extension",
-        "min": 1
-      },
-      {
-        "id": "Patient.extension:deathNotificationStatus",
-        "path": "Patient.extension",
-        "sliceName": "deathNotificationStatus"
-      },
-      {
-        "id": "Patient.extension:deathNotificationStatus.extension",
-        "path": "Patient.extension.extension",
-        "min": 1
-      },
-      {
-        "id": "Patient.extension:patientInterpreterRequired",
-        "path": "Patient.extension",
-        "sliceName": "patientInterpreterRequired",
-        "definition": "This Patient requires an interpreter to communicate healthcare information to the practitioner. This is to be used in conjunction with the Patient.communication.language element",
-        "min": 1
-      },
-      {
         "id": "Patient.name",
         "path": "Patient.name",
         "min": 1
@@ -71,7 +50,7 @@
           {
             "key": "PDS-Pat-002",
             "severity": "error",
-            "human": "Patient.family.given value length SHALL be between 0 and 35",
+            "human": "Patient.name.family value length SHALL be between 0 and 35",
             "expression": "Patient.name.family.length <= 35"
           }
         ]
@@ -138,7 +117,7 @@
         "id": "Patient.communication",
         "path": "Patient.communication",
         "min": 1,
-        "max": "1"
+        "max": 1
       },
       {
         "id": "Patient.generalPractitioner.identifier.value",
