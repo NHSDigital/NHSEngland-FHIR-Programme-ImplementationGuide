@@ -1,6 +1,9 @@
 {
 	"resourceType": "Patient",
 	"id": "PDS-Patient-AlbertEinsteinCommunication-Example",
+  "text":"Albert Einstein has returned to England after spending many years abroad. Albert has changed his name several times and can't remember any addresses he had in England. He does remember being in hospital as a child in Devon. Amy Armstrong tries several Queries using some of the names Albert has used over the years but she can find no record for Albert. She decides to allocate an NHS Number and completes the on screen record with the information that Albert provides, address, telephone, name, sex, date of birth.She also asks Albert for his preferences and adds his preferred contact method, preferred written communication format and preferred language and interpreter required. 
+
+She also marks the record to say that Albert has had previous NHS contact."
 	"meta": {
 		"profile": [
 			"https://fhir.nhs.uk/England/StructureDefinition/England-Patient-PDS"
