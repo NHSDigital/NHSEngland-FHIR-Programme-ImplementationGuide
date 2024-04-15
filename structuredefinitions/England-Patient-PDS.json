@@ -34,16 +34,6 @@
   "differential": {
     "element": [
       {
-        "id": "Patient.extension:deathNotificationStatus",
-        "path": "Patient.extension",
-        "sliceName": "deathNotificationStatus"
-      },
-      {
-        "id": "Patient.extension:deathNotificationStatus.extension",
-        "path": "Patient.extension.extension",
-        "min": 1
-      },
-      {
         "id": "Patient.extension:mothersMaidenName",
         "path": "Patient.extension",
         "sliceName": "mothersMaidenName",
@@ -108,16 +98,6 @@
         "path": "Patient.address",
         "min": 1,
         "mustSupport": true
-      },
-      {
-        "id": "Patient.address.extension:addressKey",
-        "path": "Patient.address.extension",
-        "sliceName": "addressKey"
-      },
-      {
-        "id": "Patient.address.extension:addressKey.extension",
-        "path": "Patient.address.extension.extension",
-        "min": 2
       },
       {
         "id": "Patient.generalPractitioner",
