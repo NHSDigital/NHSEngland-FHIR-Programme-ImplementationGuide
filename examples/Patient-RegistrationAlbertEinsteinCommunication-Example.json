@@ -16,6 +16,18 @@
       "valueBoolean": true
     }
   ],
+  "identifier": [
+    {
+      "use": "temp",
+      "type": {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code": "MR",
+        "display": "Medical record number"
+      }.
+      "system": "urn:ietf:rfc:3986",
+      "value": "1147777"
+    }
+  ],
   "name": [
     {
       "use": "official",
