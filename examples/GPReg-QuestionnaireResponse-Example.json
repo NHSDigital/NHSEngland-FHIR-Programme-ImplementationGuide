@@ -1,5 +1,6 @@
 {
   "resourceType": "QuestionnaireResponse",
+  "id": "GPReg-QuestionnaireResponse-Example",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse|2.7"

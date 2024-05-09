@@ -1,5 +1,6 @@
 {
   "resourceType": "Bundle",
+  "id": "GPReg-QuestionnaireResponse-Extracted-Example",
   "type": "transaction",
   "entry": [
     {
