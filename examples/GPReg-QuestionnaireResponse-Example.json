@@ -583,8 +583,5 @@
       ]
     }
   ],
-  "subject": {
-    "reference": "Patient/null"
-  },
-  "questionnaire": "urn:uuid:a62f17af-1657-4375-916b-7b1363257159"
+  "questionnaire": "Questionnaire/GPReg-Questionnaire-RegisterGPSurgery-Example"
 }
