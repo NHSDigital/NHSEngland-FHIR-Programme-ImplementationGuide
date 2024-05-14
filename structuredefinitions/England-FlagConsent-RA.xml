@@ -1,84 +1,100 @@
-<?xml version="1.0" encoding="UTF-8" ?>
- <root>
-     <resourceType>StructureDefinition</resourceType>
-     <id>FlagConsent</id>
-     <url>https://fhir.nhs.uk/England/StructureDefinition/FlagConsent</url>
-     <version>0.1.0</version>
-     <name>FlagConsent</name>
-     <title>NHSE Flag Consent Profile</title>
-     <status>draft</status>
-     <date>2024-02-14</date>
-     <description>Record consent to capture information for NHS England flags</description>
-     <fhirVersion>4.0.1</fhirVersion>
-     <kind>resource</kind>
-     <abstract>false</abstract>
-     <type>Consent</type>
-     <baseDefinition>http://hl7.org/fhir/StructureDefinition/Consent</baseDefinition>
-     <derivation>constraint</derivation>
-     <differential>
-         <element>
-             <id>Consent.contained</id>
-             <path>Consent.contained</path>
-             <slicing>
-                 <discriminator>
-                     <type>profile</type>
-                     <path>contained</path>
-                 </discriminator>
-                 <rules>open</rules>
-             </slicing>
-             <min>1</min>
-         </element>
-         <element>
-             <id>Consent.contained:provenance</id>
-             <path>Consent.contained</path>
-             <sliceName>provenance</sliceName>
-             <min>1</min>
-             <max>1</max>
-         </element>
-         <element>
-             <id>Consent.extension</id>
-             <path>Consent.extension</path>
-             <slicing>
-                 <discriminator>
-                     <type>value</type>
-                     <path>url</path>
-                 </discriminator>
-                 <ordered>false</ordered>
-                 <rules>open</rules>
-             </slicing>
-         </element>
-         <element>
-             <id>Consent.performer</id>
-             <path>Consent.performer</path>
-             <max>1</max>
-             <type>
-                 <code>Reference</code>
-                 <targetProfile>http://hl7.org/fhir/StructureDefinition/Organization</targetProfile>
-                 <targetProfile>http://hl7.org/fhir/StructureDefinition/Patient</targetProfile>
-                 <targetProfile>http://hl7.org/fhir/StructureDefinition/Practitioner</targetProfile>
-             </type>
-         </element>
-         <element>
-             <id>Consent.policy</id>
-             <path>Consent.policy</path>
-             <min>1</min>
-             <max>1</max>
-         </element>
-         <element>
-             <id>Consent.policy.uri</id>
-             <path>Consent.policy.uri</path>
-             <min>1</min>
-         </element>
-         <element>
-             <id>Consent.policyRule</id>
-             <path>Consent.policyRule</path>
-             <min>1</min>
-         </element>
-         <element>
-             <id>Consent.provision.purpose</id>
-             <path>Consent.provision.purpose</path>
-             <min>1</min>
-             <max>1</max>
-         </element>
-     </differential>
- </root>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <id value="FlagConsent" />
+    <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-category">
+        <valueString value="Foundation.Security" />
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
+        <valueCode value="patient" />
+    </extension>
+    <url value="https://fhir.nhs.uk/England/StructureDefinition/FlagConsent" />
+    <version value="0.1.0" />
+    <name value="FlagConsent" />
+    <title value="NHSE Flag Consent Profile" />
+    <status value="draft" />
+    <date value="2024-02-14" />
+    <description value="Record consent to capture information for NHS England flags" />
+    <fhirVersion value="4.0.1" />
+    <mapping>
+        <identity value="workflow" />
+        <uri value="http://hl7.org/fhir/workflow" />
+        <name value="Workflow Pattern" />
+    </mapping>
+    <mapping>
+        <identity value="v2" />
+        <uri value="http://hl7.org/v2" />
+        <name value="HL7 v2 Mapping" />
+    </mapping>
+    <mapping>
+        <identity value="rim" />
+        <uri value="http://hl7.org/v3" />
+        <name value="RIM Mapping" />
+    </mapping>
+    <mapping>
+        <identity value="w5" />
+        <uri value="http://hl7.org/fhir/fivews" />
+        <name value="FiveWs Pattern Mapping" />
+    </mapping>
+    <kind value="resource" />
+    <abstract value="false" />
+    <type value="Consent" />
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Consent" />
+    <derivation value="constraint" />
+    <differential>
+        <element id="Consent.contained">
+            <path value="Consent.contained" />
+            <slicing>
+                <discriminator>
+                    <type value="profile" />
+                    <path value="contained" />
+                </discriminator>
+                <rules value="open" />
+            </slicing>
+            <min value="1" />
+        </element>
+        <element id="Consent.contained:provenance">
+            <path value="Consent.contained" />
+            <sliceName value="provenance" />
+            <min value="1" />
+            <max value="1" />
+        </element>
+        <element id="Consent.extension">
+            <path value="Consent.extension" />
+            <slicing>
+                <discriminator>
+                    <type value="value" />
+                    <path value="url" />
+                </discriminator>
+                <ordered value="false" />
+                <rules value="open" />
+            </slicing>
+        </element>
+        <element id="Consent.performer">
+            <path value="Consent.performer" />
+            <max value="1" />
+            <type>
+                <code value="Reference" />
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+            </type>
+        </element>
+        <element id="Consent.policy">
+            <path value="Consent.policy" />
+            <min value="1" />
+            <max value="1" />
+        </element>
+        <element id="Consent.policy.uri">
+            <path value="Consent.policy.uri" />
+            <min value="1" />
+        </element>
+        <element id="Consent.policyRule">
+            <path value="Consent.policyRule" />
+            <min value="1" />
+        </element>
+        <element id="Consent.provision.purpose">
+            <path value="Consent.provision.purpose" />
+            <min value="1" />
+            <max value="1" />
+        </element>
+    </differential>
+</StructureDefinition>
