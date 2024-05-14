@@ -1,17 +1,27 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <id value="FlagCondition" />
+    <id value="England-FlagCondition-RA" />
     <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-category">
         <valueString value="Clinical.Summary" />
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
         <valueCode value="patient" />
     </extension>
-    <url value="https://fhir.nhs.uk/England/StructureDefinition/FlagCondition" />
+    <url value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagCondition-RA" />
     <version value="0.1.0" />
-    <name value="FlagCondition" />
-    <title value="NHSE Condition Profile for flags" />
+    <name value="EnglandFlagConditionRA" />
+    <title value="England Flag Condition RA" />
     <status value="draft" />
     <date value="2024-02-14" />
+    <publisher value="NHS England" />
+    <contact>
+    <name value="NHS England" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
     <description value="Record an individual condition for a flag in NHS England" />
     <fhirVersion value="4.0.1" />
     <mapping>
