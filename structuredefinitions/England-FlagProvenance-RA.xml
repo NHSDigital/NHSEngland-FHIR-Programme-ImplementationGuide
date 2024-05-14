@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <root>
+     <resourceType>StructureDefinition</resourceType>
+     <id>FlagProvenance</id>
+     <url>https://fhir.nhs.uk/England/StructureDefinition/FlagProvenance</url>
+     <version>0.1.0</version>
+     <name>FlagProvenance</name>
+     <title>NHSE Flag Provenance Profile</title>
+     <status>draft</status>
+     <date>2024-02-14</date>
+     <description>Record details of the practitioner recording or removing an individual Flag.</description>
+     <fhirVersion>4.0.1</fhirVersion>
+     <kind>resource</kind>
+     <abstract>false</abstract>
+     <type>Provenance</type>
+     <baseDefinition>http://hl7.org/fhir/StructureDefinition/Provenance</baseDefinition>
+     <derivation>constraint</derivation>
+     <differential>
+         <element>
+             <id>Provenance.agent.who</id>
+             <path>Provenance.agent.who</path>
+             <type>
+                 <code>Reference</code>
+                 <targetProfile>http://hl7.org/fhir/StructureDefinition/Practitioner</targetProfile>
+             </type>
+         </element>
+         <element>
+             <id>Provenance.agent.onBehalfOf</id>
+             <path>Provenance.agent.onBehalfOf</path>
+             <type>
+                 <code>Reference</code>
+                 <targetProfile>http://hl7.org/fhir/StructureDefinition/Organization</targetProfile>
+             </type>
+         </element>
+     </differential>
+ </root>
