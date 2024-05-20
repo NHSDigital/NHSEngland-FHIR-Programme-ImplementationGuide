@@ -6,8 +6,8 @@
   </text>
   <url value="https://fhir.nhs.uk/England/CodeSystem/RAFlagCategory"/>
   <version value="0.4.0"/>
-  <name value="ReasonableAdjustmentsCategory"/>
-  <title value="RA Adjustment Category"/>
+  <name value="RAFlagCategory"/>
+  <title value="RA Flag Category"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2024-02-14"/>
