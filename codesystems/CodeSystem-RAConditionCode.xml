@@ -6,8 +6,8 @@
   </text>
   <url value="https://fhir.nhs.uk/England/CodeSystem/RAConditionCode"/>
   <version value="0.4.0"/>
-  <name value="ReasonableAdjustmentsConditionCode"/>
-  <title value="RA Record Condition Code"/>
+  <name value="RAConditionCode"/>
+  <title value="RA Condition Code"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2024-02-14"/>
