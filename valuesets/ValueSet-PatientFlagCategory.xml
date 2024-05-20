@@ -3,7 +3,7 @@
     <url value="https://fhir.nhs.uk/England/ValueSet/PatientFlagCategory" />
     <version value="0.1.0" />
     <name value="PatientFlagCategory" />
-    <title value="NHSE Patient Flag Category" />
+    <title value="Patient Flag Category" />
     <status value="draft" />
     <experimental value="false" />
     <date value="2024-02-14" />
