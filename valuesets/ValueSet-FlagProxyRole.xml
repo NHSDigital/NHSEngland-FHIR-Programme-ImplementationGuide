@@ -3,7 +3,7 @@
     <url value="https://fhir.nhs.uk/England/ValueSet/FlagProxyRole" />
     <version value="0.1.0" />
     <name value="FlagProxyRole" />
-    <title value="NHSE Flag Proxy Role" />
+    <title value="Flag Proxy Role" />
     <status value="draft" />
     <experimental value="false" />
     <date value="2024-02-14" />
