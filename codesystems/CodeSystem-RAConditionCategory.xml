@@ -6,7 +6,7 @@
   </text>
   <url value="https://fhir.nhs.uk/England/CodeSystem/RAConditionCategory"/>
   <version value="0.4.0"/>
-  <name value="ReasonableAdjustmentsConditionCategory"/>
+  <name value="RAConditionCategory"/>
   <title value="RA Condition Category"/>
   <status value="draft"/>
   <experimental value="false"/>
