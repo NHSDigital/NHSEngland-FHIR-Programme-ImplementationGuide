@@ -6,8 +6,8 @@
   </text>
   <url value="https://fhir.nhs.uk/England/CodeSystem/RAConsentPurpose"/>
   <version value="0.4.0"/>
-  <name value="ReasonableAdjustmentsConsentPurpose"/>
-  <title value="RA Record Consent Purpose"/>
+  <name value="RAConsentPurpose"/>
+  <title value="RA Consent Purpose"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2024-02-14"/>
