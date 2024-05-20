@@ -13,16 +13,14 @@
   <date value="2024-02-14"/>
   <publisher value="NHS England"/>
   <contact>
-    <name value="NHS England"/>
+    <name value="NHS England" />
     <telecom>
-      <system value="url"/>
-      <value value="https://fhir.nhs.uk"/>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+      <rank value="1" />
     </telecom>
-    <telecom>
-      <system value="email"/>
-      <value value="interoperabilityteam@nhs.net"/>
-    </telecom>
-  </contact>
+   </contact>
   <description
                value="A ValueSet containing flag codes for the Female Genital Mutilation NHS England Programme"/>
   <copyright
