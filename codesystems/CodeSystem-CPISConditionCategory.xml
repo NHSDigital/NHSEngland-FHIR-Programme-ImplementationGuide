@@ -1,10 +1,10 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-  <id value="CPIS-ConditionCategory"/>
+  <id value="CPISConditionCategory"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>https://fhir.nhs.uk/England/CodeSystem/CPIS-ConditionCategory</code> defines the following code:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">cpis-example-condition-category<a name="CPIS-ConditionCategory-cpis-example-condition-category"> </a></td><td>CPIS example condition category</td></tr></table></div>
   </text>
-  <url value="https://fhir.nhs.uk/England/CodeSystem/CPIS-ConditionCategory"/>
+  <url value="https://fhir.nhs.uk/England/CodeSystem/CPISConditionCategory"/>
   <version value="0.4.0"/>
   <name value="CPISConditionCategory"/>
   <title value="CPIS Condition Category"/>
