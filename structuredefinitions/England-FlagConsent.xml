@@ -61,7 +61,7 @@
                 </discriminator>
                 <rules value="open" />
             </slicing>
-            <min value="1" />
+            <min value="0" />
         </element>
         <element id="Consent.contained:provenance">
             <path value="Consent.contained" />
