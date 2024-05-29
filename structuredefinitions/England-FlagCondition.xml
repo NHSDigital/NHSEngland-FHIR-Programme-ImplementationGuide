@@ -62,6 +62,20 @@
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Condition" />
     <derivation value="constraint" />
     <differential>
+    <element id="Condition">
+      <path value="Condition"/>
+    </element>
+    <element id="Condition.contained">
+      <path value="Condition.contained"/>
+      <slicing>
+        <discriminator>
+          <type value="profile"/>
+          <path value="contained"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+      <min value="1"/>
+    </element>
       <element id="Condition.contained:provenance">
       <path value="Condition.contained"/>
       <sliceName value="provenance"/>
@@ -72,7 +86,18 @@
         <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagProvenance"/>
       </type>
      </element>
-     <element id="Condition.category:patientFlag">
+    <element id="Condition.category">
+      <path value="Condition.category"/>
+      <slicing>
+        <discriminator>
+          <type value="pattern"/>
+          <path value="$this"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+      <max value="2"/>
+    </element>
+    <element id="Condition.category:patientFlag">
       <path value="Condition.category"/>
       <sliceName value="patientFlag"/>
       <max value="1"/>
