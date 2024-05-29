@@ -52,32 +52,13 @@
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Consent" />
     <derivation value="constraint" />
     <differential>
-        <element id="Consent.contained">
-            <path value="Consent.contained" />
-            <slicing>
-                <discriminator>
-                    <type value="profile" />
-                    <path value="contained" />
-                </discriminator>
-                <rules value="open" />
-            </slicing>
-            <max value="0" />
-        </element>
         <element id="Consent.contained:provenance">
-            <path value="Consent.contained" />
-            <sliceName value="provenance" />
-            <max value="0" />
+        <path value="Consent.contained" />
+         <sliceName value="provenance" />
+        <min value="1" />
         </element>
         <element id="Consent.extension">
-            <path value="Consent.extension" />
-            <slicing>
-                <discriminator>
-                    <type value="value" />
-                    <path value="url" />
-                </discriminator>
-                <ordered value="false" />
-                <rules value="open" />
-            </slicing>
+        <path value="Consent.extension" />
         </element>
         <element id="Consent.performer">
             <path value="Consent.performer" />
