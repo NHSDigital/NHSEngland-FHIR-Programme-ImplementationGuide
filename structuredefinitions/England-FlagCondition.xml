@@ -1,15 +1,15 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <id value="England-FlagCondition-RA" />
+    <id value="England-FlagCondition" />
     <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-category">
         <valueString value="Clinical.Summary" />
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
         <valueCode value="patient" />
     </extension>
-    <url value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagCondition-RA" />
+    <url value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagCondition" />
     <version value="0.1.0" />
-    <name value="EnglandFlagConditionRA" />
-    <title value="England Flag Condition RA" />
+    <name value="EnglandFlagCondition" />
+    <title value="England Flag Condition" />
     <status value="draft" />
     <date value="2024-02-14" />
     <publisher value="NHS England" />
