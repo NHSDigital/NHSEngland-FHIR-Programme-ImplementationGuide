@@ -36,7 +36,7 @@
         <id value="CPIS-Consent-Example"/>
         <meta>
           <profile
-                   value="https://fhir.nhs.uk/England/StructureDefinition/FlagConsent"/>
+                   value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagConsent-RA"/>
         </meta>
         <contained>
           <Provenance>
@@ -138,7 +138,7 @@
         <id value="CPIS-Condition-Example"/>
         <meta>
           <profile
-                   value="https://fhir.nhs.uk/England/StructureDefinition/FlagCondition"/>
+                   value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagCondition-RA"/>
         </meta>
         <contained>
           <Provenance>
@@ -223,7 +223,7 @@
         <id value="CPIS-PatientFlag-Example"/>
         <meta>
           <profile
-                   value="https://fhir.nhs.uk/England/StructureDefinition/PatientFlag"/>
+                   value="https://fhir.nhs.uk/England/StructureDefinition/England-PatientFlag-RA"/>
         </meta>
         <contained>
           <Provenance>
@@ -293,7 +293,7 @@
         <id value="CPIS-Flag-Example"/>
         <meta>
           <profile
-                   value="https://fhir.nhs.uk/England/StructureDefinition/ProgrammeFlag"/>
+                   value="https://fhir.nhs.uk/England/StructureDefinition/England-ProgrammeFlag-RA"/>
         </meta>
         <contained>
           <Provenance>
