@@ -61,12 +61,11 @@
                 </discriminator>
                 <rules value="open" />
             </slicing>
-            <min value="1" />
+            <max value="1" />
         </element>
         <element id="Consent.contained:provenance">
             <path value="Consent.contained" />
             <sliceName value="provenance" />
-            <min value="1" />
             <max value="1" />
         </element>
         <element id="Consent.extension">
@@ -92,20 +91,18 @@
         </element>
         <element id="Consent.policy">
             <path value="Consent.policy" />
-            <min value="1" />
             <max value="1" />
         </element>
         <element id="Consent.policy.uri">
             <path value="Consent.policy.uri" />
-            <min value="1" />
+            <max value="1" />
         </element>
         <element id="Consent.policyRule">
             <path value="Consent.policyRule" />
-            <min value="1" />
+            <max value="1" />
         </element>
         <element id="Consent.provision.purpose">
             <path value="Consent.provision.purpose" />
-            <min value="1" />
             <max value="1" />
         </element>
     </differential>
