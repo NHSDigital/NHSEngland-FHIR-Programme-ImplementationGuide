@@ -61,12 +61,12 @@
                 </discriminator>
                 <rules value="open" />
             </slicing>
-            <max value="1" />
+            <min value="1" />
         </element>
         <element id="Consent.contained:provenance">
             <path value="Consent.contained" />
             <sliceName value="provenance" />
-            <max value="1" />
+            <min value="1" />
         </element>
         <element id="Consent.extension">
             <path value="Consent.extension" />
