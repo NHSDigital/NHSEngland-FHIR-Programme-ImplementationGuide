@@ -52,59 +52,106 @@
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Consent" />
     <derivation value="constraint" />
     <differential>
-        <element id="Consent.contained">
-            <path value="Consent.contained" />
-            <slicing>
-                <discriminator>
-                    <type value="profile" />
-                    <path value="contained" />
-                </discriminator>
-                <rules value="open" />
-            </slicing>
-            <min value="1" />
-        </element>
-        <element id="Consent.contained:provenance">
-            <path value="Consent.contained" />
-            <sliceName value="provenance" />
-            <min value="1" />
-            <max value="1" />
-        </element>
-        <element id="Consent.extension">
-            <path value="Consent.extension" />
-            <slicing>
-                <discriminator>
-                    <type value="value" />
-                    <path value="url" />
-                </discriminator>
-                <ordered value="false" />
-                <rules value="open" />
-            </slicing>
-        </element>
-        <element id="Consent.performer">
-            <path value="Consent.performer" />
-            <max value="1" />
-            <type>
-                <code value="Reference" />
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
-            </type>
-        </element>
-        <element id="Consent.policy">
-            <path value="Consent.policy" />
-            <max value="1" />
-        </element>
-        <element id="Consent.policy.uri">
-            <path value="Consent.policy.uri" />
-            <max value="1" />
-        </element>
-        <element id="Consent.policyRule">
-            <path value="Consent.policyRule" />
-            <max value="1" />
-        </element>
-        <element id="Consent.provision.purpose">
-            <path value="Consent.provision.purpose" />
-            <max value="1" />
-        </element>
-    </differential>
+     <element id="Consent.contained">
+      <path value="Consent.contained"/>
+      <slicing>
+        <discriminator>
+          <type value="profile"/>
+          <path value="contained"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+      <min value="1"/>
+    </element>
+    <element id="Consent.contained:provenance">
+      <path value="Consent.contained"/>
+      <sliceName value="provenance"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Provenance"/>
+        <profile
+                 value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagProvenance"/>
+      </type>
+    </element>
+    <element id="Consent.extension">
+      <path value="Consent.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element id="Consent.extension:createSummary">
+      <path value="Consent.extension"/>
+      <sliceName value="createSummary"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile
+                 value="https://fhir.nhs.uk/England/StructureDefinition/Extension-ConsentCreateSummary"/>
+      </type>
+    </element>
+    <element id="Consent.extension:removeSummary">
+      <path value="Consent.extension"/>
+      <sliceName value="removeSummary"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile
+                 value="https://fhir.nhs.uk/England/StructureDefinition/Extension-ConsentRemoveSummary"/>
+      </type>
+    </element>
+    <element id="Consent.category">
+      <path value="Consent.category"/>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet
+                  value="https://fhir.nhs.uk/England/ValueSet/PatientFlagCategory"/>
+      </binding>
+    </element>
+    <element id="Consent.performer">
+      <path value="Consent.performer"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile
+                       value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+        <targetProfile
+                       value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+        <targetProfile
+                       value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+      </type>
+    </element>
+    <element id="Consent.policy">
+      <path value="Consent.policy"/>
+      <max value="1"/>
+    </element>
+    <element id="Consent.policy.uri">
+      <path value="Consent.policy.uri"/>
+      <max value="1"/>
+    </element>
+    <element id="Consent.policyRule">
+      <path value="Consent.policyRule"/>
+      <max value="1"/>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="https://fhir.nhs.uk/England/ValueSet/FlagProxyRole"/>
+      </binding>
+    </element>
+    <element id="Consent.provision.purpose">
+      <path value="Consent.provision.purpose"/>
+      <max value="1"/>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet
+                  value="https://fhir.nhs.uk/England/ValueSet/FlagConsentPurpose"/>
+      </binding>
+    </element>
+  </differential>
 </StructureDefinition>
