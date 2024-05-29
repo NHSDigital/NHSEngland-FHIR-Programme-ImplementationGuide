@@ -82,7 +82,7 @@
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="Provenance"/>
+        <code value="Profile"/>
         <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagProvenance"/>
       </type>
     </element>
