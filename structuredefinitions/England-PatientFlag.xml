@@ -1,15 +1,15 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <id value="England-PatientFlag-RA" />
+    <id value="England-PatientFlag" />
     <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-category">
         <valueString value="Base.Management" />
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
         <valueCode value="patient" />
     </extension>
-    <url value="https://fhir.nhs.uk/England/StructureDefinition/England-PatientFlag-RA" />
+    <url value="https://fhir.nhs.uk/England/StructureDefinition/England-PatientFlag" />
     <version value="0.1.0" />
-    <name value="EnglandPatientFlagRA" />
-    <title value="England Patient Flag RA" />
+    <name value="EnglandPatientFlag" />
+    <title value="England Patient Flag" />
     <status value="draft" />
     <date value="2024-02-14" />
     <publisher value="NHS England" />
