@@ -84,7 +84,7 @@
       <type>
         <code value="Provenance"/>
         <profile
-                 value="https://fhir.nhs.uk/England/StructureDefinition/FlagProvenance"/>
+                 value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagProvenance"/>
       </type>
     </element>
     <element id="Condition.category">
@@ -101,8 +101,7 @@
     <element id="Condition.category:patientFlag">
       <path value="Condition.category"/>
       <sliceName value="patientFlag"/>
-      <min value="1"/>
-      <max value="*"/>
+      <max value="1"/>
       <mustSupport value="true"/>
       <binding>
         <strength value="required"/>
