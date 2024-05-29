@@ -1,0 +1,39 @@
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="AddCPISRecordTransactionExample1" />
+    <type value="transaction" />
+    <entry>
+        <fullUrl value="Patient/PatientExample1" />
+        <request>
+            <method value="PUT" />
+            <url value="Patient/PatientExample1" />
+        </request>
+    </entry>
+    <entry>
+        <fullUrl value="Consent/CPISConsentExample1" />
+        <request>
+            <method value="PUT" />
+            <url value="Consent/CPISConsentExample1" />
+        </request>
+    </entry>
+    <entry>
+        <fullUrl value="Condition/CPISConditionExample1" />
+        <request>
+            <method value="PUT" />
+            <url value="Condition/CPISConditionExample1" />
+        </request>
+    </entry>
+    <entry>
+        <fullUrl value="Flag/CPISPatientFlagExample1" />
+        <request>
+            <method value="PUT" />
+            <url value="Flag/CPISPatientFlagExample1" />
+        </request>
+    </entry>
+    <entry>
+        <fullUrl value="Flag/CPISFlagExample1" />
+        <request>
+            <method value="PUT" />
+            <url value="Flag/CPISFlagExample1" />
+        </request>
+    </entry>
+</Bundle>
