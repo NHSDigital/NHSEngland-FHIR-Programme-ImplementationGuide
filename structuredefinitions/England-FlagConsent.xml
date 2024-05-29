@@ -52,9 +52,16 @@
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Consent" />
     <derivation value="constraint" />
     <differential>
-        <element id="Condition.contained">
-        <path value="Condition.contained" />
-        <min value="1" />
+         <element id="Condition.contained">
+            <path value="Condition.contained" />
+            <slicing>
+                <discriminator>
+                    <type value="profile" />
+                    <path value="contained" />
+                </discriminator>
+                <rules value="open" />
+            </slicing>
+            <min value="1" />
         </element>
         <element id="Consent.contained:provenance">
         <path value="Consent.contained" />
