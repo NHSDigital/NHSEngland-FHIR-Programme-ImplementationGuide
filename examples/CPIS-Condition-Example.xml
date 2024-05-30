@@ -7,6 +7,7 @@
   <contained>
     <Provenance>
       <id value="482155c0-9ed3-4b22-b7b8-009f265606cc"/>
+      <type value = "Provenance" />
       <target>
         <reference value="#"/>
       </target>
