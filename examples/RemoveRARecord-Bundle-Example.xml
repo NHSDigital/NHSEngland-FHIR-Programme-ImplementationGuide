@@ -1,0 +1,22 @@
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="RemoveRARecord-Bundle-Example"/>
+  <type value="transaction"/>
+  <entry>
+    <request>
+      <method value="DELETE"/>
+      <url value="Flag/RA-PatientFlag-Example"/>
+    </request>
+  </entry>
+  <entry>
+    <request>
+      <method value="DELETE"/>
+      <url value="Consent/RA-Consent-Example"/>
+    </request>
+  </entry>
+  <entry>
+    <request>
+      <method value="DELETE"/>
+      <url value="Condition/RA-Condition-Example"/>
+    </request>
+  </entry>
+</Bundle>
