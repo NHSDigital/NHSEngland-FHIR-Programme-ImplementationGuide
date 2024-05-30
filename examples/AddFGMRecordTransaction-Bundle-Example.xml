@@ -1,0 +1,39 @@
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="AddFGMRecordTransaction-Bundle-Example" />
+    <type value="transaction" />
+    <entry>
+        <fullUrl value="Patient/UKCore-Patient-Example" />
+        <request>
+            <method value="PUT" />
+            <url value="Patient/UKCore-Patient-Example" />
+        </request>
+    </entry>
+    <entry>
+        <fullUrl value="Consent/FGM-Consent-Example" />
+        <request>
+            <method value="PUT" />
+            <url value="Consent/FGM-Consent-Example" />
+        </request>
+    </entry>
+    <entry>
+        <fullUrl value="Condition/FGM-Condition-Example" />
+        <request>
+            <method value="PUT" />
+            <url value="Condition/FGM-Condition-Example" />
+        </request>
+    </entry>
+    <entry>
+        <fullUrl value="Flag/FGM-PatientFlag-Example" />
+        <request>
+            <method value="PUT" />
+            <url value="Flag/FGM-PatientFlag-Example" />
+        </request>
+    </entry>
+    <entry>
+        <fullUrl value="Flag/FGM-Flag-Example" />
+        <request>
+            <method value="PUT" />
+            <url value="Flag/FGM-Flag-Example" />
+        </request>
+    </entry>
+</Bundle>
