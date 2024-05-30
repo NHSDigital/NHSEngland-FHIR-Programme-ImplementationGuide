@@ -85,28 +85,6 @@
         <rules value="open"/>
       </slicing>
     </element>
-    <element id="Consent.extension:createSummary">
-      <path value="Consent.extension"/>
-      <sliceName value="createSummary"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="Extension"/>
-        <profile
-                 value="https://fhir.nhs.uk/England/StructureDefinition/Extension-ConsentCreateSummary"/>
-      </type>
-    </element>
-    <element id="Consent.extension:removeSummary">
-      <path value="Consent.extension"/>
-      <sliceName value="removeSummary"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="Extension"/>
-        <profile
-                 value="https://fhir.nhs.uk/England/StructureDefinition/Extension-ConsentRemoveSummary"/>
-      </type>
-    </element>
     <element id="Consent.category">
       <path value="Consent.category"/>
       <binding>
