@@ -53,12 +53,17 @@
             </slicing>
             <min value="1" />
         </element>
-        <element id="Flag.contained:provenance">
-            <path value="Flag.contained" />
-            <sliceName value="provenance" />
-            <min value="1" />
-            <max value="1" />
-        </element>
+     <element id="Flag.contained:provenance">
+      <path value="Flag.contained"/>
+      <sliceName value="provenance"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Provenance"/>
+        <profile
+                 value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagProvenance"/>
+      </type>
+      </element>
         <element id="Flag.extension">
             <path value="Flag.extension" />
             <slicing>
