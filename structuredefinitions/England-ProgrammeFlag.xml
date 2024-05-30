@@ -67,8 +67,7 @@
     <element id="Flag.category:patientFlag">
       <path value="Flag.category"/>
       <sliceName value="patientFlag"/>
-      <min value="1"/>
-      <max value="*"/>
+      <max value="1"/>
       <mustSupport value="true"/>
       <binding>
         <strength value="required"/>
@@ -79,8 +78,7 @@
     <element id="Flag.category:programmeFlag">
       <path value="Flag.category"/>
       <sliceName value="programmeFlag"/>
-      <min value="1"/>
-      <max value="*"/>
+      <max value="1"/>
       <mustSupport value="true"/>
       <binding>
         <strength value="required"/>
