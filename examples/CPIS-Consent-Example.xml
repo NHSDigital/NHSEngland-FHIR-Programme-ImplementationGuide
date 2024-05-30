@@ -8,11 +8,11 @@
           <meta>
               <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagConsent" />
           </meta>
-            <id value="51a731b3-1c46-47ba-abad-04209bd264e6" />
-            <target>
+        <id value="51a731b3-1c46-47ba-abad-04209bd264e6" />
+        <target>
                 <reference value="#" />
             </target>
-            <recorded value="2024-01-01T11:00:00+00:00" />
+       <recorded value="2024-01-01T11:00:00+00:00" />
             <agent>
                 <who>
                     <reference value="https://sds.spineservices.nhs.uk/STU3/Practitioner/2ee4tr6a9" />
