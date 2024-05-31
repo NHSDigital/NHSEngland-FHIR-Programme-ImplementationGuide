@@ -1,0 +1,39 @@
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="AddRARecordTransaction-Bundle-Example" />
+    <type value="transaction" />
+    <entry>
+        <fullUrl value="Patient/UKCore-Patient-Example" />
+        <request>
+            <method value="PUT" />
+            <url value="Patient/UKCore-Patient-Example" />
+        </request>
+    </entry>
+    <entry>
+        <fullUrl value="Consent/RA-Consent-Example" />
+        <request>
+            <method value="PUT" />
+            <url value="Consent/RA-Consent-Example" />
+        </request>
+    </entry>
+    <entry>
+        <fullUrl value="Condition/RA-Condition-Example" />
+        <request>
+            <method value="PUT" />
+            <url value="Condition/RA-Condition-Example" />
+        </request>
+    </entry>
+    <entry>
+        <fullUrl value="Flag/RA-PatientFlag-Example" />
+        <request>
+            <method value="PUT" />
+            <url value="Flag/RA-PatientFlag-Example" />
+        </request>
+    </entry>
+    <entry>
+        <fullUrl value="Flag/RA-Flag-Example" />
+        <request>
+            <method value="PUT" />
+            <url value="Flag/RA-Flag-Example" />
+        </request>
+    </entry>
+</Bundle>
