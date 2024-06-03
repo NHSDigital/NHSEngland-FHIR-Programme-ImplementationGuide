@@ -5,6 +5,9 @@
              value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagCondition" />
   </meta>
   <contained>
+     <meta>
+         <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagProvenance" />
+      </meta>
     <Provenance>
       <id value="482155c0-9ed3-4b22-b7b8-009f265606cc" />
       <target>
