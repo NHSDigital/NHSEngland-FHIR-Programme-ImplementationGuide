@@ -5,10 +5,10 @@
              value="https://fhir.nhs.uk/England/StructureDefinition/England-PatientFlag" />
   </meta>
   <contained>
-    <Provenance>
-      <meta>
+     <meta>
         <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagProvenance" />
       </meta>
+    <Provenance>
       <id value="3fc83fd8-4a6d-48e4-91ab-12bb10a4a834" />
       <target>
         <reference value="#" />
