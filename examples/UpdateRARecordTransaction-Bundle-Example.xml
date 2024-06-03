@@ -143,8 +143,8 @@
         </meta>
         <contained>
           <Provenance>
-        <meta>
-             <profile="https://fhir.nhs.uk/England/StructureDefinition/England-FlagProvenance" />
+           <meta>
+             <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagProvenance" />
             </meta>
             <id value="6a6b18a7-c077-49da-929f-a8dd38468f79" />
             <target>
@@ -231,8 +231,8 @@
         </meta>
         <contained>
           <Provenance>
-        <meta>
-             <profile="https://fhir.nhs.uk/England/StructureDefinition/England-FlagProvenance" />
+            <meta>
+             <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagProvenance" />
             </meta>
             <id value="c4e2e862-3bf4-4176-a186-9f1732938260" />
             <target>
@@ -411,8 +411,8 @@
         </meta>
         <contained>
           <Provenance>
-        <meta>
-             <profile="https://fhir.nhs.uk/England/StructureDefinition/England-FlagProvenance" />
+           <meta>
+             <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagProvenance" />
             </meta>
             <id value="f55e1edc-8ac7-4e06-b322-25fd34e62249" />
             <target>
