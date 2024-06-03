@@ -8,7 +8,7 @@
   <contained>
     <Provenance>
       <meta>
-        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagProvenance" />
+        <profile ="https://fhir.nhs.uk/England/StructureDefinition/England-FlagProvenance" />
       </meta>
       <id value="4c75ce1f-1ad7-4391-b5f6-104754c7e904" />
       <target>
