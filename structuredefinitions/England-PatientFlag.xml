@@ -1,11 +1,5 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <id value="England-PatientFlag" />
-    <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-category">
-        <valueString value="Base.Management" />
-    </extension>
-    <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
-        <valueCode value="patient" />
-    </extension>
     <url value="https://fhir.nhs.uk/England/StructureDefinition/England-PatientFlag" />
     <version value="0.1.0" />
     <name value="EnglandPatientFlag" />
