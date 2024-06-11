@@ -3,10 +3,10 @@
   <id value="AddRARecordTransaction-Bundle-Example" />
   <type value="transaction" />
   <entry>
-    <fullUrl value="Patient/PatientFlag-ALanMann-Example" />
+    <fullUrl value="Patient/PatientFlag-AlanMann-Example" />
     <resource>
       <Patient>
-        <id value="PatientFlag-ALanMann-Example" />
+        <id value="PatientFlag-AlanMann-Example" />
         <meta>
           <profile
                    value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
@@ -27,7 +27,7 @@
     </resource>
     <request>
       <method value="PUT" />
-      <url value="Patient/PatientFlag-ALanMann-Example" />
+      <url value="Patient/PatientFlag-AlanMann-Example" />
     </request>
   </entry>
   <entry>
@@ -106,7 +106,7 @@
           </coding>
         </category>
         <patient>
-          <reference value="Patient/PatientFlag-ALanMann-Example" />
+          <reference value="Patient/PatientFlag-AlanMann-Example" />
         </patient>
         <policy>
           <authority value="https://www.gov.uk/" />
@@ -234,7 +234,7 @@
                    value="https://fhir.nhs.uk/England/StructureDefinition/England-PatientFlag" />
         </meta>
         <contained>
-           <meta>
+           <metal
              <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagProvenance" />
             </meta>
           <Provenance>
@@ -306,7 +306,7 @@
           </coding>
         </code>
         <subject>
-          <reference value="Patient/PatientFlag-ALanMann-Example" />
+          <reference value="Patient/PatientFlag-AlanMann-Example" />
         </subject>
       </Flag>
     </resource>
@@ -392,7 +392,7 @@
           </coding>
         </code>
         <subject>
-          <reference value="Patient/PatientFlag-ALanMann-Example" />
+          <reference value="Patient/PatientFlag-AlanMann-Example" />
         </subject>
       </Flag>
     </resource>
