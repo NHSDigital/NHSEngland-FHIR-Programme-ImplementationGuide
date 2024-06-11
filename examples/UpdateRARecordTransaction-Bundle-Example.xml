@@ -2,10 +2,10 @@
   <id value="UpdateRARecordTransaction-Bundle-Example" />
   <type value="transaction" />
   <entry>
-    <fullUrl value="Patient/UKCore-Patient-Example" />
+    <fullUrl value="Patient/PatientFlag-AlanMann-Example" />
     <resource>
       <Patient>
-        <id value="UKCore-Patient-Example" />
+        <id value="PatientFlag-AlanMann-Example" />
         <meta>
           <profile
                    value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
@@ -26,7 +26,7 @@
     </resource>
     <request>
       <method value="PUT" />
-      <url value="Patient/UKCore-Patient-Example" />
+      <url value="Patient/PatientFlag-AlanMann-Example" />
     </request>
   </entry>
   <entry>
@@ -102,7 +102,7 @@
           </coding>
         </category>
         <patient>
-          <reference value="Patient/UKCore-Patient-Example" />
+          <reference value="Patient/PatientFlag-AlanMann-Example" />
         </patient>
         <policy>
           <authority value="https://www.gov.uk/" />
@@ -211,7 +211,7 @@
           </coding>
         </code>
         <subject>
-          <reference value="Patient/UKCore-Patient-Example" />
+          <reference value="Patient/PatientFlag-AlanMann-Example" />
         </subject>
       </Condition>
     </resource>
@@ -302,7 +302,7 @@
           </coding>
         </code>
         <subject>
-          <reference value="Patient/UKCore-Patient-Example" />
+          <reference value="Patient/PatientFlag-AlanMann-Example" />
         </subject>
       </Flag>
     </resource>
@@ -388,7 +388,7 @@
           </coding>
         </code>
         <subject>
-          <reference value="Patient/UKCore-Patient-Example" />
+          <reference value="Patient/PatientFlag-AlanMann-Example" />
         </subject>
       </Flag>
     </resource>
@@ -477,7 +477,7 @@
           </coding>
         </code>
         <subject>
-          <reference value="Patient/UKCore-Patient-Example" />
+          <reference value="Patient/PatientFlag-AlanMann-Example" />
         </subject>
       </Condition>
     </resource>
@@ -562,7 +562,7 @@
           </coding>
         </code>
         <subject>
-          <reference value="Patient/UKCore-Patient-Example" />
+          <reference value="Patient/PatientFlag-AlanMann-Example" />
         </subject>
       </Flag>
     </resource>
