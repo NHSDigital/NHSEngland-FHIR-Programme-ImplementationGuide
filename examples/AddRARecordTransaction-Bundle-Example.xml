@@ -234,7 +234,7 @@
                    value="https://fhir.nhs.uk/England/StructureDefinition/England-PatientFlag" />
         </meta>
         <contained>
-           <meta
+           <meta>
              <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagProvenance" />
             </meta>
           <Provenance>
