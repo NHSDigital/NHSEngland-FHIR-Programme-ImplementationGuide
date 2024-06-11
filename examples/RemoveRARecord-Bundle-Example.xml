@@ -83,7 +83,7 @@
           </coding>
         </code>
         <subject>
-          <reference value="Patient/UKCore-Patient-Example" />
+          <reference value="Patient/PatientFlag-AlanMann-Example" />
         </subject>
       </Flag>
     </resource>
@@ -168,7 +168,7 @@
           </coding>
         </category>
         <patient>
-          <reference value="Patient/UKCore-Patient-Example" />
+          <reference value="Patient/PatientFlag-AlanMann-Example" />
         </patient>
         <policy>
           <authority value="https://www.gov.uk/" />
@@ -277,7 +277,7 @@
           </coding>
         </code>
         <subject>
-          <reference value="Patient/UKCore-Patient-Example" />
+          <reference value="Patient/PatientFlag-AlanMann-Example" />
         </subject>
       </Condition>
     </resource>
