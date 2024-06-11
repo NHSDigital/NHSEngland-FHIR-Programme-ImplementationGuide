@@ -70,7 +70,7 @@
     </coding>
   </category>
   <patient>
-    <reference value="Patient/UKCore-Patient-Example" />
+    <reference value="Patient/PatientFlag-AlanMann-Example" />
   </patient>
   <policy>
     <authority value="https://www.gov.uk/" />
