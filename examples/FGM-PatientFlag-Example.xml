@@ -58,6 +58,6 @@
     </coding>
   </code>
   <subject>
-    <reference value="Patient/UKCore-Patient-Example" />
+    <reference value="Patient/PatientFlag-AlanMann-Example" />
   </subject>
 </Flag>
