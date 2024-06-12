@@ -68,11 +68,11 @@
               </role>
               <who>
                 <reference
-                           value="https://sds.spineservices.nhs.uk/STU3/Practitioner/2ee4tr6a9" />
+                           value="https://sds.spineservices.nhs.uk/Practitioner/2ee4tr6a9" />
               </who>
               <onBehalfOf>
                 <reference
-                           value="https://directory.spineservices.nhs.uk/STU3/Organization/a3e5i7" />
+                           value="https://directory.spineservices.nhs.uk/Organization/a3e5i7" />
               </onBehalfOf>
             </agent>
           </Provenance>
@@ -174,11 +174,11 @@
               </role>
               <who>
                 <reference
-                           value="https://sds.spineservices.nhs.uk/STU3/Practitioner/2ee4tr6a9" />
+                           value="https://sds.spineservices.nhs.uk/Practitioner/2ee4tr6a9" />
               </who>
               <onBehalfOf>
                 <reference
-                           value="https://directory.spineservices.nhs.uk/STU3/Organization/a3e5i7" />
+                           value="https://directory.spineservices.nhs.uk/Organization/a3e5i7" />
               </onBehalfOf>
             </agent>
           </Provenance>
@@ -262,11 +262,11 @@
               </role>
               <who>
                 <reference
-                           value="https://sds.spineservices.nhs.uk/STU3/Practitioner/2ee4tr6a9" />
+                           value="https://sds.spineservices.nhs.uk/Practitioner/2ee4tr6a9" />
               </who>
               <onBehalfOf>
                 <reference
-                           value="https://directory.spineservices.nhs.uk/STU3/Organization/a3e5i7" />
+                           value="https://directory.spineservices.nhs.uk/Organization/a3e5i7" />
               </onBehalfOf>
             </agent>
           </Provenance>
@@ -350,11 +350,11 @@
               </role>
               <who>
                 <reference
-                           value="https://sds.spineservices.nhs.uk/STU3/Practitioner/2ee4tr6a9" />
+                           value="https://sds.spineservices.nhs.uk/Practitioner/2ee4tr6a9" />
               </who>
               <onBehalfOf>
                 <reference
-                           value="https://directory.spineservices.nhs.uk/STU3/Organization/a3e5i7" />
+                           value="https://directory.spineservices.nhs.uk/Organization/a3e5i7" />
               </onBehalfOf>
             </agent>
           </Provenance>
