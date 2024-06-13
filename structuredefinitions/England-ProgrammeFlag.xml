@@ -1,15 +1,9 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <id value="England-ProgrammeFlag-RA" />
-    <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-category">
-        <valueString value="Base.Management" />
-    </extension>
-    <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
-        <valueCode value="patient" />
-    </extension>
-    <url value="https://fhir.nhs.uk/England/StructureDefinition/England-ProgrammeFlag-RA" />
+    <id value="England-ProgrammeFlag" />
+    <url value="https://fhir.nhs.uk/England/StructureDefinition/England-ProgrammeFlag" />
     <version value="0.1.0" />
-    <name value="EnglandProgrammeFlagRA" />
-    <title value="England Programme Flag RA" />
+    <name value="EnglandProgrammeFlag" />
+    <title value="England Programme Flag" />
     <status value="draft" />
     <date value="2024-02-14" />
     <publisher value="NHS England" />
@@ -64,23 +58,36 @@
             </slicing>
             <min value="2" />
         </element>
-        <element id="Flag.category:patientFlag">
-            <path value="Flag.category" />
-            <sliceName value="patientFlag" />
-            <min value="1" />
-            <max value="*" />
-            <mustSupport value="true" />
-        </element>
-        <element id="Flag.category:programmeFlag">
-            <path value="Flag.category" />
-            <sliceName value="programmeFlag" />
-            <min value="1" />
-            <max value="*" />
-            <mustSupport value="true" />
-        </element>
-        <element id="Flag.code">
-            <path value="Flag.code" />
-            <mustSupport value="true" />
-        </element>
+    <element id="Flag.category:patientFlag">
+      <path value="Flag.category" />
+      <sliceName value="patientFlag" />
+      <max value="1" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet
+                  value="https://fhir.nhs.uk/England/ValueSet/PatientFlagCategory" />
+      </binding>
+    </element>
+    <element id="Flag.category:programmeFlag">
+      <path value="Flag.category" />
+      <sliceName value="programmeFlag" />
+      <max value="1" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet
+                  value="https://fhir.nhs.uk/England/ValueSet/ProgrammeFlagCategory" />
+      </binding>
+    </element>
+    <element id="Flag.code">
+      <path value="Flag.code" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet
+                  value="https://fhir.nhs.uk/England/ValueSet/ProgrammeFlagCode" />
+      </binding>
+    </element>
     </differential>
 </StructureDefinition>

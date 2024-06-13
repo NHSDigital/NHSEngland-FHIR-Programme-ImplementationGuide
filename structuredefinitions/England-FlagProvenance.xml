@@ -1,15 +1,9 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <id value="England-FlagProvenance-RA" />
-    <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-category">
-        <valueString value="Foundation.Security" />
-    </extension>
-    <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
-        <valueCode value="not-classified" />
-    </extension>
-    <url value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagProvenance-RA" />
+    <id value="England-FlagProvenance" />
+    <url value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagProvenance" />
     <version value="0.1.0" />
-    <name value="EnglandFlagProvenanceRA" />
-    <title value="England Flag Provenance RA" />
+    <name value="EnglandFlagProvenance" />
+    <title value="England Flag Provenance" />
     <status value="draft" />
     <date value="2024-02-14" />
     <publisher value="NHS England" />
