@@ -141,7 +141,7 @@
         <id value="CPIS-Condition-Example" />
         <meta>
           <profile
-                   value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagCondition" />
+                   value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-Condition" />
         </meta>
         <contained>
            <meta>
