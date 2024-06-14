@@ -36,7 +36,7 @@
         <id value="RA-Consent-Example" />
         <meta>
           <profile
-                   value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagConsent" />
+                   value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-Consent" />
         </meta>
         <contained>
           <Provenance>
