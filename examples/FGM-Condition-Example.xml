@@ -52,7 +52,7 @@
   <category>
     <coding>
       <system
-              value="https://fhir.nhs.uk/England/CodeSystem/PatientFlagCategory" />
+              value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
       <code value="FGM" />
       <display value="Female Genital Mutilation Flag" />
     </coding>
@@ -60,7 +60,7 @@
   <category>
     <coding>
       <system
-              value="https://fhir.nhs.uk/England/CodeSystem/FGMConditionCategory" />
+              value="https://fhir.nhs.uk/England/CodeSystem/England-ConditionCategoryFGM" />
       <code value="fgm-example-condition-category" />
       <display value="FGM example condition category" />
     </coding>
@@ -68,7 +68,7 @@
   <code>
     <coding>
       <system
-              value="https://fhir.nhs.uk/England/CodeSystem/FGMConditionCode" />
+              value="https://fhir.nhs.uk/England/CodeSystem/England-ConditionCodeFGM" />
       <code value="1" />
       <display value="FGM example condition code" />
     </coding>

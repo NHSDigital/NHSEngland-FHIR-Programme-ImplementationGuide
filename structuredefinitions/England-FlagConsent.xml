@@ -84,7 +84,7 @@
       <binding>
         <strength value="extensible" />
         <valueSet
-                  value="https://fhir.nhs.uk/England/ValueSet/PatientFlagCategory" />
+                  value="https://fhir.nhs.uk/England/ValueSet/England-FlagCategoryPatient" />
       </binding>
     </element>
     <element id="Consent.performer">
@@ -113,7 +113,7 @@
       <max value="1" />
       <binding>
         <strength value="extensible" />
-        <valueSet value="https://fhir.nhs.uk/England/ValueSet/FlagProxyRole" />
+        <valueSet value="https://fhir.nhs.uk/England/ValueSet/England-FlagProxyRole" />
       </binding>
     </element>
     <element id="Consent.provision.purpose">
@@ -122,7 +122,7 @@
       <binding>
         <strength value="extensible" />
         <valueSet
-                  value="https://fhir.nhs.uk/England/ValueSet/FlagConsentPurpose" />
+                  value="https://fhir.nhs.uk/England/ValueSet/England-FlagConsentPurpose" />
       </binding>
     </element>
   </differential>

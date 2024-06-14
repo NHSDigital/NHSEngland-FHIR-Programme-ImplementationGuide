@@ -70,7 +70,7 @@
   <code>
     <coding>
       <system
-              value="https://fhir.nhs.uk/England/CodeSystem/PatientFlagCategory" />
+              value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
       <code value="NRAF" />
       <display value="National Reasonable Adjustments Flag" />
     </coding>

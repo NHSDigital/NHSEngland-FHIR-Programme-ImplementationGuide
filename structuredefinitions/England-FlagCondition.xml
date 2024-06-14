@@ -110,7 +110,7 @@
       <binding>
         <strength value="required" />
         <valueSet
-                  value="https://fhir.nhs.uk/England/ValueSet/FlagConditionCategory" />
+                  value="https://fhir.nhs.uk/England/ValueSet/England-FlagConditionCategory" />
       </binding>
      </element>
      <element id="Condition.code">
@@ -120,7 +120,7 @@
       <binding>
         <strength value="extensible" />
         <valueSet
-                  value="https://fhir.nhs.uk/England/ValueSet/FlagConditionCode" />
+                  value="https://fhir.nhs.uk/England/ValueSet/England-FlagConditionCode" />
       </binding>
      </element>
   </differential>
