@@ -29,7 +29,7 @@
   <content value="complete" />
   <count value="1" />
   <concept>
-    <code value="1" />
+    <code value="fgm-example-condition-code" />
     <display value="FGM example condition code" />
   </concept>
 </CodeSystem>
