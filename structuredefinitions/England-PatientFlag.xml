@@ -55,7 +55,7 @@
       <type>
         <code value="Provenance" />
         <profile
-                 value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagProvenance" />
+                 value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-Provenance" />
       </type>
       </element>
         <element id="Flag.extension">
