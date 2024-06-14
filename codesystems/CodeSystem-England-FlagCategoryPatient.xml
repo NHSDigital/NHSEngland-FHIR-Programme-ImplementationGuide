@@ -7,7 +7,7 @@
   <url value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
   <version value="0.4.0" />
   <name value="EnglandFlagCategoryPatient" />
-  <title value="England Flag CategoryPatient" />
+  <title value="England Flag Category Patient" />
   <status value="draft" />
   <experimental value="false" />
   <date value="2024-02-14" />
