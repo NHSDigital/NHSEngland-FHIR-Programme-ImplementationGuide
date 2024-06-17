@@ -1,24 +1,13 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-<<<<<<< HEAD:codesystems/CodeSystem-England-ConditionCodeRA.xml
   <id value="England-ConditionCodeRA" />
-=======
-  <id value="RAConditionCode" />
->>>>>>> main:codesystems/CodeSystem-RAConditionCode.xml
   <text>
     <status value="generated" />
     <div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>https://fhir.nhs.uk/England/CodeSystem/RA-ConditionCode</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="RA-ConditionCode-1"> </a></td><td>Vision (for example blindness or partial sight)</td></tr><tr><td style="white-space:nowrap">2<a name="RA-ConditionCode-2"> </a></td><td>Hearing (for example deafness or partial hearing)</td></tr><tr><td style="white-space:nowrap">3<a name="RA-ConditionCode-3"> </a></td><td>Mobility (for example walking short distances or climbing stairs)</td></tr><tr><td style="white-space:nowrap">4<a name="RA-ConditionCode-4"> </a></td><td>Dexterity (for example lifting and carrying objects, using a keyboard)</td></tr><tr><td style="white-space:nowrap">5<a name="RA-ConditionCode-5"> </a></td><td>Learning or understanding or concentrating</td></tr><tr><td style="white-space:nowrap">6<a name="RA-ConditionCode-6"> </a></td><td>Memory</td></tr><tr><td style="white-space:nowrap">7<a name="RA-ConditionCode-7"> </a></td><td>Mental health</td></tr><tr><td style="white-space:nowrap">8<a name="RA-ConditionCode-8"> </a></td><td>Stamina or breathing or fatigue</td></tr><tr><td style="white-space:nowrap">9<a name="RA-ConditionCode-9"> </a></td><td>Social or behavioural (for example associated with autism spectrum disorder (ASD) which includes Asperger’s, or attention deficit hyperactivity disorder (ADHD))</td></tr><tr><td style="white-space:nowrap">10<a name="RA-ConditionCode-10"> </a></td><td>Other (please specify)</td></tr><tr><td style="white-space:nowrap">12<a name="RA-ConditionCode-12"> </a></td><td>Patient would prefer not to say</td></tr></table></div>
   </text>
-<<<<<<< HEAD:codesystems/CodeSystem-England-ConditionCodeRA.xml
   <url value="https://fhir.nhs.uk/England/CodeSystem/England-ConditionCodeRA" />
   <version value="0.4.0" />
   <name value="EnglandConditionCodeRA" />
   <title value="England Condition Code RA" />
-=======
-  <url value="https://fhir.nhs.uk/England/CodeSystem/RAConditionCode" />
-  <version value="0.4.0" />
-  <name value="RAConditionCode" />
-  <title value="RA Condition Code" />
->>>>>>> main:codesystems/CodeSystem-RAConditionCode.xml
   <status value="draft" />
   <experimental value="false" />
   <date value="2024-02-14" />
