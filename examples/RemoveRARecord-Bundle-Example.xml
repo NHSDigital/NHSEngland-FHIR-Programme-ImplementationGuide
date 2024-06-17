@@ -205,7 +205,7 @@
         <id value="RA-Condition-Example" />
         <meta>
           <profile
-                   value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-Condition" />
+                   value="https://fhir.nhs.uk/England/StructureDefinition/England-Condition-Flag" />
         </meta>
         <contained>
             <meta>
