@@ -1,24 +1,13 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-<<<<<<< HEAD:codesystems/CodeSystem-England-FlagCategoryFGM.xml
   <id value="England-FlagCategoryFGM" />
-=======
-  <id value="FGMFlagCategory" />
->>>>>>> main:codesystems/CodeSystem-FGMFlagCategory.xml
   <text>
     <status value="generated" />
     <div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>https://fhir.nhs.uk/England/CodeSystem/FGM-FlagCategory</code> defines the following code:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">001<a name="FGM-FlagCategory-001"> </a></td><td>Example FGM category</td></tr></table></div>
   </text>
-<<<<<<< HEAD:codesystems/CodeSystem-England-FlagCategoryFGM.xml
   <url value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryFGM" />
   <version value="0.4.0" />
   <name value="EnglandFlagCategoryFGM" />
   <title value="England Flag Category FGM" />
-=======
-  <url value="https://fhir.nhs.uk/England/CodeSystem/FGMFlagCategory" />
-  <version value="0.4.0" />
-  <name value="FGMFlagCategory" />
-  <title value="FGM Flag Category" />
->>>>>>> main:codesystems/CodeSystem-FGMFlagCategory.xml
   <status value="draft" />
   <experimental value="false" />
   <date value="2024-02-14" />
