@@ -99,7 +99,7 @@
         <id value="RA-Consent-Example" />
         <meta>
           <profile
-                   value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagConsent" />
+                   value="https://fhir.nhs.uk/England/StructureDefinition/England-Consent-Flag" />
         </meta>
         <contained>
           <meta>
@@ -205,7 +205,7 @@
         <id value="RA-Condition-Example" />
         <meta>
           <profile
-                   value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagCondition" />
+                   value="https://fhir.nhs.uk/England/StructureDefinition/England-Condition-Flag" />
         </meta>
         <contained>
             <meta>

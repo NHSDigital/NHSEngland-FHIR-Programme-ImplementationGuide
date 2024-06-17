@@ -1,9 +1,9 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <id value="England-FlagCondition" />
-    <url value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagCondition" />
+    <id value="England-Consent-Flag" />
+    <url value="https://fhir.nhs.uk/England/StructureDefinition/England-Consent-Flag" />
     <version value="0.1.0" />
-    <name value="EnglandFlagCondition" />
-    <title value="England Flag Condition" />
+    <name value="EnglandConsentFlag" />
+    <title value="England Consent Flag" />
     <status value="draft" />
     <date value="2024-02-14" />
     <publisher value="NHS England" />
@@ -16,19 +16,14 @@
       <rank value="1" />
     </telecom>
    </contact>
-    <description value="Record an individual condition for a flag in NHS England" />
-    <purpose value="This profile is made available to record an individual condition for a flag in NHS England " />
+    <description value="Record consent to capture information for NHS England flags" />
+    <purpose value="This profile is made available to record a consent to capture information for NHS England flags" />
     <copyright value="Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the \&amp;quot;License\&amp;quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \&amp;quot;AS IS\&amp;quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
     <fhirVersion value="4.0.1" />
     <mapping>
         <identity value="workflow" />
         <uri value="http://hl7.org/fhir/workflow" />
         <name value="Workflow Pattern" />
-    </mapping>
-    <mapping>
-        <identity value="sct-concept" />
-        <uri value="http://snomed.info/conceptdomain" />
-        <name value="SNOMED CT Concept Domain Binding" />
     </mapping>
     <mapping>
         <identity value="v2" />
@@ -45,22 +40,14 @@
         <uri value="http://hl7.org/fhir/fivews" />
         <name value="FiveWs Pattern Mapping" />
     </mapping>
-    <mapping>
-        <identity value="sct-attr" />
-        <uri value="http://snomed.org/attributebinding" />
-        <name value="SNOMED CT Attribute Binding" />
-    </mapping>
     <kind value="resource" />
     <abstract value="false" />
-    <type value="Condition" />
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Condition" />
+    <type value="Consent" />
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Consent" />
     <derivation value="constraint" />
     <differential>
-    <element id="Condition">
-      <path value="Condition" />
-    </element>
-    <element id="Condition.contained">
-      <path value="Condition.contained" />
+     <element id="Consent.contained">
+      <path value="Consent.contained" />
       <slicing>
         <discriminator>
           <type value="profile" />
@@ -70,58 +57,73 @@
       </slicing>
       <min value="1" />
     </element>
-      <element id="Condition.contained:provenance">
-      <path value="Condition.contained" />
+    <element id="Consent.contained:provenance">
+      <path value="Consent.contained" />
       <sliceName value="provenance" />
       <min value="1" />
       <max value="1" />
       <type>
         <code value="Provenance" />
-        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
+        <profile
+                 value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
       </type>
-     </element>
-    <element id="Condition.category">
-      <path value="Condition.category" />
+    </element>
+    <element id="Consent.extension">
+      <path value="Consent.extension" />
       <slicing>
         <discriminator>
-          <type value="pattern" />
-          <path value="$this" />
+          <type value="value" />
+          <path value="url" />
         </discriminator>
+        <ordered value="false" />
         <rules value="open" />
       </slicing>
-      <max value="2" />
     </element>
-    <element id="Condition.category:patientFlag">
-      <path value="Condition.category" />
-      <sliceName value="patientFlag" />
-      <max value="1" />
-      <mustSupport value="true" />
-      <binding>
-        <strength value="required" />
-        <valueSet
-                  value="https://fhir.nhs.uk/England/ValueSet/PatientFlagCategory" />
-      </binding>
-     </element>
-     <element id="Condition.category:conditionCategory">
-      <path value="Condition.category" />
-      <sliceName value="conditionCategory" />
-      <max value="1" />
-      <mustSupport value="true" />
-      <binding>
-        <strength value="required" />
-        <valueSet
-                  value="https://fhir.nhs.uk/England/ValueSet/FlagConditionCategory" />
-      </binding>
-     </element>
-     <element id="Condition.code">
-      <path value="Condition.code" />
-      <min value="1" />
-      <mustSupport value="true" />
+    <element id="Consent.category">
+      <path value="Consent.category" />
       <binding>
         <strength value="extensible" />
         <valueSet
-                  value="https://fhir.nhs.uk/England/ValueSet/FlagConditionCode" />
+                  value="https://fhir.nhs.uk/England/ValueSet/PatientFlagCategory" />
       </binding>
-     </element>
+    </element>
+    <element id="Consent.performer">
+      <path value="Consent.performer" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile
+                       value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <targetProfile
+                       value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <targetProfile
+                       value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
+    </element>
+    <element id="Consent.policy">
+      <path value="Consent.policy" />
+      <max value="1" />
+    </element>
+    <element id="Consent.policy.uri">
+      <path value="Consent.policy.uri" />
+      <max value="1" />
+    </element>
+    <element id="Consent.policyRule">
+      <path value="Consent.policyRule" />
+      <max value="1" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://fhir.nhs.uk/England/ValueSet/FlagProxyRole" />
+      </binding>
+    </element>
+    <element id="Consent.provision.purpose">
+      <path value="Consent.provision.purpose" />
+      <max value="1" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet
+                  value="https://fhir.nhs.uk/England/ValueSet/FlagConsentPurpose" />
+      </binding>
+    </element>
   </differential>
 </StructureDefinition>
