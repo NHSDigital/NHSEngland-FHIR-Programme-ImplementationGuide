@@ -1,24 +1,13 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-<<<<<<< HEAD:codesystems/CodeSystem-England-FlagCategoryRA.xml
   <id value="England-FlagCategoryRA" />
-=======
-  <id value="RAFlagCategory" />
->>>>>>> main:codesystems/CodeSystem-RAFlagCategory.xml
   <text>
     <status value="generated" />
     <div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>https://fhir.nhs.uk/England/CodeSystem/RA-FlagCategory</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">001<a name="RA-FlagCategory-001"> </a></td><td>Communication support</td></tr><tr><td style="white-space:nowrap">002<a name="RA-FlagCategory-002"> </a></td><td>Requires communication professional</td></tr><tr><td style="white-space:nowrap">003<a name="RA-FlagCategory-003"> </a></td><td>Requires specific contact method</td></tr><tr><td style="white-space:nowrap">004<a name="RA-FlagCategory-004"> </a></td><td>Requires specific information format</td></tr><tr><td style="white-space:nowrap">005<a name="RA-FlagCategory-005"> </a></td><td>Additional communication needs and support</td></tr><tr><td style="white-space:nowrap">006<a name="RA-FlagCategory-006"> </a></td><td>Community Language Support</td></tr><tr><td style="white-space:nowrap">007<a name="RA-FlagCategory-007"> </a></td><td>Adjustments for providing Additional Support to patients</td></tr><tr><td style="white-space:nowrap">008<a name="RA-FlagCategory-008"> </a></td><td>Adjustments for Individual Care Requirements</td></tr><tr><td style="white-space:nowrap">009<a name="RA-FlagCategory-009"> </a></td><td>Adjustments in relation to the environment of care</td></tr><tr><td style="white-space:nowrap">010<a name="RA-FlagCategory-010"> </a></td><td>Adjustments to support Additional needs</td></tr><tr><td style="white-space:nowrap">011<a name="RA-FlagCategory-011"> </a></td><td>Bespoke Reasonable adjustments</td></tr></table></div>
   </text>
-<<<<<<< HEAD:codesystems/CodeSystem-England-FlagCategoryRA.xml
   <url value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryRA" />
   <version value="0.4.0" />
   <name value="EnglandFlagCategoryRA" />
   <title value="England Flag Category RA" />
-=======
-  <url value="https://fhir.nhs.uk/England/CodeSystem/RAFlagCategory" />
-  <version value="0.4.0" />
-  <name value="RAFlagCategory" />
-  <title value="RA Flag Category" />
->>>>>>> main:codesystems/CodeSystem-RAFlagCategory.xml
   <status value="draft" />
   <experimental value="false" />
   <date value="2024-02-14" />
