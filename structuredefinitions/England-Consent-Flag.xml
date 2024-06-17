@@ -1,9 +1,9 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <id value="England-FlagConsent" />
-    <url value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagConsent" />
+    <id value="England-Consent-Flag" />
+    <url value="https://fhir.nhs.uk/England/StructureDefinition/England-Consent-Flag" />
     <version value="0.1.0" />
-    <name value="EnglandFlagConsent" />
-    <title value="England Flag Consent" />
+    <name value="EnglandConsentFlag" />
+    <title value="England Consent Flag" />
     <status value="draft" />
     <date value="2024-02-14" />
     <publisher value="NHS England" />
