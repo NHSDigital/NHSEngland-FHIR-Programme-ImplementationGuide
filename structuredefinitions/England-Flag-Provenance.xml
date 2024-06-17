@@ -1,6 +1,6 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <id value="England-Flag-Provenance" />
-    <url value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-Provenance" />
+    <id value="England-Provenance-Flag" />
+    <url value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
     <version value="0.1.0" />
     <name value="EnglandFlagProvenance" />
     <title value="England Flag Provenance" />
