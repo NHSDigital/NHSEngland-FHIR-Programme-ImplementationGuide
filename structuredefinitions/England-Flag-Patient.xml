@@ -1,6 +1,6 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <id value="England-Flag-Patient" />
-    <url value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-Patient" />
+    <id value="England-Flag-PatientFlag" />
+    <url value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag" />
     <version value="0.1.0" />
     <name value="EnglandFlagPatient" />
     <title value="England Flag Patient" />
