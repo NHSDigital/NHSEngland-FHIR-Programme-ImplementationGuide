@@ -1,24 +1,13 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-<<<<<<< HEAD:codesystems/CodeSystem-England-ConditionCodeFGM.xml
   <id value="England-ConditionCodeFGM" />
-=======
-  <id value="FGMConditionCode" />
->>>>>>> main:codesystems/CodeSystem-FGMConditionCode.xml
   <text>
     <status value="generated" />
     <div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>https://fhir.nhs.uk/England/CodeSystem/FGM-ConditionCode</code> defines the following code:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="FGM-ConditionCode-1"> </a></td><td>FGM example condition code</td></tr></table></div>
   </text>
-<<<<<<< HEAD:codesystems/CodeSystem-England-ConditionCodeFGM.xml
   <url value="https://fhir.nhs.uk/England/CodeSystem/England-ConditionCodeFGM" />
   <version value="0.4.0" />
   <name value="EnglandConditionCodeFGM" />
   <title value="England Condition Code FGM" />
-=======
-  <url value="https://fhir.nhs.uk/England/CodeSystem/FGMConditionCode" />
-  <version value="0.4.0" />
-  <name value="FGMConditionCode" />
-  <title value="FGM Condition Code" />
->>>>>>> main:codesystems/CodeSystem-FGMConditionCode.xml
   <status value="draft" />
   <experimental value="false" />
   <date value="2024-02-14" />
@@ -40,11 +29,7 @@
   <content value="complete" />
   <count value="1" />
   <concept>
-<<<<<<< HEAD:codesystems/CodeSystem-England-ConditionCodeFGM.xml
     <code value="fgm-example-condition-code" />
-=======
-    <code value="1" />
->>>>>>> main:codesystems/CodeSystem-FGMConditionCode.xml
     <display value="FGM example condition code" />
   </concept>
 </CodeSystem>
