@@ -1,5 +1,4 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-<<<<<<< HEAD:codesystems/CodeSystem-England-FlagCategoryPatient.xml
   <id value="England-FlagCategoryPatient" />
   <text>
     <status value="generated" />
@@ -9,17 +8,6 @@
   <version value="0.4.0" />
   <name value="EnglandFlagCategoryPatient" />
   <title value="England Flag Category Patient" />
-=======
-  <id value="PatientFlagCategory" />
-  <text>
-    <status value="generated" />
-    <div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>https://fhir.nhs.uk/England/CodeSystem/PatientFlagCategory</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">NRAF<a name="PatientFlagCategory-NRAF"> </a></td><td>National Reasonable Adjustments Flag</td></tr><tr><td style="white-space:nowrap">FGM<a name="PatientFlagCategory-FGM"> </a></td><td>Female Genital Mutilation Flag</td></tr></table></div>
-  </text>
-  <url value="https://fhir.nhs.uk/England/CodeSystem/PatientFlagCategory" />
-  <version value="0.4.0" />
-  <name value="PatientFlagCategory" />
-  <title value="Patient Flag Category" />
->>>>>>> main:codesystems/CodeSystem-PatientFlagCategory.xml
   <status value="draft" />
   <experimental value="false" />
   <date value="2024-02-14" />
