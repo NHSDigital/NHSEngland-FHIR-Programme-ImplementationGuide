@@ -1,9 +1,9 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <id value="England-ProgrammeFlag" />
-    <url value="https://fhir.nhs.uk/England/StructureDefinition/England-ProgrammeFlag" />
+    <id value="England-Flag-PatientFlag-Adjustment" />
+    <url value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag-Adjustment" />
     <version value="0.1.0" />
-    <name value="EnglandProgrammeFlag" />
-    <title value="England Programme Flag" />
+    <name value="EnglandFlagPatientFlagAdjustment" />
+    <title value="England Flag Patient Flag Adjustment" />
     <status value="draft" />
     <date value="2024-02-14" />
     <publisher value="NHS England" />

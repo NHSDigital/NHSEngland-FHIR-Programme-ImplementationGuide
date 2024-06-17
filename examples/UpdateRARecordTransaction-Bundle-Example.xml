@@ -318,7 +318,7 @@
         <id value="RA-Flag-Example" />
         <meta>
           <profile
-                   value="https://fhir.nhs.uk/England/StructureDefinition/England-ProgrammeFlag" />
+                   value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag-Adjustment" />
         </meta>
         <contained>
           <Provenance>
@@ -493,7 +493,7 @@
         <id value="RA-Flag2-Example" />
         <meta>
           <profile
-                   value="https://fhir.nhs.uk/England/StructureDefinition/England-ProgrammeFlag" />
+                   value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag-Adjustment" />
         </meta>
         <contained>
           <Provenance>
