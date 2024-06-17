@@ -1,24 +1,13 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-<<<<<<< HEAD:codesystems/CodeSystem-England-ConsentPurposeFGM.xml
   <id value="England-ConsentPurposeFGM" />
-=======
-  <id value="FGMConsentPurpose" />
->>>>>>> main:codesystems/CodeSystem-FGMConsentPurpose.xml
   <text>
     <status value="generated" />
     <div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>https://fhir.nhs.uk/England/CodeSystem/FGM-ConsentPurpose</code> defines the following code:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">FGMCONSENT<a name="FGM-ConsentPurpose-FGMCONSENT"> </a></td><td>FGM - Consent to record FGM flags</td></tr></table></div>
   </text>
-<<<<<<< HEAD:codesystems/CodeSystem-England-ConsentPurposeFGM.xml
   <url value="https://fhir.nhs.uk/England/CodeSystem/England-ConsentPurposeFGM" />
   <version value="0.4.0" />
   <name value="EnglandConsentPurposeFGM" />
   <title value="England Consent Purpose FGM" />
-=======
-  <url value="https://fhir.nhs.uk/England/CodeSystem/FGMConsentPurpose" />
-  <version value="0.4.0" />
-  <name value="FGMConsentPurpose" />
-  <title value="FGM Consent Purpose" />
->>>>>>> main:codesystems/CodeSystem-FGMConsentPurpose.xml
   <status value="draft" />
   <experimental value="false" />
   <date value="2024-02-14" />
