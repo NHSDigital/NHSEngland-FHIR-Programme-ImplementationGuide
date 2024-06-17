@@ -2,8 +2,8 @@
     <id value="England-Provenance-Flag" />
     <url value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
     <version value="0.1.0" />
-    <name value="EnglandFlagProvenance" />
-    <title value="England Flag Provenance" />
+    <name value="EnglandProvenanceFlag" />
+    <title value="England Provenance Flag" />
     <status value="draft" />
     <date value="2024-02-14" />
     <publisher value="NHS England" />
