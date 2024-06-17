@@ -4,11 +4,6 @@
     <version value="0.1.0" />
     <name value="EnglandFlagPatientFlagAdjustment" />
     <title value="England Flag Patient Flag Adjustment" />
-    <id value="England-ProgrammeFlag" />
-    <url value="https://fhir.nhs.uk/England/StructureDefinition/England-ProgrammeFlag" />
-    <version value="0.1.0" />
-    <name value="EnglandProgrammeFlag" />
-    <title value="England Programme Flag" />
     <status value="draft" />
     <date value="2024-02-14" />
     <publisher value="NHS England" />
