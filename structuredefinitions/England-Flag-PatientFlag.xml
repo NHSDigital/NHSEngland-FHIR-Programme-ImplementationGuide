@@ -1,9 +1,9 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <id value="England-PatientFlag" />
-    <url value="https://fhir.nhs.uk/England/StructureDefinition/England-PatientFlag" />
+    <id value="England-Flag-PatientFlag" />
+    <url value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag" />
     <version value="0.1.0" />
-    <name value="EnglandPatientFlag" />
-    <title value="England Patient Flag" />
+    <name value="EnglandFlagPatientFlag" />
+    <title value="England Flag Patient Flag" />
     <status value="draft" />
     <date value="2024-02-14" />
     <publisher value="NHS England" />
@@ -55,7 +55,7 @@
       <type>
         <code value="Provenance" />
         <profile
-                 value="https://fhir.nhs.uk/England/StructureDefinition/England-FlagProvenance" />
+                 value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
       </type>
       </element>
         <element id="Flag.extension">
