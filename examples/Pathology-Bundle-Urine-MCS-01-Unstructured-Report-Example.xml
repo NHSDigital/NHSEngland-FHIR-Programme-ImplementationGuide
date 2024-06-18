@@ -1,12 +1,12 @@
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="Pathology-Bundle-HPV-Report-Example" />
+  <id value="Pathology-Bundle-Urine-MCS-01-Unstructured-Report-Example" />
   <meta>
-    <lastUpdated value="2022-04-03T15:43:00+00:00" />
+    <lastUpdated value="2022-02-25T13:47:00+00:00" />
     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle" />
   </meta>
   <identifier>
     <system value="https://tools.ietf.org/html/rfc4122" />
-    <value value="4e9c9282-5440-49a8-a61d-285d9aefedbd" />
+    <value value="86834956-dc57-4b90-8f1b-6174a887ca27" />
   </identifier>
   <type value="message" />
   <entry>
@@ -164,7 +164,7 @@
         </meta>
         <identifier>
           <system value="http://B82033-pickeringmedicalpractice.com/labrequest" />
-          <value value="REQ-20220321-000017" />
+          <value value="REQ-20220221-000018" />
         </identifier>
         <status value="active" />
         <intent value="order" />
@@ -172,15 +172,15 @@
           <coding>
             <!-- From PaLM procedure reference set -->
             <system value="http://snomed.info/sct" />
-            <code value="700152009" />
-            <display value="Human papilloma virus screening" />
+            <code value="401324008" />
+            <display value="Urinary microscopy, culture and sensitivities" />
           </coding>
         </code>
         <subject>
           <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
           <display value="MOXEY, Judy" />
         </subject>
-        <authoredOn value="2022-03-21T10:17:00+00:00" />
+        <authoredOn value="2022-02-21T10:29:00+00:00" />
         <requester>
           <reference value="urn:uuid:9a835acf-d715-4d84-8dcf-a8435f6417fe" />
           <display value="GASKELL, Dr Gale" />
@@ -202,30 +202,30 @@
         </meta>
         <identifier>
           <system value="http://B82033-pickeringmedicalpractice.com/specimen" />
-          <value value="SPC-REQ-20220321-000065" />
+          <value value="SPC-REQ-20220221-000024" />
         </identifier>
         <accessionIdentifier>
           <system value="http://Y8J7D-pathlab001.com/specimen" />
-          <value value="SPC-LAB-20220322-005962" />
+          <value value="SPC-LAB-20220221-004306" />
         </accessionIdentifier>
         <status value="available" />
         <type>
           <coding>
             <system value="http://snomed.info/sct" />
-            <code value="258524009" />
-            <display value="Cervical swab" />
+            <code value="122575003" />
+            <display value="Urine specimen" />
           </coding>
         </type>
         <subject>
           <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
           <display value="MOXEY, Judy" />
         </subject>
-        <receivedTime value="2022-03-22T15:25:00+00:00" />
+        <receivedTime value="2022-02-21T14:58:00+00:00" />
         <request>
           <reference value="urn:uuid:1c38d507-9ad7-4b49-ba91-7da204842cac" />
         </request>
         <collection>
-          <collectedDateTime value="2022-03-22T11:04:00+00:00" />
+          <collectedDateTime value="2022-02-21T11:07:00+00:00" />
         </collection>
       </Specimen>
     </resource>
@@ -240,7 +240,7 @@
         </meta>
         <identifier>
           <system value="http://Y8J7D-pathlab001.com/report" />
-          <value value="REP-20220403-008209" />
+          <value value="REP-20220225-006301" />
         </identifier>
         <basedOn>
           <reference value="urn:uuid:1c38d507-9ad7-4b49-ba91-7da204842cac" />
@@ -264,7 +264,7 @@
           <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
           <display value="MOXEY, Judy" />
         </subject>
-        <issued value="2022-04-03T15:43:00+00:00" />
+        <issued value="2022-02-25T13:47:00+00:00" />
         <performer>
           <reference value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />
           <display value="TD008362 PATH LAB 001" />
@@ -273,22 +273,23 @@
           <reference value="urn:uuid:bde5b0a5-4fb3-4655-acf0-215b93aee006" />
         </specimen>
         <result>
-          <reference value="urn:uuid:43526b6e-c48a-44d2-9c2a-1e3a2a20ac67" />
+          <reference value="urn:uuid:bd867909-49ca-4a4b-b02f-162790b6800f" />
         </result>
+        <conclusion value="Likely to be clinically significant." />
       </DiagnosticReport>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:43526b6e-c48a-44d2-9c2a-1e3a2a20ac67" />
+    <fullUrl value="urn:uuid:bd867909-49ca-4a4b-b02f-162790b6800f" />
     <resource>
       <Observation>
-        <id value="43526b6e-c48a-44d2-9c2a-1e3a2a20ac67" />
+        <id value="bd867909-49ca-4a4b-b02f-162790b6800f" />
         <meta>
           <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
         </meta>
         <identifier>
           <system value="https://tools.ietf.org/html/rfc4122" />
-          <value value="9e9890cb-db0c-4cc2-9dc8-5d9b6589bda1" />
+          <value value="02875aea-9815-4d1d-b34e-f9f29b859d02" />
         </identifier>
         <status value="final" />
         <category>
@@ -300,38 +301,26 @@
         </category>
         <code>
           <coding>
-            <!-- From PaLM observable entity reference set (an equivalent PBCL code does not exist) -->
+            <!-- From PBCL observable entity reference set -->
             <system value="http://snomed.info/sct" />
-            <code value="50121000237101" />
-            <display value="Human papilloma virus RNA nucleic acid amplification qualitative result" />
+            <code value="995581000000104" />
+            <display value="Urinary microscopy, culture and sensitivities" />
           </coding>
         </code>
         <subject>
           <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
           <display value="MOXEY, Judy" />
         </subject>
-        <issued value="2022-04-03T15:43:00+00:00" />
+        <issued value="2022-02-25T13:47:00+00:00" />
         <performer>
           <reference value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />
           <display value="TD008362 PATH LAB 001" />
         </performer>
-        <valueCodeableConcept>
-          <coding>
-            <system value="http://snomed.info/sct" />
-            <code value="260415000" />
-            <display value="Not detected" />
-          </coding>
-        </valueCodeableConcept>
-        <note>
-          <text value="No cytology result (HPV Screening)" />
-        </note>
-        <note>
-          <text value="Suggested management : Normal  Recall" />
-        </note>
+        <valueString value="Microscopy\nCasts  None seen\nWhite cells  >35 x10*6/L\nRed cells  10-35 x10*6/L\nEpithelial cells  +\n\nCulture\n1. Staphylococcus aureus   Scanty growth\n\nSensitivities  1\nFlucloxacillin   S\nTrimethoprim  S\nNitrofurantoin  R" /> 
         <specimen>
           <reference value="urn:uuid:bde5b0a5-4fb3-4655-acf0-215b93aee006" />
         </specimen>
       </Observation>
     </resource>
-  </entry>
+  </entry> 
 </Bundle>
