@@ -299,14 +299,14 @@
             <display value="Laboratory" />
           </coding>
         </category>
-				<code>
-					<coding>
-						<!-- From PBCL observable entity reference set -->
-						<system value="http://snomed.info/sct" />
-						<code value="995581000000104" />
-						<display value="Urinary microscopy, culture and sensitivities" />
-					</coding>
-				</code>
+        <code>
+          <coding>
+            <!-- From PBCL observable entity reference set -->
+            <system value="http://snomed.info/sct" />
+            <code value="995581000000104" />
+            <display value="Urinary microscopy, culture and sensitivities" />
+          </coding>
+        </code>
         <subject>
           <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
           <display value="MOXEY, Judy" />
@@ -316,7 +316,7 @@
           <reference value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />
           <display value="TD008362 PATH LAB 001" />
         </performer>
-				<valueString value="Microscopy\nCasts	None seen\nWhite cells	>35 x10*6/L\nRed cells	10-35 x10*6/L\nEpithelial cells	+\n\nCulture\n1. Staphylococcus aureus 	Scanty growth\n\nSensitivities	1\nFlucloxacillin 	S\nTrimethoprim	S\nNitrofurantoin	R" /> 
+        <valueString value="Microscopy\nCasts  None seen\nWhite cells  >35 x10*6/L\nRed cells  10-35 x10*6/L\nEpithelial cells  +\n\nCulture\n1. Staphylococcus aureus   Scanty growth\n\nSensitivities  1\nFlucloxacillin   S\nTrimethoprim  S\nNitrofurantoin  R" /> 
         <specimen>
           <reference value="urn:uuid:bde5b0a5-4fb3-4655-acf0-215b93aee006" />
         </specimen>
