@@ -5,11 +5,11 @@
              value="https://fhir.nhs.uk/England/StructureDefinition/England-Consent-Flag" />
   </meta>
   <contained>
-     <meta>
-        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
-      </meta>
     <Provenance>
       <id value="4c75ce1f-1ad7-4391-b5f6-104754c7e904" />
+      <meta>
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
+      </meta>
       <target>
         <reference value="#" />
       </target>
