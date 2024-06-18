@@ -1,12 +1,12 @@
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="Pathology-Bundle-HPV-Report-Example" />
+  <id value="Pathology-Bundle-CRP-Report-Example" />
   <meta>
-    <lastUpdated value="2022-04-03T15:43:00+00:00" />
+    <lastUpdated value="2022-03-08T12:09:00+00:00" />
     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Bundle" />
   </meta>
   <identifier>
     <system value="https://tools.ietf.org/html/rfc4122" />
-    <value value="4e9c9282-5440-49a8-a61d-285d9aefedbd" />
+    <value value="1f859037-2942-4117-884a-f51b62db5a52" />
   </identifier>
   <type value="message" />
   <entry>
@@ -136,20 +136,20 @@
             </valueCodeableConcept>
           </extension>
           <system value="https://fhir.nhs.uk/Id/nhs-number" />
-          <value value="9727710859" />
+          <value value="9727710638" />
         </identifier>
         <name>
           <use value="official" />
-          <family value="MOXEY" />
-          <given value="Judy" />
+          <family value="WELSH" />
+          <given value="Joel" />
         </name>
-        <gender value="female" />
-        <birthDate value="2004-05-06" />
+        <gender value="male" />
+        <birthDate value="1972-08-23" />
         <address>
-          <line value="1 CASTLEGATE" />
-          <city value="PICKERING" />
-          <district value="NORTH YORKSHIRE" />
-          <postalCode value="YO18 7AY" />
+          <line value="ACONBURY" />
+          <line value="LARPOOL DRIVE" />
+          <city value="WHITBY" />
+          <postalCode value="YO22 4ND" />
         </address>
       </Patient>
     </resource>
@@ -164,7 +164,7 @@
         </meta>
         <identifier>
           <system value="http://B82033-pickeringmedicalpractice.com/labrequest" />
-          <value value="REQ-20220321-000017" />
+          <value value="REQ-20220307-000142" />
         </identifier>
         <status value="active" />
         <intent value="order" />
@@ -172,15 +172,15 @@
           <coding>
             <!-- From PaLM procedure reference set -->
             <system value="http://snomed.info/sct" />
-            <code value="700152009" />
-            <display value="Human papilloma virus screening" />
+            <code value="135842001" />
+            <display value="Serum C reactive protein level" />
           </coding>
         </code>
         <subject>
           <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
-          <display value="MOXEY, Judy" />
+          <display value="WELSH, Joel" />
         </subject>
-        <authoredOn value="2022-03-21T10:17:00+00:00" />
+        <authoredOn value="2022-01-29T10:24:00+00:00" />
         <requester>
           <reference value="urn:uuid:9a835acf-d715-4d84-8dcf-a8435f6417fe" />
           <display value="GASKELL, Dr Gale" />
@@ -189,45 +189,10 @@
           <reference value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />
           <display value="TD008362 PATH LAB 001" />
         </performer>
+        <specimen>
+          <reference value="urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d" />
+        </specimen>
       </ServiceRequest>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="urn:uuid:bde5b0a5-4fb3-4655-acf0-215b93aee006" />
-    <resource>
-      <Specimen>
-        <id value="bde5b0a5-4fb3-4655-acf0-215b93aee006" />
-        <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen" />
-        </meta>
-        <identifier>
-          <system value="http://B82033-pickeringmedicalpractice.com/specimen" />
-          <value value="SPC-REQ-20220321-000065" />
-        </identifier>
-        <accessionIdentifier>
-          <system value="http://Y8J7D-pathlab001.com/specimen" />
-          <value value="SPC-LAB-20220322-005962" />
-        </accessionIdentifier>
-        <status value="available" />
-        <type>
-          <coding>
-            <system value="http://snomed.info/sct" />
-            <code value="258524009" />
-            <display value="Cervical swab" />
-          </coding>
-        </type>
-        <subject>
-          <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
-          <display value="MOXEY, Judy" />
-        </subject>
-        <receivedTime value="2022-03-22T15:25:00+00:00" />
-        <request>
-          <reference value="urn:uuid:1c38d507-9ad7-4b49-ba91-7da204842cac" />
-        </request>
-        <collection>
-          <collectedDateTime value="2022-03-22T11:04:00+00:00" />
-        </collection>
-      </Specimen>
     </resource>
   </entry>
   <entry>
@@ -240,7 +205,7 @@
         </meta>
         <identifier>
           <system value="http://Y8J7D-pathlab001.com/report" />
-          <value value="REP-20220403-008209" />
+          <value value="REP-20220308-004205" />
         </identifier>
         <basedOn>
           <reference value="urn:uuid:1c38d507-9ad7-4b49-ba91-7da204842cac" />
@@ -262,33 +227,68 @@
         </code>
         <subject>
           <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
-          <display value="MOXEY, Judy" />
+          <display value="WELSH, Joel" />
         </subject>
-        <issued value="2022-04-03T15:43:00+00:00" />
+        <issued value="2022-03-08T12:09:00+00:00" />
         <performer>
           <reference value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />
           <display value="TD008362 PATH LAB 001" />
         </performer>
         <specimen>
-          <reference value="urn:uuid:bde5b0a5-4fb3-4655-acf0-215b93aee006" />
+          <reference value="urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d" />
         </specimen>
         <result>
-          <reference value="urn:uuid:43526b6e-c48a-44d2-9c2a-1e3a2a20ac67" />
+          <reference value="urn:uuid:8697e1ea-a15d-4cab-95d9-7335f4b57e22" />
         </result>
       </DiagnosticReport>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:43526b6e-c48a-44d2-9c2a-1e3a2a20ac67" />
+    <fullUrl value="urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d" />
+    <resource>
+      <Specimen>
+        <id value="bab0eaec-1ec5-4598-b660-90bb38a1030d" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen" />
+        </meta>
+        <identifier>
+          <system value="http://B82033-pickeringmedicalpractice.com/specimen" />
+          <value value="SPC-REQ-20220307-000105" />
+        </identifier>
+        <accessionIdentifier>
+          <system value="http://Y8J7D-pathlab001.com/specimen" />
+          <value value="SPC-LAB-20220307-007856" />
+        </accessionIdentifier>
+        <status value="available" />
+        <type>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="122555007" />
+            <display value="Venous blood specimen" />
+          </coding>
+        </type>
+        <subject>
+          <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
+          <display value="WELSH, Joel" />
+        </subject>
+        <receivedTime value="2022-03-07T14:58:00+00:00" />
+        <collection>
+          <collectedDateTime value="2022-03-07T11:42:00+00:00" />
+        </collection>
+      </Specimen>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:8697e1ea-a15d-4cab-95d9-7335f4b57e22" />
     <resource>
       <Observation>
-        <id value="43526b6e-c48a-44d2-9c2a-1e3a2a20ac67" />
+        <id value="8697e1ea-a15d-4cab-95d9-7335f4b57e22" />
         <meta>
           <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
         </meta>
         <identifier>
           <system value="https://tools.ietf.org/html/rfc4122" />
-          <value value="9e9890cb-db0c-4cc2-9dc8-5d9b6589bda1" />
+          <value value="09fd65ba-4bbb-49dd-9d16-ca74f885db6c" />
         </identifier>
         <status value="final" />
         <category>
@@ -299,38 +299,60 @@
           </coding>
         </category>
         <code>
+          <!-- Equivalent codes from the PBCL and PaLM SNOMED CT reference sets are used in this example. -->
+          <!-- In practice, it is likely that only a code from one reference set will be carried. -->
           <coding>
-            <!-- From PaLM observable entity reference set (an equivalent PBCL code does not exist) -->
+            <!-- From PBCL observable entity reference sets -->
             <system value="http://snomed.info/sct" />
-            <code value="50121000237101" />
-            <display value="Human papilloma virus RNA nucleic acid amplification qualitative result" />
+            <code value="1001371000000100" />
+            <display value="Serum CRP (C reactive protein) level" />
+          </coding>
+          <coding>
+            <!-- From PaLM observable entity reference sets -->
+            <system value="http://snomed.info/sct" />
+            <code value="1106741000000105" />
+            <display value="CRP (C reactive protein) mass concentration in serum" />
           </coding>
         </code>
         <subject>
           <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
-          <display value="MOXEY, Judy" />
+          <display value="WELSH, Joel" />
         </subject>
-        <issued value="2022-04-03T15:43:00+00:00" />
+        <issued value="2022-03-08T12:09:00+00:00" />
         <performer>
           <reference value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />
           <display value="TD008362 PATH LAB 001" />
         </performer>
-        <valueCodeableConcept>
+        <valueQuantity>
+          <value value="200" />
+          <unit value="mg/L" />
+          <system value="http://unitsofmeasure.org" />
+          <code value="mg/L" />
+        </valueQuantity>
+        <interpretation>
           <coding>
-            <system value="http://snomed.info/sct" />
-            <code value="260415000" />
-            <display value="Not detected" />
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation" />
+            <code value="H" />
+            <display value="High" />
           </coding>
-        </valueCodeableConcept>
-        <note>
-          <text value="No cytology result (HPV Screening)" />
-        </note>
-        <note>
-          <text value="Suggested management : Normal  Recall" />
-        </note>
+        </interpretation>
         <specimen>
-          <reference value="urn:uuid:bde5b0a5-4fb3-4655-acf0-215b93aee006" />
+          <reference value="urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d" />
         </specimen>
+        <referenceRange>
+          <low>
+            <value value="0" />
+            <unit value="mg/L" />
+            <system value="http://unitsofmeasure.org" />
+            <code value="mg/L" />
+          </low>
+          <high>
+            <value value="5" />
+            <unit value="mg/L" />
+            <system value="http://unitsofmeasure.org" />
+            <code value="mg/L" />
+          </high>
+        </referenceRange>
       </Observation>
     </resource>
   </entry>
