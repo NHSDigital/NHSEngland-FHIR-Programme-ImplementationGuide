@@ -1,9 +1,9 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-    <id value="PatientFlagCategory" />
-    <url value="https://fhir.nhs.uk/England/ValueSet/PatientFlagCategory" />
+    <id value="England-FlagCategoryPatient" />
+    <url value="https://fhir.nhs.uk/England/ValueSet/England-FlagCategoryPatient" />
     <version value="0.1.0" />
-    <name value="PatientFlagCategory" />
-    <title value="Patient Flag Category" />
+    <name value="EnglandFlagCategoryPatient" />
+    <title value="England Flag Category Patient" />
     <status value="draft" />
     <experimental value="false" />
     <date value="2024-02-14" />
@@ -22,12 +22,12 @@
     <expansion>
         <timestamp value="2024-02-14T12:00:00+00:00" />
         <contains>
-            <system value="https://fhir.nhs.uk/England/CodeSystem/PatientFlagCategory" />
+            <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
             <code value="NRAF" />
             <display value="National Reasonable Adjustments Flag" />
         </contains>
         <contains>
-            <system value="https://fhir.nhs.uk/England/CodeSystem/PatientFlagCategory" />
+            <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
             <code value="FGM" />
             <display value="Female Genital Mutilation Flag" />
         </contains>

@@ -1,13 +1,13 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-  <id value="RAConsentPurpose" />
+  <id value="England-ConsentPurposeRA" />
   <text>
     <status value="generated" />
     <div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>https://fhir.nhs.uk/England/CodeSystem/RA-ConsentPurpose</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">RACONSENT<a name="RA-ConsentPurpose-RACONSENT"> </a></td><td>Reasonable Adjustments - Consent to record Reasonable Adjustments</td></tr><tr><td style="white-space:nowrap">RADISSENT<a name="RA-ConsentPurpose-RADISSENT"> </a></td><td>Reasonable Adjustments - Dissent to record Reasonable Adjustments</td></tr><tr><td style="white-space:nowrap">RAREVOKED<a name="RA-ConsentPurpose-RAREVOKED"> </a></td><td>Reasonable Adjustments - Consent revoked to record Reasonable Adjustments</td></tr></table></div>
   </text>
-  <url value="https://fhir.nhs.uk/England/CodeSystem/RAConsentPurpose" />
+  <url value="https://fhir.nhs.uk/England/CodeSystem/England-ConsentPurposeRA" />
   <version value="0.4.0" />
-  <name value="RAConsentPurpose" />
-  <title value="RA Consent Purpose" />
+  <name value="EnglandConsentPurposeRA" />
+  <title value="England Consent Purpose RA" />
   <status value="draft" />
   <experimental value="false" />
   <date value="2024-02-14" />

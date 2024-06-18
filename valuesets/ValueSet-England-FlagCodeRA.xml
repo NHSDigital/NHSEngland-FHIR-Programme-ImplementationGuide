@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-    <id value="RAFlagCode" />
-    <url value="https://fhir.nhs.uk/England/ValueSet/RAFlagCode" />
+    <id value="England-FlagCodeRA" />
+    <url value="https://fhir.nhs.uk/England/ValueSet/England-FlagCodeRA" />
     <version value="0.1.0" />
-    <name value="RAFlagCode" />
-    <title value="RA Flag Code" />
+    <name value="EnglandFlagCodeRA" />
+    <title value="England Flag Code RA" />
     <status value="draft" />
     <experimental value="false" />
     <date value="2024-02-14" />
