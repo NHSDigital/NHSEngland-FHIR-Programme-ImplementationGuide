@@ -70,7 +70,7 @@
     <coding>
       <system
               value="https://fhir.nhs.uk/England/CodeSystem/England-ConditionCodeFGM" />
-      <code value="1" />
+      <code value="fgm-example-condition-code" />
       <display value="FGM example condition code" />
     </coding>
   </code>
