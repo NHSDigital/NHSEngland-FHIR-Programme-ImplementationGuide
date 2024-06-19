@@ -65,7 +65,7 @@
     <coding>
       <system
               value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
-      <code value="NRAF" />
+      <code value="nraf" />
       <display value="National Reasonable Adjustments Flag" />
     </coding>
   </category>
@@ -80,14 +80,14 @@
   <policyRule>
     <coding>
       <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagProxyRole" />
-      <code value="001" />
+      <code value="patient-consent" />
     </coding>
   </policyRule>
   <provision>
     <purpose>
       <system
               value="https://fhir.nhs.uk/England/CodeSystem/England-ConsentPurposeRA" />
-      <code value="RADISSENT" />
+      <code value="ra-dissent" />
       <display
                value="Reasonable Adjustments - Dissent to record Reasonable Adjustments" />
     </purpose>

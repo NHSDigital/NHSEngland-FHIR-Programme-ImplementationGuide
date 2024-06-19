@@ -78,7 +78,7 @@
           <coding>
             <system
                     value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
-            <code value="NRAF" />
+            <code value="nraf" />
             <display value="National Reasonable Adjustments Flag" />
           </coding>
         </code>
@@ -163,7 +163,7 @@
           <coding>
             <system
                     value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
-            <code value="NRAF" />
+            <code value="nraf" />
             <display value="National Reasonable Adjustments Flag" />
           </coding>
         </category>
@@ -179,14 +179,14 @@
           <coding>
             <system
                     value="https://fhir.nhs.uk/England/CodeSystem/England-FlagProxyRole" />
-            <code value="001" />
+            <code value="patient-consent" />
           </coding>
         </policyRule>
         <provision>
           <purpose>
             <system
                     value="https://fhir.nhs.uk/England/CodeSystem/England-ConsentPurposeRA" />
-            <code value="RACONSENT" />
+            <code value="ra-consent" />
             <display
                      value="Reasonable Adjustments - Consent to record Reasonable Adjustments" />
           </purpose>
@@ -256,7 +256,7 @@
           <coding>
             <system
                     value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
-            <code value="NRAF" />
+            <code value="nraf" />
             <display value="National Reasonable Adjustments Flag" />
           </coding>
         </category>
@@ -272,7 +272,7 @@
           <coding>
             <system
                     value="https://fhir.nhs.uk/England/CodeSystem/England-ConditionCodeRA" />
-            <code value="5" />
+            <code value="learning" />
             <display value="Learning or understanding or concentrating" />
           </coding>
         </code>
