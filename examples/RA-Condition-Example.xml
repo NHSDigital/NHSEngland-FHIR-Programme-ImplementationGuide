@@ -53,7 +53,7 @@
     <coding>
       <system
               value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
-      <code value="NRAF" />
+      <code value="nraf" />
       <display value="National Reasonable Adjustments Flag" />
     </coding>
   </category>
@@ -69,7 +69,7 @@
     <coding>
       <system
               value="https://fhir.nhs.uk/England/CodeSystem/England-ConditionCodeRA" />
-      <code value="5" />
+      <code value="learning" />
       <display value="Learning or understanding or concentrating" />
     </coding>
   </code>
