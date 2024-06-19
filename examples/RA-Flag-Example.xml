@@ -53,14 +53,14 @@
     <coding>
       <system
               value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
-      <code value="NRAF" />
+      <code value="nraf" />
       <display value="National Reasonable Adjustments Flag" />
     </coding>
   </category>
   <category>
     <coding>
       <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryRA" />
-      <code value="001" />
+      <code value="communication-support" />
       <display value="Communication support" />
     </coding>
   </category>
