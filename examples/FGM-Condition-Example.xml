@@ -54,7 +54,7 @@
     <coding>
       <system
               value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
-      <code value="FGM" />
+      <code value="fgm" />
       <display value="Female Genital Mutilation Flag" />
     </coding>
   </category>
