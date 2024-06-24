@@ -1,7 +1,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <id value="Extension-ConsentCreateSummary" />
     <url value="http://example.org/StructureDefinition/Extension-ConsentCreateSummary" />
-    <name value="Extension-ConsentCreateSummary" />
+    <name value="ExtensionConsentCreateSummary" />
     <title value="Extension for Consent Create Summary" />
     <status value="active" />
    <contact>
