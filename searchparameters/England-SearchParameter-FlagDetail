@@ -29,5 +29,4 @@
               value="Flag.extension('http://hl7.org/fhir/StructureDefinition/flag-detail')" />
   <target value="Condition" />
   <target value="Flag" />
-  <target value="Consent" />
 </SearchParameter>
