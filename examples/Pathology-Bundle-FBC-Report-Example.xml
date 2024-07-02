@@ -472,7 +472,7 @@
         </category>
         <code>
           <coding>
-            <!-- From PBCL and PaLM observable entity reference set -->
+            <!-- From PBCL and PaLM observable entity reference sets -->
             <system value="http://snomed.info/sct" />
             <code value="1022451000000103" />
             <display value="Red blood cell count" />
