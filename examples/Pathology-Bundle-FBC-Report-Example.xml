@@ -752,7 +752,7 @@
         </category>
         <code>
           <coding>
-            <!-- From PBCL and PaLM observable entity reference set -->
+            <!-- From PBCL and PaLM observable entity reference sets -->
             <system value="http://snomed.info/sct" />
             <code value="1022471000000107" />
             <display value="MCH - Mean corpuscular haemoglobin" />
@@ -816,7 +816,7 @@
         </category>
         <code>
           <coding>
-            <!-- From PBCL and PaLM observable entity reference set -->
+            <!-- From PBCL and PaLM observable entity reference sets -->
             <system value="http://snomed.info/sct" />
             <code value="1022481000000109" />
             <display value="MCHC - Mean corpuscular haemoglobin concentration" />
