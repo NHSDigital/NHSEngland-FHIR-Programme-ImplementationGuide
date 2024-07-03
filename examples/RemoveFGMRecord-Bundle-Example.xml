@@ -1,33 +1,6 @@
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="AddFGMRecordTransaction-Bundle-Example" />
+  <id value="RemoveFGMRecord-Bundle-Example" />
   <type value="transaction" />
-  <entry>
-    <fullUrl value="Patient/PatientFlag-AlanMann-Example" />
-    <resource>
-      <Patient>
-        <id value="PatientFlag-AlanMann-Example" />
-        <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
-        </meta>
-        <identifier>
-          <system value="https://fhir.nhs.uk/Id/nhs-number" />
-          <value value="9912003888" />
-        </identifier>
-        <active value="true" />
-        <name>
-          <use value="official" />
-          <family value="Mann" />
-          <given value="Alan" />
-        </name>
-        <gender value="male" />
-        <birthDate value="1970-01-01" />
-      </Patient>
-    </resource>
-    <request>
-      <method value="PUT" />
-      <url value="Patient/PatientFlag-AlanMann-Example" />
-    </request>
-  </entry>
   <entry>
     <fullUrl value="Flag/FGM-PatientFlag-Example" />
     <resource>
@@ -38,7 +11,7 @@
         </meta>
         <contained>
           <Provenance>
-            <id value="3fc83fd8-4a6d-48e4-91ab-12bb10a4a834" />
+            <id value="c4e2e862-3bf4-4176-a186-9f1732938260" />
             <meta>
               <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
             </meta>
@@ -89,7 +62,7 @@
       </Flag>
     </resource>
     <request>
-      <method value="PUT" />
+      <method value="DELETE" />
       <url value="Flag/FGM-PatientFlag-Example" />
     </request>
   </entry>
