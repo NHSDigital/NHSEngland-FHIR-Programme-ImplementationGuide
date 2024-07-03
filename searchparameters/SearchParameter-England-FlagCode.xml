@@ -1,28 +1,28 @@
 <SearchParameter xmlns="http://hl7.org/fhir">
-  <id value="England-Flag-Code"/>
-  <url value="https://fhir.nhs.uk/England/SearchParameter/England-Flag-Code"/>
-  <version value="0.1.0"/>
-  <name value="EnglandFlagCode"/>
-  <status value="active"/>
-  <title value="England Flag Code"/>
-  <date value="2024-02-14"/>
-  <status value="draft"/>
-  <experimental value="false"/>
-  <date value="2024-02-14"/>
-  <publisher value="NHS England"/>
+  <id value="England-Flag-Code" />
+  <url value="https://fhir.nhs.uk/England/SearchParameter/England-Flag-Code" />
+  <version value="0.1.0" />
+  <name value="EnglandFlagCode" />
+  <status value="active" />
+  <title value="England Flag Code" />
+  <date value="2024-02-14" />
+  <status value="draft" />
+  <experimental value="false" />
+  <date value="2024-02-14" />
+  <publisher value="NHS England" />
   <contact>
-    <name value="NHS England"/>
+    <name value="NHS England" />
     <telecom>
-      <system value="email"/>
-      <value value="interoperabilityteam@nhs.net"/>
-      <use value="work"/>
-      <rank value="1"/>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+      <rank value="1" />
     </telecom>
   </contact>
-  <description value="Search by code in the Flag resource"/>
-  <code value="code"/>
-  <base value="Flag"/>
-  <type value="token"/>
-  <expression value="Flag.code"/>
-  <xpathUsage value="normal"/>
+  <description value="Search by code in the Flag resource" />
+  <code value="code" />
+  <base value="Flag" />
+  <type value="token" />
+  <expression value="Flag.code" />
+  <xpathUsage value="normal" />
 </SearchParameter>

@@ -1,22 +1,22 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Extension-England-FlagNotes"/>
-  <url value="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-FlagNotes"/>
-  <version value="0.1.0"/>
-  <name value="ExtensionEnglandFlagNotes"/>
-  <title value="Extension England Flag Notes"/>
-  <status value="draft"/>
-  <date value="2024-02-14"/>
-  <publisher value="NHS England"/>
+  <id value="Extension-England-FlagNotes" />
+  <url value="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-FlagNotes" />
+  <version value="0.1.0" />
+  <name value="ExtensionEnglandFlagNotes" />
+  <title value="Extension England Flag Notes" />
+  <status value="draft" />
+  <date value="2024-02-14" />
+  <publisher value="NHS England" />
   <contact>
-    <name value="NHS England"/>
+    <name value="NHS England" />
     <telecom>
-      <system value="email"/>
-      <value value="interoperabilityteam@nhs.net"/>
-      <use value="work"/>
-      <rank value="1"/>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+      <rank value="1" />
     </telecom>
   </contact>
-  <description value="Captures the additional information for an Adjustment within a Reasonable Adjustment Flag."/>
+  <description value="Captures the additional information for an Adjustment within a Reasonable Adjustment Flag." />
   <purpose value="Additional information required to correctly or effectively interpret an Adjustment." />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
