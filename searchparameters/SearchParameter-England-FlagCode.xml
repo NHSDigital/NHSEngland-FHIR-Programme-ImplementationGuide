@@ -3,10 +3,9 @@
   <url value="https://fhir.nhs.uk/England/SearchParameter/England-FlagCode" />
   <version value="0.1.0" />
   <name value="EnglandFlagCode" />
-  <status value="active" />
+  <status value="draft" />
   <title value="England Flag Code" />
   <date value="2024-02-14" />
-  <status value="draft" />
   <experimental value="false" />
   <date value="2024-02-14" />
   <publisher value="NHS England" />
