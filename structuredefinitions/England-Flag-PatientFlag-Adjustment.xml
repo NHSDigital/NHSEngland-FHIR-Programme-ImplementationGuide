@@ -43,12 +43,12 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Flag.extension:detail">
+    <element id="Flag.extension:extensionEnglandFlagNotes">
       <path value="Flag.extension" />
-      <sliceName value="detail" />
+      <sliceName value="extensionEnglandFlagNotes" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/flag-detail" />
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-FlagNotes" />
       </type>
       <isModifier value="false" />
     </element>
