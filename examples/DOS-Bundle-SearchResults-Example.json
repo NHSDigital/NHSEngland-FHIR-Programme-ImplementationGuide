@@ -1,6 +1,6 @@
 {
   "resourceType": "Bundle",
-  "id": "DOS-Bundle-SearchSetResults-Example",
+  "id": "DOS-Bundle-SearchResults-Example",
   "meta": {
     "versionId": "0.1.0",
     "lastUpdated": "2024-07-16T15:01:30.8185338+00:00"
@@ -55,6 +55,10 @@
         "start": "2024-07-22T09:00:00+00:00",
         "end": "2024-07-22T10:00:00+00:00"
       }
+      ,
+      "search": {
+        "mode": "match"
+      }
     },
     {
       "fullUrl": "http://example.org/fhir/Slot/RR8-SJUH-TAUTO-002",
@@ -96,6 +100,10 @@
         "start": "2024-07-22T10:00:00+00:00",
         "end": "2024-07-22T10:30:00+00:00"
       }
+      ,
+      "search": {
+        "mode": "match"
+      }
     },
     {
       "fullUrl": "http://example.org/fhir/Slot/RR8-SJUH-TAUTO-003",
@@ -136,6 +144,10 @@
         "status": "free",
         "start": "2024-07-22T11:00:00+00:00",
         "end": "2024-07-22T11:30:00+00:00"
+      }
+      ,
+      "search": {
+        "mode": "match"
       }
     },
     {
@@ -209,6 +221,10 @@
           "end": "2024-07-29T10:00:00+00:00"
         }
       }
+      ,
+      "search": {
+        "mode": "match"
+      }
     },
     {
       "fullUrl": "http://example.org/fhir/HealthcareService/DoS-HealthcareService-OrthopaedicService-Example",
@@ -280,6 +296,10 @@
           }
         ]
       }
+      ,
+      "search": {
+        "mode": "match"
+      }
     },
     {
       "fullUrl": "http://example.org/fhir/PractitionerRole/PractitionerRole-JoeSmithLeedsSTH-Example",
@@ -347,6 +367,10 @@
             ]
           }
         ]
+      }
+      ,
+      "search": {
+        "mode": "match"
       }
     },
     {
