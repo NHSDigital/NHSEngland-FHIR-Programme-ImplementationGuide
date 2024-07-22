@@ -1740,14 +1740,20 @@
                   "enableWhen": [
                     {
                       "question": "1651487045545",
-                      "operator": "!=",
+                      "operator": "=",
                       "answerCoding": {
                         "system": "http://snomed.info/sct",
                         "code": "74964007",
                         "display": "Other"
                       }
+                    },
+                    {
+                      "question": "630742013280",
+                      "operator": "=",
+                      "answerBoolean": true
                     }
                   ],
+                  "enableBehavior": "any",
                   "required": true,
                   "repeats": false
                 },
