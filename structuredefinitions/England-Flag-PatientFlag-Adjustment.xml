@@ -1,11 +1,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="England-Flag-PatientFlag-Adjustment" />
   <url value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag-Adjustment" />
-  <version value="0.1.0" />
+  <version value="0.2.0" />
   <name value="EnglandFlagPatientFlagAdjustment" />
   <title value="England Flag Patient Flag Adjustment" />
   <status value="draft" />
-  <date value="2024-02-14" />
+  <date value="2024-08-12" />
   <publisher value="NHS England" />
   <contact>
     <name value="NHS England" />

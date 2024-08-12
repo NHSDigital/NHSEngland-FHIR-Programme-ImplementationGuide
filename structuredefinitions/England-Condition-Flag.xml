@@ -1,11 +1,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="England-Condition-Flag" />
   <url value="https://fhir.nhs.uk/England/StructureDefinition/England-Condition-Flag" />
-  <version value="0.2.0" />
+  <version value="0.3.0" />
   <name value="EnglandConditionFlag" />
   <title value="England Condition Flag" />
   <status value="draft" />
-  <date value="2024-06-18" />
+  <date value="2024-08-12" />
   <publisher value="NHS England" />
   <contact>
     <name value="NHS England" />
