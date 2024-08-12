@@ -2,8 +2,8 @@
   <id value="England-PatientFlagType" />
   <url value="https://fhir.nhs.uk/England/CodeSystem/England-PatientFlagType" />
   <version value="1.0.0" />
-  <name value="England-PatientFlagType" />
-  <title value="England Flag Category Patient" />
+  <name value="EnglandPatientFlagType" />
+  <title value="England Patient Flag Type" />
   <status value="active" />
   <experimental value="false" />
   <date value="2024-08-12" />
