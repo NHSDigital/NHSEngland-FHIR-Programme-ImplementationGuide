@@ -4,7 +4,7 @@
     <version value="0.1.0" />
     <name value="EnglandFlagCategoryPatient" />
     <title value="England Flag Category Patient" />
-    <status value="draft" />
+    <status value="retired" />
     <experimental value="false" />
     <date value="2024-02-14" />
   <publisher value="NHS England" />
