@@ -59,11 +59,13 @@
     <element id="Flag.category:patientFlag">
       <path value="Flag.category" />
       <sliceName value="patientFlag" />
+      <min value="1" />
       <max value="1" />
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://fhir.nhs.uk/England/ValueSet/England-FlagCategoryPatient" />
+        <description value="Type of PatientFlag recorded" />
+        <valueSet value="https://fhir.nhs.uk/England/ValueSet/England-PatientFlagType" />
       </binding>
     </element>
     <element id="Flag.category:programmeFlag">
@@ -73,6 +75,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
+        <description value="A general category for Adjustment (flags) for filtering/display purposes." />
         <valueSet value="https://fhir.nhs.uk/England/ValueSet/England-FlagCategoryProgramme" />
       </binding>
     </element>
