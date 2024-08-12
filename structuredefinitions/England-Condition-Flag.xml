@@ -91,11 +91,13 @@
     <element id="Condition.category:patientFlag">
       <path value="Condition.category" />
       <sliceName value="patientFlag" />
+      <min value="1" />
       <max value="1" />
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://fhir.nhs.uk/England/ValueSet/England-FlagCategoryPatient" />
+        <description value="Type of PatientFlag recorded" />
+        <valueSet value="https://fhir.nhs.uk/England/ValueSet/England-PatientFlagType" />
       </binding>
     </element>
     <element id="Condition.category:conditionCategory">

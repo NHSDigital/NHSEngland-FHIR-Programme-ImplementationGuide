@@ -63,7 +63,7 @@
   <status value="active" />
   <code>
     <coding>
-      <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-PatientFlagType" />
       <code value="national-reasonable-adjustment-flag" />
       <display value="National Reasonable Adjustments Flag" />
     </coding>
