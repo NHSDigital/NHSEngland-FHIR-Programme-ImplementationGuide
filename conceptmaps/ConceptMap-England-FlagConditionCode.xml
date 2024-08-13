@@ -1,0 +1,126 @@
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="England-FlagConditionCode"/>
+  <url value="https://fhir.nhs.uk/England/ConceptMap/ConceptMap-England-FlagConditionCode"/>
+  <version value="1.0.0"/>
+  <name value="EnglandFlagConditionCode"/>
+  <title value="Concept Map - England Flag Condition Code"/>
+  <status value="active"/>
+  <date value="2024-08-13"/>
+  <publisher value="NHS England"/>
+  <contact>
+    <name value="NHS England"/>
+    <telecom>
+      <system value="email"/>
+      <value value="interoperabilityteam@nhs.net"/>
+      <use value="work"/>
+      <rank value="1"/>
+    </telecom>
+  </contact>
+  <description value="A Concept Map from ValueSet RARecord-ConditionCode-1 to ValueSet England-FlagConditionCode to aid interpretation of codes in legacy data formats."/>
+  <copyright value="Copyright © 2024+ NHS England Licensed under the Apache License, Version 2.0 (the \&amp;quot;License\&amp;quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \&amp;quot;AS IS\&amp;quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
+  <sourceUri value="https://fhir.nhs.uk/STU3/ValueSet/RARecord-ConditionCode-1"/>
+  <targetUri value="https://fhir.nhs.uk/England/ValueSet/England-FlagConditionCode"/>
+  <group>
+    <source value="https://fhir.nhs.uk/STU3/ValueSet/RARecord-ConditionCode-1"/>
+    <target value="https://fhir.nhs.uk/England/ValueSet/England-FlagConditionCode"/>
+    <element>
+      <code value="1"/>
+      <display value="Vision (for example blindness or partial sight)"/>
+      <target>
+        <code value="vision"/>
+        <display value="Vision (for example blindness or partial sight)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="2"/>
+      <display value="Hearing (for example deafness or partial hearing)"/>
+      <target>
+        <code value="hearing"/>
+        <display value="Hearing (for example deafness or partial hearing)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="3"/>
+      <display value="Mobility (for example walking short distances or climbing stairs)"/>
+      <target>
+        <code value="mobility"/>
+        <display value="Mobility (for example walking short distances or climbing stairs)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="4"/>
+      <display value="Dexterity (for example lifting and carrying objects, using a keyboard)"/>
+      <target>
+        <code value="dexterity"/>
+        <display value="Dexterity (for example lifting and carrying objects, using a keyboard)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="5"/>
+      <display value="Learning or understanding or concentrating"/>
+      <target>
+        <code value="learning"/>
+        <display value="Learning or understanding or concentrating"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="6"/>
+      <display value="Memory"/>
+      <target>
+        <code value="memory"/>
+        <display value="Memory"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="7"/>
+      <display value="Mental health"/>
+      <target>
+        <code value="mental-health"/>
+        <display value="Mental health"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="8"/>
+      <display value="Stamina or breathing or fatigue"/>
+      <target>
+        <code value="stamina"/>
+        <display value="Stamina or breathing or fatigue"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="9"/>
+      <display value="Social or behavioural (for example associated with autism spectrum disorder (ASD) which includes Asperger’s, or attention deficit hyperactivity disorder (ADHD))"/>
+      <target>
+        <code value="social"/>
+        <display value="Social or behavioural (for example associated with autism spectrum disorder (ASD) which includes Asperger’s, or attention deficit hyperactivity disorder (ADHD))"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="10"/>
+      <display value="Other (please specify)"/>
+      <target>
+        <code value="other"/>
+        <display value="Other (please specify)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="12"/>
+      <display value="Patient would prefer not to say"/>
+      <target>
+        <code value="patient-would-prefer-not-to-say"/>
+        <display value="Patient would prefer not to say"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>
