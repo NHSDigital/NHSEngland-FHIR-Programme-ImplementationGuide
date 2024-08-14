@@ -23,7 +23,7 @@
       <agent>
         <role>
           <coding>
-            <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1" />
+            <system value="https://fhir.nhs.uk/England/CodeSystem/England-SDSJobRoleName" />
             <code value="R0260" />
             <display value="General Medical Practitioner" />
           </coding>
