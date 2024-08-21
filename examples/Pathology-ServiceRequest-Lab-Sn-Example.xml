@@ -8,10 +8,10 @@
   <identifier>
     <type>
       <coding>
-        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-        <code value="PLAC"/>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+        <code value="PLAC" />
       </coding>
-      <text value="Placer"/>
+      <text value="Placer" />
     </type>
     <system value="http://B82033-pickeringmedicalpractice.com/labrequest" />
     <value value="REQ-20220307-000046-001" />
@@ -20,10 +20,10 @@
   <identifier>
     <type>
       <coding>
-        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-        <code value="FILL"/>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+        <code value="FILL" />
       </coding>
-      <text value="Filler"/>
+      <text value="Filler" />
     </type>
     <system value="http://B82033-pickeringmedicalpractice.com/labrequest" />
     <value value="REP-20220307-000247" />
