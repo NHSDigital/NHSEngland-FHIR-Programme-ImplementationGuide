@@ -44,7 +44,7 @@
   <kind value="requirements"/>
   <implementation>
     <url value="https://api.service.nhs.uk/patient-flags-api/FHIR/R4"/>
-  </implementation
+  </implementation>
   <fhirVersion value="4.0.1"/>
   <format value="application/fhir+json"/>
   <implementationGuide value="https://simplifier.net/guide/patient-flag-implementation-guide-beta?version=current"/>
@@ -60,8 +60,8 @@
           <valueString value="patient"/>
         </extension>
         <extension url="optional">
-          <valueString value="code"/>0
-                </extension>
+          <valueString value="code"/>
+        </extension>
       </extension>
       <type value="Flag"/>
       <profile>
