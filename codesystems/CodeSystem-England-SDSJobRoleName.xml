@@ -2,10 +2,10 @@
     <id value="England-SDSJobRoleName" />
     <url value="https://fhir.nhs.uk/England/CodeSystem/England-SDSJobRoleName" />
     <version value="0.0.1" />
-    <name value="England SDS Job Role Name" />
-    <title value ="EnglandSDSJobRoleName" />
+    <name value="EnglandSDSJobRoleName" />
+    <title value ="England SDS Job Role Name" />
     <status value="draft" />
-    <date value="2024-08-14" />
+    <date value="2024-09-17" />
     <publisher value="NHS England" />
     <description value="A Spine Directory Service CodeSystem that identifies the job role associated with the person on the smart card. This consists of a set of Role Based Access Control (RBAC) codes. This code list is externally maintained." />
     <contact>
