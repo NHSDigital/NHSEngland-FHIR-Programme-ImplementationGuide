@@ -41,12 +41,8 @@
   <purpose value="Requirements for NHS England PatientFlag FHIR API Implementation Guide, to specify the RESTFul interactions, supported profiles, and expected minimum SearchParamneters." />
   <copyright value="Copyright &#169; 2024+ NHS England Licensed under the Apache License, Version 2.0 (the &amp;quot;License&amp;quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &amp;quot;AS IS&amp;quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
   <kind value="requirements" />
-  <implementation>
-    <url value="https://api.service.nhs.uk/patient-flags-api/FHIR/R4" />
-  </implementation>
   <fhirVersion value="4.0.1" />
   <format value="application/fhir+json" />
-  <format value="application/fhir+xml" />
   <implementationGuide value="https://simplifier.net/guide/patient-flag-implementation-guide-beta?version=current" />
   <rest>
     <mode value="server" />
@@ -65,6 +61,8 @@
       </extension>
       <type value="Flag" />
       <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag" />
+      <supportedProfile value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag" />
+      <supportedProfile value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag-Adjustment" />
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
@@ -94,14 +92,14 @@
           <valueCode value="SHALL" />
         </extension>
         <code value="search-type" />
-        <documentation value="Search%2FRead%20all%20top-level%20patient%20flags%20associated%20with%20a%20patient%5Cr%5CnGET%20~%2FFlag%3Fpatient%3D%5BPatient%23%5D%5Cr%5Cnreturn%3A%20searchset%20bundle%20of%20top-level%20patientflags%5Cr%5CnSearchParameter%3A%20%5BPatient%5D" />
+        <documentation value="Search/Read all top-level patient flags associated with a patient\r\nGET ~/Flag?patient=[Patient#]\r\nreturn: searchset bundle of top-level patientflags\r\nSearchParameter: [Patient]" />
       </interaction>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
         </extension>
         <code value="search-type" />
-        <documentation value="Search%2FRead%20for%20a%20specific%20type%20of%20patient%20flag%20and%20supporting%20resources%20associated%20with%20a%20patient%5Cr%5CnGET%20~%2FFlag%3Fpatient%3D%5BPatient%23%5D%26code%3D%5BFlagType%5D%5Cr%5Cnreturn%3A%20searchset%20bundle%20of%20Flag%20resources%20of%20type%20%5BFlagType%5D%20and%20any%20supporting%20resources%5Cr%5CnSearchParameter%3A%20combo%20%5BPatient%5D%20%26%26%20%5BFlagType%5D%0D%0A" />
+        <documentation value="Search/Read for a specific type of patient flag and supporting resources associated with a patient\r\nGET ~/Flag?patient=[Patient#]&amp;code=[FlagType]\r\nreturn: searchset bundle of Flag resources of type [FlagType] and any supporting resources\r\nSearchParameter: combo [Patient] &amp; [FlagType]" />
       </interaction>
       <versioning value="no-version" />
       <readHistory value="false" />
@@ -122,6 +120,7 @@
     <resource>
       <type value="Condition" />
       <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Condition-Flag" />
+      <supportedProfile value="https://fhir.nhs.uk/England/StructureDefinition/England-Condition-Flag" />
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
