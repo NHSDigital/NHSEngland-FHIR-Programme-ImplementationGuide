@@ -121,30 +121,22 @@
     </resource>
     <resource>
       <type value="Condition" />
-      <profile>
-        <reference value="https://fhir.nhs.uk/England/StructureDefinition/England-Condition-Flag" />
-      </profile>
+      <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Condition-Flag" />
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode>
-            <code value="SHALL" />
-          </valueCode>
+          <valueCode value="SHALL" />
         </extension>
         <code value="create" />
       </interaction>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode>
-            <code value="MAY" />
-          </valueCode>
+          <valueCode value="MAY" />
         </extension>
         <code value="update" />
       </interaction>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode>
-            <code value="SHALL" />
-          </valueCode>
+          <valueCode value="SHALL" />
         </extension>
         <code value="delete" />
       </interaction>
