@@ -64,9 +64,7 @@
         </extension>
       </extension>
       <type value="Flag" />
-      <profile>
-        <reference value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag" />
-      </profile>
+      <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag" />
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode>
