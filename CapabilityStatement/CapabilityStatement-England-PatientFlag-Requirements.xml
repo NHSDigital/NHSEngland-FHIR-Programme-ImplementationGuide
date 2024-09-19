@@ -67,13 +67,13 @@
       <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag" />
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
+          <valueCode value="SHALL" />
         </extension>
         <code value="create" />
       </interaction>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
+          <valueCode value="SHALL" />
         </extension>
         <code value="read" />
       </interaction>
