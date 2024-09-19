@@ -98,7 +98,7 @@
       </interaction>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL" >
+          <valueCode value="SHALL" />
         </extension>
         <code value="search-type" />
         <documentation value="Search%2FRead%20for%20a%20specific%20type%20of%20patient%20flag%20and%20supporting%20resources%20associated%20with%20a%20patient%5Cr%5CnGET%20~%2FFlag%3Fpatient%3D%5BPatient%23%5D%26code%3D%5BFlagType%5D%5Cr%5Cnreturn%3A%20searchset%20bundle%20of%20Flag%20resources%20of%20type%20%5BFlagType%5D%20and%20any%20supporting%20resources%5Cr%5CnSearchParameter%3A%20combo%20%5BPatient%5D%20%26%26%20%5BFlagType%5D%0D%0A" />
