@@ -47,6 +47,7 @@
   </implementation>
   <fhirVersion value="4.0.1" />
   <format value="application/fhir+json" />
+  <format value="application/fhir+xml" />
   <implementationGuide value="https://simplifier.net/guide/patient-flag-implementation-guide-beta?version=current" />
   <rest>
     <mode value="server" />
