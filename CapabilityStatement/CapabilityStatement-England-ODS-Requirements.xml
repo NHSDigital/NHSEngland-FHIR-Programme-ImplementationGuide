@@ -147,7 +147,7 @@
       </interaction>
       <searchParam>
         <name value="_sort" />
-        <type value="string" />
+        <type value="token" />
       </searchParam>
       <searchParam>
         <name value="_count" />
