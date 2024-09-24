@@ -146,10 +146,6 @@
         <code value="read" />
       </interaction>
       <searchParam>
-        <name value="_sort" />
-        <type value="string" />
-      </searchParam>
-      <searchParam>
         <name value="_count" />
         <type value="number" />
       </searchParam>
@@ -257,10 +253,6 @@
       <interaction>
         <code value="read" />
       </interaction>
-      <searchParam>
-        <name value="_sort" />
-        <type value="string" />
-      </searchParam>
       <searchParam>
         <name value="_count" />
         <type value="number" />
