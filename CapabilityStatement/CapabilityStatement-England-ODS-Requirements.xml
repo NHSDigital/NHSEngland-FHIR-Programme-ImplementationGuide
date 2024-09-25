@@ -270,6 +270,12 @@
         <name value="_security" />
         <type value="token" />
       </searchParam>
+      <searchParam> 
+        <name value="_sort"/> 
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-source"/> 
+        <type value="token"/> 
+        <documentation value="How to sort the resources when returning"/> 
+      </searchParam>
       <searchParam>
         <name value="_tag" />
         <type value="token" />
