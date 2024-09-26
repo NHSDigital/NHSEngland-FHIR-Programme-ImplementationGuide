@@ -36,6 +36,28 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Flag" />
   <derivation value="constraint" />
   <differential>
+    <element id="Flag.contained">
+      <path value="Flag.contained" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Flag.contained:provenance">
+      <path value="Flag.contained" />
+      <sliceName value="provenance" />
+      <short value="Who, What, When for a set of resources" />
+      <definition value="Provenance of a resource is a record that describes entities and processes involved in producing and delivering or otherwise influencing that resource. Provenance provides a critical foundation for assessing authenticity, enabling trust, and allowing reproducibility. Provenance assertions are a form of contextual metadata and can themselves become important records with their own provenance. Provenance statement indicates clinical significance in terms of confidence in authenticity, reliability, and trustworthiness, integrity, and stage in lifecycle (e.g. Document Completion - has the artifact been legally authenticated), all of which may impact security, privacy, and trust policies." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Resource" />
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
+      </type>
+    </element>
     <element id="Flag.extension:extensionEnglandFlagNotes">
       <path value="Flag.extension" />
       <sliceName value="extensionEnglandFlagNotes" />

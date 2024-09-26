@@ -45,7 +45,6 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="1" />
     </element>
     <element id="Flag.contained:provenance">
       <path value="Flag.contained" />
