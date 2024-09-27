@@ -1,11 +1,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="England-Flag-PatientFlag-Adjustment" />
   <url value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag-Adjustment" />
-  <version value="0.1.0" />
+  <version value="0.2.0" />
   <name value="EnglandFlagPatientFlagAdjustment" />
   <title value="England Flag Patient Flag Adjustment" />
   <status value="draft" />
-  <date value="2024-02-14" />
+  <date value="2024-09-27" />
   <publisher value="NHS England" />
   <contact>
     <name value="NHS England" />
@@ -49,8 +49,6 @@
     <element id="Flag.contained:provenance">
       <path value="Flag.contained" />
       <sliceName value="provenance" />
-      <short value="Who, What, When for a set of resources" />
-      <definition value="Provenance of a resource is a record that describes entities and processes involved in producing and delivering or otherwise influencing that resource. Provenance provides a critical foundation for assessing authenticity, enabling trust, and allowing reproducibility. Provenance assertions are a form of contextual metadata and can themselves become important records with their own provenance. Provenance statement indicates clinical significance in terms of confidence in authenticity, reliability, and trustworthiness, integrity, and stage in lifecycle (e.g. Document Completion - has the artifact been legally authenticated), all of which may impact security, privacy, and trust policies." />
       <min value="1" />
       <max value="1" />
       <type>
