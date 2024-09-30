@@ -45,6 +45,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <mustSupport value="true" />
     </element>
     <element id="Flag.contained:provenance">
       <path value="Flag.contained" />
@@ -54,9 +55,22 @@
         <code value="Provenance" />
         <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
       </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Flag.status">
+      <path value="Flag.status" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Flag.category">
+      <path value="Flag.category" />
+      <mustSupport value="true" />
     </element>
     <element id="Flag.code">
       <path value="Flag.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Flag.subject">
+      <path value="Flag.subject" />
       <mustSupport value="true" />
     </element>
   </differential>
