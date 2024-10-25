@@ -53,6 +53,14 @@
         </coding>
       </patternCodeableConcept>
     </element>
+    <element id="Consent.category:information-access.coding.system">
+      <path value="Consent.category.coding.system" />
+      <fixedUri value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
+    </element>
+    <element id="Consent.category:information-access.coding.code">
+      <path value="Consent.category.coding.code" />
+      <fixedCode value="INFA" />
+    </element>
     <element id="Consent.patient">
       <path value="Consent.patient" />
       <short value="Patient NHS number" />
@@ -75,7 +83,7 @@
       <slicing>
         <discriminator>
           <type value="value" />
-          <path value="coding.system" />
+          <path value="type" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -85,6 +93,10 @@
     </element>
     <element id="Consent.performer.identifier">
       <path value="Consent.performer.identifier" />
+      <min value="1" />
+    </element>
+    <element id="Consent.performer.identifier.type">
+      <path value="Consent.performer.identifier.type" />
       <min value="1" />
     </element>
     <element id="Consent.performer.identifier.system">
