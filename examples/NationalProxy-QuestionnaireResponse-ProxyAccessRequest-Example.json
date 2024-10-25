@@ -1,6 +1,6 @@
 {
   "resourceType" : "QuestionnaireResponse",
-  "id" : "QuestionnaireResponse-proxy-access-request",
+  "id" : "NationalProxy-QuestionnaireResponse-ProxyAccessRequest-Example",
   "questionnaire" : "https://fhir.nhs.uk/England/Questionnaire/ProxyAccessRequest",
   "status" : "completed",
   "subject" : {
