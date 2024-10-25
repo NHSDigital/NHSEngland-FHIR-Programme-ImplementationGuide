@@ -1,13 +1,13 @@
 {
   "resourceType" : "Task",
-  "id" : "NationalProxy-Task-ConsentVerification-Requested-Example",
+  "id" : "NationalProxy-Task-ConsentVerification-Accepted-Example",
   "identifier" : [
     {
       "system" : "https://tools.ietf.org/html/rfc4122",
       "value" : "41bf06bf-83f3-4004-98d3-480e3f048d55"
     }
   ],
-  "status" : "requested",
+  "status" : "accepted",
   "intent" : "order",
   "priority" : "routine",
   "code" : {
@@ -61,7 +61,7 @@
   },
   "note" : [
     {
-      "text" : "Please verify the national proxy request for from Jayne Smith to access Jane Marie Anne Smith records. Relationship is MOTHER"
+      "text" : "Please verify the national proxy request from Jayne Smith to access Jane Marie Anne Smith records. Relationship is MOTHER"
     }
   ],
   "input" : [
