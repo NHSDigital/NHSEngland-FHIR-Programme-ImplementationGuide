@@ -55,6 +55,12 @@
   "provision" : {
     "actor" : [{
       "role" : {
+        "coding" : [
+          { 
+            "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+            "code": "GRANTOR"
+          }
+        ],
         "text" : "coding to be defined"
       },
       "reference" : {
