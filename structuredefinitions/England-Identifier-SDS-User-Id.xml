@@ -1,10 +1,10 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="England-Identifier-SDS-User-Id"/>
   <url
-       value="https://fhir.nhs.uk/England/StructureDefinition/StructureDefinition/England-Identifier-SDS-User-Id"/>
+       value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-SDS-User-Id"/>
   <version value="0.0.1-current"/>
   <name value="EnglandIdentifierSDSUserId"/>
-  <title value="SDS User Id"/>
+  <title value="England Identifier SDS User Id"/>
   <status value="draft"/>
   <date value="2024-10-25T07:31:19+00:00"/>
   <publisher value="NHS England"/>
