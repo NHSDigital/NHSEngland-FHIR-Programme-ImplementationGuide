@@ -95,10 +95,6 @@
       <path value="Consent.performer.identifier" />
       <min value="1" />
     </element>
-    <element id="Consent.performer.identifier.type">
-      <path value="Consent.performer.identifier.type" />
-      <min value="1" />
-    </element>
     <element id="Consent.performer.identifier.system">
       <path value="Consent.performer.identifier.system" />
       <min value="1" />
