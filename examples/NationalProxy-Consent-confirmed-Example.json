@@ -5,7 +5,7 @@
       "system" : "https://tools.ietf.org/html/rfc4122",
       "value" : "147ed671-7215-40f8-bd3e-eaaee9455acb"
     }],
-    "status" : "confirmed",
+    "status" : "active",
     "scope" : {
       "coding" : [{
         "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
