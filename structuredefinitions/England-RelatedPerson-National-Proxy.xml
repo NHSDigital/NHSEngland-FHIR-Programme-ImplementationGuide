@@ -1,0 +1,93 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="England-RelatedPerson-National-Proxy" />
+  <url value="https://fhir.nhs.uk/England/StructureDefinition/England-RelatedPerson-National-Proxy" />
+  <version value="0.0.1-current" />
+  <name value="EnglandRelatedPersonNationalProxy" />
+  <status value="draft" />
+  <date value="2024-10-25T07:31:19+00:00" />
+  <publisher value="NHS England" />
+  <contact>
+    <name value="NHS England" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="RelatedPerson from National Proxy elaboration" />
+  <purpose value="This documents requirement for NHS England National Proxy" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="RelatedPerson" />
+  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="RelatedPerson.identifier">
+      <path value="RelatedPerson.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="system" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="RelatedPerson.identifier:NHSNumber">
+      <path value="RelatedPerson.identifier" />
+      <sliceName value="NHSNumber" />
+      <max value="1" />
+      <type>
+        <code value="Identifier" />
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-NHS-Number" />
+      </type>
+    </element>
+    <element id="RelatedPerson.active">
+      <path value="RelatedPerson.active" />
+      <min value="1" />
+    </element>
+    <element id="RelatedPerson.patient.identifier">
+      <path value="RelatedPerson.patient.identifier" />
+      <type>
+        <code value="Identifier" />
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-NHS-Number" />
+      </type>
+    </element>
+    <element id="RelatedPerson.relationship">
+      <path value="RelatedPerson.relationship" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="coding.system" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="RelatedPerson.relationship.coding">
+      <path value="RelatedPerson.relationship.coding" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype" />
+      </binding>
+    </element>
+    <element id="RelatedPerson.relationship:Type">
+      <path value="RelatedPerson.relationship" />
+      <sliceName value="Type" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="RelatedPerson.relationship:Type.coding.system">
+      <path value="RelatedPerson.relationship.coding.system" />
+      <min value="1" />
+      <patternUri value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+    </element>
+    <element id="RelatedPerson.birthDate">
+      <path value="RelatedPerson.birthDate" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

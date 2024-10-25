@@ -43,9 +43,6 @@
   "sourceReference" : {
     "reference" : "https://nhsdigital.github.io/nhsengland-spine-specification-sandbox/QuestionnaireResponse/QuestionnaireResponse-proxy-access-request"
   },
-  "policyRule" : {
-    "text" : "coding to be defined"
-  },
   "provision" : {
     "actor" : [{
       "role" : {
