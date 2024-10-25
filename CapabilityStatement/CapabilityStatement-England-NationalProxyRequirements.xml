@@ -32,8 +32,6 @@
       <type value="Consent"/>
       <profile
                value="https://fhir.nhs.uk/England/StructureDefinition/England-Consent-National-Proxy"/>
-      <supportedProfile
-                        value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Consent"/>
       <documentation
                      value="```
 GET /Consent/{id}
@@ -72,9 +70,7 @@ GET /Consent?patient:identifier=https://fhir.nhs.uk/Id/nhs-number|9459304130
         <valueCode value="SHALL"/>
       </extension>
       <type value="RelatedPerson"/>
-      <profile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
-      <supportedProfile
-                        value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson"/>
+      <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-RelatedPerson-National-Proxy"/>
       <documentation
                      value="
 `GET /RelatedPerson/{id}`
