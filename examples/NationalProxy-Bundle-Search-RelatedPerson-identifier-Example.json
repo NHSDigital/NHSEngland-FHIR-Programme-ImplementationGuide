@@ -1,6 +1,6 @@
 {
     "resourceType" : "Bundle",
-    "id" : "NationalProxy-Bundle-SearchSet-RelatedPerson-identifier-search-Example",
+    "id" : "NationalProxy-Bundle-Search-RelatedPerson-identifier-Example",
     "type" : "searchset",
     "total" : 1,
     "link" : [
