@@ -53,6 +53,15 @@
   "sourceReference": {
     "reference": "https://nhsdigital.github.io/nhsengland-spine-specification-sandbox/QuestionnaireResponse/QuestionnaireResponse-proxy-access-request"
   },
+  "policyRule" : {
+    "coding" : [
+      { 
+        "system" : "http://terminology.hl7.org/CodeSystem/consentpolicycodes",
+        "code": "ssa-827"
+      }
+    ],
+    "text": "Coding to be defined"
+  },
   "provision": {
     "actor": [
       {

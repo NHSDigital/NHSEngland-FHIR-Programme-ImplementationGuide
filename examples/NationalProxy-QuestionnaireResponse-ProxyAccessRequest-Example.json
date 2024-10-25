@@ -1,13 +1,6 @@
 {
   "resourceType" : "QuestionnaireResponse",
   "id" : "QuestionnaireResponse-proxy-access-request",
-  "meta" : {
-    "tag" : [
-      {
-        "code" : "lformsVersion: 34.0.0"
-      }
-    ]
-  },
   "questionnaire" : "https://fhir.nhs.uk/England/Questionnaire/ProxyAccessRequest",
   "status" : "completed",
   "subject" : {
