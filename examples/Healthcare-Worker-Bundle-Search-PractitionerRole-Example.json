@@ -44,7 +44,7 @@
           {
             "coding": [
               {
-                "system": "https://fhir.nhs.uk/CodeSystem/England-JobRoleCode",
+                "system": "https://fhir.nhs.uk/England/CodeSystem/England-JobRoleCode",
                 "code": "01005"
               }
             ]
