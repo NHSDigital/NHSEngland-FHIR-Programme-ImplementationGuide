@@ -1,9 +1,9 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <id value="England-Practitioner-Healthcare-Worker"/>
-    <url value="https://fhir.nhs.uk/England/StructureDefinition/England-Practitioner-Healthcare-Worker"/>
+    <id value="England-Practitioner"/>
+    <url value="https://fhir.nhs.uk/England/StructureDefinition/England-Practitioner"/>
     <version value="0.0.1-current"/>
-    <name value="EnglandPractitionerHealthcareWorker"/>
-    <title value="England Practitioner Healthcare Worker"/>
+    <name value="EnglandPractitioner"/>
+    <title value="England Practitioner"/>
     <status value="draft"/>
     <date value="2024-10-25T07:31:19+00:00"/>
     <publisher value="NHS England"/>
@@ -30,7 +30,7 @@
             <path value="Practitioner.identifier"/>
             <slicing>
                 <discriminator>
-                    <type value="pattern"/>
+                    <type value="value"/>
                     <path value="system"/>
                 </discriminator>
                 <rules value="closed"/>
@@ -55,6 +55,10 @@
                 <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-General-Medical-Practitioner-Code"/>
             </type>
         </element>
+        <element id="Practitioner.identifier:gmp-number.system">
+            <path value="Practitioner.identifier.system" />
+            <fixedUri value="https://fhir.hl7.org.uk/Id/gmp-number" />
+        </element>
         <element id="Practitioner.identifier:gmc-number">
             <path value="Practitioner.identifier"/>
             <sliceName value="gmc-number"/>
@@ -65,25 +69,23 @@
                 <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-General-Medical-Council-Reference-Number"/>
             </type>
         </element>
+        <element id="Practitioner.identifier:gmc-number.system">
+            <path value="Practitioner.identifier.system" />
+            <fixedUri value="https://fhir.hl7.org.uk/Id/gmc-number" />
+        </element>
         <element id="Practitioner.identifier:sds-user-id">
             <path value="Practitioner.identifier"/>
             <sliceName value="sds-user-id"/>
-            <min value="1"/>
+            <min value="0"/>
             <max value="1"/>
             <type>
                 <code value="Identifier"/>
                 <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-SDS-User-Id"/>
             </type>
         </element>
-        <element id="Practitioner.identifier.system:sds-user-id">
-            <path value="Practitioner.identifier.system"/>
-            <sliceName value="sds-user-id"/>
-            <min value="1"/>
-            <max value="1"/>
-            <type>
-                <code value="Identifier"/>
-                <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-SDS-User-Id"/>
-            </type>
+        <element id="Practitioner.identifier:sds-user-id.system">
+            <path value="Practitioner.identifier.system" />
+            <fixedUri value="https://fhir.nhs.uk/Id/sds-user-id" />
         </element>
     </differential>
 </StructureDefinition>
