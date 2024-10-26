@@ -1,6 +1,6 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="England-PractitionerRole-Healthcare-Worker"/>
-  <url value="https://fhir.nhs.uk/England/StructureDefinitionEngland-PractitionerRole-Healthcare-Worker"/>
+  <url value="https://fhir.nhs.uk/England/StructureDefinition/England-PractitionerRole-Healthcare-Worker"/>
   <version value="0.0.1-current"/>
   <name value="EnglandPractitionerRoleHealthcareWorker"/>
   <title value="England Practitioner Role Healthcare Worker"/>
