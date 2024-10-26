@@ -22,7 +22,7 @@
             ]
         }
     ],
-    "description": "- [JOB ROLE CODE](https://www.datadictionary.nhs.uk/attributes/job_role_code.html)\n- [UKCoreSDSJobRoleName](https://simplifier.net/hl7fhirukcorer4/codesystem-ukcore-sdsjobrolename)",
+    "description": "TODO Reduce CodeSystems allowed in this valueset, http://terminology.hl7.org/CodeSystem/practitioner-role is included to not invalidate DOS examples and ideally should be removed. \n- [JOB ROLE CODE](https://www.datadictionary.nhs.uk/attributes/job_role_code.html)\n- [UKCoreSDSJobRoleName](https://simplifier.net/hl7fhirukcorer4/codesystem-ukcore-sdsjobrolename)",
     "compose": {
         "include": [
             {
