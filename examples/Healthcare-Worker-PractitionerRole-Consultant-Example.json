@@ -1,0 +1,60 @@
+{
+    "resourceType" : "PractitionerRole",
+    "id" : "practitionerrole-consultant",
+    "text" : {
+      "status" : "generated",
+      "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole practitionerrole-consultant</b></p><a name=\"practitionerrole-consultant\"> </a><a name=\"hcpractitionerrole-consultant\"> </a><a name=\"practitionerrole-consultant-en-US\"> </a><p><b>identifier</b>: <code>https://fhir.nhs.uk/Id/sds-role-profile-id</code>/454567759542</p><p><b>active</b>: true</p><p><b>period</b>: 2024-09-30 --&gt; (ongoing)</p><p><b>practitioner</b>: <a href=\"https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.1.0&amp;canonical=https://fhir.nhs.uk/England/spine/Practitioner/practitioner-consultant\">Dr Thomas Edwards</a></p><p><b>organization</b>: TAUNTON AND SOMERSET NHS FOUNDATION TRUST (Identifier: <code>https://fhir.nhs.uk/Id/ods-organization-code</code>/RBA)</p><p><b>code</b>: <span title=\"Codes:{https://fhir.nhs.uk/CodeSystem/NHSDigital-SDS-JobRoleCode R0620}\">R0620</span>, <span title=\"Codes:{https://fhir.nhs.uk/CodeSystem/NHSDigital-SDS-JobRoleCode G0100}\">G0100</span>, <span title=\"Codes:{https://fhir.nhs.uk/CodeSystem/NHSDigital-SDS-JobRoleCode S0030}\">S0030</span></p></div>"
+    },
+    "identifier" : [
+      {
+        "system" : "https://fhir.nhs.uk/Id/sds-role-profile-id",
+        "value" : "454567759542"
+      }
+    ],
+    "active" : true,
+    "period" : {
+      "start" : "2024-09-30"
+    },
+    "practitioner" : {
+        "reference" : "https://directoryservice.example.nhs.uk/FHIR/R4/Practitioner/Healthcare-Worker-Practitioner-Consultant-Example",
+      "identifier" : {
+        "system" : "https://fhir.nhs.uk/Id/sds-user-id",
+        "value" : "3415870201"
+      },
+      "display" : "Dr Thomas Edwards"
+    },
+    "organization" : {
+      "reference" : "https://directoryservice.example.nhs.uk/FHIR/R4/Organization/RBA",
+      "identifier" : {
+        "system" : "https://fhir.nhs.uk/Id/ods-organization-code",
+        "value" : "RBA"
+      },
+      "display" : "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
+    },
+    "code" : [
+      {
+        "coding" : [
+          {
+            "system" : "https://fhir.nhs.uk/CodeSystem/NHSDigital-SDS-JobRoleCode",
+            "code" : "R0620"
+          }
+        ]
+      },
+      {
+        "coding" : [
+          {
+            "system" : "https://fhir.nhs.uk/CodeSystem/NHSDigital-SDS-JobRoleCode",
+            "code" : "G0100"
+          }
+        ]
+      },
+      {
+        "coding" : [
+          {
+            "system" : "https://fhir.nhs.uk/CodeSystem/NHSDigital-SDS-JobRoleCode",
+            "code" : "S0030"
+          }
+        ]
+      }
+    ]
+  }
