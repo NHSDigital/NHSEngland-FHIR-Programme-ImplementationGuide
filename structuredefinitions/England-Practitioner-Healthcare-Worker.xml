@@ -30,7 +30,7 @@
             <path value="Practitioner.identifier"/>
             <slicing>
                 <discriminator>
-                    <type value="pattern"/>
+                    <type value="value"/>
                     <path value="system"/>
                 </discriminator>
                 <rules value="closed"/>
