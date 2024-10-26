@@ -66,7 +66,7 @@
     <element id="Task.requester.identifier">
       <path value="Task.requester.identifier" />
       <min value="1" />
-      <short value="SDS-User-Id is not part of NHS Data Dictionary and so should not be present here as an identifier."/>
+      <short value="SDS-User-Id is not part of NHS Data Dictionary and so should not be present here as an identifier." />
       <type>
         <code value="Identifier" />
         <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-General-Medical-Practitioner-Code" />
@@ -87,7 +87,7 @@
     <element id="Task.owner.identifier">
       <path value="Task.owner.identifier" />
       <min value="1" />
-      <short value="SDS-User-Id is not part of NHS Data Dictionary and so should not be present here as an identifer."/>
+      <short value="SDS-User-Id is not part of NHS Data Dictionary and so should not be present here as an identifer." />
       <type>
         <code value="Identifier" />
         <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-General-Medical-Practitioner-Code" />
