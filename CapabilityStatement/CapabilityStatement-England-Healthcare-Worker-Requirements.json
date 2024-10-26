@@ -42,7 +42,7 @@
               }
             ],
             "type" : "Practitioner",
-            "profile" : "https://fhir.nhs.uk/England/StructureDefinition/England-Practitionerr",
+            "profile" : "https://fhir.nhs.uk/England/StructureDefinition/England-Practitioner",
             "supportedProfile" : [
               "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner"
             ],
