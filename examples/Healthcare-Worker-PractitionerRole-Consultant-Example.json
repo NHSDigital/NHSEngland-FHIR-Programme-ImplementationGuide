@@ -31,7 +31,7 @@
     {
       "coding": [
         {
-          "system": "https://fhir.nhs.uk/CodeSystem/NHSDigital-SDS-JobRoleCode",
+          "system": "https://fhir.nhs.uk/CodeSystem/England-JobRoleCode",
           "code": "R0620"
         }
       ]
@@ -39,7 +39,7 @@
     {
       "coding": [
         {
-          "system": "https://fhir.nhs.uk/CodeSystem/NHSDigital-SDS-JobRoleCode",
+          "system": "https://fhir.nhs.uk/CodeSystem/England-JobRoleCode",
           "code": "G0100"
         }
       ]
@@ -47,7 +47,7 @@
     {
       "coding": [
         {
-          "system": "https://fhir.nhs.uk/CodeSystem/NHSDigital-SDS-JobRoleCode",
+          "system": "https://fhir.nhs.uk/CodeSystem/England-JobRoleCode",
           "code": "S0030"
         }
       ]

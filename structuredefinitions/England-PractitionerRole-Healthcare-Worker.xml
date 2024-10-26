@@ -69,11 +69,12 @@
     </element>
     <element id="PractitionerRole.practitioner.identifier">
       <path value="PractitionerRole.practitioner.identifier"/>
-      <min value="1"/>
+      <min value="0"/>
       <type>
         <code value="Identifier"/>
         <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-General-Medical-Practitioner-Code" />
         <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-General-Medical-Council-Reference-Number" />
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-SDS-User-Id" />
       </type>
     </element>
     <element id="PractitionerRole.organization.identifier">
