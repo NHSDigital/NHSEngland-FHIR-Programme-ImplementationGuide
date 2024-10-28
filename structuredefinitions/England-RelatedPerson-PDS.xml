@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="England-RelatedPerson-PDS" />
+  <url value="https://fhir.nhs.uk/England/StructureDefinition/England-RelatedPerson-PDS" />
+  <version value="0.0.1-current" />
+  <name value="EnglandRelatedPersonPDS" />
+  <title value="England Related Person PDS" />
+  <status value="draft" />
+  <date value="2024-10-25T07:31:19+00:00" />
+  <publisher value="NHS England" />
+  <contact>
+    <name value="NHS England" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="Based on [NHS England Confluence - Related Person Network - Physical Data Model - LPG](https://nhsd-confluence.digital.nhs.uk/display/DEMGRPH/Related+Person+Network+-+Physical+Data+Model+-+LPG#RelatedPersonNetworkPhysicalDataModelLPG-Appendix-FHIRRelatedPersonAPI-Example)" />
+  <purpose value="This documents requirement for NHS England PDS" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="RelatedPerson" />
+  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="RelatedPerson.extension:CopyCorrespondenceIndicator">
+      <path value="RelatedPerson.extension" />
+      <sliceName value="CopyCorrespondenceIndicator" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CopyCorrespondenceIndicator" />
+      </type>
+    </element>
+    <element id="RelatedPerson.extension:ContactRank">
+      <path value="RelatedPerson.extension" />
+      <sliceName value="ContactRank" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactRank" />
+      </type>
+    </element>
+    <element id="RelatedPerson.extension:ContactPreference">
+      <path value="RelatedPerson.extension" />
+      <sliceName value="ContactPreference" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactPreference" />
+      </type>
+    </element>
+    <element id="RelatedPerson.extension:interpreterRequired">
+      <path value="RelatedPerson.extension" />
+      <sliceName value="interpreterRequired" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired" />
+      </type>
+    </element>
+    <element id="RelatedPerson.identifier">
+      <path value="RelatedPerson.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="system" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="RelatedPerson.identifier:NHSNumber">
+      <path value="RelatedPerson.identifier" />
+      <sliceName value="NHSNumber" />
+      <max value="1" />
+      <type>
+        <code value="Identifier" />
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-NHS-Number" />
+      </type>
+    </element>
+    <element id="RelatedPerson.patient.identifier">
+      <path value="RelatedPerson.patient.identifier" />
+      <type>
+        <code value="Identifier" />
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-NHS-Number" />
+      </type>
+    </element>
+    <element id="RelatedPerson.relationship">
+      <path value="RelatedPerson.relationship" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="coding.system" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <min value="1" />
+      <max value="3" />
+    </element>
+    <element id="RelatedPerson.relationship.coding">
+      <path value="RelatedPerson.relationship.coding" />
+      <min value="1" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://fhir.nhs.uk/England/spine/ValueSet/PDSRelatedPersonRelationshipType" />
+      </binding>
+    </element>
+    <element id="RelatedPerson.relationship.coding.system">
+      <path value="RelatedPerson.relationship.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="RelatedPerson.relationship.coding.code">
+      <path value="RelatedPerson.relationship.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="RelatedPerson.relationship:Role">
+      <path value="RelatedPerson.relationship" />
+      <sliceName value="Role" />
+      <max value="2" />
+    </element>
+    <element id="RelatedPerson.relationship:Role.coding.system">
+      <path value="RelatedPerson.relationship.coding.system" />
+      <patternUri value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole" />
+    </element>
+    <element id="RelatedPerson.relationship:Type">
+      <path value="RelatedPerson.relationship" />
+      <sliceName value="Type" />
+      <max value="1" />
+    </element>
+    <element id="RelatedPerson.relationship:Type.coding.system">
+      <path value="RelatedPerson.relationship.coding.system" />
+      <patternUri value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+    </element>
+    <element id="RelatedPerson.relationship:NextOfKin">
+      <path value="RelatedPerson.relationship" />
+      <sliceName value="NextOfKin" />
+      <max value="1" />
+    </element>
+    <element id="RelatedPerson.relationship:NextOfKin.coding.system">
+      <path value="RelatedPerson.relationship.coding.system" />
+      <patternUri value="http://terminology.hl7.org/CodeSystem/v2-0131" />
+    </element>
+    <element id="RelatedPerson.name">
+      <path value="RelatedPerson.name" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="RelatedPerson.name.use">
+      <path value="RelatedPerson.name.use" />
+      <min value="1" />
+    </element>
+    <element id="RelatedPerson.name.period.start">
+      <path value="RelatedPerson.name.period.start" />
+      <min value="1" />
+    </element>
+    <element id="RelatedPerson.telecom.value">
+      <path value="RelatedPerson.telecom.value" />
+      <min value="1" />
+    </element>
+    <element id="RelatedPerson.telecom.use">
+      <path value="RelatedPerson.telecom.use" />
+      <min value="1" />
+    </element>
+    <element id="RelatedPerson.telecom.period.start">
+      <path value="RelatedPerson.telecom.period.start" />
+      <min value="1" />
+    </element>
+    <element id="RelatedPerson.birthDate">
+      <path value="RelatedPerson.birthDate" />
+      <mustSupport value="true" />
+    </element>
+    <element id="RelatedPerson.address.extension:AddressKey">
+      <path value="RelatedPerson.address.extension" />
+      <sliceName value="AddressKey" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey" />
+      </type>
+    </element>
+    <element id="RelatedPerson.address.use">
+      <path value="RelatedPerson.address.use" />
+      <min value="1" />
+    </element>
+    <element id="RelatedPerson.address.period.start">
+      <path value="RelatedPerson.address.period.start" />
+      <min value="1" />
+    </element>
+    <element id="RelatedPerson.period.start">
+      <path value="RelatedPerson.period.start" />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>
