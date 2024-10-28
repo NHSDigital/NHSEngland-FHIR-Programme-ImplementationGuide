@@ -50,7 +50,7 @@
   ],
   "active" : true,
   "patient" : {
-    🔗 "reference" : "Patient/Patient-NHS-9459304130-Jane-Smith",
+    "reference" : "Patient/Patient-NHS-9459304130-Jane-Smith",
     "identifier" : {
       "system" : "https://fhir.nhs.uk/Id/nhs-number",
       "value" : "9100000009"
