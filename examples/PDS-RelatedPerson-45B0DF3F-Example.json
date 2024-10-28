@@ -1,6 +1,6 @@
 {
     "resourceType" : "RelatedPerson",
-    "id" : "PDS-RelatedPerson-45B0DF3F",
+    "id" : "PDS-RelatedPerson-45B0DF3F-Example",
     "active" : true,
     "patient" : {
       "identifier" : {

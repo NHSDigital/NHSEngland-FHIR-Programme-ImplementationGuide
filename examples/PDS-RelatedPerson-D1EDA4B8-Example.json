@@ -1,6 +1,6 @@
 {
   "resourceType" : "RelatedPerson",
-  "id" : "PDS-RelatedPerson-D1EDA4B8",
+  "id" : "PDS-RelatedPerson-D1EDA4B8-Example",
   "text" : {
     "status" : "generated",
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: RelatedPerson RelatedPerson-D1EDA4B8</b></p><a name=\"RelatedPerson-D1EDA4B8\"> </a><a name=\"hcRelatedPerson-D1EDA4B8\"> </a><a name=\"RelatedPerson-D1EDA4B8-en-US\"> </a><p><b>identifier</b>: <code>https://fhir.nhs.uk/Id/nhs-number</code>/9732017945</p><p><b>active</b>: true</p><p><b>patient</b>: Identifier: <code>https://fhir.nhs.uk/Id/nhs-number</code>/9732017996</p><p><b>relationship</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode MTH}\">mother</span>, <span title=\"Codes:{https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole Guardian}\">Guardian of patient</span>, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0131 N}\">Next-of-Kin</span></p><p><b>name</b>: </p><p><b>period</b>: 2017-02-17 --&gt; (ongoing)</p></div>"
