@@ -7,10 +7,6 @@
       "valueBoolean": true
     },
     {
-      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactRank",
-      "valuePositiveInt": 1
-    },
-    {
       "extension": [
         {
           "url": "PreferredWrittenCommunicationFormat",
@@ -42,10 +38,6 @@
         }
       ],
       "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactPreference"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired",
-      "valueBoolean": true
     }
   ],
   "active": true,
