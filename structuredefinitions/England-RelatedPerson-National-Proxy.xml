@@ -64,7 +64,7 @@
           <type value="pattern" />
           <path value="coding.system" />
         </discriminator>
-        <rules value="closed" />
+        <rules value="openAtEnd" />
       </slicing>
       <min value="1" />
       <max value="3" />
