@@ -27,28 +27,12 @@
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
   <derivation value="constraint" />
   <differential>
-    <element id="RelatedPerson.extension:CopyCorrespondenceIndicator">
-      <path value="RelatedPerson.extension" />
-      <sliceName value="CopyCorrespondenceIndicator" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CopyCorrespondenceIndicator" />
-      </type>
-    </element>
     <element id="RelatedPerson.extension:ContactRank">
       <path value="RelatedPerson.extension" />
       <sliceName value="ContactRank" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactRank" />
-      </type>
-    </element>
-    <element id="RelatedPerson.extension:ContactPreference">
-      <path value="RelatedPerson.extension" />
-      <sliceName value="ContactPreference" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactPreference" />
       </type>
     </element>
     <element id="RelatedPerson.extension:interpreterRequired">
