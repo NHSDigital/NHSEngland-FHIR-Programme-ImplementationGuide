@@ -1,173 +1,173 @@
 {
-  "resourceType" : "RelatedPerson",
-  "id" : "PDS-RelatedPerson-507B7621-Example",
-  "extension" : [
+  "resourceType": "RelatedPerson",
+  "id": "PDS-RelatedPerson-507B7621-Example",
+  "extension": [
     {
-      "url" : "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CopyCorrespondenceIndicator",
-      "valueBoolean" : true
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CopyCorrespondenceIndicator",
+      "valueBoolean": true
     },
     {
-      "url" : "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactRank",
-      "valuePositiveInt" : 1
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactRank",
+      "valuePositiveInt": 1
     },
     {
-      "extension" : [
+      "extension": [
         {
-          "url" : "PreferredWrittenCommunicationFormat",
-          "valueCodeableConcept" : {
-            "coding" : [
+          "url": "PreferredWrittenCommunicationFormat",
+          "valueCodeableConcept": {
+            "coding": [
               {
-                "system" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredWrittenCommunicationFormat",
-                "code" : "32",
-                "display" : "Braille"
+                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredWrittenCommunicationFormat",
+                "code": "32",
+                "display": "Braille"
               }
             ]
           }
         },
         {
-          "url" : "PreferredContactMethod",
-          "valueCodeableConcept" : {
-            "coding" : [
+          "url": "PreferredContactMethod",
+          "valueCodeableConcept": {
+            "coding": [
               {
-                "system" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredContactMethod",
-                "code" : "1",
-                "display" : "Letter"
+                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredContactMethod",
+                "code": "1",
+                "display": "Letter"
               }
             ]
           }
         },
         {
-          "url" : "PreferredContactTimes",
-          "valueString" : "Not after 7pm"
+          "url": "PreferredContactTimes",
+          "valueString": "Not after 7pm"
         }
       ],
-      "url" : "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactPreference"
+      "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactPreference"
     },
     {
-      "url" : "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired",
-      "valueBoolean" : true
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired",
+      "valueBoolean": true
     }
   ],
-  "active" : true,
-  "patient" : {
-    "reference" : "Patient/Patient-NHS-9459304130-Jane-Smith",
-    "identifier" : {
-      "system" : "https://fhir.nhs.uk/Id/nhs-number",
-      "value" : "9100000009"
+  "active": true,
+  "patient": {
+    "reference": "Patient/Patient-NHS-9459304130-Jane-Smith",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9100000009"
     }
   },
-  "relationship" : [
+  "relationship": [
     {
-      "coding" : [
+      "coding": [
         {
-          "system" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole",
-          "code" : "Guardian",
-          "display" : "Guardian of patient"
+          "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole",
+          "code": "Guardian",
+          "display": "Guardian of patient"
         }
       ]
     }
   ],
-  "name" : [
+  "name": [
     {
-      "use" : "usual",
-      "family" : "Smith",
-      "given" : [
+      "use": "usual",
+      "family": "Smith",
+      "given": [
         "Jane"
       ],
-      "prefix" : [
+      "prefix": [
         "Mrs"
       ],
-      "suffix" : [
+      "suffix": [
         "MBE"
       ],
-      "period" : {
-        "start" : "2020-01-01",
-        "end" : "2021-12-31"
+      "period": {
+        "start": "2020-01-01",
+        "end": "2021-12-31"
       }
     }
   ],
-  "telecom" : [
+  "telecom": [
     {
-      "system" : "phone",
-      "value" : "01632960587",
-      "use" : "home",
-      "period" : {
-        "start" : "2020-01-01",
-        "end" : "2021-12-31"
+      "system": "phone",
+      "value": "01632960587",
+      "use": "home",
+      "period": {
+        "start": "2020-01-01",
+        "end": "2021-12-31"
       }
     }
   ],
-  "address" : [
+  "address": [
     {
-      "extension" : [
+      "extension": [
         {
-          "extension" : [
+          "extension": [
             {
-              "url" : "type",
-              "valueCodeableConcept" : {
-                "coding" : [
+              "url": "type",
+              "valueCodeableConcept": {
+                "coding": [
                   {
-                    "system" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKeyType",
-                    "code" : "PAF"
+                    "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKeyType",
+                    "code": "PAF"
                   }
                 ]
               }
             },
             {
-              "url" : "value",
-              "valueString" : "12345678"
+              "url": "value",
+              "valueString": "12345678"
             }
           ],
-          "url" : "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey"
+          "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey"
         },
         {
-          "extension" : [
+          "extension": [
             {
-              "url" : "type",
-              "valueCodeableConcept" : {
-                "coding" : [
+              "url": "type",
+              "valueCodeableConcept": {
+                "coding": [
                   {
-                    "system" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKeyType",
-                    "code" : "UPRN"
+                    "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKeyType",
+                    "code": "UPRN"
                   }
                 ]
               }
             },
             {
-              "url" : "value",
-              "valueString" : "123456789012"
+              "url": "value",
+              "valueString": "123456789012"
             }
           ],
-          "url" : "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey"
+          "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey"
         }
       ],
-      "use" : "home",
-      "line" : [
+      "use": "home",
+      "line": [
         "1 Trevelyan Square",
         "Boar Lane",
         "City Centre",
         "Leeds",
         "West Yorkshire"
       ],
-      "postalCode" : "LS1 6AE",
-      "period" : {
-        "start" : "2020-01-01",
-        "end" : "2021-12-31"
+      "postalCode": "LS1 6AE",
+      "period": {
+        "start": "2020-01-01",
+        "end": "2021-12-31"
       }
     }
   ],
-  "period" : {
-    "start" : "2020-01-01",
-    "end" : "2021-12-31"
+  "period": {
+    "start": "2020-01-01",
+    "end": "2021-12-31"
   },
-  "communication" : [
+  "communication": [
     {
-      "language" : {
-        "coding" : [
+      "language": {
+        "coding": [
           {
-            "system" : "urn:ietf:bcp:47",
-            "code" : "fr",
-            "display" : "French"
+            "system": "urn:ietf:bcp:47",
+            "code": "fr",
+            "display": "French"
           }
         ]
       }
