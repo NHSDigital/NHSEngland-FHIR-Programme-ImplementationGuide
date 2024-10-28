@@ -104,7 +104,7 @@
       <max value="1" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://fhir.nhs.uk/England/spine/ValueSet/PDSRelatedPersonRelationshipType" />
+        <valueSet value="https://fhir.nhs.uk/England/ValueSet/England-PDSRelationshipType" />
       </binding>
     </element>
     <element id="RelatedPerson.relationship.coding.system">
