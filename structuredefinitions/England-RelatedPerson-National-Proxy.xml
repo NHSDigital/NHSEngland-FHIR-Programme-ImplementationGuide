@@ -67,12 +67,12 @@
         <rules value="closed" />
       </slicing>
       <min value="1" />
-      <max value="1" />
+      <max value="3" />
     </element>
     <element id="RelatedPerson.relationship.coding">
       <path value="RelatedPerson.relationship.coding" />
       <binding>
-        <strength value="required" />
+        <strength value="preferred" />
         <valueSet value="http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype" />
       </binding>
     </element>
