@@ -43,6 +43,14 @@
         <valueSet value="https://fhir.nhs.uk/England/ValueSet/England-TaskCode" />
       </binding>
     </element>
+    <element id="Task.focus">
+      <path value="Task.focus" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-CodeableReference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
+      </type>
+    </element>
     <element id="Task.for">
       <path value="Task.for" />
       <min value="1" />
