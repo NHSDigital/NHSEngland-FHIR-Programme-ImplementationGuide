@@ -18,6 +18,7 @@
       }
     ]
   },
+  "instantiatesCanonical": "https://workflow.example.nhs.uk/FHIR/R4/ActivityDefinition/ActivityDefinition-Proxy-Verification",
   "focus": {
     "extension": [
       {
@@ -33,9 +34,7 @@
         }
       }
     ],
-    "reference": "https://workflow.example.nhs.uk/FHIR/R4/ActivityDefinition/ActivityDefinition-Proxy-Verification",
-    "type": "ActivityDefinition",
-    "display": "Obtaining consent"
+    "reference" : "https://nhsdigital.github.io/nhsengland-spine-specification-sandbox/QuestionnaireResponse-QuestionnaireResponse-proxy-access-request"
   },
   "for": {
     "identifier": {
