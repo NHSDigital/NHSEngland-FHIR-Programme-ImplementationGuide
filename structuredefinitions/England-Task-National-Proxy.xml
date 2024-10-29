@@ -38,13 +38,10 @@
     <element id="Task.code">
       <path value="Task.code" />
       <min value="1" />
-    </element>
-    <element id="Task.focus">
-      <path value="Task.focus" />
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-CodeableReference" />
-      </type>
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://fhir.nhs.uk/England/ValueSet/England-TaskCode" />
+      </binding>
     </element>
     <element id="Task.for">
       <path value="Task.for" />

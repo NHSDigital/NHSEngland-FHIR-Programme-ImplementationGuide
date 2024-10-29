@@ -13,29 +13,16 @@
   "code": {
     "coding": [
       {
-        "system": "http://hl7.org/fhir/CodeSystem/task-code",
-        "code": "fulfill"
+        "system": "http://snomed.info/sct",
+        "code": "414925007",
+        "display": "Obtaining consent"
       }
     ]
   },
+  "instantiatesCanonical": "https://workflow.example.nhs.uk/FHIR/R4/ActivityDefinition/ActivityDefinition-Proxy-Verification",
   "focus": {
-    "extension": [
-      {
-        "url": "https://fhir.nhs.uk/England/StructureDefinition/England-Extension-ExtCodeableReference",
-        "valueCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "414925007",
-              "display": "Obtaining consent"
-            }
-          ]
-        }
-      }
-    ],
-    "reference": "https://workflow.example.nhs.uk/FHIR/R4/ActivityDefinition/ActivityDefinition-Proxy-Verification",
-    "type": "ActivityDefinition",
-    "display": "Obtaining consent"
+    "type": "QuestionnaireResponse",
+    "reference" : "https://nhsdigital.github.io/nhsengland-spine-specification-sandbox/QuestionnaireResponse-QuestionnaireResponse-proxy-access-request"
   },
   "for": {
     "identifier": {
