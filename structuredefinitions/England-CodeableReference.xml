@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.nhs.uk/England/StructureDefinition/CodeableReference" />
+  <name value="CodeableReference" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <type value="Reference" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Reference" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Reference.extension:englandExtensionExtCodeableReference">
+      <path value="Reference.extension" />
+      <sliceName value="englandExtensionExtCodeableReference" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Extension-ExtCodeableReference" />
+      </type>
+      <isModifier value="false" />
+    </element>
+  </differential>
+</StructureDefinition>

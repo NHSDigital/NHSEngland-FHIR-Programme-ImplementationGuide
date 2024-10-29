@@ -39,14 +39,12 @@
       <path value="Task.code" />
       <min value="1" />
     </element>
-    <element id="Task.focus.extension:englandExtensionExtCodeableReference">
-      <path value="Task.focus.extension" />
-      <sliceName value="englandExtensionExtCodeableReference" />
+    <element id="Task.focus">
+      <path value="Task.focus" />
       <type>
-        <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Extension-ExtCodeableReference" />
+        <code value="Reference" />
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/CodeableReference" />
       </type>
-      <isModifier value="false" />
     </element>
     <element id="Task.for">
       <path value="Task.for" />
