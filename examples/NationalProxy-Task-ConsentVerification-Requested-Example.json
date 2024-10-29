@@ -98,20 +98,6 @@
         "reference": "https://nhsdigital.github.io/nhsengland-spine-specification-sandbox/RelatedPerson-RelatedPerson-NHS-9100000009",
         "type": "RelatedPerson"
       }
-    },
-    {
-      "type": {
-        "coding": [
-          {
-            "system": "https://fhir.nhs.uk/England/NationalProxy",
-            "code": "OriginalRequest"
-          }
-        ]
-      },
-      "valueReference": {
-        "reference": "https://nhsdigital.github.io/nhsengland-spine-specification-sandbox/QuestionnaireResponse-QuestionnaireResponse-proxy-access-request",
-        "type": "QuestionnaireResponse"
-      }
     }
   ]
 }
