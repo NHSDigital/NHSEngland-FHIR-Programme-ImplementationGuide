@@ -8,6 +8,14 @@
     }
   ],
   "status" : "completed",
+  "businessStatus" : {
+    "coding" : [
+      {
+        "system" : "https://fhir.nhs.uk/England/NationalProxyConsentStatus",
+        "code" : "proxy-approved"
+      }
+    ]
+  },
   "intent" : "order",
   "priority" : "routine",
   "code" : {
