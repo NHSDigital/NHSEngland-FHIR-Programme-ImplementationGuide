@@ -43,7 +43,7 @@
       <path value="Task.focus" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/England/StructureDefinition/CodeableReference" />
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-CodeableReference" />
       </type>
     </element>
     <element id="Task.for">
