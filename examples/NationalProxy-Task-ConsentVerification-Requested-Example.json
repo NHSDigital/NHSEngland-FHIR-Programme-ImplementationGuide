@@ -33,7 +33,7 @@
         }
       }
     ],
-    "reference": "https://fhir.nhs.uk/England/spine/ActivityDefinition/ActivityDefinition-Proxy-Verification",
+    "reference": "https://workflow.example.nhs.uk/FHIR/R4/ActivityDefinition/ActivityDefinition-Proxy-Verification",
     "type": "ActivityDefinition",
     "display": "Obtaining consent"
   },

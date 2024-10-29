@@ -8,14 +8,6 @@
     }
   ],
   "status" : "completed",
-  "businessStatus" : {
-    "coding" : [
-      {
-        "system" : "https://fhir.nhs.uk/England/NationalProxyConsentDescision",
-        "code" : "accepted"
-      }
-    ]
-  },
   "intent" : "order",
   "priority" : "routine",
   "code" : {
@@ -41,7 +33,7 @@
         }
       }
     ],
-    "reference" : "https://fhir.nhs.uk/England/spine/ActivityDefinition/ActivityDefinition-Proxy-Verification",
+    "reference": "https://workflow.example.nhs.uk/FHIR/R4/ActivityDefinition/ActivityDefinition-Proxy-Verification",
     "type" : "ActivityDefinition",
     "display" : "Obtaining consent"
   },
@@ -69,7 +61,14 @@
   },
   "note" : [
     {
-      "text" : "Please verify the national proxy request for from Jayne Smith to access Jane Marie Anne Smith records. Relationship is MOTHER"
+      "time": "2024-10-07T15:07:55.495Z",
+      "authorReference": {
+        "identifier": {
+          "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+          "value": "X26"
+        }
+      },
+      "text": "Please verify the national proxy request for from Jayne Smith to access Jane Marie Anne Smith records. Relationship is MOTHER"
     }
   ],
   "input" : [
