@@ -2,8 +2,8 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="England-CodeableReference"/>
   <url value="https://fhir.nhs.uk/England/StructureDefinition/England-CodeableReference" />
-  <name value="CodeableReference" />
-  <title value="Codeable Reference" />
+  <name value="EnglandCodeableReference" />
+  <title value="England Codeable Reference" />
   <date value="2024-10-25T07:31:19+00:00" />
   <version value="0.0.1-current" />
   <status value="draft" />
