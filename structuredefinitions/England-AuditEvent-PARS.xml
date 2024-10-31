@@ -193,7 +193,7 @@
         </discriminator>
         <rules value="closed" />
       </slicing>
-      <min value="4" />
+      <min value="3" />
     </element>
     <element id="AuditEvent.entity:patient">
       <path value="AuditEvent.entity" />
