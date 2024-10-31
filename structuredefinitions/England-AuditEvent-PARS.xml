@@ -169,7 +169,7 @@
       <slicing>
         <discriminator>
           <type value="pattern" />
-          <path value="what.identifier.system" />
+          <path value="type" />
         </discriminator>
         <rules value="closed" />
       </slicing>
