@@ -2,7 +2,9 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <id value="England-AuditEvent-PARS"/>
     <url value="https://fhir.nhs.uk/England/StructureDefinition/England-AuditEvent-PARS"/>
+    <name value="EnglandAuditEventPARS"/>
     <title value="England Audit Event PARS"/>
+    <version value="0.0.1-current"/>
     <status value="draft"/>
     <date value="2024-10-25T07:31:19+00:00"/>
     <publisher value="NHS England"/>
