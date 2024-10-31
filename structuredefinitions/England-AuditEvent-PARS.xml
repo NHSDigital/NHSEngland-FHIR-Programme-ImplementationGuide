@@ -39,7 +39,7 @@
       <path value="AuditEvent.agent" />
       <slicing>
         <discriminator>
-          <type value="pattern" />
+          <type value="value" />
           <path value="who.type" />
         </discriminator>
         <rules value="closed" />
