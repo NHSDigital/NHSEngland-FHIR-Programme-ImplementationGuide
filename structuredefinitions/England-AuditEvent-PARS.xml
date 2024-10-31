@@ -72,7 +72,7 @@
         <element id="AuditEvent.agent:accreditedSystemId">
             <path value="AuditEvent.agent"/>
             <sliceName value="accreditedSystemId"/>
-            <short value="TODO This is an Endpoint identifier, move to organisation? "/>
+            <short value="TODO This is an Endpoint identifier, move to organisation?"/>
             <min value="0"/>
             <max value="1"/>
         </element>
@@ -309,7 +309,7 @@
         <element id="AuditEvent.entity:submittedOrganisation">
             <path value="AuditEvent.entity"/>
             <sliceName value="submittedOrganisation"/>
-            <short value="ODS code of the organisation submitted in the message/headers "/>
+            <short value="ODS code of the organisation submitted in the message/headers"/>
             <min value="1"/>
             <max value="1"/>
         </element>
