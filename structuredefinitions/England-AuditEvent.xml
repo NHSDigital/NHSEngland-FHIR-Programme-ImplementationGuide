@@ -4,10 +4,19 @@
          value="https://fhir.nhs.uk/England/StructureDefinition/England-AuditEvent"/>
     <version value="0.0.1-current"/>
     <name value="EnglandAuditEvent"/>
-    <title value="England AuditEvent"/>
+    <title value="England Audit Event"/>
     <status value="draft"/>
     <date value="2024-10-25T07:31:19+00:00"/>
     <publisher value="NHS England"/>
+    <contact>
+        <name value="NHS England" />
+        <telecom>
+            <system value="email" />
+            <value value="interoperabilityteam@nhs.net" />
+            <use value="work" />
+            <rank value="1" />
+        </telecom>
+    </contact>
     <description value="Base England Audit Event"/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
