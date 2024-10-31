@@ -99,12 +99,12 @@
         ]
       },
       "valueCodeableConcept" : {
-        "coding": 
+        "coding":[ 
           {
             "system" : "https://fhir.nhs.uk/England/NationalProxyConsentStatus",
             "code" : "proxy-approved"
           
-        }
+        }]
       }
     }
   ]
