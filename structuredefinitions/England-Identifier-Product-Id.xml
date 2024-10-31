@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <id value="England-Identifier-Product-Id"/>
+    <url value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-Product-Id"/>
+    <version value="0.0.1-current"/>
+    <name value="EnglandIdentifierProductId"/>
+    <title value="England Identifier Product Id"/>
+    <status value="draft"/>
+    <date value="2024-10-25T07:31:19+00:00"/>
+    <publisher value="NHS England"/>
+    <contact>
+        <name value="NHS England" />
+        <telecom>
+            <system value="email" />
+            <value value="interoperabilityteam@nhs.net" />
+            <use value="work" />
+            <rank value="1" />
+        </telecom>
+    </contact>
+    <description value="To follow"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Identifier"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Identifier"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Identifier.system">
+            <path value="Identifier.system"/>
+            <min value="1"/>
+            <patternUri value="https://fhir.nhs.uk/Id/product-id"/>
+        </element>
+        <element id="Identifier.value">
+            <path value="Identifier.value"/>
+            <min value="1"/>
+        </element>
+    </differential>
+</StructureDefinition>

@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <id value="England-AuditEvent-PARS"/>
+    <url value="https://fhir.nhs.uk/England/StructureDefinition/England-AuditEvent-PARS"/>
+    <title value="England Audit Event PARS"/>
+    <status value="draft"/>
+    <date value="2024-10-25T07:31:19+00:00"/>
+    <publisher value="NHS England"/>
+    <contact>
+        <name value="NHS England" />
+        <telecom>
+            <system value="email" />
+            <value value="interoperabilityteam@nhs.net" />
+            <use value="work" />
+            <rank value="1" />
+        </telecom>
+    </contact>
+    <description value="The Patient Audit Record Service (PARS) is a reporting service that describes how patient data has been accessed. This service is used by guardians of data e.g. Privacy officers to track and monitor requests to access patient records."/>
+    <purpose value="This documents NHS England Data Dictionary and HL7 definitions" />
+    <copyright value="Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the \&amp;quot;License\&amp;quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \&amp;quot;AS IS\&amp;quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="AuditEvent"/>
+    <baseDefinition value="https://fhir.nhs.uk/England/StructureDefinition/England-AuditEvent"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="AuditEvent">
+            <path value="AuditEvent"/>
+        </element>
+        <element id="AuditEvent.action">
+            <path value="AuditEvent.action"/>
+            <short value="Type of operation - Create Read Update Delete"/>
+        </element>
+        <element id="AuditEvent.recorded">
+            <path value="AuditEvent.recorded"/>
+            <definition value="DateTime the event happened. In Spine this is derived from the internalID, in PARS it will be its own field"/>
+        </element>
+        <element id="AuditEvent.agent">
+            <path value="AuditEvent.agent"/>
+            <slicing>
+                <discriminator>
+                    <type value="pattern"/>
+                    <path value="type"/>
+                </discriminator>
+                <rules value="closed"/>
+            </slicing>
+        </element>
+        <element id="AuditEvent.agent:organisation">
+            <path value="AuditEvent.agent"/>
+            <sliceName value="organisation"/>
+            <min value="1"/>
+            <max value="2"/>
+        </element>
+        <element id="AuditEvent.agent:organisation.who.type">
+            <path value="AuditEvent.agent.who.type"/>
+            <patternUri value="Organization"/>
+        </element>
+        <element id="AuditEvent.agent:organisation.who.identifier">
+            <path value="AuditEvent.agent.who.identifier"/>
+            <type>
+                <code value="Identifier"/>
+                <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-Organisation-Code"/>
+            </type>
+        </element>
+        <element id="AuditEvent.agent:organisation.who.display">
+            <path value="AuditEvent.agent.who.display"/>
+            <short value="Name of the organisation"/>
+        </element>
+        <element id="AuditEvent.agent:accreditedSystemId">
+            <path value="AuditEvent.agent"/>
+            <sliceName value="accreditedSystemId"/>
+            <short value="TODO This is an Endpoint identifier, move to organisation? "/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="AuditEvent.agent:accreditedSystemId.who.type">
+            <path value="AuditEvent.agent.who.type"/>
+            <patternUri value="Endpoint"/>
+        </element>
+        <element id="AuditEvent.agent:accreditedSystemId.who.identifier">
+            <path value="AuditEvent.agent.who.identifier"/>
+            <type>
+                <code value="Identifier"/>
+                <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-Accredited-System"/>
+                <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-Product-Id"/>
+            </type>
+        </element>
+        <element id="AuditEvent.agent:user">
+            <path value="AuditEvent.agent"/>
+            <sliceName value="user"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="AuditEvent.agent:user.who.type">
+            <path value="AuditEvent.agent.who.type"/>
+            <patternUri value="Practitioner"/>
+        </element>
+        <element id="AuditEvent.agent:user.who.identifier">
+            <path value="AuditEvent.agent.who.identifier"/>
+            <type>
+                <code value="Identifier"/>
+                <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-SDS-User-Id"/>
+            </type>
+        </element>
+        <element id="AuditEvent.agent:user.who.display">
+            <path value="AuditEvent.agent.who.display"/>
+            <short value="User Name"/>
+        </element>
+        <element id="AuditEvent.agent:userRole">
+            <path value="AuditEvent.agent"/>
+            <sliceName value="userRole"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="AuditEvent.agent:userRole.who.type">
+            <path value="AuditEvent.agent.who.type"/>
+            <patternUri value="PractitionerRole"/>
+        </element>
+        <element id="AuditEvent.agent:userRole.who.identifier">
+            <path value="AuditEvent.agent.who.identifier"/>
+            <type>
+                <code value="Identifier"/>
+                <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-SDS-User-Profile-Id"/>
+            </type>
+        </element>
+        <element id="AuditEvent.agent:patient">
+            <path value="AuditEvent.agent"/>
+            <sliceName value="patient"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="AuditEvent.agent:patient.who.type">
+            <path value="AuditEvent.agent.who.type"/>
+            <patternUri value="Patient"/>
+        </element>
+        <element id="AuditEvent.agent:patient.who.identifier">
+            <path value="AuditEvent.agent.who.identifier"/>
+            <type>
+                <code value="Identifier"/>
+                <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-NHS-Number"/>
+            </type>
+        </element>
+        <element id="AuditEvent.agent:patient.who.display">
+            <path value="AuditEvent.agent.who.display"/>
+            <short value="Patient Name"/>
+        </element>
+        <element id="AuditEvent.source.site">
+            <path value="AuditEvent.source.site"/>
+            <short value="Audit Creator system Code"/>
+        </element>
+        <element id="AuditEvent.source.observer">
+            <path value="AuditEvent.source.observer"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
+            </type>
+        </element>
+        <element id="AuditEvent.source.observer.identifier">
+            <path value="AuditEvent.source.observer.identifier"/>
+            <short value="Audit Creator system Identifier"/>
+            <type>
+                <code value="Identifier"/>
+                <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-Accredited-System"/>
+                <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-Product-Id"/>
+            </type>
+        </element>
+        <element id="AuditEvent.source.observer.display">
+            <path value="AuditEvent.source.observer.display"/>
+            <short value="Audit Creator Name"/>
+        </element>
+        <element id="AuditEvent.entity">
+            <path value="AuditEvent.entity"/>
+            <slicing>
+                <discriminator>
+                    <type value="pattern"/>
+                    <path value="type"/>
+                </discriminator>
+                <rules value="closed"/>
+            </slicing>
+            <min value="4"/>
+        </element>
+        <element id="AuditEvent.entity:patient">
+            <path value="AuditEvent.entity"/>
+            <sliceName value="patient"/>
+            <short value="Patient NHS number"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="AuditEvent.entity:patient.what.identifier">
+            <path value="AuditEvent.entity.what.identifier"/>
+            <type>
+                <code value="Identifier"/>
+                <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-NHS-Number"/>
+            </type>
+        </element>
+        <element id="AuditEvent.entity:patient.type">
+            <path value="AuditEvent.entity.type"/>
+            <patternCoding>
+                <system value="http://terminology.hl7.org/CodeSystem/audit-entity-type"/>
+                <code value="1"/>
+            </patternCoding>
+        </element>
+        <element id="AuditEvent.entity:patient.role">
+            <path value="AuditEvent.entity.role"/>
+            <patternCoding>
+                <system value="http://terminology.hl7.org/CodeSystem/object-role"/>
+                <code value="1"/>
+            </patternCoding>
+        </element>
+        <element id="AuditEvent.entity:endpoint">
+            <path value="AuditEvent.entity"/>
+            <sliceName value="endpoint"/>
+            <short value="Endpoint details"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="AuditEvent.entity:endpoint.what.identifier">
+            <path value="AuditEvent.entity.what.identifier"/>
+            <type>
+                <code value="Identifier"/>
+                <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-Accredited-System"/>
+                <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-Product-Id"/>
+            </type>
+        </element>
+        <element id="AuditEvent.entity:endpoint.type">
+            <path value="AuditEvent.entity.type"/>
+            <patternCoding>
+                <system value="http://hl7.org/fhir/resource-types"/>
+                <code value="Endpoint"/>
+            </patternCoding>
+        </element>
+        <element id="AuditEvent.entity:endpoint.name">
+            <path value="AuditEvent.entity.name"/>
+            <short value="Human readable interactionID. E.g. Parent Prescription"/>
+            <min value="1"/>
+        </element>
+        <element id="AuditEvent.entity:endpoint.detail">
+            <path value="AuditEvent.entity.detail"/>
+            <slicing>
+                <discriminator>
+                    <type value="pattern"/>
+                    <path value="type"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <min value="2"/>
+        </element>
+        <element id="AuditEvent.entity:endpoint.detail:interactionIdentifier">
+            <path value="AuditEvent.entity.detail"/>
+            <sliceName value="interactionIdentifier"/>
+            <short value="HL7V3 identifier, for FHIR there is no standard. E.g. PORX_IN020101UK04"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="AuditEvent.entity:endpoint.detail:interactionIdentifier.type">
+            <path value="AuditEvent.entity.detail.type"/>
+            <patternString value="interactionIdentifier"/>
+        </element>
+        <element id="AuditEvent.entity:endpoint.detail:interactionIdentifier.value[x]">
+            <path value="AuditEvent.entity.detail.value[x]"/>
+            <type>
+                <code value="string"/>
+            </type>
+        </element>
+        <element id="AuditEvent.entity:endpoint.detail:productIdentifier">
+            <path value="AuditEvent.entity.detail"/>
+            <sliceName value="productIdentifier"/>
+            <short value="High level grouping of the message types"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="AuditEvent.entity:endpoint.detail:productIdentifier.type">
+            <path value="AuditEvent.entity.detail.type"/>
+            <patternString value="productIdentifier"/>
+        </element>
+        <element id="AuditEvent.entity:endpoint.detail:productIdentifier.value[x]">
+            <path value="AuditEvent.entity.detail.value[x]"/>
+            <type>
+                <code value="string"/>
+            </type>
+        </element>
+        <element id="AuditEvent.entity:transaction">
+            <path value="AuditEvent.entity"/>
+            <sliceName value="transaction"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="AuditEvent.entity:transaction.what">
+            <path value="AuditEvent.entity.what"/>
+            <short value="Transaction Id, Correlation Id or X-RequestID"/>
+        </element>
+        <element id="AuditEvent.entity:transaction.what.identifier">
+            <path value="AuditEvent.entity.what.identifier"/>
+            <type>
+                <code value="Identifier"/>
+                <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-Request-Id"/>
+            </type>
+        </element>
+        <element id="AuditEvent.entity:transaction.type">
+            <path value="AuditEvent.entity.type"/>
+            <patternCoding>
+                <system value="https://profiles.ihe.net/ITI/BALP/CodeSystem/BasicAuditEntityType"/>
+                <code value="XrequestId"/>
+            </patternCoding>
+        </element>
+        <element id="AuditEvent.entity:submittedOrganisation">
+            <path value="AuditEvent.entity"/>
+            <sliceName value="submittedOrganisation"/>
+            <short value="ODS code of the organisation submitted in the message/headers "/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="AuditEvent.entity:submittedOrganisation.what.identifier">
+            <path value="AuditEvent.entity.what.identifier"/>
+            <type>
+                <code value="Identifier"/>
+                <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-Organisation-Code"/>
+            </type>
+        </element>
+        <element id="AuditEvent.entity:submittedOrganisation.type">
+            <path value="AuditEvent.entity.type"/>
+            <patternCoding>
+                <system value="http://terminology.hl7.org/CodeSystem/audit-entity-type"/>
+                <code value="3"/>
+            </patternCoding>
+        </element>
+    </differential>
+</StructureDefinition>
