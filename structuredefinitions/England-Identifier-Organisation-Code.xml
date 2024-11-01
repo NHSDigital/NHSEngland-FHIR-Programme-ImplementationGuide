@@ -16,7 +16,7 @@
       <rank value="1" />
     </telecom>
   </contact>
-  <description value="NHS Data Dictionary: [ORGANISATION_CODE](https://www.datadictionary.nhs.uk/attributes/organisation_code.html)&#xD;&#xA;
+  <description value="NHS Data Dictionary: [ORGANISATION CODE](https://www.datadictionary.nhs.uk/attributes/organisation_code.html)&#xD;&#xA;
   &#xD;&#xA;
   FHIR Naming System: [ods-organization-code](https://simplifier.net/ukfhircommunityassets/namingsystem-ods-organization-code)" />
   <purpose value="This documents NHS England Data Dictionary and HL7 definitions" />
