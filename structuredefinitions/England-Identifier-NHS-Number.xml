@@ -24,11 +24,11 @@
   Format: NNNNNNNNNN (400 000 000 to 499 999 999, and 600 000 000 to 799 999)&#xD;&#xA;
   &#xD;&#xA;
   &#xD;&#xA;
-  | Name                | HL7 FHIR Identifier | HL7 FHIR Value                                   | HL7 v2 CX | HL7 v2 Value | OID/HL7 v3                |&#xD;&#xA;
-  |---------------------| --------------------|--------------------------------------------------|-----------|--------------|---------------------------|&#xD;&#xA;
-  | Identifier          | identifier.value    | {NHSNumber}                                      | CX.1      | {NHSNumber}  |                           |&#xD;&#xA;
-  | Assigning Authority | identifier.system   | https://fhir.nhs.uk/Id/nhs-number                | CX.4      | NHS          | 2.16.840.1.113883.2.1.4.1 |&#xD;&#xA;
-  | Identifier Code     | identifier.type     | http://terminology.hl7.org/CodeSystem/v2-0203#NH | CX.5      | NH           |                           |&#xD;&#xA;
+   | Name                | HL7 FHIR Identifier | HL7 FHIR Value                                   | HL7 v2 CX | HL7 v2 Value | OID                       |&#xD;&#xA;
+   |---------------------| --------------------|--------------------------------------------------|-----------|--------------|---------------------------|&#xD;&#xA;
+   | Identifier          | identifier.value    | {NHSNumber}                                      | CX.1      | {NHSNumber}  |                           |&#xD;&#xA;
+   | Assigning Authority | identifier.system   | https://fhir.nhs.uk/Id/nhs-number                | CX.4      | NHS          | 2.16.840.1.113883.2.1.4.1 |&#xD;&#xA;
+   | Identifier Code     | identifier.type     | http://terminology.hl7.org/CodeSystem/v2-0203#NH | CX.5      | NH           |                           |&#xD;&#xA;
   &#xD;&#xA;
   &#xD;&#xA;
     " />
