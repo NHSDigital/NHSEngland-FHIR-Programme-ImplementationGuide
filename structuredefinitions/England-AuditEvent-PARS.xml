@@ -105,6 +105,7 @@
     <element id="AuditEvent.agent:user">
       <path value="AuditEvent.agent" />
       <sliceName value="user" />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="AuditEvent.agent:user.who">
@@ -155,6 +156,7 @@
     <element id="AuditEvent.agent:patient">
       <path value="AuditEvent.agent" />
       <sliceName value="patient" />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="AuditEvent.agent:patient.who">
