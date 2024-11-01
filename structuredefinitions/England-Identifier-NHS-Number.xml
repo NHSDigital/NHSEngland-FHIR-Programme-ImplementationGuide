@@ -39,10 +39,16 @@
       <path value="Identifier.type.coding.code" />
       <fixedCode value="NH" />
     </element>
+    <element id="Identifier.type.coding.display">
+      <path value="Identifier.type.coding.display" />
+      <short value="National Health Plan Identifier" />
+      <definition value="Class: Insurance Used for the UK NHS national identifier." />
+      <fixedString value="National Health Plan Identifier" />
+    </element>
     <element id="Identifier.system">
       <path value="Identifier.system" />
       <min value="1" />
-      <patternUri value="https://fhir.nhs.uk/Id/nhs-number" />
+      <fixedUri value="https://fhir.nhs.uk/Id/nhs-number" />
     </element>
     <element id="Identifier.value">
       <path value="Identifier.value" />
