@@ -49,7 +49,7 @@ FHIR Naming System [gmc-number](https://simplifier.net/ukfhircommunityassets/nam
     <element id="Identifier.system">
       <path value="Identifier.system" />
       <min value="1" />
-      <patternUri value="https://fhir.hl7.org.uk/Id/gmc-number" />
+      <fixedUri value="https://fhir.hl7.org.uk/Id/gmc-number" />
     </element>
     <element id="Identifier.value">
       <path value="Identifier.value" />

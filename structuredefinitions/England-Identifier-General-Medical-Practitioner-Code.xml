@@ -48,7 +48,7 @@ FHIR Naming System: [gmp-number](https://simplifier.net/ukfhircommunityassets/na
     <element id="Identifier.system">
       <path value="Identifier.system" />
       <min value="1" />
-      <patternUri value="https://fhir.hl7.org.uk/Id/gmp-number" />
+      <fixedUri value="https://fhir.hl7.org.uk/Id/gmp-number" />
     </element>
     <element id="Identifier.value">
       <path value="Identifier.value" />
