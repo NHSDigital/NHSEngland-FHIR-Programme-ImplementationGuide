@@ -40,7 +40,7 @@
       <slicing>
         <discriminator>
           <type value="value" />
-          <path value="who.identifier.system" />
+          <path value="who.type" />
         </discriminator>
         <rules value="closed" />
       </slicing>
@@ -209,6 +209,10 @@
         <discriminator>
           <type value="value" />
           <path value="type.system" />
+        </discriminator>
+        <discriminator>
+          <type value="value" />
+          <path value="type.code" />
         </discriminator>
         <rules value="closed" />
       </slicing>
