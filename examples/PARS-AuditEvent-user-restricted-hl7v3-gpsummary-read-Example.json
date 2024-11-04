@@ -3,8 +3,8 @@
     "id" : "PARS-AuditEvent-user-restricted-hl7v3-gpsummary-read-Example",
     "type" : {
       "system" : "http://terminology.hl7.org/CodeSystem/audit-event-type",
-      "code" : "transmit",
-      "display" : "Transmit Record Lifecycle Event"
+      "code" : "hl7-v3",
+      "display" : "HL7 v3 Operation"
     },
     "action" : "R",
     "recorded" : "2024-07-01T09:49:00+00:00",

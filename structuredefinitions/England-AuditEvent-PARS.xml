@@ -35,5 +35,25 @@
       <path value="AuditEvent.recorded" />
       <definition value="DateTime the event happened. In Spine this is derived from the internalID, in PARS it will be its own field" />
     </element>
+    <element id="AuditEvent.agent">
+      <path value="AuditEvent.agent" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="who.type" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="AuditEvent.agent:organisation">
+      <path value="AuditEvent.agent" />
+      <sliceName value="organisation" />
+      <min value="1" />
+      <max value="2" />
+    </element>
+    <element id="AuditEvent.agent:organisation.who.type">
+      <path value="AuditEvent.agent.who.type" />
+      <fixedUri value="Organization" />
+    </element>
   </differential>
 </StructureDefinition>
