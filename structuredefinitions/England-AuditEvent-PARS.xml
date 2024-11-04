@@ -51,9 +51,20 @@
       <min value="1" />
       <max value="2" />
     </element>
+    <element id="AuditEvent.agent:organisation.who">
+      <path value="AuditEvent.agent.who" />
+      <short value="Name of the organisation" />
+    </element>
     <element id="AuditEvent.agent:organisation.who.type">
       <path value="AuditEvent.agent.who.type" />
       <fixedUri value="Organization" />
+    </element>
+    <element id="AuditEvent.agent.who.identifier">
+      <path value="AuditEvent.agent.who.identifier" />
+    </element>
+    <element id="AuditEvent.agent:organisation.who.display">
+      <path value="AuditEvent.agent.who.display" />
+      <short value="Name of the organisation" />
     </element>
     <element id="AuditEvent.agent:user">
       <path value="AuditEvent.agent" />
@@ -64,6 +75,13 @@
       <path value="AuditEvent.agent.who.type" />
       <fixedUri value="Practitioner" />
     </element>
+    <element id="AuditEvent.agent.who.identifier">
+      <path value="AuditEvent.agent.who.identifier" />
+    </element>
+    <element id="AuditEvent.agent:user.who.display">
+      <path value="AuditEvent.agent.who.display" />
+      <short value="User Name" />
+    </element>
     <element id="AuditEvent.agent:patient">
       <path value="AuditEvent.agent" />
       <sliceName value="patient" />
@@ -72,6 +90,13 @@
     <element id="AuditEvent.agent:patient.who.type">
       <path value="AuditEvent.agent.who.type" />
       <fixedUri value="Patient" />
+    </element>
+    <element id="AuditEvent.agent.who.identifier">
+      <path value="AuditEvent.agent.who.identifier" />
+    </element>
+    <element id="AuditEvent.agent:patient.who.display">
+      <path value="AuditEvent.agent.who.display" />
+      <short value="Patient Name" />
     </element>
     <element id="AuditEvent.agent:userRole">
       <path value="AuditEvent.agent" />
@@ -82,6 +107,9 @@
       <path value="AuditEvent.agent.who.type" />
       <fixedUri value="PractitionerRole" />
     </element>
+    <element id="AuditEvent.agent.who.identifier">
+      <path value="AuditEvent.agent.who.identifier" />
+    </element>
     <element id="AuditEvent.agent:endpoint">
       <path value="AuditEvent.agent" />
       <sliceName value="endpoint" />
@@ -90,6 +118,14 @@
     <element id="AuditEvent.agent:endpoint.who.type">
       <path value="AuditEvent.agent.who.type" />
       <fixedUri value="Endpoint" />
+    </element>
+    <element id="AuditEvent.agent.who.identifier">
+      <path value="AuditEvent.agent.who.identifier" />
+      <type>
+        <code value="Identifier" />
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-Product-Id" />
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-Accredited-System" />
+      </type>
     </element>
   </differential>
 </StructureDefinition>
