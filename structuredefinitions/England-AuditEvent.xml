@@ -105,5 +105,13 @@
       <path value="AuditEvent.entity.type" />
       <min value="1" />
     </element>
+    <element id="AuditEvent.entity.type.system">
+      <path value="AuditEvent.entity.type.system" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.entity.type.code">
+      <path value="AuditEvent.entity.type.code" />
+      <min value="1" />
+    </element>
   </differential>
 </StructureDefinition>

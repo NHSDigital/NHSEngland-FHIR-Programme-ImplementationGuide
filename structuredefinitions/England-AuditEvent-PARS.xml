@@ -115,5 +115,146 @@
         <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-Accredited-System" />
       </type>
     </element>
+    <element id="AuditEvent.entity">
+      <path value="AuditEvent.entity" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="type" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="AuditEvent.entity:patient">
+      <path value="AuditEvent.entity" />
+      <sliceName value="patient" />
+      <short value="Patient NHS number" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="AuditEvent.entity:patient.type.system">
+      <path value="AuditEvent.entity.type.system" />
+      <fixedUri value="http://terminology.hl7.org/CodeSystem/audit-entity-type" />
+    </element>
+    <element id="AuditEvent.entity:patient.type.code">
+      <path value="AuditEvent.entity.type.code" />
+      <fixedCode value="1" />
+    </element>
+    <element id="AuditEvent.entity:patient.role.system">
+      <path value="AuditEvent.entity.role.system" />
+      <min value="1" />
+      <fixedUri value="http://terminology.hl7.org/CodeSystem/object-role" />
+    </element>
+    <element id="AuditEvent.entity:patient.role.code">
+      <path value="AuditEvent.entity.role.code" />
+      <fixedCode value="1" />
+    </element>
+    <element id="AuditEvent.entity:transaction">
+      <path value="AuditEvent.entity" />
+      <sliceName value="transaction" />
+      <short value="Transaction Id, Correlation Id or X-RequestID" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="AuditEvent.entity.what.identifier">
+      <path value="AuditEvent.entity.what.identifier" />
+    </element>
+    <element id="AuditEvent.entity:transaction.type.system">
+      <path value="AuditEvent.entity.type.system" />
+      <fixedUri value="https://profiles.ihe.net/ITI/BALP/CodeSystem/BasicAuditEntityType" />
+    </element>
+    <element id="AuditEvent.entity:transaction.type.code">
+      <path value="AuditEvent.entity.type.code" />
+      <fixedCode value="XrequestId" />
+    </element>
+    <element id="AuditEvent.entity:submittedOrganisation">
+      <path value="AuditEvent.entity" />
+      <sliceName value="submittedOrganisation" />
+      <short value="ODS code of the organisation submitted in the message/headers" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="AuditEvent.entity.what.identifier">
+      <path value="AuditEvent.entity.what.identifier" />
+    </element>
+    <element id="AuditEvent.entity:submittedOrganisation.type.system">
+      <path value="AuditEvent.entity.type.system" />
+      <fixedUri value="http://terminology.hl7.org/CodeSystem/audit-entity-type" />
+    </element>
+    <element id="AuditEvent.entity:submittedOrganisation.type.code">
+      <path value="AuditEvent.entity.type.code" />
+      <fixedCode value="3" />
+    </element>
+    <element id="AuditEvent.entity:endpoint">
+      <path value="AuditEvent.entity" />
+      <sliceName value="endpoint" />
+      <short value="Endpoint details" />
+    </element>
+    <element id="AuditEvent.entity.what.identifier">
+      <path value="AuditEvent.entity.what.identifier" />
+      <type>
+        <code value="Identifier" />
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-Accredited-System" />
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-Product-Id" />
+      </type>
+    </element>
+    <element id="AuditEvent.entity:endpoint.type.system">
+      <path value="AuditEvent.entity.type.system" />
+      <fixedUri value="http://hl7.org/fhir/resource-types" />
+    </element>
+    <element id="AuditEvent.entity:endpoint.type.code">
+      <path value="AuditEvent.entity.type.code" />
+      <fixedCode value="Endpoint" />
+    </element>
+    <element id="AuditEvent.entity:endpoint.name">
+      <path value="AuditEvent.entity.name" />
+      <short value="Human readable interactionID. E.g. Parent Prescription" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.entity:endpoint.detail">
+      <path value="AuditEvent.entity.detail" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="type" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="2" />
+      <max value="2" />
+    </element>
+    <element id="AuditEvent.entity:endpoint.detail:productIdentifier">
+      <path value="AuditEvent.entity.detail" />
+      <sliceName value="productIdentifier" />
+      <short value="High level grouping of the message types" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="AuditEvent.entity:endpoint.detail:productIdentifier.type">
+      <path value="AuditEvent.entity.detail.type" />
+      <fixedString value="productIdentifier" />
+    </element>
+    <element id="AuditEvent.entity:endpoint.detail:productIdentifier.value[x]">
+      <path value="AuditEvent.entity.detail.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="AuditEvent.entity:endpoint.detail:interactionIdentifier">
+      <path value="AuditEvent.entity.detail" />
+      <sliceName value="interactionIdentifier" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="AuditEvent.entity:endpoint.detail:interactionIdentifier.type">
+      <path value="AuditEvent.entity.detail.type" />
+      <fixedString value="interactionIdentifier" />
+    </element>
+    <element id="AuditEvent.entity:endpoint.detail:interactionIdentifier.value[x]">
+      <path value="AuditEvent.entity.detail.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
   </differential>
 </StructureDefinition>
