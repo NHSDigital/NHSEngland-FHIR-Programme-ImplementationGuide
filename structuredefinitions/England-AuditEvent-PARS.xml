@@ -42,7 +42,7 @@
           <type value="value" />
           <path value="who.type" />
         </discriminator>
-        <rules value="closed" />
+        <rules value="open" />
       </slicing>
     </element>
     <element id="AuditEvent.agent:organisation">
@@ -115,12 +115,42 @@
         <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-Accredited-System" />
       </type>
     </element>
+    <element id="AuditEvent.source.site">
+      <path value="AuditEvent.source.site" />
+      <short value="Audit Creator system Code" />
+    </element>
+    <element id="AuditEvent.source.observer">
+      <path value="AuditEvent.source.observer" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
+      </type>
+    </element>
+    <element id="AuditEvent.source.observer.identifier">
+      <path value="AuditEvent.source.observer.identifier" />
+      <short value="Audit Creator system Identifier" />
+      <definition value="An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers." />
+      <min value="1" />
+      <type>
+        <code value="Identifier" />
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-Accredited-System" />
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-Product-Id" />
+      </type>
+    </element>
+    <element id="AuditEvent.source.observer.display">
+      <path value="AuditEvent.source.observer.display" />
+      <short value="Audit Creator Name" />
+    </element>
     <element id="AuditEvent.entity">
       <path value="AuditEvent.entity" />
       <slicing>
         <discriminator>
           <type value="value" />
-          <path value="type" />
+          <path value="type.system" />
+        </discriminator>
+        <discriminator>
+          <type value="value" />
+          <path value="type.code" />
         </discriminator>
         <rules value="closed" />
       </slicing>
