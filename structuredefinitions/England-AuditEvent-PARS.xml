@@ -186,9 +186,6 @@
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="AuditEvent.entity.what.identifier">
-      <path value="AuditEvent.entity.what.identifier" />
-    </element>
     <element id="AuditEvent.entity:transaction.type.system">
       <path value="AuditEvent.entity.type.system" />
       <fixedUri value="https://profiles.ihe.net/ITI/BALP/CodeSystem/BasicAuditEntityType" />
@@ -201,11 +198,7 @@
       <path value="AuditEvent.entity" />
       <sliceName value="submittedOrganisation" />
       <short value="ODS code of the organisation submitted in the message/headers" />
-      <min value="1" />
       <max value="1" />
-    </element>
-    <element id="AuditEvent.entity.what.identifier">
-      <path value="AuditEvent.entity.what.identifier" />
     </element>
     <element id="AuditEvent.entity:submittedOrganisation.type.system">
       <path value="AuditEvent.entity.type.system" />
@@ -220,7 +213,7 @@
       <sliceName value="endpoint" />
       <short value="Endpoint details" />
     </element>
-    <element id="AuditEvent.entity.what.identifier">
+    <element id="AuditEvent.entity:endpoint.what.identifier">
       <path value="AuditEvent.entity.what.identifier" />
       <type>
         <code value="Identifier" />
