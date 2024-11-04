@@ -28,6 +28,7 @@
       },
       {
         "who" : {
+          "type" : "Patient",
           "identifier" : {
             "system" : "https://fhir.nhs.uk/Id/nhs-number",
             "value" : "9999999991"
