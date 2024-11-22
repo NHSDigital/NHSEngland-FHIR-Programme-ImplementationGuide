@@ -1,0 +1,177 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="England-ScreeningEndCode" />
+  <url value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningEndCode" />
+  <version value="0.1.0" />
+  <name value="EnglandScreeningEndCode" />
+  <title value="England Screening End Code" />
+  <status value="draft" />
+  <experimental value="false" />
+  <date value="2024-11-22" />
+  <publisher value="NHS England" />
+  <contact>
+    <name value="NHS England" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="A CodeSystem used to indicate which end code applies to a screening episode. The codes and their description are datasets definition from the Breast Screening Service(BS-Select)" />
+  <copyright value="Copyright © 2024+ NHS England Licensed under the Apache License, Version 2.0 (the \&quot;License\&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \&quot;AS IS\&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at https://www.hl7.org/fhir/license.html." />
+  <caseSensitive value="true" />
+  <content value="complete" />
+  <count value="43" />
+  <concept>
+    <code value="ar" />
+    <display value="Randomised Out" />
+  </concept>
+  <concept>
+    <code value="bs" />
+    <display value="Being Screened" />
+  </concept>
+  <concept>
+    <code value="cp" />
+    <display value="Under Care Permanently" />
+  </concept>
+  <concept>
+    <code value="ct" />
+    <display value="Under Care Temporarily" />
+  </concept>
+  <concept>
+    <code value="dd" />
+    <display value="Deceased DD" />
+  </concept>
+  <concept>
+    <code value="de" />
+    <display value="Defaulted" />
+  </concept>
+  <concept>
+    <code value="dna" />
+    <display value="Did Not Attend" />
+  </concept>
+  <concept>
+    <code value="dnr" />
+    <display value="Did Not Respond" />
+  </concept>
+  <concept>
+    <code value="du" />
+    <display value="Details Unknown" />
+  </concept>
+  <concept>
+    <code value="fb" />
+    <display value="Closed Being Screened" />
+  </concept>
+  <concept>
+    <code value="fc" />
+    <display value="Ceased" />
+  </concept>
+  <concept>
+    <code value="fd" />
+    <display value="Deceased FD" />
+  </concept>
+  <concept>
+    <code value="ff" />
+    <display value="FP69 Status" />
+  </concept>
+  <concept>
+    <code value="fm" />
+    <display value="Moved Away" />
+  </concept>
+  <concept>
+    <code value="fp" />
+    <display value="FPC Closed Prematurely" />
+  </concept>
+  <concept>
+    <code value="fs" />
+    <display value="Suspended" />
+  </concept>
+  <concept>
+    <code value="fx" />
+    <display value="WO Withdrawn" />
+  </concept>
+  <concept>
+    <code value="hr" />
+    <display value="On Higher Risk" />
+  </concept>
+  <concept>
+    <code value="mv" />
+    <display value="Moved" />
+  </concept>
+  <concept>
+    <code value="na" />
+    <display value="Non Attender" />
+  </concept>
+  <concept>
+    <code value="nk" />
+    <display value="Not Known At This Address" />
+  </concept>
+  <concept>
+    <code value="nr" />
+    <display value="Non Responder" />
+  </concept>
+  <concept>
+    <code value="ns" />
+    <display value="Attended, Not Screened" />
+  </concept>
+  <concept>
+    <code value="nt" />
+    <display value="No Transport" />
+  </concept>
+  <concept>
+    <code value="op" />
+    <display value="Opted Out Permanently" />
+  </concept>
+  <concept>
+    <code value="ot" />
+    <display value="Opted Out Temporarily" />
+  </concept>
+  <concept>
+    <code value="pc" />
+    <display value="Premature Closure Of Episode" />
+  </concept>
+  <concept>
+    <code value="r" />
+    <display value="Routine Closure" />
+  </concept>
+  <concept>
+    <code value="rs" />
+    <display value="Recently Screened" />
+  </concept>
+  <concept>
+    <code value="sc" />
+    <display value="Screening Complete" />
+  </concept>
+  <concept>
+    <code value="wb" />
+    <display value="Withdrawn (Already Being Screened)" />
+  </concept>
+  <concept>
+    <code value="wc" />
+    <display value="Withdrawn (Ceased From Call/Recall System)" />
+  </concept>
+  <concept>
+    <code value="wd" />
+    <display value="Withdrawn (Died Since Included In Batch)" />
+  </concept>
+  <concept>
+    <code value="wf" />
+    <display value="Withdrawn (FP69 Status)" />
+  </concept>
+  <concept>
+    <code value="wm" />
+    <display value="Withdrawn (Moved)" />
+  </concept>
+  <concept>
+    <code value="wo" />
+    <display value="Withdrawn (Other Reason)" />
+  </concept>
+  <concept>
+    <code value="ws" />
+    <display value="Withdrawn (Randomised Out/Prev. Suspended)" />
+  </concept>
+  <concept>
+    <code value="x" />
+    <display value="Episode Closed, Other Reason" />
+  </concept>
+</CodeSystem>

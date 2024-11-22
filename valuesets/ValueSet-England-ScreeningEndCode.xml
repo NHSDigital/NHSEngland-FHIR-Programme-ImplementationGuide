@@ -1,0 +1,214 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="England-ScreeningEndCode" />
+  <url value="https://fhir.nhs.uk/England/ValueSet/England-ScreeningEndCode" />
+  <version value="0.1.0" />
+  <name value="EnglandScreeningEndCode" />
+  <title value="England Screening End Code" />
+  <status value="draft" />
+  <experimental value="false" />
+  <date value="2024-11-22" />
+  <publisher value="NHS England" />
+  <contact>
+    <name value="NHS England" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="A ValueSet used to indicate which end code applies to a screening episode. The codes and their description are datasets definition from the Breast Screening Service (BS-Select)." />
+  <expansion>
+    <timestamp value="2024-11-22T12:00:00+00:00" />
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningEndCode" />
+      <code value="ar" />
+      <display value="Randomised Out" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningEndCode" />
+      <code value="bs" />
+      <display value="Being Screened" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningEndCode" />
+      <code value="cp" />
+      <display value="Under Care Permanently" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningEndCode" />
+      <code value="ct" />
+      <display value="Under Care Temporarily" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningEndCode" />
+      <code value="dd" />
+      <display value="Deceased DD" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningEndCode" />
+      <code value="de" />
+      <display value="Defaulted" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningEndCode" />
+      <code value="dna" />
+      <display value="Did Not Attend" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningEndCode" />
+      <code value="dnr" />
+      <display value="Did Not Respond" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningEndCode" />
+      <code value="du" />
+      <display value="Details Unknown" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningEndCode" />
+      <code value="fb" />
+      <display value="Closed Being Screened" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningEndCode" />
+      <code value="fc" />
+      <display value="Ceased" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningEndCode" />
+      <code value="fd" />
+      <display value="Deceased FD" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningEndCode" />
+      <code value="ff" />
+      <display value="FP69 Status" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningEndCode" />
+      <code value="fm" />
+      <display value="Moved Away" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningEndCode" />
+      <code value="fp" />
+      <display value="FPC Closed Prematurely" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningEndCode" />
+      <code value="fs" />
+      <display value="Suspended" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningEndCode" />
+      <code value="fx" />
+      <display value="WO Withdrawn" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningEndCode" />
+      <code value="hr" />
+      <display value="On Higher Risk" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningEndCode" />
+      <code value="mv" />
+      <display value="Moved" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningEndCode" />
+      <code value="na" />
+      <display value="Non Attender" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningEndCode" />
+      <code value="nk" />
+      <display value="Not Known At This Address" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningEndCode" />
+      <code value="nr" />
+      <display value="Non Responder" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningEndCode" />
+      <code value="ns" />
+      <display value="Attended, Not Screened" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningEndCode" />
+      <code value="nt" />
+      <display value="No Transport" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningEndCode" />
+      <code value="op" />
+      <display value="Opted Out Permanently" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningEndCode" />
+      <code value="ot" />
+      <display value="Opted Out Temporarily" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningEndCode" />
+      <code value="pc" />
+      <display value="Premature Closure Of Episode" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningEndCode" />
+      <code value="r" />
+      <display value="Routine Closure" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningEndCode" />
+      <code value="rs" />
+      <display value="Recently Screened" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningEndCode" />
+      <code value="sc" />
+      <display value="Screening Complete" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningEndCode" />
+      <code value="wb" />
+      <display value="Withdrawn (Already Being Screened)" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningEndCode" />
+      <code value="wc" />
+      <display value="Withdrawn (Ceased From Call/Recall System)" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningEndCode" />
+      <code value="wd" />
+      <display value="Withdrawn (Died Since Included In Batch)" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningEndCode" />
+      <code value="wf" />
+      <display value="Withdrawn (FP69 Status)" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningEndCode" />
+      <code value="wm" />
+      <display value="Withdrawn (Moved)" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningEndCode" />
+      <code value="wo" />
+      <display value="Withdrawn (Other Reason)" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningEndCode" />
+      <code value="ws" />
+      <display value="Withdrawn (Randomised Out/Prev. Suspended)" />
+    </contains>
+    <contains>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningEndCode" />
+      <code value="x" />
+      <display value="Episode Closed, Other Reason" />
+    </contains>
+  </expansion>
+</ValueSet>
