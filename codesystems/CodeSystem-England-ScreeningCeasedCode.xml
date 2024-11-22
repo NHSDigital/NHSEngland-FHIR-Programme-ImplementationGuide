@@ -29,12 +29,12 @@
     <display value="Informed Subject Choice" />
   </concept>
   <concept>
-    <code value="bilateral-masectomy" />
-    <display value="Bilateral Masectomy" />
+    <code value="bilateral-mastectomy" />
+    <display value="Bilateral Mastectomy" />
   </concept>
   <concept>
     <code value="mental-capacity-act" />
-    <display value="Mental capacity Act" />
+    <display value="Mental Capacity Act" />
   </concept>
   <concept>
     <code value="personal-welfare" />
