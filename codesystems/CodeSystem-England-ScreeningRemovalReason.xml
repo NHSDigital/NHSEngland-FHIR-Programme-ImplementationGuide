@@ -18,9 +18,10 @@
     </telecom>
   </contact>
   <description value="A CodeSystem used to indicate which removal reason applies to a screening episode. The codes and their description are datasets definition from the Breast Screening Service(BS-Select)." />
+  <copyright value="Copyright © 2024+ NHS England Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at https://www.hl7.org/fhir/license.html." />
   <caseSensitive value="true" />
   <content value="complete" />
-  <count value="34" />
+  <count value="30" />
   <concept>
     <code value="death" />
     <display value="Death" />
@@ -86,16 +87,8 @@
     <display value="Gone Away - Address Not Known/FP69" />
   </concept>
   <concept>
-    <code value="DEA" />
-    <display value="Death DEA" />
-  </concept>
-  <concept>
     <code value="DIS" />
     <display value="Practice Dissolution" />
-  </concept>
-  <concept>
-    <code value="EMB" />
-    <display value="Embarkation" />
   </concept>
   <concept>
     <code value="LDN" />
@@ -110,10 +103,6 @@
     <display value="Address Out Of Practice Area" />
   </concept>
   <concept>
-    <code value="ORR" />
-    <display value="Other Reason" />
-  </concept>
-  <concept>
     <code value="RDI" />
     <display value="Practice Request Immediate Removal" />
   </concept>
@@ -124,10 +113,6 @@
   <concept>
     <code value="RFI" />
     <display value="Removal From Residential Institute" />
-  </concept>
-  <concept>
-    <code value="RPR" />
-    <display value="Patient Request" />
   </concept>
   <concept>
     <code value="SCT" />
