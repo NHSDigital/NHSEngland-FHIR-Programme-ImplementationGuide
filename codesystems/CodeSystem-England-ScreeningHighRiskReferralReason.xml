@@ -1,0 +1,68 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="England-ScreeningHighRiskReferralReason" />
+  <url value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningHighRiskReferralReason" />
+  <version value="0.1.0" />
+  <name value="EnglandScreeningHighRiskReferralReason" />
+  <title value="England Screening High Risk Referral Reason" />
+  <status value="draft" />
+  <experimental value="false" />
+  <date value="2024-11-22" />
+  <publisher value="NHS England" />
+  <contact>
+    <name value="NHS England" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="A CodeSystem used to indicate which higher risk codes are associated with a patient. The codes and their description are datasets definition from the Breast Screening Service(BS-Select)." />
+  <caseSensitive value="true" />
+  <content value="complete" />
+  <count value="11" />
+  <concept>
+    <code value="AT-heterozygotes" />
+    <display value="A-T Heterozygotes" />
+  </concept>
+  <concept>
+    <code value="AT-homozygotes" />
+    <display value="A-T Homozygotes" />
+  </concept>
+  <concept>
+    <code value="BRCA-risk" />
+    <display value="BRCA1/BRCA2/PALB2 (8% 10-Year Risk)" />
+  </concept>
+  <concept>
+    <code value="BRCA-tested" />
+    <display value="BRCA1/BRCA2/PALB2 Tested" />
+  </concept>
+  <concept>
+    <code value="HR-gene-untested" />
+    <display value="HR Gene Untested" />
+  </concept>
+  <concept>
+    <code value="other-gene-mutations" />
+    <display value="Other Gene Mutations" />
+  </concept>
+  <concept>
+    <code value="radiotherapy-below-30" />
+    <display value="Radiotherapy Below Aged 30" />
+  </concept>
+  <concept>
+    <code value="radiotherapy-lower" />
+    <display value="Radiotherapy To Breast Tissue Aged 10-19" />
+  </concept>
+  <concept>
+    <code value="radiotherapy-upper" />
+    <display value="Radiotherapy To Breast Tissue Aged 20-35" />
+  </concept>
+  <concept>
+    <code value="risk-equivalent" />
+    <display value="Risk Equivalent, Not Tested" />
+  </concept>
+  <concept>
+    <code value="TP53" />
+    <display value="TP53 (Li-Fraumeni) Syndrome" />
+  </concept>
+</CodeSystem>
