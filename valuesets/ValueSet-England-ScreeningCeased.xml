@@ -32,14 +32,14 @@
     <contains>
       <system
         value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningCeasedCode" />
-      <code value="bilateral-masectomy" />
-      <display value="Bilateral Masectomy" />
+      <code value="bilateral-mastectomy" />
+      <display value="Bilateral Mastectomy" />
     </contains>
     <contains>
       <system
         value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningCeasedCode" />
       <code value="mental-capacity-act" />
-      <display value="Mental capacity Act" />
+      <display value="Mental Capacity Act" />
     </contains>
     <contains>
       <system
