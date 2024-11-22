@@ -26,15 +26,15 @@
   <count value="7" />
   <concept>
     <code value="BRCA1" />
-    <display value="BRCA1" />
+    <display value="BReast CAncer gene 1" />
   </concept>
   <concept>
     <code value="BRCA2" />
-    <display value="BRCA2" />
+    <display value="BReast CAncer gene 2" />
   </concept>
   <concept>
     <code value="CDH1" />
-    <display value="CDH1 (E-Cadherin)" />
+    <display value="Cadherin-1/(E-Cadherin)" />
   </concept>
   <concept>
     <code value="other" />
@@ -42,14 +42,14 @@
   </concept>
   <concept>
     <code value="PALB2" />
-    <display value="PALB2" />
+    <display value="Partner and Localizer of BRCA2" />
   </concept>
   <concept>
     <code value="PTEN" />
-    <display value="PTEN" />
+    <display value="Phosphatase and Tensin Homolog" />
   </concept>
   <concept>
     <code value="STK11" />
-    <display value="STK11" />
+    <display value="Serine/Threonine Kinase 11" />
   </concept>
 </CodeSystem>

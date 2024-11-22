@@ -27,19 +27,19 @@
       <system
         value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningGeneCode" />
       <code value="BRCA1" />
-      <display value="BRCA1" />
+      <display value="BReast CAncer gene 1" />
     </contains>
     <contains>
       <system
         value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningGeneCode" />
       <code value="BRCA2" />
-      <display value="BRCA2" />
+      <display value="BReast CAncer gene 2" />
     </contains>
     <contains>
       <system
         value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningGeneCode" />
       <code value="CDH1" />
-      <display value="CDH1 (E-Cadherin)" />
+      <display value="Cadherin-1/(E-Cadherin)" />
     </contains>
     <contains>
       <system
@@ -51,19 +51,19 @@
       <system
         value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningGeneCode" />
       <code value="PALB2" />
-      <display value="PALB2" />
+      <display value="Partner and Localizer of BRCA2" />
     </contains>
     <contains>
       <system
         value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningGeneCode" />
       <code value="PTEN" />
-      <display value="PTEN" />
+      <display value="Phosphatase and Tensin Homolog" />
     </contains>
     <contains>
       <system
         value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningGeneCode" />
       <code value="STK11" />
-      <display value="STK11" />
+      <display value="Serine/Threonine Kinase 11" />
     </contains>
   </expansion>
 </ValueSet>
