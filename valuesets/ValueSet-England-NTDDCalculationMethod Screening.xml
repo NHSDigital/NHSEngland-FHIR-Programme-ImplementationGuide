@@ -1,9 +1,9 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="England-ScreeningNTDDCalculationMethod" />
-  <url value="https://fhir.nhs.uk/England/ValueSet/England-ScreeningNTDDCalculationMethod" />
+  <id value="England-NTDDCalculationMethodScreening" />
+  <url value="https://fhir.nhs.uk/England/ValueSet/England-NTDDCalculationMethodScreening" />
   <version value="0.1.0" />
-  <name value="EnglandScreeningNTDDCalculationMethod" />
-  <title value="England Screening NTDD Calculation Method" />
+  <name value="EnglandNTDDCalculationMethodScreening" />
+  <title value="England NTDD Calculation Method Screening" />
   <status value="draft" />
   <experimental value="false" />
   <date value="2024-11-21" />
