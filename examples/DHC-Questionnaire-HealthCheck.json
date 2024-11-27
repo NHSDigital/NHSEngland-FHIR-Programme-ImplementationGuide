@@ -1,0 +1,946 @@
+{
+    "resourceType": "Questionnaire",
+    "id": "123",
+    "url": "http://hl7.org/fhir/Questionnaire/3141",
+    "identifier": [
+        {
+            "system": "add-the-system-name",
+            "value": "unique-questionnnaire-identifier"
+        }
+    ],
+    "name": "NHS Digital Health Check",
+    "title": "CVD Questionnaire",
+    "status": "draft",
+    "subjectType": [
+        "Patient"
+    ],
+    "date": "2024-07",
+    "publisher": "NHS England",
+    "contact": [
+        {
+            "telecom": [
+                {
+                    "system": "url",
+                    "value": "https://developer.nhs.uk/apis/cds-api/api_questionnaire.html"
+                }
+            ]
+        }
+    ],
+    "description": "CVD Questionnaire",
+    "item": [
+        {
+            "linkId": "hasCompletedHealthCheckInLast5Years",
+            "text": "Have you completed health check in the last 5 years?",
+            "type": "boolean"
+        },
+        {
+            "linkId": "hasPreExistingCondition",
+            "text": "Do you have any of the pre-existing conditions that make them ineligible for a health check",
+            "type": "boolean"
+        },
+        {
+            "linkId": "hasFamilyHeartAttackHistory",
+            "code": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "515741000000106"
+                }
+            ],
+            "text": "Either your parents or siblings had a heart attack or angina before the age of 60",
+            "type": "choice",
+            "answerOption": [
+                {
+                    "valueCoding": {
+                        "code": "no",
+                        "display": "No"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "code": "yes",
+                        "display": "Yes"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "code": "dontknow",
+                        "display": "I do not know"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "sex",
+            "text": "Sex assigned at birth",
+            "type": "choice",
+            "answerValueSet": "http://hl7.org/fhir/ValueSet/administrative-gender"
+        },
+        {
+            "linkId": "ethnicBackground",
+            "text": "Ethnic Background",
+            "type": "choice",
+            "answerOption": [
+                {
+                    "valueCoding": {
+                        "code": "AsianOrAsianBritish",
+                        "display": "Asian or Asian British"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "code": "BACBB",
+                        "display": "Black, African, Caribbean or Black British"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "code": "mixed",
+                        "display": "Mixed or multiple ethnic groups"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "code": "white",
+                        "display": "White"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "code": "other",
+                        "display": "Other ethnic group"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "detailedEthnicBackground",
+            "text": "Detailed Ethnic Background",
+            "type": "choice",
+            "answerValueSet": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-EthnicCategory-1"
+        },
+        {
+            "linkId": "drinkAlcohol",
+            "text": "Do you drink Alcohol",
+            "type": "choice",
+            "answerOption": [
+                {
+                    "valueCoding": {
+                        "system": "http://example.org/alcohol-codes",
+                        "code": "never",
+                        "display": "No, I've never had a drink of alcohol"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "system": "http://example.org/alcohol-codes",
+                        "code": "notNow",
+                        "display": "No, I used to drink alcohol but I do not anymore"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "system": "http://example.org/alcohol-codes",
+                        "code": "yes-I-drink",
+                        "display": "Yes, I drink alcohol"
+                    }
+                }
+                 
+            ],
+            "item": [
+                {
+                    "linkId": "alcoholHowOften",
+                    "text": "Frequency of alcohol drinking",
+                    "type": "choice",
+                    "enableWhen": [
+                        {
+                            "question": "drinkAlcohol",
+                            "operator": "=",
+                            "answerCoding": {
+                                "system": "http://example.org/alcohol-codes",
+                                "code": "yes-I-drink"
+                            }
+                        }
+                    ],
+                    "answerOption": [
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-codes",
+                                "code": "monthly-once",
+                                "display": "Monthly or less"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-codes",
+                                "code": "2-4-monthly",
+                                "display": "2 to 4 times a month"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-codes",
+                                "code": "2-3-weekly",
+                                "display": "2 to 3 times a week"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-codes",
+                                "code": "4-or-more-weekly",
+                                "display": "4 times or more a week"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "alcoholDailyUnits",
+                    "text": "Units the patient drinks on a typical day when they drink alcohol",
+                    "type": "choice",
+                    "enableWhen": [
+                        {
+                            "question": "drinkAlcohol",
+                            "operator": "=",
+                            "answerCoding": {
+                                "system": "http://example.org/alcohol-codes",
+                                "code": "yes-I-drink"
+                            }
+                        }
+                    ],
+                    "answerOption": [
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-codes",
+                                "code": "zero-to-two-alcohol-units",
+                                "display": "0 to 2"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-codes",
+                                "code": "three-to-four-alcohol-units",
+                                "display": "3 to 4"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-codes",
+                                "code": "five-to-six-alcohol-units",
+                                "display": "5 to 6"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-codes",
+                                "code": "seven-to-nine-alcohol-units",
+                                "display": "7 to 9"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-codes",
+                                "code": "ten-or-more-alcohol-units",
+                                "display": "10 or more"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "alcoholConcernedRelative",
+                    "text": "Either patient's relative or doctor has been concerned about the patient drinking",
+                    "type": "choice",
+                    "answerOption": [
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-concerned-codes",
+                                "code": "no",
+                                "display": "No"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-concerned-codes",
+                                "code": "yes-not-in-the-past",
+                                "display": "Yes, but not in the past year"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-concerned-codes",
+                                "code": "yes-in-the-past",
+                                "display": "Yes, during the past year"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "alcoholFailedObligations",
+                    "text": "How often the patient failed to fulfil obligations because of alcohol",
+                    "type": "choice",
+                    "answerOption": [
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-obligation-codes",
+                                "code": "never-failed",
+                                "display": "Never"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-obligation-codes",
+                                "code": "failed-less-than-monthly",
+                                "display": "Less than monthly"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-obligation-codes",
+                                "code": "failed-monthly",
+                                "display": "Monthly"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-obligation-codes",
+                                "code": "failed-weekly",
+                                "display": "Weekly"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-obligation-codes",
+                                "code": "failed-daily",
+                                "display": "Daily or almost daily"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "alcoholGuilt",
+                    "text": "How often the patient felt guilty after drinking",
+                    "type": "choice",
+                    "answerOption": [
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-guilt-codes",
+                                "code": "never-guilt",
+                                "display": "Never"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-guilt-codes",
+                                "code": "guilt-less-than-monthly",
+                                "display": "Less than monthly"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-guilt-codes",
+                                "code": "guilt-monthly",
+                                "display": "Monthly"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-guilt-codes",
+                                "code": "guilt-weekly",
+                                "display": "Weekly"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-guilt-codes",
+                                "code": "guilt-daily",
+                                "display": "Daily or almost daily"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "alcoholMemoryLoss",
+                    "text": "How often the patient was unable to remember what happened the night before because of drinking",
+                    "type": "choice",
+                    "answerOption": [
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-obligation-codes",
+                                "code": "never-loss-memory",
+                                "display": "Never"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-obligation-codes",
+                                "code": "memory-loss-less-than-monthly",
+                                "display": "Less than monthly"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-obligation-codes",
+                                "code": "memory-loss-monthly",
+                                "display": "Monthly"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-obligation-codes",
+                                "code": "memory-loss-weekly",
+                                "display": "Weekly"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-obligation-codes",
+                                "code": "memory-loss-daily",
+                                "display": "Daily or almost daily"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "alcoholMorningDrink",
+                    "text": "How often the patient needed a morning alcoholic drink after drinking session",
+                    "type": "choice",
+                    "answerOption": [
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-obligation-codes",
+                                "code": "never",
+                                "display": "Never"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-obligation-codes",
+                                "code": "less-than-monthly",
+                                "display": "Less than monthly"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-obligation-codes",
+                                "code": "monthly",
+                                "display": "Monthly"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-obligation-codes",
+                                "code": "weekly",
+                                "display": "Weekly"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-obligation-codes",
+                                "code": "daily",
+                                "display": "Daily or almost daily"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "alcoholMultipleDrinksOneOccasion",
+                    "text": "How often the patient had multiple drinks on a single occasion",
+                    "type": "choice",
+                    "answerOption": [
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-obligation-codes",
+                                "code": "never",
+                                "display": "Never"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-obligation-codes",
+                                "code": "less-than-monthly",
+                                "display": "Less than monthly"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-obligation-codes",
+                                "code": "monthly",
+                                "display": "Monthly"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-obligation-codes",
+                                "code": "weekly",
+                                "display": "Weekly"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-obligation-codes",
+                                "code": "daily",
+                                "display": "Daily or almost daily"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "alcoholPersonInjured",
+                    "text": "Whether someone was injured as a result of patient's drinking",
+                    "type": "choice",
+                    "answerOption": [
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-concerned-codes",
+                                "code": "no",
+                                "display": "No"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-concerned-codes",
+                                "code": "yes-not-in-the-past",
+                                "display": "Yes, but not in the past year"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-concerned-codes",
+                                "code": "yes-in-the-past",
+                                "display": "Yes, during the past year"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "alcoholCannotStop",
+                    "text": "How often the patient could not stop drinking after starting to drink",
+                    "type": "choice",
+                    "answerOption": [
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-obligation-codes",
+                                "code": "never",
+                                "display": "Never"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-obligation-codes",
+                                "code": "less-than-monthly",
+                                "display": "Less than monthly"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-obligation-codes",
+                                "code": "monthly",
+                                "display": "Monthly"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-obligation-codes",
+                                "code": "weekly",
+                                "display": "Weekly"
+                            }
+                        },
+                        {
+                            "valueCoding": {
+                                "system": "http://example.org/alcohol-obligation-codes",
+                                "code": "daily",
+                                "display": "Daily or almost daily"
+                            }
+                        }
+                    ]
+                }
+                 
+            ]
+        },
+        {
+            "linkId": "cycleHours",
+            "text": "Number of hours patient cycled last week",
+            "type": "choice",
+            "answerOption": [
+                {
+                    "valueCoding": {
+                        "system": "http://example.org/excercise-codes",
+                        "code": "none",
+                        "display": "None"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "system": "http://example.org/excercise-codes",
+                        "code": "less-than-1-hour",
+                        "display": "Less than 1 hour"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "system": "http://example.org/excercise-codes",
+                        "code": "more-than-1-but-less-than-3-hours",
+                        "display": "More than 1 hour but less than 3"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "system": "http://example.org/excercise-codes",
+                        "code": "more-than-3-hours",
+                        "display": "3 hours or more"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "exerciseHours",
+            "text": "Number of hours patient did exercise last week",
+            "type": "choice",
+            "answerOption": [
+                {
+                    "valueCoding": {
+                        "system": "http://example.org/excercise-codes",
+                        "code": "none",
+                        "display": "None"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "system": "http://example.org/excercise-codes",
+                        "code": "less-than-1-hour",
+                        "display": "Less than 1 hour"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "system": "http://example.org/excercise-codes",
+                        "code": "more-than-1-but-less-than-3-hours",
+                        "display": "More than 1 hour but less than 3"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "system": "http://example.org/excercise-codes",
+                        "code": "more-than-3-hours",
+                        "display": "3 hours or more"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "gardeningHours",
+            "text": "Number of hours patient did gardening or DIY last week",
+            "type": "choice",
+            "answerOption": [
+                {
+                    "valueCoding": {
+                        "system": "http://example.org/excercise-codes",
+                        "code": "none",
+                        "display": "None"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "system": "http://example.org/excercise-codes",
+                        "code": "less-than-1-hour",
+                        "display": "Less than 1 hour"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "system": "http://example.org/excercise-codes",
+                        "code": "more-than-1-but-less-than-3-hours",
+                        "display": "More than 1 hour but less than 3"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "system": "http://example.org/excercise-codes",
+                        "code": "more-than-3-hours",
+                        "display": "3 hours or more"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "houseworkHours",
+            "text": "Number of hours patient did housework last week",
+            "type": "choice",
+            "answerOption": [
+                {
+                    "valueCoding": {
+                        "system": "http://example.org/excercise-codes",
+                        "code": "none",
+                        "display": "None"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "system": "http://example.org/excercise-codes",
+                        "code": "less-than-1-hour",
+                        "display": "Less than 1 hour"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "system": "http://example.org/excercise-codes",
+                        "code": "more-than-1-but-less-than-3-hours",
+                        "display": "More than 1 hour but less than 3"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "system": "http://example.org/excercise-codes",
+                        "code": "more-than-3-hours",
+                        "display": "3 hours or more"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "walkHours",
+            "text": "Number of hours patient walk last week",
+            "type": "choice",
+            "answerOption": [
+                {
+                    "valueCoding": {
+                        "system": "http://example.org/excercise-codes",
+                        "code": "none",
+                        "display": "None"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "system": "http://example.org/excercise-codes",
+                        "code": "less-than-1-hour",
+                        "display": "Less than 1 hour"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "system": "http://example.org/excercise-codes",
+                        "code": "more-than-1-but-less-than-3-hours",
+                        "display": "More than 1 hour but less than 3"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "system": "http://example.org/excercise-codes",
+                        "code": "more-than-3-hours",
+                        "display": "3 hours or more"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "walkPace",
+            "text": "Patient usual walking pace",
+            "type": "choice",
+            "answerOption": [
+                {
+                    "valueCoding": {
+                        "system": "http://example.org/excercise-codes",
+                        "code": "slow-pace",
+                        "display": "Slow Pace"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "system": "http://example.org/excercise-codes",
+                        "code": "avg-pace",
+                        "display": "Average Pace"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "system": "http://example.org/excercise-codes",
+                        "code": "brisk-pace",
+                        "display": "Brisk Pace"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "system": "http://example.org/excercise-codes",
+                        "code": "fast-pace",
+                        "display": "Fast pace"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "smoking",
+            "text": "Patient smoking frequency",
+            "type": "choice",
+            "answerOption": [
+                {
+                    "valueCoding": {
+                        "system": "http://example.org/smoking-codes",
+                        "code": "never",
+                        "display": "No, I have never smoked"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "system": "http://example.org/smoking-codes",
+                        "code": "quit",
+                        "display": "No, I quit smoking"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "system": "http://example.org/smoking-codes",
+                        "code": "upto-10-cigars",
+                        "display": "Yes, I smoke up to 10 cigarettes a day"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "system": "http://example.org/smoking-codes",
+                        "code": "11-20-cigars",
+                        "display": "Yes, I smoke 11 to 20 cigarettes a day"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "system": "http://example.org/smoking-codes",
+                        "code": "more-than-20-cigars",
+                        "display": "Yes, I smoke more than 20 cigarettes a day"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "workActivity",
+            "text": "Patient activity at work",
+            "type": "choice",
+            "answerOption": [
+                {
+                    "valueCoding": {
+                        "system": "http://example.org/work-codes",
+                        "code": "unemployed",
+                        "display": "Unemployed"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "system": "http://example.org/work-codes",
+                        "code": "sitting",
+                        "display": "Sitting"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "system": "http://example.org/work-codes",
+                        "code": "light-physical",
+                        "display": "Phisical Light"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "system": "http://example.org/work-codes",
+                        "code": "medium-physical",
+                        "display": "Phisical Medium"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "system": "http://example.org/work-codes",
+                        "code": "heavy-physical",
+                        "display": "Physical Heavy"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "height",
+            "text": "Height of the patient in centimetres",
+            "type": "integer",
+            "code": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "1153637007"
+                }
+            ],
+            "item": [
+                {
+                    "linkId": "heightDisplayPreferences",
+                    "text": "Patient's height display preference",
+                    "type": "choice",
+                    "answerOption": [
+                        {
+                            "valueString": "cm"
+                        },
+                        {
+                            "valueString": "feetAndInches"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "linkId": "weight",
+            "text": "Weight of the patient in kilograms",
+            "type": "integer",
+            "code": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "27113001"
+                }
+            ],
+            "item": [
+                {
+                    "linkId": "weightDisplayPreferences",
+                    "text": "Patient's weight display preference",
+                    "type": "choice",
+                    "answerOption": [
+                        {
+                            "valueString": "kg"
+                        },
+                        {
+                            "valueString": "stoneAndPounds"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "linkId": "bloodPressureSystolic",
+            "text": "Patient systolic blood pressure value",
+            "type": "integer",
+            "code": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "271649006"
+                }
+            ]
+        },
+        {
+            "linkId": "bloodPressureDiastolic",
+            "text": "Patient diastolic blood pressure value",
+            "type": "integer",
+            "code": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "271650006"
+                }
+            ]
+        },
+        {
+            "linkId": "bloodPressureLocation",
+            "text": "Place where the blood pressure reading was taken",
+            "type": "string",
+            "code": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "271650006"
+                }
+            ],
+            "answerOption": [
+                {
+                    "valueString": "At a clinic or pharmacy by a healthcare professional"
+                },
+                {
+                    "valueString": "With a monitor at home"
+                }
+            ]
+        }
+    ]
+}
