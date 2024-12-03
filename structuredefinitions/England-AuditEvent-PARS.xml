@@ -59,26 +59,6 @@
         <rules value="closed" />
       </slicing>
     </element>
-    <element id="AuditEvent.agent.who">
-      <path value="AuditEvent.agent.who" />
-      <min value="1" />
-    </element>
-    <element id="AuditEvent.agent.who.type">
-      <path value="AuditEvent.agent.who.type" />
-      <min value="1" />
-    </element>
-    <element id="AuditEvent.agent.who.identifier">
-      <path value="AuditEvent.agent.who.identifier" />
-      <min value="1" />
-    </element>
-    <element id="AuditEvent.agent.who.identifier.system">
-      <path value="AuditEvent.agent.who.identifier.system" />
-      <min value="1" />
-    </element>
-    <element id="AuditEvent.agent.who.identifier.value">
-      <path value="AuditEvent.agent.who.identifier.value" />
-      <min value="1" />
-    </element>
     <element id="AuditEvent.agent:organisation">
       <path value="AuditEvent.agent" />
       <sliceName value="organisation" />
