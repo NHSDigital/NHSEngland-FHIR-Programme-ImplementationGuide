@@ -170,10 +170,6 @@
         <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-Product-Id" />
       </type>
     </element>
-    <element id="AuditEvent.source.observer.display">
-      <path value="AuditEvent.source.observer.display" />
-      <short value="Audit Creator Name" />
-    </element>
     <element id="AuditEvent.entity">
       <path value="AuditEvent.entity" />
       <slicing>
