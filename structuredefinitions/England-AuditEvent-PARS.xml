@@ -66,7 +66,6 @@
     <element id="AuditEvent.agent:patient">
       <path value="AuditEvent.agent" />
       <sliceName value="patient" />
-      <max value="1" />
     </element>
     <element id="AuditEvent.agent:patient.who.type">
       <path value="AuditEvent.agent.who.type" />
@@ -79,7 +78,6 @@
     <element id="AuditEvent.agent:user">
       <path value="AuditEvent.agent" />
       <sliceName value="user" />
-      <max value="1" />
     </element>
     <element id="AuditEvent.agent:user.who.type">
       <path value="AuditEvent.agent.who.type" />
@@ -92,7 +90,6 @@
     <element id="AuditEvent.agent:userRole">
       <path value="AuditEvent.agent" />
       <sliceName value="userRole" />
-      <max value="1" />
     </element>
     <element id="AuditEvent.agent:userRole.who.type">
       <path value="AuditEvent.agent.who.type" />
@@ -101,7 +98,6 @@
     <element id="AuditEvent.agent:endpoint">
       <path value="AuditEvent.agent" />
       <sliceName value="endpoint" />
-      <max value="1" />
     </element>
     <element id="AuditEvent.agent:endpoint.who.type">
       <path value="AuditEvent.agent.who.type" />
