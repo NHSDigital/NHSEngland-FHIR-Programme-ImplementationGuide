@@ -30,12 +30,46 @@
     <element id="AuditEvent.action">
       <path value="AuditEvent.action" />
       <short value="Type of operation - Create Read Update Delete" />
+      <min value="1" />
     </element>
     <element id="AuditEvent.recorded">
       <path value="AuditEvent.recorded" />
+      <mustSupport value="true" />
       <definition value="DateTime the event happened. In Spine this is derived from the internalID, in PARS it will be its own field" />
     </element>
-    <element id="AuditEvent.agent">
+    <element id="AuditEvent.type.system">
+      <path value="AuditEvent.type.system" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.subtype.system">
+      <path value="AuditEvent.subtype.system" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.subtype.code">
+      <path value="AuditEvent.subtype.code" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.agent.who">
+      <path value="AuditEvent.agent.who" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.agent.who.type">
+      <path value="AuditEvent.agent.who.type" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.agent.who.identifier">
+      <path value="AuditEvent.agent.who.identifier" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.agent.who.identifier.system">
+      <path value="AuditEvent.agent.who.identifier.system" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.agent.who.identifier.value">
+      <path value="AuditEvent.agent.who.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="Audit Event.agent">
       <path value="AuditEvent.agent" />
       <slicing>
         <discriminator>
@@ -104,6 +138,7 @@
     <element id="AuditEvent.agent:endpoint">
       <path value="AuditEvent.agent" />
       <sliceName value="endpoint" />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="AuditEvent.agent:endpoint.who.type">
@@ -117,6 +152,20 @@
         <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-Product-Id" />
         <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-Accredited-System" />
       </type>
+    </element>
+     <element id="AuditEvent.source.type">
+      <path value="AuditEvent.source.type" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.source.type.system">
+      <path value="AuditEvent.source.type.system" />
+      <short value="Audit Creator system Identifier" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.source.type.code">
+      <path value="AuditEvent.source.type.code" />
+      <short value="Audit Creator Identifier code" />
+      <min value="1" />
     </element>
     <element id="AuditEvent.source.site">
       <path value="AuditEvent.source.site" />
@@ -143,6 +192,31 @@
     <element id="AuditEvent.source.observer.display">
       <path value="AuditEvent.source.observer.display" />
       <short value="Audit Creator Name" />
+      <min value="1" />
+    </element>
+     <element id="AuditEvent.entity.what">
+      <path value="AuditEvent.entity.what" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.entity.what.identifier">
+      <path value="AuditEvent.entity.what.identifier" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.entity.what.identifier.system">
+      <path value="AuditEvent.entity.what.identifier.system" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.entity.type">
+      <path value="AuditEvent.entity.type" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.entity.type.system">
+      <path value="AuditEvent.entity.type.system" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.entity.type.code">
+      <path value="AuditEvent.entity.type.code" />
+      <min value="1" />
     </element>
     <element id="AuditEvent.entity">
       <path value="AuditEvent.entity" />
