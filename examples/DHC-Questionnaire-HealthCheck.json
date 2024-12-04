@@ -1,15 +1,13 @@
 {
     "resourceType": "Questionnaire",
-    "id": "123",
     "url": "http://hl7.org/fhir/Questionnaire/3141",
     "identifier": [
         {
-            "system": "add-the-system-name",
             "value": "unique-questionnnaire-identifier"
         }
     ],
-    "name": "NHS Digital Health Check",
-    "title": "CVD Questionnaire",
+    "name": "NHSDigitalHealthCheck",
+    "title": "NHS Digital Health Check",
     "status": "draft",
     "subjectType": [
         "Patient"
