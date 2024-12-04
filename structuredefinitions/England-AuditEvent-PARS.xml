@@ -24,7 +24,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="AuditEvent" />
-  <baseDefinition value="https://fhir.nhs.uk/England/StructureDefinition/England-AuditEvent" />
+  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-AuditEvent" />
   <derivation value="constraint" />
   <differential>
     <element id="AuditEvent.action">
