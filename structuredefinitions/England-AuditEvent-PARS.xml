@@ -27,16 +27,6 @@
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-AuditEvent" />
   <derivation value="constraint" />
   <differential>
-    <element id="AuditEvent.action">
-      <path value="AuditEvent.action" />
-      <short value="Type of operation - Create Read Update Delete" />
-      <min value="1" />
-    </element>
-    <element id="AuditEvent.recorded">
-      <path value="AuditEvent.recorded" />
-      <mustSupport value="true" />
-      <definition value="DateTime the event happened. In Spine this is derived from the internalID, in PARS it will be its own field" />
-    </element>
     <element id="AuditEvent.type.system">
       <path value="AuditEvent.type.system" />
       <min value="1" />
@@ -48,6 +38,26 @@
     <element id="AuditEvent.subtype.code">
       <path value="AuditEvent.subtype.code" />
       <min value="1" />
+    </element>
+    <element id="AuditEvent.action">
+      <path value="AuditEvent.action" />
+      <short value="Type of operation - Create Read Update Delete" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.recorded">
+      <path value="AuditEvent.recorded" />
+      <definition value="DateTime the event happened. In Spine this is derived from the internalID, in PARS it will be its own field" />
+      <mustSupport value="true" />
+    </element>
+    <element id="AuditEvent.agent">
+      <path value="AuditEvent.agent" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="who.type" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
     </element>
     <element id="AuditEvent.agent.who">
       <path value="AuditEvent.agent.who" />
@@ -68,16 +78,6 @@
     <element id="AuditEvent.agent.who.identifier.value">
       <path value="AuditEvent.agent.who.identifier.value" />
       <min value="1" />
-    </element>
-    <element id="Audit Event.agent">
-      <path value="AuditEvent.agent" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="who.type" />
-        </discriminator>
-        <rules value="closed" />
-      </slicing>
     </element>
     <element id="AuditEvent.agent:organisation">
       <path value="AuditEvent.agent" />
@@ -153,7 +153,7 @@
         <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-Accredited-System" />
       </type>
     </element>
-     <element id="AuditEvent.source.type">
+    <element id="AuditEvent.source.type">
       <path value="AuditEvent.source.type" />
       <min value="1" />
     </element>
@@ -166,10 +166,6 @@
       <path value="AuditEvent.source.type.code" />
       <short value="Audit Creator Identifier code" />
       <min value="1" />
-    </element>
-    <element id="AuditEvent.source.site">
-      <path value="AuditEvent.source.site" />
-      <short value="Audit Creator system Code" />
     </element>
     <element id="AuditEvent.source.observer">
       <path value="AuditEvent.source.observer" />
@@ -194,7 +190,21 @@
       <short value="Audit Creator Name" />
       <min value="1" />
     </element>
-     <element id="AuditEvent.entity.what">
+    <element id="AuditEvent.entity">
+      <path value="AuditEvent.entity" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="type.system" />
+        </discriminator>
+        <discriminator>
+          <type value="value" />
+          <path value="type.code" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="AuditEvent.entity.what">
       <path value="AuditEvent.entity.what" />
       <min value="1" />
     </element>
@@ -217,20 +227,6 @@
     <element id="AuditEvent.entity.type.code">
       <path value="AuditEvent.entity.type.code" />
       <min value="1" />
-    </element>
-    <element id="AuditEvent.entity">
-      <path value="AuditEvent.entity" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="type.system" />
-        </discriminator>
-        <discriminator>
-          <type value="value" />
-          <path value="type.code" />
-        </discriminator>
-        <rules value="closed" />
-      </slicing>
     </element>
     <element id="AuditEvent.entity:patient">
       <path value="AuditEvent.entity" />
