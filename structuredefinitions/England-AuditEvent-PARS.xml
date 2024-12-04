@@ -153,20 +153,6 @@
         <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-Accredited-System" />
       </type>
     </element>
-    <element id="AuditEvent.source.type">
-      <path value="AuditEvent.source.type" />
-      <min value="1" />
-    </element>
-    <element id="AuditEvent.source.type.system">
-      <path value="AuditEvent.source.type.system" />
-      <short value="Audit Creator system Identifier" />
-      <min value="1" />
-    </element>
-    <element id="AuditEvent.source.type.code">
-      <path value="AuditEvent.source.type.code" />
-      <short value="Audit Creator Identifier code" />
-      <min value="1" />
-    </element>
     <element id="AuditEvent.source.observer">
       <path value="AuditEvent.source.observer" />
       <type>
@@ -188,6 +174,18 @@
     <element id="AuditEvent.source.observer.display">
       <path value="AuditEvent.source.observer.display" />
       <short value="Audit Creator Name" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.source.type">
+      <path value="AuditEvent.source.type" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.source.type.system">
+      <path value="AuditEvent.source.type.system" />
+      <min value="1" />
+    </element>
+    <element id="AuditEvent.source.type.code">
+      <path value="AuditEvent.source.type.code" />
       <min value="1" />
     </element>
     <element id="AuditEvent.entity">
