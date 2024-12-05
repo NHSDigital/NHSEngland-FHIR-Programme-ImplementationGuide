@@ -845,23 +845,23 @@
         },
         {
           "valueCoding": {
-            "system": "http://example.org/smoking-codes",
-            "code": "upto-10-cigars",
-            "display": "Yes, I smoke up to 10 cigarettes a day"
+            "system": "http://snomed.info/sct",
+            "code": "160603005",
+            "display": "Light cigarette smoker (1-9 cigs/day)"
           }
         },
         {
           "valueCoding": {
-            "system": "http://example.org/smoking-codes",
-            "code": "11-20-cigars",
-            "display": "Yes, I smoke 11 to 20 cigarettes a day"
+            "system": "http://snomed.info/sct",
+            "code": "160604004",
+            "display": "Moderate cigarette smoker (10-19 cigs/day) (finding)"
           }
         },
         {
           "valueCoding": {
-            "system": "http://example.org/smoking-codes",
-            "code": "more-than-20-cigars",
-            "display": "Yes, I smoke more than 20 cigarettes a day"
+            "system": "http://snomed.info/sct",
+            "code": "56771006",
+            "display": "Heavy smoker (over 20 per day) (finding)"
           }
         }
       ]
@@ -909,15 +909,6 @@
       ]
     },
     {
-      "linkId": "height",
-      "text": "Height of the patient in centimetres",
-      "type": "integer",
-      "code": [
-        {
-          "system": "http://snomed.info/sct",
-          "code": "1153637007"
-        }
-      ],
       "item": [
         {
           "linkId": "heightDisplayPreferences",
@@ -932,18 +923,18 @@
             }
           ]
         }
-      ]
-    },
-    {
-      "linkId": "weight",
-      "text": "Weight of the patient in kilograms",
+      ],
       "type": "integer",
+      "linkId": "height",
       "code": [
         {
           "system": "http://snomed.info/sct",
-          "code": "27113001"
+          "code": "1153637007"
         }
       ],
+      "text": "Height of the patient in centimetres"
+    },
+    {
       "item": [
         {
           "linkId": "weightDisplayPreferences",
@@ -958,7 +949,16 @@
             }
           ]
         }
-      ]
+      ],
+      "type": "integer",
+      "linkId": "weight",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "27113001"
+        }
+      ],
+      "text": "Weight of the patient in kilograms"
     },
     {
       "type": "integer",
