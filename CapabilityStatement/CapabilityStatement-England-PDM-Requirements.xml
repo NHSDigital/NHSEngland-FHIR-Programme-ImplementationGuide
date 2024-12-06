@@ -1,0 +1,53 @@
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+  <id value="CapabilityStatement-England-PDM-Requirements" />
+  <url value="https://fhir.nhs.uk/England/CapabilityStatement/England-PDM-Requirements" />
+  <version value="0.0.1-current" />
+  <name value="CapabilityStatementEnglandPDMRequirements" />
+  <title value="CapabilityStatement England PDM Requirements" />
+  <status value="draft" />
+  <experimental value="false" />
+  <date value="2024-10-08" />
+  <publisher value="NHS England" />
+  <description value="This includes conformanace from [HL7 Structured Data Capture](https://build.fhir.org/ig/HL7/sdc/)" />
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm" />
+      <code value="001" />
+    </coding>
+  </jurisdiction>
+  <kind value="requirements" />
+  <fhirVersion value="4.0.1" />
+  <format value="application/fhir+xml" />
+  <format value="application/fhir+json" />
+  <rest>
+    <mode value="server" />
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHALL" />
+      </extension>
+      <type value="Questionnaire" />
+      <profile value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire" />
+      <documentation value="
+`POST /Questionnaire`
+" />
+      <interaction>
+        <code value="create" />
+        <code value="update" />
+      </interaction>
+    </resource>
+     <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHALL" />
+      </extension>
+      <type value="QuestionnaireResponse" />
+      <profile value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse" />
+      <documentation value="
+`POST /QuestionnaireResponse`
+" />
+      <interaction>
+        <code value="create" />
+        <code value="update" />
+      </interaction>
+    </resource>
+  </rest>
+</CapabilityStatement>
