@@ -21,6 +21,15 @@
   <format value="application/fhir+json" />
   <rest>
     <mode value="server" />
+    <security>
+      <service>
+        <coding>
+          <system value="http://hl7.org/fhir/restful-security-service" />
+          <code value="SMART-on-FHIR" />
+          <display value="SMART-on-FHIR" />
+        </coding>
+      </service>
+    </security>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="SHALL" />
@@ -32,10 +41,12 @@
 " />
       <interaction>
         <code value="create" />
+      </interaction>
+      <interaction>
         <code value="update" />
       </interaction>
     </resource>
-     <resource>
+    <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="SHALL" />
       </extension>
@@ -46,6 +57,8 @@
 " />
       <interaction>
         <code value="create" />
+      </interaction>
+      <interaction>
         <code value="update" />
       </interaction>
     </resource>
