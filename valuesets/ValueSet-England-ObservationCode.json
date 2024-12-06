@@ -63,6 +63,15 @@
           "op" : "descendent-of",
           "value" : "386053000"
         }]
-      }]
+      },
+      {
+        "system" : "http://snomed.info/sct",
+        "filter" : [{
+          "property" : "concept",
+          "op" : "is-a",
+          "value" : "404684003"
+        }]
+      }
+    ]
     }
   }
