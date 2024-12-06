@@ -67,7 +67,7 @@
         <valueCode value="SHALL" />
       </extension>
       <type value="Observation" />
-      <profile value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse" />
+      <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Observation-PDM" />
       <documentation value="
 `POST /Observation`
 " />
