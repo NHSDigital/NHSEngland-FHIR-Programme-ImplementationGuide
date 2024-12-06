@@ -7,7 +7,6 @@
     <title value="England Observation PDM"/>
     <status value="draft"/>
     <date value="2024-12-02T14:10:33+00:00"/>
-    <publisher value="Virtually Healthcare"/>
     <publisher value="NHS England" />
     <contact>
         <name value="NHS England" />
@@ -45,10 +44,6 @@
         <element id="Observation.identifier">
             <path value="Observation.identifier"/>
             <min value="1"/>
-            <type>
-                <code value="Identifier"/>
-                <profile value="https://fhir.virtually.healthcare/StructureDefinition/CommonResourceIdentifiers"/>
-            </type>
             <mustSupport value="true"/>
         </element>
         <element id="Observation.code.coding">
