@@ -1,7 +1,11 @@
 {
   "resourceType": "Questionnaire",
   "id": "21c06492-008a-4c9c-8f13-e984b0ba73b8",
-  "url": "http://hl7.org/fhir/Questionnaire/3141",
+  "meta": {
+    "versionId": "10",
+    "lastUpdated": "2024-12-06T12:59:48.355Z"
+  },
+  "url": "https://fhir.nhs.uk/England/StructureDefinition/England-Questionnaire-NHSDigitalHealthCheck",
   "identifier": [
     {
       "value": "unique-questionnnaire-identifier"
@@ -28,9 +32,9 @@
   "description": "CVD Questionnaire",
   "item": [
     {
-      "type": "boolean",
       "linkId": "hasCompletedHealthCheckInLast5Years",
-      "text": "Have you completed health check in the last 5 years?"
+      "text": "Have you completed health check in the last 5 years?",
+      "type": "boolean"
     },
     {
       "linkId": "hasPreExistingCondition",
@@ -38,6 +42,24 @@
       "type": "boolean"
     },
     {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "drop-down",
+                "display": "Drop down"
+              }
+            ]
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        }
+      ],
       "linkId": "hasFamilyHeartAttackHistory",
       "code": [
         {
@@ -50,13 +72,15 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": "no",
+            "system": "http://snomed.info/sct",
+            "code": "373067005",
             "display": "No"
           }
         },
         {
           "valueCoding": {
-            "code": "yes",
+            "system": "http://snomed.info/sct",
+            "code": "373066001",
             "display": "Yes"
           }
         },
@@ -69,13 +93,26 @@
       ]
     },
     {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "drop-down",
+                "display": "Drop down"
+              }
+            ]
+          }
+        }
+      ],
       "linkId": "sex",
       "text": "Sex assigned at birth",
       "type": "choice",
       "answerValueSet": "http://hl7.org/fhir/ValueSet/administrative-gender"
     },
     {
-      "type": "choice",
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -92,6 +129,7 @@
       ],
       "linkId": "ethnicBackground",
       "text": "Ethnic Background",
+      "type": "choice",
       "answerOption": [
         {
           "valueCoding": {
@@ -126,7 +164,6 @@
       ]
     },
     {
-      "type": "choice",
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -139,10 +176,31 @@
               }
             ]
           }
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+          "valueDuration": {
+            "value": 5,
+            "unit": "years",
+            "system": "http://unitsofmeasure.org",
+            "code": "a"
+          }
         }
       ],
       "linkId": "detailedEthnicBackground",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "398089004",
+          "display": "Ethnic background"
+        }
+      ],
       "text": "Detailed Ethnic Background",
+      "type": "choice",
       "answerValueSet": "https://fhir.hl7.org.uk/ValueSet/UKCore-EthnicCategory"
     },
     {
@@ -791,7 +849,6 @@
       ]
     },
     {
-      "type": "choice",
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -815,8 +872,8 @@
           }
         },
         {
-          "valueBoolean": true,
-          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract"
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
         }
       ],
       "linkId": "smoking",
@@ -828,6 +885,7 @@
         }
       ],
       "text": "Patient smoking frequency",
+      "type": "choice",
       "answerOption": [
         {
           "valueCoding": {
@@ -867,7 +925,6 @@
       ]
     },
     {
-      "type": "choice",
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -884,6 +941,7 @@
       ],
       "linkId": "workActivity",
       "text": "Patient activity at work",
+      "type": "choice",
       "answerOption": [
         {
           "valueCoding": {
@@ -923,6 +981,29 @@
       ]
     },
     {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "cm",
+            "display": "centimeter"
+          }
+        }
+      ],
+      "linkId": "height",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1153637007"
+        }
+      ],
+      "text": "Height of the patient in centimetres",
+      "type": "quantity",
       "item": [
         {
           "linkId": "heightDisplayPreferences",
@@ -937,31 +1018,41 @@
             }
           ]
         }
-      ],
-      "type": "quantity",
+      ]
+    },
+    {
       "extension": [
         {
-          "valueBoolean": true,
-          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract"
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+          "valueDuration": {
+            "value": 1,
+            "unit": "years",
+            "system": "http://unitsofmeasure.org",
+            "code": "a"
+          }
         },
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
           "valueCoding": {
-            "code": "cm",
-            "display": "cm"
+            "system": "http://unitsofmeasure.org",
+            "code": "kg",
+            "display": "kilogram"
           }
         }
       ],
-      "linkId": "height",
+      "linkId": "weight",
       "code": [
         {
           "system": "http://snomed.info/sct",
-          "code": "1153637007"
+          "code": "27113001"
         }
       ],
-      "text": "Height of the patient in centimetres"
-    },
-    {
+      "text": "Weight of the patient in kilograms",
+      "type": "quantity",
       "item": [
         {
           "linkId": "weightDisplayPreferences",
@@ -976,41 +1067,9 @@
             }
           ]
         }
-      ],
-      "type": "quantity",
-      "extension": [
-        {
-          "valueBoolean": true,
-          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract"
-        },
-        {
-          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
-          "valueDuration": {
-            "value": 1,
-            "unit": "years",
-            "system": "http://unitsofmeasure.org",
-            "code": "a"
-          }
-        },
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
-          "valueCoding": {
-            "code": "kg",
-            "display": "kg"
-          }
-        }
-      ],
-      "linkId": "weight",
-      "code": [
-        {
-          "system": "http://snomed.info/sct",
-          "code": "27113001"
-        }
-      ],
-      "text": "Weight of the patient in kilograms"
+      ]
     },
     {
-      "type": "quantity",
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
@@ -1028,10 +1087,10 @@
           "code": "271649006"
         }
       ],
-      "text": "Patient systolic blood pressure value"
+      "text": "Patient systolic blood pressure value",
+      "type": "quantity"
     },
     {
-      "type": "quantity",
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
@@ -1049,18 +1108,19 @@
           "code": "271650006"
         }
       ],
-      "text": "Patient diastolic blood pressure value"
+      "text": "Patient diastolic blood pressure value",
+      "type": "quantity"
     },
     {
       "linkId": "bloodPressureLocation",
-      "text": "Place where the blood pressure reading was taken",
-      "type": "string",
       "code": [
         {
           "system": "http://snomed.info/sct",
           "code": "271650006"
         }
       ],
+      "text": "Place where the blood pressure reading was taken",
+      "type": "string",
       "answerOption": [
         {
           "valueString": "At a clinic or pharmacy by a healthcare professional"
