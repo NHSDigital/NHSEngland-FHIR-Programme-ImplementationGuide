@@ -4,7 +4,7 @@
     "url" : "https://fhir.nhs.uk/England/ValueSet/England-ObservationCode",
     "version" : "0.0.1-draft",
     "name" : "EnglandObservationCode",
-    "title" : "NHS England Observation Code",
+    "title" : "England Observation Code",
     "status" : "draft",
     "experimental" : false,
     "date" : "2024-12-02T14:10:33+00:00",
