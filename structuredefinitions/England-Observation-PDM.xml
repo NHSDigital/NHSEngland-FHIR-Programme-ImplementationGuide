@@ -144,7 +144,7 @@
             <mustSupport value="true"/>
             <binding>
                 <strength value="required"/>
-                <valueSet value="https://fhir.nhs.uk/England/ValueSet/England-ObservationCode"/>
+                <valueSet value="https://fhir.nhs.uk/England/ValueSet/England-ObservationValueCode"/>
             </binding>
         </element>
         <element id="Observation.value[x]:valueCodeableConcept.coding:SNOMED.system">
