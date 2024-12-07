@@ -2,8 +2,8 @@
   "resourceType": "Questionnaire",
   "id": "21c06492-008a-4c9c-8f13-e984b0ba73b8",
   "meta": {
-    "versionId": "14",
-    "lastUpdated": "2024-12-06T15:07:08.115Z"
+    "versionId": "18",
+    "lastUpdated": "2024-12-07T07:50:49.435Z"
   },
   "url": "https://fhir.nhs.uk/England/StructureDefinition/England-Questionnaire-NHSDigitalHealthCheck",
   "identifier": [
@@ -831,6 +831,20 @@
           ]
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ]
+              }
+            }
+          ],
           "linkId": "walkHours",
           "text": "Number of hours patient walk last week",
           "type": "choice",
@@ -1080,6 +1094,13 @@
             "code": "56771006",
             "display": "Heavy smoker (over 20 per day) (finding)"
           }
+        },
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "8517006",
+            "display": "Ex-smoker"
+          }
         }
       ]
     },
@@ -1175,61 +1196,122 @@
     {
       "extension": [
         {
-          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
-          "valueCoding": {
-            "system": "http://unitsofmeasure.org",
-            "code": "mm[Hg]",
-            "display": "millimeter of mercury"
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemPopulationContext",
+          "valueExpression": {
+            "name": "bloodPressure",
+            "language": "application/x-fhir-query",
+            "expression": "Observation?patient={{%patient.id}}&code=http://snomed.info/sct|75367002"
           }
-        }
-      ],
-      "linkId": "bloodPressureSystolic",
-      "code": [
-        {
-          "system": "http://snomed.info/sct",
-          "code": "271649006"
-        }
-      ],
-      "text": "Patient systolic blood pressure value",
-      "type": "quantity"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
-          "valueCoding": {
-            "system": "http://unitsofmeasure.org",
-            "code": "mm[Hg]",
-            "display": "millimeter of mercury"
-          }
-        }
-      ],
-      "linkId": "bloodPressureDiastolic",
-      "code": [
-        {
-          "system": "http://snomed.info/sct",
-          "code": "271650006"
-        }
-      ],
-      "text": "Patient diastolic blood pressure value",
-      "type": "quantity"
-    },
-    {
-      "linkId": "bloodPressureLocation",
-      "code": [
-        {
-          "system": "http://snomed.info/sct",
-          "code": "271650006"
-        }
-      ],
-      "text": "Place where the blood pressure reading was taken",
-      "type": "string",
-      "answerOption": [
-        {
-          "valueString": "At a clinic or pharmacy by a healthcare professional"
         },
         {
-          "valueString": "With a monitor at home"
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "exists(%bloodPressure)"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+          "valueDuration": {
+            "value": 1,
+            "unit": "weeks",
+            "system": "http://unitsofmeasure.org",
+            "code": "wk"
+          }
+        }
+      ],
+      "linkId": "1698352725817",
+      "definition": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-BloodPressure#code",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "75367002",
+          "display": "Blood pressure"
+        },
+        {
+          "system": "http://loinc.org",
+          "code": "85354-9"
+        }
+      ],
+      "text": "Blood Pressure",
+      "type": "group",
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "valueCoding": {
+                "system": "http://unitsofmeasure.org",
+                "code": "mm[Hg]",
+                "display": "millimeter of mercury"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%bloodPressure.component[DiastolicBP].valueQuantity.value"
+              }
+            }
+          ],
+          "linkId": "bloodPressureDiastolic",
+          "definition": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-BloodPressure#component[DiastolicBP]",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "271650006"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6"
+            }
+          ],
+          "text": "Patient diastolic blood pressure value",
+          "type": "quantity"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "valueCoding": {
+                "system": "http://unitsofmeasure.org",
+                "code": "mm[Hg]",
+                "display": "millimeter of mercury"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%bloodPressure.component[SystolicBP].valueQuantity.value"
+              }
+            }
+          ],
+          "linkId": "bloodPressureSystolic",
+          "definition": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-BloodPressure#component[SystolicBP]",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "271649006"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "8462-4"
+            }
+          ],
+          "text": "Patient systolic blood pressure value",
+          "type": "quantity"
+        },
+        {
+          "linkId": "bloodPressureLocation",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "271650006"
+            }
+          ],
+          "text": "Place where the blood pressure reading was taken",
+          "type": "string"
         }
       ]
     }
