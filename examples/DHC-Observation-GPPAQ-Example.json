@@ -1,6 +1,6 @@
 {
     "resourceType": "Observation",
-    "id": "DCH-Observation-GPPAQ-Example",
+    "id": "DHC-Observation-GPPAQ-Example",
     "text": {
         "status": "generated",
         "div": "div-narrative"
