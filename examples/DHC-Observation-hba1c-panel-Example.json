@@ -1,0 +1,60 @@
+{
+    "resourceType": "Observation",
+    "id": "DHC-Observation-hba1c-panel-Example",
+    "text": {
+        "status": "generated",
+        "div": "div-narrative"
+    },
+    "subject": {
+        "reference": "Patient/123",
+        "type": "Patient",
+        "display": "Mr/Mrs Patient Name"
+    },
+    "encounter": {
+        "reference": "Encounter/enc-1122",
+        "type": "Encounter"
+    },
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "441689006",
+                "display": "Measurement of total hemoglobin concentration"
+            }
+        ]
+    },
+    "effectiveDateTime": "2024-07-17T12:12:59+01:00",
+    "status": "final",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "laboratory",
+                    "display": "Laboratory result for Blood"
+                }
+            ],
+            "text": "Laboratory - Hba1c"
+        }
+    ],
+    "component": [       
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "1003671000000100",
+                        "display": "Haemoglobin A1c level"
+                    }
+                ],
+                "text": "HbA1c in mmol/L"
+            },
+            "valueQuantity": {
+                "value": 3.8,
+                "unit": "mmol/L",
+                "system": "http://unitsofmeasure.org",
+                "code": "mmol/L"
+            }
+        }
+    ]
+}
