@@ -1,0 +1,41 @@
+{
+    "resourceType": "Observation",
+    "id": "DCH-Observation-GPPAQ-Example",
+    "text": {
+        "status": "generated",
+        "div": "div-narrative"
+    },
+    "subject": {
+        "reference": "Patient/123",
+        "type": "Patient",
+        "display": "Mr/Mrs Patient Name"
+    },
+    "encounter": {
+        "reference": "Encounter/enc-1122",
+        "type": "Encounter"
+    },
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "activity",
+                    "display": "Physical Activity"
+                }
+            ],
+            "text": "Physical activity details and GPPAQ score"
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "366241000000106",
+                "display": "Active"
+            }
+        ]
+    },
+    "valueString": "Active",
+    "effectiveDateTime": "2024-07-17T12:12:59+01:00",
+    "status": "final"
+}
