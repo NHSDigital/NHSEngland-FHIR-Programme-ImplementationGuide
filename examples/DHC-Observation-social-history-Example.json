@@ -1,6 +1,6 @@
 {
     "resourceType": "Observation",
-    "id": "DCH-Observation-social-history-Example",
+    "id": "DHC-Observation-social-history-Example",
     "text": {
         "status": "generated",
         "div": "div-narrative"
