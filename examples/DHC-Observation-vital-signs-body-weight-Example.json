@@ -1,6 +1,6 @@
 {
     "resourceType": "Observation",
-    "id": "DHC-Observation-vital-signs-panel-Example",
+    "id": "DHC-Observation-vital-signs-body-weight-Example",
     "text": {
         "status": "generated",
         "div": "div-narrative"
@@ -17,16 +17,12 @@
     "code": {
         "coding": [
             {
-                "system": "http://loinc.org",
-                "code": "85353-1",
-                "display": "Vital Signs Panel"
-            },
-            {
                 "system": "http://snomed.info/sct",
-                "code": "118227000",
-                "display": "Vital Signs finding"
+                "code": "27113001",
+                "display": "Body Weight"
             }
-        ]
+        ],
+        "text": "Body Weight in kilograms"
     },
     "effectiveDateTime": "2024-07-17T12:12:59+01:00",
     "status": "final",
@@ -38,21 +34,14 @@
                     "code": "vital-signs",
                     "display": "Vital Signs"
                 }
-            ]
+            ],
+            "text": "Vital Signs - Body height, weight, waist and BMI"
         }
     ],
-    "hasMember": [
-        {
-            "reference": "Observation/DHC-Observation-vital-signs-body-height-Example"
-        },
-        {
-            "reference": "Observation/DHC-Observation-vital-signs-body-weight-Example"
-        },
-        {
-            "reference": "Observation/DHC-Observation-vital-signs-body-waist-Example"
-        },
-        {
-            "reference": "Observation/DHC-Observation-vital-signs-body-mass-index-Example"
-        }
-    ]
+    "valueQuantity": {
+        "value": 70,
+        "unit": "kg",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg"
+    }
 }
