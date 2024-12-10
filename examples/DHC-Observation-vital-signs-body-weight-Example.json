@@ -19,7 +19,7 @@
             {
                 "system": "http://snomed.info/sct",
                 "code": "27113001",
-                "display": "Body Weight"
+                "display": "Body weight"
             }
         ],
         "text": "Body Weight in kilograms"
