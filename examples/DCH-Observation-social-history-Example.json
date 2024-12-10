@@ -49,7 +49,7 @@
                     {
                         "system": "http://snomed.info/sct",
                         "code": "515741000000106",
-                        "display": "Family History CHD"
+                        "display": "Family history of myocardial infarction in first degree relative less than 60 years"
                     }
                 ],
                 "text": "Family History CHD"
