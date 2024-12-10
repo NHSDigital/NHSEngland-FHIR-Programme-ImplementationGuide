@@ -1,6 +1,6 @@
 {
     "resourceType": "Observation",
-    "id": "DCH-Observation-blood-pressure-Example",
+    "id": "DHC-Observation-blood-pressure-Example",
     "text": {
         "status": "generated",
         "div": "div-narrative"
