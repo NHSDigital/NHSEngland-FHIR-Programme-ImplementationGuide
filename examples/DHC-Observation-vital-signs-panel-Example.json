@@ -1,6 +1,6 @@
 {
     "resourceType": "Observation",
-    "id": "unique-id-vital-signs",
+    "id": "DHC-Observation-vital-signs-panel-Example",
     "text": {
         "status": "generated",
         "div": "div-narrative"
