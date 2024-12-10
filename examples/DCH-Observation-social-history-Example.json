@@ -88,7 +88,7 @@
                     {
                         "system": "http://snomed.info/sct",
                         "code": "763256006",
-                        "display": "Alcohol AUDIT"
+                        "display": "AUDIT-C (Alcohol Use Disorders Identification Test - Consumption) score"
                     }
                 ],
                 "text": "Alcohol AUDIT score"
