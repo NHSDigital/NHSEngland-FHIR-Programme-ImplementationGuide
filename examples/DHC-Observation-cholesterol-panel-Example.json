@@ -20,7 +20,7 @@
             {
                 "system": "http://snomed.info/sct",
                 "code": "365793008",
-                "display": "Finding of Cholesterol levels"
+                "display": "Cholesterol level - finding"
             }
         ]
     },
@@ -45,7 +45,7 @@
                     {
                         "system": "http://snomed.info/sct",
                         "code": "853681000000104",
-                        "display": "Total Cholesterol Level"
+                        "display": "Total cholesterol level"
                     }
                 ],
                 "text": "Total Cholesterol Level in mmol/L"
@@ -62,7 +62,7 @@
                 "coding": [
                     {
                         "system": "http://snomed.info/sct",
-                        "code": "1005681000000100",
+                        "code": "1005681000000107",
                         "display": "Serum high density lipoprotein Cholesterol Level (HDL)"
                     }
                 ],
@@ -80,7 +80,7 @@
                 "coding": [
                     {
                         "system": "http://snomed.info/sct",
-                        "code": "1030411000000100",
+                        "code": "1030411000000101",
                         "display": "Non high density lipoprotein cholesterol level (Non-HDL)"
                     }
                 ],
@@ -98,7 +98,7 @@
                 "coding": [
                     {
                         "system": "http://snomed.info/sct",
-                        "code": "1028551000000100",
+                        "code": "1028551000000102",
                         "display": "Total cholesterol to high lipoprotein ratio"
                     }
                 ],

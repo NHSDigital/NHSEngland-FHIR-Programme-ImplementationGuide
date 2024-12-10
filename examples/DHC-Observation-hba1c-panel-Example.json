@@ -43,7 +43,7 @@
                 "coding": [
                     {
                         "system": "http://snomed.info/sct",
-                        "code": "1003671000000100",
+                        "code": "1003671000000109",
                         "display": "Haemoglobin A1c level"
                     }
                 ],
