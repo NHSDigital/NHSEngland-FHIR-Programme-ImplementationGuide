@@ -1168,7 +1168,7 @@
           }
         }
       ],
-      "linkId": "weight",
+      "linkId": "/27113001",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -1196,11 +1196,11 @@
     {
       "extension": [
         {
-          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemPopulationContext",
+          "url": "http://hl7.org/fhir/StructureDefinition/variable",
           "valueExpression": {
             "name": "bloodPressure",
-            "language": "application/x-fhir-query",
-            "expression": "Observation?patient={{%patient.id}}&code=http://snomed.info/sct|75367002"
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId='/75367002')"
           }
         },
         {
@@ -1213,7 +1213,7 @@
           }
         }
       ],
-      "linkId": "1698352725817",
+      "linkId": "/75367002",
       "definition": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-VitalSigns-BloodPressure#code",
       "code": [
         {
