@@ -1,10 +1,6 @@
 {
     "resourceType": "Observation",
     "id": "DHC-Observation-smoking-coded-value-Example",
-    "text": {
-        "status": "generated",
-        "div": "div-narrative"
-    },
     "subject": {
         "reference": "Patient/123",
         "type": "Patient",
@@ -18,18 +14,17 @@
         "coding": [
             {
                 "system": "http://snomed.info/sct",
-                "code": "365980008",
-                "display": "Finding of tobacco use and exposure"
+                "code": "230060001",
+                "display": "Light cigarette smoker"
             }
-        ],
-        "text": "Smoking History"
+        ]
     },
     "valueCodeableConcept": {
         "coding": [
             {
-                "system": "http://snomed.info/sct",
-                "code": "230060001",
-                "display": "Light cigarette smoker"
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "Y",
+                "display": "Yes"
             }
         ]
     },
