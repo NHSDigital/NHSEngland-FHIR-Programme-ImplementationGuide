@@ -18,8 +18,8 @@
         "coding": [
             {
                 "system": "http://snomed.info/sct",
-                "code": "365980008",
-                "display": "Finding of tobacco use and exposure"
+                "code": "230056004",
+                "display": "Cigarette consumption"
             }
         ],
         "text": "Smoking History"
@@ -27,8 +27,8 @@
     "valueQuantity": {
         "value": 8,
         "unit": "Cigarettes/Day",
-        "system": "http://snomed.info/sct",
-        "code": "160603005"
+        "system": "http://unitsofmeasure.org",
+        "code": "/d"
     },
     "effectiveDateTime": "2024-07-17T12:12:59+01:00",
     "status": "final",

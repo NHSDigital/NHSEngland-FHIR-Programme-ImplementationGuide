@@ -1,0 +1,35 @@
+{
+    "resourceType": "RiskAssessment",
+    "id": "DHC-RiskAssessment-QRisk-Example",
+    "status": "final",
+    "subject": {
+      "reference": "Patient/example-id"
+    },
+    "occurrenceDateTime": "2023-01-01",  
+    "prediction": [
+      {
+        "outcome": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "694350005",
+              "display": "QRisk score"
+            }
+          ]
+        },
+        "probabilityDecimal": 10.5 
+      },
+      {
+        "outcome": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "365799000",
+              "display": "Heart age"
+            }
+          ]
+        },
+        "probabilityDecimal": 55  
+      }
+    ]
+  }
