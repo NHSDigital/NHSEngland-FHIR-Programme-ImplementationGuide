@@ -1,6 +1,6 @@
 {
     "resourceType" : "Coverage",
-    "id" : "EHIC-England-Coverage-PDS",
+    "id" : "EHIC-England-Coverage-PDS-Example",
     "identifier" : [
       {
         "system" : "http://toBeDefined.org/ehic",
