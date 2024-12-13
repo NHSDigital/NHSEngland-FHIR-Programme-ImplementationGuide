@@ -1,6 +1,6 @@
 {
     "resourceType": "Observation",
-    "id": "DHC-Observation-cholesterol-panel-Example",
+    "id": "DHC-Observation-cholesterol-non-hdl-Example",
     "text": {
         "status": "generated",
         "div": "div-narrative"
@@ -19,7 +19,7 @@
             {
                 "system": "http://snomed.info/sct",
                 "code": "1030411000000101",
-                "display": "Non high density lipoprotein cholesterol level (Non-HDL)"
+                "display": "Non high density lipoprotein cholesterol level"
             }
         ],
         "text": "Non-HDL in mmol/L"
@@ -42,37 +42,6 @@
                 }
             ],
             "text": "Laboratory - Total Cholesterol, HDL, Non-HDL and Cholesterol to HDL ratio"
-        }
-    ],
-    "hasMember": [
-        {
-            "reference": "Observation/DHC-Observation-cholesterol-total-level-Example"
-        },
-        {
-            "reference": "Observation/DHC-Observation-cholesterol-hdl-Example"
-        },
-        {
-            "reference": "Observation/DHC-Observation-cholesterol-non-hdl-Example"
-        }
-    ],
-    "component": [
-        {
-            "code": {
-                "coding": [
-                    {
-                        "system": "http://snomed.info/sct",
-                        "code": "1028551000000102",
-                        "display": "Total cholesterol to high lipoprotein ratio"
-                    }
-                ],
-                "text": "Total cholesterol to high lipoprotein ratio"
-            },
-            "valueQuantity": {
-                "value": 5.8,
-                "unit": "ratio",
-                "system": "http://unitsofmeasure.org",
-                "code": "ratio"
-            }
         }
     ]
 }

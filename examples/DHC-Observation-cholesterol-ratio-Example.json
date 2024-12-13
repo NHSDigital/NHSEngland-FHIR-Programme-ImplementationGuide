@@ -1,6 +1,6 @@
 {
     "resourceType": "Observation",
-    "id": "DHC-Observation-cholesterol-panel-Example",
+    "id": "DHC-Observation-cholesterol-ratio-Example",
     "text": {
         "status": "generated",
         "div": "div-narrative"
@@ -19,16 +19,14 @@
             {
                 "system": "http://snomed.info/sct",
                 "code": "1028551000000102",
-                "display": "Total cholesterol to high lipoprotein ratio"
+                "display": "Total cholesterol:HDL (high density lipoprotein) ratio"
             }
         ],
         "text": "Total cholesterol to high lipoprotein ratio"
     },
     "valueQuantity": {
         "value": 5.8,
-        "unit": "ratio",
-        "system": "http://unitsofmeasure.org",
-        "code": "ratio"
+        "unit": "1/1"
     },
     "effectiveDateTime": "2024-07-17T12:12:59+01:00",
     "status": "final",

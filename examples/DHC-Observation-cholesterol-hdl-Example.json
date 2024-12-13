@@ -19,7 +19,7 @@
             {
                 "system": "http://snomed.info/sct",
                 "code": "1005681000000107",
-                "display": "Serum high density lipoprotein Cholesterol Level (HDL)"
+                "display": "Serum high density lipoprotein cholesterol level"
             }
         ],
         "text": "Serum high density lipoprotein Cholesterol Level (HDL) in mmol/L"

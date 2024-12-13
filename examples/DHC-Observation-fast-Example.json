@@ -18,7 +18,7 @@
         "coding": [
             {
                 "system": "http://snomed.info/sct",
-                "code": "1084601000000100",
+                "code": "1084601000000102",
                 "display": "Fast Alcohol Screening Test score"
             }
         ],

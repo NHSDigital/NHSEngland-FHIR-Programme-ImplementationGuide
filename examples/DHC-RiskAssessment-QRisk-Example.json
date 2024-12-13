@@ -12,8 +12,8 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "694350005",
-              "display": "QRisk score"
+              "code": "439827008",
+              "display": "QRISK cardiovascular disease risk score"
             }
           ]
         },
