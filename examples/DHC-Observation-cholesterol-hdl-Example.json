@@ -1,7 +1,6 @@
-
 {
     "resourceType": "Observation",
-    "id": "DHC-Observation-cholesterol-panel-Example",
+    "id": "DHC-Observation-cholesterol-hdl-Example",
     "text": {
         "status": "generated",
         "div": "div-narrative"
@@ -19,10 +18,17 @@
         "coding": [
             {
                 "system": "http://snomed.info/sct",
-                "code": "365793008",
-                "display": "Cholesterol level - finding"
+                "code": "1005681000000107",
+                "display": "Serum high density lipoprotein Cholesterol Level (HDL)"
             }
-        ]
+        ],
+        "text": "Serum high density lipoprotein Cholesterol Level (HDL) in mmol/L"
+    },
+    "valueQuantity": {
+        "value": 1.2,
+        "unit": "mmol/L",
+        "system": "http://unitsofmeasure.org",
+        "code": "mmol/L"
     },
     "effectiveDateTime": "2024-07-17T12:12:59+01:00",
     "status": "final",
@@ -37,20 +43,5 @@
             ],
             "text": "Laboratory - Total Cholesterol, HDL, Non-HDL and Cholesterol to HDL ratio"
         }
-    ],
-    "hasMember": [
-        {
-            "reference": "Observation/DHC-Observation-cholesterol-total-level-Example"
-        },
-        {
-            "reference": "Observation/DHC-Observation-cholesterol-hdl-Example"
-        },
-        {
-            "reference": "Observation/DHC-Observation-cholesterol-non-hdl-Example"
-        },
-        {
-            "reference": "Observation/DHC-Observation-cholesterol-ratio-Example"
-        }
     ]
 }
-   

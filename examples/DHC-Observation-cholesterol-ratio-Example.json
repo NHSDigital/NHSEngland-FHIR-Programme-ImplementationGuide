@@ -1,4 +1,3 @@
-
 {
     "resourceType": "Observation",
     "id": "DHC-Observation-cholesterol-panel-Example",
@@ -19,10 +18,17 @@
         "coding": [
             {
                 "system": "http://snomed.info/sct",
-                "code": "365793008",
-                "display": "Cholesterol level - finding"
+                "code": "1028551000000102",
+                "display": "Total cholesterol to high lipoprotein ratio"
             }
-        ]
+        ],
+        "text": "Total cholesterol to high lipoprotein ratio"
+    },
+    "valueQuantity": {
+        "value": 5.8,
+        "unit": "ratio",
+        "system": "http://unitsofmeasure.org",
+        "code": "ratio"
     },
     "effectiveDateTime": "2024-07-17T12:12:59+01:00",
     "status": "final",
@@ -37,20 +43,5 @@
             ],
             "text": "Laboratory - Total Cholesterol, HDL, Non-HDL and Cholesterol to HDL ratio"
         }
-    ],
-    "hasMember": [
-        {
-            "reference": "Observation/DHC-Observation-cholesterol-total-level-Example"
-        },
-        {
-            "reference": "Observation/DHC-Observation-cholesterol-hdl-Example"
-        },
-        {
-            "reference": "Observation/DHC-Observation-cholesterol-non-hdl-Example"
-        },
-        {
-            "reference": "Observation/DHC-Observation-cholesterol-ratio-Example"
-        }
     ]
 }
-   
