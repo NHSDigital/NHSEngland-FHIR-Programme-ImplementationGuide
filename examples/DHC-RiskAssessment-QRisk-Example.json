@@ -24,8 +24,8 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "365799000",
-              "display": "Heart age"
+              "code": "1325531000000102",
+              "display": "QRISK3 Healthy Heart Age"
             }
           ]
         },
