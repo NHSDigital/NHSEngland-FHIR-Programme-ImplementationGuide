@@ -3,7 +3,6 @@
     "id" : "EHIC-England-Coverage-PDS-Example",
     "identifier" : [
       {
-        "system" : "http://toBeDefined.org/ehic",
         "value" : "80380000900090510553",
         "assigner": {
           "identifier": {
@@ -32,8 +31,7 @@
           "identifier": {
             "system":"urn:iso:std:iso:3166-2",
             "value":"GB-ENG"
-          },
-          "display" : "Italy"
+          }
         }
       },
       "display": "Mrs Jane Smith MBE"
@@ -43,8 +41,9 @@
     },
     "payor" : [
       {
-        "reference" : "Organization/example-rt",
-        "display" : "SSN-MIN SALUTE - 500001"
+        "identifier" : {
+          "value" :"instituitionIdentifier"
+        }
       }
     ]
   }
