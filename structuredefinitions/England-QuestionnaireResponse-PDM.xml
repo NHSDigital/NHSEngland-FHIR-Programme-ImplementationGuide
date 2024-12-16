@@ -24,7 +24,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="QuestionnaireResponse" />
-  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse" />
+  <baseDefinition value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse" />
   <derivation value="constraint" />
   <differential>
     <element id="QuestionnaireResponse.questionnaire">
