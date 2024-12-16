@@ -1,61 +1,63 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Extension-England-PractitionerRole-characteristic"/>
-  <url value="http://hl7.org/fhir/R5/StructureDefinition/extension-PractitionerRole.characteristic"/>
-  <version value="0.1.0"/>
-  <name value="ExtensionEnglandPractitionerRoleCharacteristic"/>
-  <title value="Extension England PractitionerRole characteristic"/>
-  <date value="2024-12-16" />
-  <publisher value="NHS England" />
-  <contact>
-    <name value="NHS England" />
-    <telecom>
-      <system value="email" />
-      <value value="interoperabilityteam@nhs.net" />
-      <use value="work" />
-      <rank value="1" />
-    </telecom>
-  </contact>
-  <description value="An extension to represent characteristics of PractitionerRole, backported from FHIR R5."/>
-  <purpose value="This extension enables the representation of specific PractitionerRole characteristics such as business functions, certifications, or other defining traits in R4, aligned with R5's PractitionerRole.characteristic element."/>
-  <fhirVersion value="4.0.1"/>
-  <kind value="complex-type"/>
-  <abstract value="false"/>
-  <context>
-    <type value="element"/>
-    <expression value="PractitionerRole"/>
-  </context>
-  <type value="Extension"/>
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
-  <differential>
-    <element>
-      <id value="Extension"/>
-      <path value="Extension"/>
-      <short value="Characteristic of PractitionerRole"/>
-      <definition value="A property or characteristic of the PractitionerRole, such as business function or certification, backported from FHIR R5."/>
-      <min value="0"/>
-      <max value="*"/>
-      <isModifier value="false"/>
-      <mustSupport value="false"/>
-    </element>
-    <element>
-      <id value="Extension.url"/>
-      <path value="Extension.url"/>
-      <short value="URL for the extension"/>
-      <definition value="Identifies the meaning of the extension, which is the R5 PractitionerRole.characteristic."/>
-      <min value="1"/>
-      <max value="1"/>
-      <fixedUri value="http://hl7.org/fhir/R5/StructureDefinition/extension-PractitionerRole.characteristic"/>
-    </element>
-    <element>
-      <id value="Extension.valueCodeableConcept"/>
-      <path value="Extension.valueCodeableConcept"/>
-      <short value="Characteristic coded or textual value"/>
-      <definition value="A property or characteristic of the PractitionerRole, represented as a CodeableConcept."/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="CodeableConcept"/>
-      </type>
-    </element>
-  </differential>
+	<id value="Extension-England-PractitionerRole-Characteristic"/>
+	<url value="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-PractitionerRole-Characteristic"/>
+	<version value="0.1.0"/>
+	<name value="ExtensionEnglandPractitionerRoleCharacteristic"/>
+	<title value="Extension England Practitioner Role Characteristic"/>
+	<status value="draft"/>
+	<date value="2024-12-16"/>
+	<publisher value="NHS England"/>
+	<contact>
+		<name value="NHS England"/>
+		<telecom>
+			<system value="email"/>
+			<value value="interoperabilityteam@nhs.net"/>
+			<use value="work"/>
+			<rank value="1"/>
+		</telecom>
+	</contact>
+	<description value="An extension to represent characteristics of PractitionerRole, backported from FHIR R5."/>
+	<purpose value="This extension enables the representation of specific PractitionerRole characteristics such as business functions, certifications, or other defining traits in R4, aligned with R5's PractitionerRole.characteristic element."/>
+	<copyright value="Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the \&amp;quot;License\&amp;quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \&amp;quot;AS IS\&amp;quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."/>
+	<fhirVersion value="4.0.1"/>
+	<kind value="complex-type"/>
+	<abstract value="false"/>
+	<context>
+		<type value="element"/>
+		<expression value="PractitionerRole"/>
+	</context>
+	<type value="Extension"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+	<differential>
+		<element>
+			<id value="Extension"/>
+			<path value="Extension"/>
+			<short value="Characteristic of PractitionerRole"/>
+			<definition value="A property or characteristic of the PractitionerRole, such as business function or certification, backported from FHIR R5."/>
+			<min value="0"/>
+			<max value="*"/>
+			<isModifier value="false"/>
+			<mustSupport value="false"/>
+		</element>
+		<element>
+			<id value="Extension.url"/>
+			<path value="Extension.url"/>
+			<short value="URL for the extension"/>
+			<definition value="Identifies the meaning of the extension, which is the R5 PractitionerRole.characteristic."/>
+			<min value="1"/>
+			<max value="1"/>
+			<fixedUri value="http://hl7.org/fhir/R5/StructureDefinition/extension-PractitionerRole.characteristic"/>
+		</element>
+		<element>
+			<id value="Extension.valueCodeableConcept"/>
+			<path value="Extension.valueCodeableConcept"/>
+			<short value="Characteristic coded or textual value"/>
+			<definition value="A property or characteristic of the PractitionerRole, represented as a CodeableConcept."/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+			</type>
+		</element>
+	</differential>
 </StructureDefinition>
