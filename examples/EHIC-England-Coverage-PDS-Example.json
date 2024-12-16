@@ -7,7 +7,7 @@
         "assigner": {
           "identifier": {
             "system":"urn:iso:std:iso:3166",
-            "value":"IT"
+            "value":"ITA"
           },
           "display" : "Italy"
         }
@@ -26,13 +26,7 @@
     "beneficiary" : {
       "identifier" : {
         "system":"https://fhir.nhs.uk/Id/nhs-number",
-        "value": "9000000009",
-        "assigner": {
-          "identifier": {
-            "system":"urn:iso:std:iso:3166-2",
-            "value":"GB-ENG"
-          }
-        }
+        "value": "9000000009"
       },
       "display": "Mrs Jane Smith MBE"
     },
