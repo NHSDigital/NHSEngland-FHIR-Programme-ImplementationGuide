@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="England-Observation-PDM" />
-  <url value="https://fhir.nhs.uk/England/StructureDefinition/England-Observation-PDM" />
+  <id value="England-Observation-Panel-PDM" />
+  <url value="https://fhir.nhs.uk/England/StructureDefinition/England-Observation-Panel-PDM" />
   <version value="0.0.1-draft" />
-  <name value="EnglandObservationPDM" />
-  <title value="England Observation PDM" />
+  <name value="EnglandObservationPanelPDM" />
+  <title value="England Observation Panel PDM" />
   <status value="draft" />
   <date value="2024-12-02T14:10:33+00:00" />
   <publisher value="NHS England" />
@@ -68,19 +68,6 @@
       <min value="1" />
       <patternUri value="http://snomed.info/sct" />
     </element>
-    <element id="Observation.code.coding:LOINC">
-      <path value="Observation.code.coding" />
-      <sliceName value="LOINC" />
-      <binding>
-        <strength value="extensible" />
-        <valueSet value="http://hl7.org/fhir/ValueSet/observation-codes" />
-      </binding>
-    </element>
-    <element id="Observation.code.coding:LOINC.system">
-      <path value="Observation.code.coding.system" />
-      <min value="1" />
-      <patternUri value="http://loinc.org" />
-    </element>
     <element id="Observation.subject.reference">
       <path value="Observation.subject.reference" />
       <min value="1" />
@@ -111,43 +98,12 @@
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Observation.value[x]:valueCodeableConcept.coding">
-      <path value="Observation.value[x].coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <ordered value="false" />
-        <rules value="closed" />
-      </slicing>
-    </element>
-    <element id="Observation.value[x]:valueCodeableConcept.coding:SNOMED">
-      <path value="Observation.value[x].coding" />
-      <sliceName value="SNOMED" />
-      <mustSupport value="true" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://fhir.nhs.uk/England/ValueSet/England-ObservationValueCode" />
-      </binding>
-    </element>
-    <element id="Observation.value[x]:valueCodeableConcept.coding:SNOMED.system">
-      <path value="Observation.value[x].coding.system" />
-      <min value="1" />
-      <patternUri value="http://snomed.info/sct" />
-    </element>
-    <element id="Observation.value[x]:valueCodeableConcept.coding:LOINC">
-      <path value="Observation.value[x].coding" />
-      <sliceName value="LOINC" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="http://hl7.org/fhir/ValueSet/observation-codes" />
-      </binding>
-    </element>
-    <element id="Observation.value[x]:valueCodeableConcept.coding:LOINC.system">
-      <path value="Observation.value[x].coding.system" />
-      <min value="1" />
-      <patternUri value="http://loinc.org" />
+    <element id="Observation.hasMember">
+      <path value="Observation.hasMember" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/England/StructureDefinition/England-Observation-PDM" />
+      </type>
     </element>
     <element id="Observation.derivedFrom">
       <path value="Observation.derivedFrom" />
@@ -160,44 +116,6 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/MolecularSequence" />
         <targetProfile value="https://fhir.nhs.uk/England/StructureDefinition/England-QuestionnaireResponse-PDM" />
       </type>
-    </element>
-    <element id="Observation.component.code.coding">
-      <path value="Observation.component.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <ordered value="false" />
-        <rules value="closed" />
-      </slicing>
-    </element>
-    <element id="Observation.component.code.coding:SNOMED">
-      <path value="Observation.component.code.coding" />
-      <sliceName value="SNOMED" />
-      <mustSupport value="true" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://fhir.nhs.uk/England/ValueSet/England-ObservationCode" />
-      </binding>
-    </element>
-    <element id="Observation.component.code.coding:SNOMED.system">
-      <path value="Observation.component.code.coding.system" />
-      <min value="1" />
-      <patternUri value="http://snomed.info/sct" />
-    </element>
-    <element id="Observation.component.code.coding:LOINC">
-      <path value="Observation.component.code.coding" />
-      <sliceName value="LOINC" />
-      <binding>
-        <strength value="extensible" />
-        <valueSet value="http://hl7.org/fhir/ValueSet/observation-codes" />
-      </binding>
-    </element>
-    <element id="Observation.component.code.coding:LOINC.system">
-      <path value="Observation.component.code.coding.system" />
-      <min value="1" />
-      <patternUri value="http://loinc.org" />
     </element>
   </differential>
 </StructureDefinition>

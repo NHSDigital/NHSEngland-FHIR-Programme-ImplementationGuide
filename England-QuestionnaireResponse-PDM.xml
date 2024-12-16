@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="England-QuestionnaireResponse-PDM" />
+  <url value="https://fhir.nhs.uk/England/StructureDefinition/England-QuestionnaireResponse-PDM" />
+  <name value="EnglandQuestionnaireResponsePDM" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="QuestionnaireResponse" />
+  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-QuestionnaireResponse" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="QuestionnaireResponse.questionnaire">
+      <path value="QuestionnaireResponse.questionnaire" />
+      <type>
+        <code value="canonical" />
+        <targetProfile value="https://fhir.nhs.uk/England/StructureDefinition/England-Questionnaire-PDM" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
