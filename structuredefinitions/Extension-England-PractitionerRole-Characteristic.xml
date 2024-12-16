@@ -1,6 +1,6 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
 	<id value="Extension-England-PractitionerRole-Characteristic"/>
-	<url value="https://fhir.nhs.uk/England/StructureDefinition/Extension-England-PractitionerRole-Characteristic"/>
+	<url value="http://hl7.org/fhir/R5/StructureDefinition/extension-PractitionerRole.characteristic"/>
 	<version value="0.1.0"/>
 	<name value="ExtensionEnglandPractitionerRoleCharacteristic"/>
 	<title value="Extension England Practitioner Role Characteristic"/>
