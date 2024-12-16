@@ -30,18 +30,38 @@
   <differential>
     <element id="DiagnosticReport.code.coding">
       <path value="DiagnosticReport.code.coding" />
-      <min value="1" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <binding>
+        <strength value="required" />
+        <description value="UK Report Code" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ReportCode" />
+      </binding>
     </element>
-    <element id="DiagnosticReport.code.coding.system">
+    <element id="DiagnosticReport.code.coding:SNOMED">
+      <path value="DiagnosticReport.code.coding" />
+      <sliceName value="SNOMED" />
+      <min value="1" />
+      <binding>
+        <strength value="required" />
+        <description value="UKCore-ReportCode" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ReportCode" />
+      </binding>
+    </element>
+    <element id="DiagnosticReport.code.coding:SNOMED.system">
       <path value="DiagnosticReport.code.coding.system" />
       <min value="1" />
-      <fixedUri value="http://snomed.info/sct" />
     </element>
-    <element id="DiagnosticReport.code.coding.code">
+    <element id="DiagnosticReport.code.coding:SNOMED.code">
       <path value="DiagnosticReport.code.coding.code" />
       <min value="1" />
     </element>
-    <element id="DiagnosticReport.code.coding.display">
+    <element id="DiagnosticReport.code.coding:SNOMED.display">
       <path value="DiagnosticReport.code.coding.display" />
       <min value="1" />
     </element>
