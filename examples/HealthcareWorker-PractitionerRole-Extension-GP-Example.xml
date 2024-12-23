@@ -38,7 +38,7 @@
 		</coding>
 	</code>
 	<!-- New Extension: PractitionerRole.characteristic -->
-	<extension url="http://hl7.org/fhir/StructureDefinition/extension-PractitionerRole.characteristic">
+	<extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-PractitionerRole.characteristic">
 		<valueCodeableConcept>
 			<coding>
 				<system value="http://example.org/business-function"/>
