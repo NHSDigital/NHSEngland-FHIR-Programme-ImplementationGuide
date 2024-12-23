@@ -36,7 +36,6 @@
 			<code value="R0620"/>
 		</coding>
 	</code>
-	<!-- New Extension: PractitionerRole.characteristic -->
 	<extension>
 		<url value="http://hl7.org/fhir/5.0/StructureDefinition/extension-PractitionerRole.characteristic"/>
 		<valueCodeableConcept>
