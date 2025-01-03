@@ -27,28 +27,12 @@
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
   <derivation value="constraint" />
   <differential>
-    <element id="RelatedPerson.extension:CopyCorrespondenceIndicator">
-      <path value="RelatedPerson.extension" />
-      <sliceName value="CopyCorrespondenceIndicator" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CopyCorrespondenceIndicator" />
-      </type>
-    </element>
     <element id="RelatedPerson.extension:ContactRank">
       <path value="RelatedPerson.extension" />
       <sliceName value="ContactRank" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactRank" />
-      </type>
-    </element>
-    <element id="RelatedPerson.extension:ContactPreference">
-      <path value="RelatedPerson.extension" />
-      <sliceName value="ContactPreference" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactPreference" />
       </type>
     </element>
     <element id="RelatedPerson.extension:interpreterRequired">
@@ -93,7 +77,7 @@
           <type value="pattern" />
           <path value="coding.system" />
         </discriminator>
-        <rules value="closed" />
+        <rules value="openAtEnd" />
       </slicing>
       <min value="1" />
       <max value="3" />
@@ -103,7 +87,7 @@
       <min value="1" />
       <max value="1" />
       <binding>
-        <strength value="required" />
+        <strength value="preferred" />
         <valueSet value="https://fhir.nhs.uk/England/ValueSet/England-PDSRelationshipType" />
       </binding>
     </element>
