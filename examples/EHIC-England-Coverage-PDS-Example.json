@@ -13,6 +13,12 @@
         }
       }
     ],
+    "subscriber" : {
+      "identifier" : {
+        "system" :"http://hl7.it/sid/codiceFiscale",
+        "value": "RSSMRA70A01F205V"
+      }
+    },
     "status" : "active",
     "type" : {
       "coding" : [
