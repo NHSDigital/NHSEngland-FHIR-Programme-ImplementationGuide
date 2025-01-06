@@ -26,8 +26,14 @@
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
   <derivation value="constraint" />
   <differential>
-    <element id="PractitionerRole">
-      <path value="PractitionerRole" />
+    <element id="PractitionerRole.extension:characteristic">
+      <path value="PractitionerRole.extension" />
+      <sliceName value="characteristic" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-PractitionerRole.characteristic" />
+      </type>
+      <isModifier value="false" />
     </element>
     <element id="PractitionerRole.identifier">
       <path value="PractitionerRole.identifier" />
@@ -69,7 +75,6 @@
     </element>
     <element id="PractitionerRole.practitioner.identifier">
       <path value="PractitionerRole.practitioner.identifier" />
-      <min value="0" />
       <type>
         <code value="Identifier" />
         <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Identifier-General-Medical-Practitioner-Code" />
