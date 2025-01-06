@@ -14,9 +14,17 @@
       }
     ],
     "subscriber" : {
+      "type": "Patient",
       "identifier" : {
         "system" :"http://hl7.it/sid/codiceFiscale",
-        "value": "RSSMRA70A01F205V"
+        "value": "RSSMRA70A01F205V",
+        "assigner": {
+          "identifier": {
+            "system":"urn:iso:std:iso:3166",
+            "value":"ITA"
+          },
+          "display" : "Italy"
+        }
       }
     },
     "status" : "active",
@@ -30,6 +38,7 @@
       ]
     },
     "beneficiary" : {
+      "type": "Patient",
       "identifier" : {
         "system":"https://fhir.nhs.uk/Id/nhs-number",
         "value": "9000000009"
