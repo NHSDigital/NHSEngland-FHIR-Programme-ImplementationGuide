@@ -1,58 +1,58 @@
 {
-    "resourceType" : "Coverage",
-    "id" : "EHIC-England-Coverage-PDS-Example",
-    "identifier" : [
-      {
-        "value" : "80380000900090510553",
-        "assigner": {
-          "identifier": {
-            "system":"urn:iso:std:iso:3166",
-            "value":"ITA"
-          },
-          "display" : "Italy"
-        }
+  "resourceType": "Coverage",
+  "id": "EHIC-England-Coverage-PDS-Example",
+  "identifier": [
+    {
+      "value": "80380000900090510553",
+      "assigner": {
+        "identifier": {
+          "system": "urn:iso:std:iso:3166",
+          "value": "ITA"
+        },
+        "display": "Italy"
       }
-    ],
-    "subscriber" : {
-      "type": "Patient",
-      "identifier" : {
-        "system" :"http://hl7.it/sid/codiceFiscale",
-        "value": "RSSMRA70A01F205V",
-        "assigner": {
-          "identifier": {
-            "system":"urn:iso:std:iso:3166",
-            "value":"ITA"
-          },
-          "display" : "Italy"
-        }
-      }
+    }
+  ],
+  "subscriber": {
+    "type": "Patient",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9449308853"
     },
-    "status" : "active",
-    "type" : {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.eu/CodeSystem/v3-ActCode",
-          "code" : "EHIC",
-          "display" : "European Health Insurance Card"
-        }
-      ]
-    },
-    "beneficiary" : {
-      "type": "Patient",
-      "identifier" : {
-        "system":"https://fhir.nhs.uk/Id/nhs-number",
-        "value": "9000000009"
-      },
-      "display": "Mrs Jane Smith MBE"
-    },
-    "period" : {
-      "end" : "2022-01-19"
-    },
-    "payor" : [
+    "display": "Mario Rossi"
+  },
+  "status": "active",
+  "type": {
+    "coding": [
       {
-        "identifier" : {
-          "value" :"instituitionIdentifier"
-        }
+        "system": "http://terminology.hl7.eu/CodeSystem/v3-ActCode",
+        "code": "EHIC",
+        "display": "European Health Insurance Card"
       }
     ]
-  }
+  },
+  "beneficiary": {
+    "type": "Patient",
+    "identifier": {
+      "system": "http://hl7.it/sid/codiceFiscale",
+      "value": "RSSMRA70A01F205V",
+      "assigner": {
+        "identifier": {
+          "system": "urn:iso:std:iso:3166",
+          "value": "ITA"
+        },
+        "display": "Italy"
+      }
+    }
+  },
+  "period": {
+    "end": "2022-01-19"
+  },
+  "payor": [
+    {
+      "identifier": {
+        "value": "instituitionIdentifier"
+      }
+    }
+  ]
+}
