@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://hl7.org/fhir/5.0/StructureDefinition/extension-PersonalRelationship.group" />
+  <url value="http://hl7.org/fhir/6.0/StructureDefinition/extension-PersonalRelationship.group" />
   <name value="ExtensionPersonalRelationshipGroup" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
