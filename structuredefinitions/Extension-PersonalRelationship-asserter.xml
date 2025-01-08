@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://hl7.org/fhir/5.0/StructureDefinition/extension-PersonalRelationship.asserter" />
+  <name value="ExtensionPersonalRelationshipasserter" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Basic" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://hl7.org/fhir/5.0/StructureDefinition/extension-PersonalRelationship.asserter" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <short value="Who has asserted the details of the relationship" />
+      <definition value="The asserter of the relationship. Typically is the source of the relationship information. (The relationship was reported by ...)." />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="Patient" />
+        <targetProfile value="RelatedPerson" />
+        <targetProfile value="Practitioner" />
+        <targetProfile value="Organization" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
