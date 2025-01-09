@@ -4,7 +4,7 @@
   <url value="http://hl7.org/fhir/6.0/StructureDefinition/extension-PersonalRelationship.group" />
   <version value="0.0.1" />
   <name value="ExtensionEnglandPersonalRelationshipGroup" />
-  <title value="ExtensionEnglandPersonalRelationshipGroup" />
+  <title value="Extension England Personal Relationship Group" />
   <status value="draft" />
   <date value="2025-01-09" />
   <publisher value="NHS England" />
