@@ -3,10 +3,8 @@
   <id value="England-Basic-PersonalRelationship" />
   <url value="https://fhir.nhs.uk/England/StructureDefinition/England-Basic-PersonalRelationship" />
   <version value="0.0.1" />
-  <name value="England-Basic-PersonalRelationship" />
+  <name value="EnglandBasicPersonalRelationship" />
   <title value="England Basic Personal Relationship" />
-  <status value="draft" />
-  <date value="2025-01-08" />
   <status value="draft" />
   <date value="2025-01-09" />
   <publisher value="NHS England" />
@@ -44,7 +42,6 @@
       <sliceName value="englandPersonalRelationshipsouce" />
       <short value="The individual that is the the source of the relationship" />
       <definition value="For example, if the relationship is daughter, then the individual that is the .source is the daughter of the .target." />
-      <requirements value="" />
       <min value="1" />
       <max value="1" />
       <type>
@@ -66,6 +63,10 @@
         <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-PersonalRelationship.relationshipType" />
       </type>
       <isModifier value="false" />
+    </element>
+    <element id="Basic.extension:extensionPersonalRelationshiprelationshipType.url">
+      <path value="Basic.extension.url" />
+      <fixedUri value="http://hl7.org/fhir/5.0/StructureDefinition/extension-PersonalRelationship.relationshipType" />
     </element>
     <element id="Basic.extension:extensionPersonalRelationshiptarget">
       <path value="Basic.extension" />
@@ -93,6 +94,10 @@
       </type>
       <isModifier value="false" />
     </element>
+    <element id="Basic.extension:extensionPersonalRelationshipperiod.url">
+      <path value="Basic.extension.url" />
+      <fixedUri value="http://hl7.org/fhir/5.0/StructureDefinition/extension-PersonalRelationship.period" />
+    </element>
     <element id="Basic.extension:extensionPersonalRelationshipconfidence">
       <path value="Basic.extension" />
       <sliceName value="extensionPersonalRelationshipconfidence" />
@@ -106,6 +111,10 @@
       </type>
       <isModifier value="false" />
     </element>
+    <element id="Basic.extension:extensionPersonalRelationshipconfidence.url">
+      <path value="Basic.extension.url" />
+      <fixedUri value="http://hl7.org/fhir/5.0/StructureDefinition/extension-PersonalRelationship.confidence" />
+    </element>
     <element id="Basic.extension:extensionPersonalRelationshipasserter">
       <path value="Basic.extension" />
       <sliceName value="extensionPersonalRelationshipasserter" />
@@ -118,6 +127,10 @@
       </type>
       <isModifier value="false" />
     </element>
+    <element id="Basic.extension:extensionPersonalRelationshipasserter.url">
+      <path value="Basic.extension.url" />
+      <fixedUri value="http://hl7.org/fhir/5.0/StructureDefinition/extension-PersonalRelationship.asserter" />
+    </element>
     <element id="Basic.extension:extensionPersonalRelationshipGroup">
       <path value="Basic.extension" />
       <sliceName value="extensionPersonalRelationshipGroup" />
@@ -128,6 +141,10 @@
         <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-PersonalRelationship.group" />
       </type>
       <isModifier value="false" />
+    </element>
+    <element id="Basic.extension:extensionPersonalRelationshipGroup.url">
+      <path value="Basic.extension.url" />
+      <fixedUri value="http://hl7.org/fhir/5.0/StructureDefinition/extension-PersonalRelationship.group" />
     </element>
   </differential>
 </StructureDefinition>
