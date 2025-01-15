@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.basedOn" />
+  <name value="ExtensionEnglandDocumentReferenceBasedOn" />
+  <title value="Extension England DocumentReferenceBasedOn" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="DocumentReference" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.basedOn" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <short value="Procedure that caused this media to be created" />
+      <definition value="A procedure that is fulfilled in whole or in part by the creation of this media." />
+      <requirements value="Allows tracing of authorization for the event and tracking whether proposals/recommendations were acted upon." />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="Appointment" />
+        <targetProfile value="AppointmentResponse" />
+        <targetProfile value="CarePlan" />
+        <targetProfile value="Claim" />
+        <targetProfile value="CommunicationRequest" />
+        <targetProfile value="Contract" />
+        <targetProfile value="CoverageEligibilityRequest" />
+        <targetProfile value="DeviceRequest" />
+        <targetProfile value="EnrollmentRequest" />
+        <targetProfile value="ImmunizationRecommendation" />
+        <targetProfile value="MedicationRequest" />
+        <targetProfile value="NutritionOrder" />
+        <targetProfile value="RequestGroup" />
+        <targetProfile value="ServiceRequest" />
+        <targetProfile value="SupplyRequest" />
+        <targetProfile value="VisionPrescription" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

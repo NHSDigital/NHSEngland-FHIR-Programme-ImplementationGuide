@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Extension-England-DocumentReference-Context" />
+  <url value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.context" />
+  <name value="ExtensionEnglandDocumentReferenceContext" />
+  <title value="Extension England Document Reference Context" />
+  <status value="draft" />
+  <description value="Describes the clinical encounter or type of care that the document content is associated with." />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="DocumentReference" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.context" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <short value="Context of the document content" />
+      <definition value="Describes the clinical encounter or type of care that the document content is associated with." />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="Appointment" />
+        <targetProfile value="Encounter" />
+        <targetProfile value="EpisodeOfCare" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
