@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.modality" />
+  <name value="ExtensionEnglandDocumentReferenceModality" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="DocumentReference" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.modality" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <short value="Imaging modality used" />
+      <definition value="Imaging modality used. This may include both acquisition and non-acquisition modalities." />
+      <min value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="extensible" />
+        <description value="Type of acquired data in the instance." />
+        <valueSet value="http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_33.html" />
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

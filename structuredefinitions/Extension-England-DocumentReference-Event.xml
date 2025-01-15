@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.event" />
+  <name value="ExtensionEnglandDocumentReferenceEvent" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="DocumentReference" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.event" />
+    </element>
+  </differential>
+</StructureDefinition>
