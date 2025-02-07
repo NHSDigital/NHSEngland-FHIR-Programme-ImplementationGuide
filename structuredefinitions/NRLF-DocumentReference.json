@@ -1,0 +1,222 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.nhs.uk/England/StructureDefinition/NRLF-DocumentReference",
+  "name": "NRLF-DocumentReference",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "DocumentReference",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DocumentReference",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DocumentReference.type",
+        "path": "DocumentReference.type",
+        "short": "Kind of document (SNOMED code)",
+        "definition": "Specifies the particular kind of document referenced.",
+        "comment": "Key metadata element describing the document that describes the exact type of document. Helps humans to assess whether the document is of interest when viewing a list of documents.",
+        "requirements": "NRL assigns permissions and indexes for search by document type and category.",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.nhs.uk/England/CodeSystem/England-NRLRecordType"
+        }
+      },
+      {
+        "id": "DocumentReference.type.coding",
+        "path": "DocumentReference.type.coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "DocumentReference.type.coding.system",
+        "path": "DocumentReference.type.coding.system",
+        "min": 1
+      },
+      {
+        "id": "DocumentReference.type.coding.code",
+        "path": "DocumentReference.type.coding.code",
+        "min": 1
+      },
+      {
+        "id": "DocumentReference.type.coding.display",
+        "path": "DocumentReference.type.coding.display",
+        "min": 1
+      },
+      {
+        "id": "DocumentReference.category",
+        "path": "DocumentReference.category",
+        "requirements": "NRL assigns permissions and indexes for search by document type and category.",
+        "min": 1,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.nhs.uk/England/ValueSet/England-NRLRecordCategory"
+        }
+      },
+      {
+        "id": "DocumentReference.category.coding",
+        "path": "DocumentReference.category.coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "DocumentReference.category.coding.system",
+        "path": "DocumentReference.category.coding.system",
+        "min": 1
+      },
+      {
+        "id": "DocumentReference.category.coding.code",
+        "path": "DocumentReference.category.coding.code",
+        "min": 1
+      },
+      {
+        "id": "DocumentReference.category.coding.display",
+        "path": "DocumentReference.category.coding.display",
+        "min": 1
+      },
+      {
+        "id": "DocumentReference.subject",
+        "path": "DocumentReference.subject",
+        "definition": "The patient to which the document pertains, as identified by NHS number.",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": ["http://hl7.org/fhir/StructureDefinition/Patient"]
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.subject.identifier",
+        "path": "DocumentReference.subject.identifier",
+        "min": 1
+      },
+      {
+        "id": "DocumentReference.subject.identifier.system",
+        "path": "DocumentReference.subject.identifier.system",
+        "min": 1,
+        "fixedUri": "https://fhir.nhs.uk/Id/nhs-number"
+      },
+      {
+        "id": "DocumentReference.subject.identifier.value",
+        "path": "DocumentReference.subject.identifier.value",
+        "definition": "The patient's NHS number.",
+        "min": 1
+      },
+      {
+        "id": "DocumentReference.author",
+        "path": "DocumentReference.author",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.author.identifier",
+        "path": "DocumentReference.author.identifier",
+        "min": 1
+      },
+      {
+        "id": "DocumentReference.author.identifier.system",
+        "path": "DocumentReference.author.identifier.system",
+        "min": 1,
+        "fixedUri": "https://fhir.nhs.uk/Id/ods-organization-code"
+      },
+      {
+        "id": "DocumentReference.author.identifier.value",
+        "path": "DocumentReference.author.identifier.value",
+        "definition": "The ODS code for the author organisation",
+        "min": 1
+      },
+      {
+        "id": "DocumentReference.custodian",
+        "path": "DocumentReference.custodian",
+        "min": 1
+      },
+      {
+        "id": "DocumentReference.custodian.identifier",
+        "path": "DocumentReference.custodian.identifier",
+        "min": 1
+      },
+      {
+        "id": "DocumentReference.custodian.identifier.system",
+        "path": "DocumentReference.custodian.identifier.system",
+        "min": 1,
+        "fixedUri": "https://fhir.nhs.uk/Id/ods-organization-code"
+      },
+      {
+        "id": "DocumentReference.custodian.identifier.value",
+        "path": "DocumentReference.custodian.identifier.value",
+        "definition": "The ODS code of the custodian organisation.",
+        "min": 1
+      },
+      {
+        "id": "DocumentReference.content.attachment.contentType",
+        "path": "DocumentReference.content.attachment.contentType",
+        "min": 1
+      },
+      {
+        "id": "DocumentReference.content.attachment.url",
+        "path": "DocumentReference.content.attachment.url",
+        "min": 1
+      },
+      {
+        "id": "DocumentReference.content.format",
+        "path": "DocumentReference.content.format",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.nhs.uk/England/ValueSet/England-NRLFormatCode"
+        }
+      },
+      {
+        "id": "DocumentReference.content.format.system",
+        "path": "DocumentReference.content.format.system",
+        "min": 1
+      },
+      {
+        "id": "DocumentReference.content.format.code",
+        "path": "DocumentReference.content.format.code",
+        "min": 1
+      },
+      {
+        "id": "DocumentReference.content.format.display",
+        "path": "DocumentReference.content.format.display",
+        "min": 1
+      },
+      {
+        "id": "DocumentReference.context.practiceSetting",
+        "path": "DocumentReference.context.practiceSetting",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.nhs.uk/England/ValueSet/England-NRLPracticeSetting"
+        }
+      },
+      {
+        "id": "DocumentReference.context.practiceSetting.coding.system",
+        "path": "DocumentReference.context.practiceSetting.coding.system",
+        "min": 1
+      },
+      {
+        "id": "DocumentReference.context.practiceSetting.coding.code",
+        "path": "DocumentReference.context.practiceSetting.coding.code",
+        "min": 1
+      },
+      {
+        "id": "DocumentReference.context.practiceSetting.coding.display",
+        "path": "DocumentReference.context.practiceSetting.coding.display",
+        "min": 1
+      }
+    ]
+  }
+}

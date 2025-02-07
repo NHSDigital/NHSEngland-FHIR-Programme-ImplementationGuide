@@ -1,0 +1,37 @@
+{
+  "resourceType": "ValueSet",
+  "id": "NRLF-FormatCode",
+  "url": "https://fhir.nhs.uk/England/ValueSet/England-NRLFormatCode",
+  "version": "1.0.0",
+  "name": "NRLF Format Code",
+  "status": "draft",
+  "date": "2025-01-28T00:00:00+00:00",
+  "publisher": "NHS Digital",
+  "contact": {
+    "name": "NRL Team at NHS Digital",
+    "telecom": {
+      "system": "email",
+      "value": "nrls@nhs.net",
+      "use": "work"
+    }
+  },
+  "description": "A ValueSet that identifies the format of the content of the target document or record of a National Record Locator pointer.",
+  "copyright": "Copyright © 2024 NHS Digital",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/England/CodeSystem/England-NRLFormatCode",
+        "concept": [
+          {
+            "code": "urn:nhs-ic:record-contact",
+            "display": "Contact details (HTTP Unsecured)"
+          },
+          {
+            "code": "urn:nhs-ic:unstructured",
+            "display": "Unstructured Document"
+          }
+        ]
+      }
+    ]
+  }
+}

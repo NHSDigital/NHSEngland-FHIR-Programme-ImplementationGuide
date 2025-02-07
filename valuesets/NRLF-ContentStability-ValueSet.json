@@ -1,0 +1,37 @@
+{
+  "resourceType": "ValueSet",
+  "id": "NRLF-ContentStability",
+  "url": "https://fhir.nhs.uk/England/ValueSet/England-NRLContentStability",
+  "version": "1.0.0",
+  "name": "NRLF Content Stability",
+  "status": "draft",
+  "date": "2025-01-28T00:00:00+00:00",
+  "publisher": "NHS Digital",
+  "contact": {
+    "name": "NRL Team at NHS Digital",
+    "telecom": {
+      "system": "email",
+      "value": "nrls@nhs.net",
+      "use": "work"
+    }
+  },
+  "description": "A code from the NRL Content Stability coding system to represent the stability of the content.",
+  "copyright": "Copyright 2024 NHS Digital.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.uk/England/CodeSystem/England-NRLContentStability",
+        "concept": [
+          {
+            "code": "static",
+            "display": "Static"
+          },
+          {
+            "code": "dynamic",
+            "display": "Dynamic"
+          }
+        ]
+      }
+    ]
+  }
+}

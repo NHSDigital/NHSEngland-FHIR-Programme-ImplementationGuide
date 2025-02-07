@@ -1,0 +1,1889 @@
+{
+  "resourceType": "ValueSet",
+  "id": "NRLF-PracticeSetting",
+  "url": "https://fhir.nhs.uk/England/ValueSet/England-NRLPracticeSetting",
+  "version": "1.1.2",
+  "name": "NRLF Record Practice Setting",
+  "status": "draft",
+  "date": "2025-01-28T00:00:00+00:00",
+  "publisher": "NHS Digital",
+  "contact": {
+    "name": "NRL Team at NHS Digital",
+    "telecom": {
+      "system": "email",
+      "value": "nrls@nhs.net",
+      "use": "work"
+    }
+  },
+  "description": "A code from the SNOMED Clinical Terminology UK coding system to represent the NRL clinical practice setting.",
+  "copyright": "Copyright 2024 NHS Digital. This value set includes content from SNOMED CT, which is copyright 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "2471000175109",
+            "display": "Employee health service"
+          },
+          {
+            "code": "828331000000102",
+            "display": "Homeopathy service"
+          },
+          {
+            "code": "893041000000108",
+            "display": "Transient ischaemic attack service"
+          },
+          {
+            "code": "893391000000101",
+            "display": "Adult cystic fibrosis service"
+          },
+          {
+            "code": "828811000000104",
+            "display": "Child psychiatry service"
+          },
+          {
+            "code": "741073001",
+            "display": "Neonatal intensive care service"
+          },
+          {
+            "code": "3801000175108",
+            "display": "Pediatric pulmonology service"
+          },
+          {
+            "code": "893521000000108",
+            "display": "Respiratory physiology service"
+          },
+          {
+            "code": "892801000000107",
+            "display": "Audiological medicine service"
+          },
+          {
+            "code": "892571000000101",
+            "display": "Medical oncology service"
+          },
+          {
+            "code": "893421000000107",
+            "display": "Tropical medicine service"
+          },
+          {
+            "code": "1060971000000108",
+            "display": "General practice service"
+          },
+          {
+            "code": "907271000000106",
+            "display": "Genetics laboratory service"
+          },
+          {
+            "code": "224891009",
+            "display": "Healthcare services"
+          },
+          {
+            "code": "893771000000104",
+            "display": "Paediatric respiratory medicine service"
+          },
+          {
+            "code": "893591000000106",
+            "display": "Paediatric metabolic disease service"
+          },
+          {
+            "code": "892771000000109",
+            "display": "Cardiothoracic transplantation service"
+          },
+          {
+            "code": "92151000000102",
+            "display": "Mental health crisis resolution team"
+          },
+          {
+            "code": "893141000000109",
+            "display": "Nephrology service"
+          },
+          {
+            "code": "829981000000108",
+            "display": "Community child health service"
+          },
+          {
+            "code": "733459009",
+            "display": "Cardiac rehabilitation service"
+          },
+          {
+            "code": "893971000000101",
+            "display": "Paediatric burns care service"
+          },
+          {
+            "code": "931851000000100",
+            "display": "Oral pathology service"
+          },
+          {
+            "code": "3771000175106",
+            "display": "Pediatric gastroenterology service"
+          },
+          {
+            "code": "893621000000109",
+            "display": "Paediatric ear nose and throat service"
+          },
+          {
+            "code": "828281000000107",
+            "display": "Eating disorders service"
+          },
+          {
+            "code": "893121000000102",
+            "display": "Spinal surgery service"
+          },
+          {
+            "code": "892751000000100",
+            "display": "Clinical immunology and allergy service"
+          },
+          {
+            "code": "893601000000100",
+            "display": "Paediatric medical oncology service"
+          },
+          {
+            "code": "3751000175100",
+            "display": "Pediatric emergency medical service"
+          },
+          {
+            "code": "893951000000105",
+            "display": "Paediatric cardiology service"
+          },
+          {
+            "code": "931831000000107",
+            "display": "Oral medicine service"
+          },
+          {
+            "code": "829961000000104",
+            "display": "Out of hours service"
+          },
+          {
+            "code": "911381000000108",
+            "display": "Telehealthcare service"
+          },
+          {
+            "code": "828181000000101",
+            "display": "Community sexual and reproductive health"
+          },
+          {
+            "code": "2451000175103",
+            "display": "Perinatology service"
+          },
+          {
+            "code": "893851000000100",
+            "display": "Paediatric neurosurgery service"
+          },
+          {
+            "code": "109201000000109",
+            "display": "Substance misuse team"
+          },
+          {
+            "code": "893671000000108",
+            "display": "Paediatric urology service"
+          },
+          {
+            "code": "932271000000104",
+            "display": "Oral and maxillofacial surgery service"
+          },
+          {
+            "code": "444933003",
+            "display": "Home hospice service"
+          },
+          {
+            "code": "444913002",
+            "display": "Diabetes mellitus service"
+          },
+          {
+            "code": "892601000000108",
+            "display": "Intermediate care service"
+          },
+          {
+            "code": "893801000000101",
+            "display": "Paediatric ophthalmology service"
+          },
+          {
+            "code": "911231000000103",
+            "display": "Remote health monitoring service"
+          },
+          {
+            "code": "893091000000103",
+            "display": "Infectious diseases service"
+          },
+          {
+            "code": "893221000000106",
+            "display": "Specialist rehabilitation service"
+          },
+          {
+            "code": "828381000000103",
+            "display": "Well woman service"
+          },
+          {
+            "code": "907301000000109",
+            "display": "National Health Service 111 service"
+          },
+          {
+            "code": "828511000000102",
+            "display": "National Health Service 24"
+          },
+          {
+            "code": "893701000000107",
+            "display": "Paediatric thoracic surgery service"
+          },
+          {
+            "code": "828861000000102",
+            "display": "Programmed pulmonary rehabilitation service"
+          },
+          {
+            "code": "931781000000102",
+            "display": "Acute medicine service"
+          },
+          {
+            "code": "827641000000101",
+            "display": "Anticoagulant service"
+          },
+          {
+            "code": "893201000000102",
+            "display": "Sport and exercise medicine service"
+          },
+          {
+            "code": "278032008",
+            "display": "Preventive service"
+          },
+          {
+            "code": "892731000000107",
+            "display": "Dental medicine service"
+          },
+          {
+            "code": "893451000000102",
+            "display": "Respite care service"
+          },
+          {
+            "code": "2351000175106",
+            "display": "Sports medicine service"
+          },
+          {
+            "code": "893271000000105",
+            "display": "Medical virology service"
+          },
+          {
+            "code": "708168004",
+            "display": "Mental health service"
+          },
+          {
+            "code": "708169007",
+            "display": "Respiratory therapy service"
+          },
+          {
+            "code": "708171007",
+            "display": "Vascular ultrasound service"
+          },
+          {
+            "code": "708170008",
+            "display": "Nursing service"
+          },
+          {
+            "code": "708173005",
+            "display": "Obstetric ultrasound service"
+          },
+          {
+            "code": "708172000",
+            "display": "Cardiac ultrasound service"
+          },
+          {
+            "code": "708175003",
+            "display": "Diagnostic imaging service"
+          },
+          {
+            "code": "708178001",
+            "display": "Cytogenetics service"
+          },
+          {
+            "code": "708174004",
+            "display": "Interventional radiology service"
+          },
+          {
+            "code": "708179009",
+            "display": "Molecular pathology service"
+          },
+          {
+            "code": "708183009",
+            "display": "Anatomic pathology service"
+          },
+          {
+            "code": "708182004",
+            "display": "Histology service"
+          },
+          {
+            "code": "708180007",
+            "display": "Dermatopathology service"
+          },
+          {
+            "code": "708187005",
+            "display": "Surgical pathology service"
+          },
+          {
+            "code": "708185002",
+            "display": "Virology service"
+          },
+          {
+            "code": "708184003",
+            "display": "Clinical pathology service"
+          },
+          {
+            "code": "708188000",
+            "display": "Serology service"
+          },
+          {
+            "code": "708194008",
+            "display": "Blood bank service"
+          },
+          {
+            "code": "708196005",
+            "display": "Hematology service"
+          },
+          {
+            "code": "708191000",
+            "display": "Toxicology service"
+          },
+          {
+            "code": "708190004",
+            "display": "Immunology service"
+          },
+          {
+            "code": "708193002",
+            "display": "Coagulation service"
+          },
+          {
+            "code": "89301000000108",
+            "display": "Community mental health team"
+          },
+          {
+            "code": "893301000000108",
+            "display": "Local specialist rehabilitation service"
+          },
+          {
+            "code": "893651000000104",
+            "display": "Paediatric clinical immunology and allergy service"
+          },
+          {
+            "code": "893171000000103",
+            "display": "Clinical neurophysiology service"
+          },
+          {
+            "code": "711332004",
+            "display": "Allergy service"
+          },
+          {
+            "code": "893151000000107",
+            "display": "Nuclear medicine service"
+          },
+          {
+            "code": "894001000000107",
+            "display": "Paediatric audiological medicine service"
+          },
+          {
+            "code": "892781000000106",
+            "display": "Burns care service"
+          },
+          {
+            "code": "3781000175109",
+            "display": "Pediatric infectious disease service"
+          },
+          {
+            "code": "893631000000106",
+            "display": "Paediatric diabetic medicine service"
+          },
+          {
+            "code": "827621000000108",
+            "display": "Addiction service"
+          },
+          {
+            "code": "893531000000105",
+            "display": "Psychiatric intensive care service"
+          },
+          {
+            "code": "893881000000106",
+            "display": "Paediatric maxillofacial surgery service"
+          },
+          {
+            "code": "893051000000106",
+            "display": "Clinical allergy service"
+          },
+          {
+            "code": "893351000000109",
+            "display": "Complex specialised rehabilitation service"
+          },
+          {
+            "code": "893001000000105",
+            "display": "Clinical genetics service"
+          },
+          {
+            "code": "908981000000101",
+            "display": "Remote triage and advice service"
+          },
+          {
+            "code": "931811000000104",
+            "display": "Histopathology service"
+          },
+          {
+            "code": "1079481000000104",
+            "display": "Perinatal psychiatry service"
+          },
+          {
+            "code": "893251000000101",
+            "display": "Mental health recovery and rehabilitation service"
+          },
+          {
+            "code": "3531000175102",
+            "display": "Geriatric service"
+          },
+          {
+            "code": "736622005",
+            "display": "Aboriginal health service"
+          },
+          {
+            "code": "983641000000106",
+            "display": "Fracture liaison service"
+          },
+          {
+            "code": "893711000000109",
+            "display": "Neonatal critical care service"
+          },
+          {
+            "code": "828521000000108",
+            "display": "National Health Service Direct"
+          },
+          {
+            "code": "892761000000102",
+            "display": "Clinical haematology service"
+          },
+          {
+            "code": "901221000000102",
+            "display": "Perinatal mental health service"
+          },
+          {
+            "code": "706902008",
+            "display": "Mycology service"
+          },
+          {
+            "code": "706901001",
+            "display": "Bacteriology service"
+          },
+          {
+            "code": "706903003",
+            "display": "Mycobacteriology service"
+          },
+          {
+            "code": "706900000",
+            "display": "Parasitology service"
+          },
+          {
+            "code": "893131000000100",
+            "display": "Genitourinary medicine service"
+          },
+          {
+            "code": "413294000",
+            "display": "Community health services"
+          },
+          {
+            "code": "413299005",
+            "display": "Early years services"
+          },
+          {
+            "code": "828291000000109",
+            "display": "Dispensing optometry service"
+          },
+          {
+            "code": "413331009",
+            "display": "Voluntary services"
+          },
+          {
+            "code": "61831000000105",
+            "display": "Periodontics service"
+          },
+          {
+            "code": "893231000000108",
+            "display": "Podiatric surgery service"
+          },
+          {
+            "code": "893581000000109",
+            "display": "Well baby service"
+          },
+          {
+            "code": "893911000000106",
+            "display": "Paediatric gastrointestinal surgery service"
+          },
+          {
+            "code": "395104009",
+            "display": "Cancer primary healthcare multidisciplinary team"
+          },
+          {
+            "code": "892711000000104",
+            "display": "Gynaecological oncology service"
+          },
+          {
+            "code": "893331000000102",
+            "display": "Dementia assessment service"
+          },
+          {
+            "code": "892611000000105",
+            "display": "Hepatology service"
+          },
+          {
+            "code": "893681000000105",
+            "display": "Paediatric trauma and orthopaedics service"
+          },
+          {
+            "code": "395086005",
+            "display": "Community specialist palliative care"
+          },
+          {
+            "code": "395092004",
+            "display": "Specialist palliative care"
+          },
+          {
+            "code": "710028007",
+            "display": "Maxillofacial surgery service"
+          },
+          {
+            "code": "892811000000109",
+            "display": "Adult mental health service"
+          },
+          {
+            "code": "828821000000105",
+            "display": "Adolescent psychiatry service"
+          },
+          {
+            "code": "983341000000102",
+            "display": "Pharmacy First service"
+          },
+          {
+            "code": "893431000000109",
+            "display": "Trauma and orthopaedics service"
+          },
+          {
+            "code": "893781000000102",
+            "display": "Paediatric plastic surgery service"
+          },
+          {
+            "code": "892581000000104",
+            "display": "Learning disability service"
+          },
+          {
+            "code": "893661000000101",
+            "display": "Paediatric clinical haematology service"
+          },
+          {
+            "code": "893311000000105",
+            "display": "Haemophilia service"
+          },
+          {
+            "code": "373654008",
+            "display": "Medical referral service"
+          },
+          {
+            "code": "893081000000100",
+            "display": "Respiratory medicine service"
+          },
+          {
+            "code": "911221000000100",
+            "display": "Remote care environment monitoring service"
+          },
+          {
+            "code": "409971007",
+            "display": "Emergency medical services"
+          },
+          {
+            "code": "828371000000100",
+            "display": "Well man service"
+          },
+          {
+            "code": "963151000000104",
+            "display": "Diabetic medicine service"
+          },
+          {
+            "code": "893761000000106",
+            "display": "Paediatric rheumatology service"
+          },
+          {
+            "code": "932841000000106",
+            "display": "Public health dentistry service"
+          },
+          {
+            "code": "893861000000102",
+            "display": "Paediatric neurodisability service"
+          },
+          {
+            "code": "92191000000105",
+            "display": "Early intervention in psychosis team"
+          },
+          {
+            "code": "722424008",
+            "display": "Physical medicine and rehabilitation service"
+          },
+          {
+            "code": "89311000000105",
+            "display": "Crisis prevention assessment and treatment team"
+          },
+          {
+            "code": "722393008",
+            "display": "Legal medicine service"
+          },
+          {
+            "code": "722352000",
+            "display": "Vascular medicine service"
+          },
+          {
+            "code": "722170006",
+            "display": "Chiropractic service"
+          },
+          {
+            "code": "722174002",
+            "display": "Pulmonary medicine service"
+          },
+          {
+            "code": "722175001",
+            "display": "Psychosomatic medicine service"
+          },
+          {
+            "code": "722176000",
+            "display": "Dentistry service"
+          },
+          {
+            "code": "722140001",
+            "display": "Physiotherapy service"
+          },
+          {
+            "code": "892561000000108",
+            "display": "Medical ophthalmology service"
+          },
+          {
+            "code": "714088003",
+            "display": "Midwifery service"
+          },
+          {
+            "code": "714089006",
+            "display": "Community midwifery service"
+          },
+          {
+            "code": "3761000175103",
+            "display": "Pediatric endocrinology service"
+          },
+          {
+            "code": "893611000000103",
+            "display": "Paediatric epilepsy service"
+          },
+          {
+            "code": "893961000000108",
+            "display": "Paediatric cardiac surgery service"
+          },
+          {
+            "code": "931841000000103",
+            "display": "Oral microbiology service"
+          },
+          {
+            "code": "91901000000109",
+            "display": "Assertive outreach team"
+          },
+          {
+            "code": "828191000000104",
+            "display": "Dental hygiene service"
+          },
+          {
+            "code": "893031000000104",
+            "display": "Clinical immunology service"
+          },
+          {
+            "code": "893381000000103",
+            "display": "Clinical psychology service"
+          },
+          {
+            "code": "2461000175101",
+            "display": "Pulmonary rehabilitation service"
+          },
+          {
+            "code": "893161000000105",
+            "display": "Neurology service"
+          },
+          {
+            "code": "828201000000102",
+            "display": "Dental surgery assistance service"
+          },
+          {
+            "code": "1079491000000102",
+            "display": "Paediatric diabetes service"
+          },
+          {
+            "code": "893261000000103",
+            "display": "Mental health dual diagnosis service"
+          },
+          {
+            "code": "310031001",
+            "display": "Family planning service"
+          },
+          {
+            "code": "310032008",
+            "display": "Intensive care service"
+          },
+          {
+            "code": "310030000",
+            "display": "Endoscopy service"
+          },
+          {
+            "code": "310034009",
+            "display": "Pediatric intensive care service"
+          },
+          {
+            "code": "310033003",
+            "display": "Adult intensive care service"
+          },
+          {
+            "code": "310025004",
+            "display": "Complementary therapy service"
+          },
+          {
+            "code": "310024000",
+            "display": "Colposcopy service"
+          },
+          {
+            "code": "310027007",
+            "display": "Mental health counseling service"
+          },
+          {
+            "code": "310026003",
+            "display": "Counseling service"
+          },
+          {
+            "code": "310029005",
+            "display": "Domiciliary visit service"
+          },
+          {
+            "code": "310028002",
+            "display": "Diagnostic investigation service"
+          },
+          {
+            "code": "310020009",
+            "display": "Hearing therapy service"
+          },
+          {
+            "code": "310022001",
+            "display": "Clinical oncology service"
+          },
+          {
+            "code": "310021008",
+            "display": "Assistive listening device service"
+          },
+          {
+            "code": "310023006",
+            "display": "Radiotherapy service"
+          },
+          {
+            "code": "310017001",
+            "display": "Pediatric hearing aid service"
+          },
+          {
+            "code": "310016005",
+            "display": "Adult hearing aid service"
+          },
+          {
+            "code": "310015009",
+            "display": "Hearing aid service"
+          },
+          {
+            "code": "310014008",
+            "display": "Pediatric cochlear implant service"
+          },
+          {
+            "code": "310013002",
+            "display": "Adult cochlear implant service"
+          },
+          {
+            "code": "310012007",
+            "display": "Cochlear implant service"
+          },
+          {
+            "code": "310011000",
+            "display": "Aural rehabilitation service"
+          },
+          {
+            "code": "310010004",
+            "display": "Distraction test audiological screening service"
+          },
+          {
+            "code": "310019003",
+            "display": "Tinnitus management service"
+          },
+          {
+            "code": "310018006",
+            "display": "Speech-reading training service"
+          },
+          {
+            "code": "310001007",
+            "display": "Anesthetic service"
+          },
+          {
+            "code": "310000008",
+            "display": "Accident and Emergency service"
+          },
+          {
+            "code": "310003005",
+            "display": "Child assessment service"
+          },
+          {
+            "code": "310002000",
+            "display": "Assessment service"
+          },
+          {
+            "code": "310008001",
+            "display": "Audiological screening service"
+          },
+          {
+            "code": "310009009",
+            "display": "Neonatal audiological screening service"
+          },
+          {
+            "code": "310005003",
+            "display": "Diagnostic audiology service"
+          },
+          {
+            "code": "310004004",
+            "display": "Audiological service"
+          },
+          {
+            "code": "310007006",
+            "display": "Pediatric diagnostic audiology service"
+          },
+          {
+            "code": "310006002",
+            "display": "Adult diagnostic audiology service"
+          },
+          {
+            "code": "310085001",
+            "display": "Drama therapy service"
+          },
+          {
+            "code": "310086000",
+            "display": "Music therapy service"
+          },
+          {
+            "code": "310083008",
+            "display": "Art therapy service"
+          },
+          {
+            "code": "310082003",
+            "display": "Arts therapy services"
+          },
+          {
+            "code": "310084002",
+            "display": "Dance therapy service"
+          },
+          {
+            "code": "310089007",
+            "display": "Hospital-based podiatry service"
+          },
+          {
+            "code": "310087009",
+            "display": "Podiatry service"
+          },
+          {
+            "code": "310088004",
+            "display": "Community-based podiatry service"
+          },
+          {
+            "code": "310080006",
+            "display": "Pharmacy service"
+          },
+          {
+            "code": "310081005",
+            "display": "Professional allied to medicine service"
+          },
+          {
+            "code": "310079008",
+            "display": "Neuropathology service"
+          },
+          {
+            "code": "310078000",
+            "display": "Medical microbiology service"
+          },
+          {
+            "code": "310071006",
+            "display": "Pain management service"
+          },
+          {
+            "code": "310070007",
+            "display": "Special care baby service"
+          },
+          {
+            "code": "310072004",
+            "display": "Acute pain service"
+          },
+          {
+            "code": "310073009",
+            "display": "Palliative care service"
+          },
+          {
+            "code": "310076001",
+            "display": "Clinical biochemistry service"
+          },
+          {
+            "code": "310074003",
+            "display": "Pathology service"
+          },
+          {
+            "code": "310064001",
+            "display": "Occupational health service"
+          },
+          {
+            "code": "310063007",
+            "display": "Obstetrics service"
+          },
+          {
+            "code": "310066004",
+            "display": "Pediatric service"
+          },
+          {
+            "code": "310065000",
+            "display": "Open access service"
+          },
+          {
+            "code": "310068003",
+            "display": "Pediatric neurology service"
+          },
+          {
+            "code": "310067008",
+            "display": "Community pediatric service"
+          },
+          {
+            "code": "310069006",
+            "display": "Pediatric oncology service"
+          },
+          {
+            "code": "310061009",
+            "display": "Gynecology service"
+          },
+          {
+            "code": "310062002",
+            "display": "Pregnancy termination service"
+          },
+          {
+            "code": "310060005",
+            "display": "Obstetrics and gynecology service"
+          },
+          {
+            "code": "310099002",
+            "display": "Child physiotherapy service"
+          },
+          {
+            "code": "310098005",
+            "display": "Hospital-based physiotherapy service"
+          },
+          {
+            "code": "310091004",
+            "display": "Community-based dietetics service"
+          },
+          {
+            "code": "310090003",
+            "display": "Dietetics service"
+          },
+          {
+            "code": "310096009",
+            "display": "Hospital-based occupational therapy service"
+          },
+          {
+            "code": "310094007",
+            "display": "Community-based occupational therapy service"
+          },
+          {
+            "code": "310095008",
+            "display": "Social services occupational therapy service"
+          },
+          {
+            "code": "310093001",
+            "display": "Occupational therapy service"
+          },
+          {
+            "code": "310092006",
+            "display": "Hospital-based dietetics service"
+          },
+          {
+            "code": "310120006",
+            "display": "Mental handicap psychiatry service"
+          },
+          {
+            "code": "310121005",
+            "display": "Psychogeriatric service"
+          },
+          {
+            "code": "310126000",
+            "display": "Breast screening service"
+          },
+          {
+            "code": "310128004",
+            "display": "Computerized tomography service"
+          },
+          {
+            "code": "310127009",
+            "display": "Magnetic resonance imaging service"
+          },
+          {
+            "code": "310129007",
+            "display": "Rehabilitation service"
+          },
+          {
+            "code": "310122003",
+            "display": "Rehabilitation psychiatry service"
+          },
+          {
+            "code": "310123008",
+            "display": "Psychology service"
+          },
+          {
+            "code": "310124002",
+            "display": "Psychotherapy service"
+          },
+          {
+            "code": "310125001",
+            "display": "Radiology service"
+          },
+          {
+            "code": "310117003",
+            "display": "Child and adolescent psychiatry service"
+          },
+          {
+            "code": "310116007",
+            "display": "Psychiatry service"
+          },
+          {
+            "code": "310119000",
+            "display": "Liaison psychiatry service"
+          },
+          {
+            "code": "310118008",
+            "display": "Forensic psychiatry service"
+          },
+          {
+            "code": "310114005",
+            "display": "Community surgical fitting service"
+          },
+          {
+            "code": "310112009",
+            "display": "Surgical fitting service"
+          },
+          {
+            "code": "310115006",
+            "display": "Public health service"
+          },
+          {
+            "code": "310113004",
+            "display": "Hospital surgical fitting service"
+          },
+          {
+            "code": "310110001",
+            "display": "Hospital orthotics service"
+          },
+          {
+            "code": "310111002",
+            "display": "Community orthotics service"
+          },
+          {
+            "code": "310109006",
+            "display": "Orthotics service"
+          },
+          {
+            "code": "310108003",
+            "display": "Community orthoptics service"
+          },
+          {
+            "code": "310105000",
+            "display": "Optometry service"
+          },
+          {
+            "code": "310107008",
+            "display": "Hospital orthoptics service"
+          },
+          {
+            "code": "310106004",
+            "display": "Orthoptics service"
+          },
+          {
+            "code": "310104001",
+            "display": "Child speech and language therapy service"
+          },
+          {
+            "code": "310103007",
+            "display": "Hospital-based speech and language therapy service"
+          },
+          {
+            "code": "310102002",
+            "display": "Community-based speech and language therapy service"
+          },
+          {
+            "code": "310141000",
+            "display": "Thoracic surgery service"
+          },
+          {
+            "code": "310143002",
+            "display": "Dental surgery service"
+          },
+          {
+            "code": "310142007",
+            "display": "Cardiac surgery service"
+          },
+          {
+            "code": "310144008",
+            "display": "General dental surgery service"
+          },
+          {
+            "code": "310145009",
+            "display": "Oral surgery service"
+          },
+          {
+            "code": "310146005",
+            "display": "Orthodontics service"
+          },
+          {
+            "code": "310147001",
+            "display": "Pediatric dentistry service"
+          },
+          {
+            "code": "310148006",
+            "display": "Restorative dentistry service"
+          },
+          {
+            "code": "310149003",
+            "display": "Ear, nose and throat service"
+          },
+          {
+            "code": "310140004",
+            "display": "Cardiothoracic surgery service"
+          },
+          {
+            "code": "310131003",
+            "display": "Community rehabilitation service"
+          },
+          {
+            "code": "310130002",
+            "display": "Head injury rehabilitation service"
+          },
+          {
+            "code": "310134006",
+            "display": "Social services"
+          },
+          {
+            "code": "310135007",
+            "display": "Social services department customer services"
+          },
+          {
+            "code": "310132005",
+            "display": "Young disabled service"
+          },
+          {
+            "code": "310133000",
+            "display": "Swallow clinic"
+          },
+          {
+            "code": "310139001",
+            "display": "Breast surgery service"
+          },
+          {
+            "code": "310138009",
+            "display": "Surgical service"
+          },
+          {
+            "code": "310136008",
+            "display": "Social services department duty team"
+          },
+          {
+            "code": "310137004",
+            "display": "Stroke service"
+          },
+          {
+            "code": "310101009",
+            "display": "Speech and language therapy service"
+          },
+          {
+            "code": "310100005",
+            "display": "Play therapy service"
+          },
+          {
+            "code": "734862008",
+            "display": "Endodontic service"
+          },
+          {
+            "code": "734863003",
+            "display": "Prosthodontic service"
+          },
+          {
+            "code": "310168000",
+            "display": "Vascular surgery service"
+          },
+          {
+            "code": "310169008",
+            "display": "Ultrasonography service"
+          },
+          {
+            "code": "310165002",
+            "display": "Transplant surgery service"
+          },
+          {
+            "code": "310167005",
+            "display": "Urology service"
+          },
+          {
+            "code": "310166001",
+            "display": "Trauma surgery service"
+          },
+          {
+            "code": "310163009",
+            "display": "Pediatric surgical service"
+          },
+          {
+            "code": "310164003",
+            "display": "Plastic surgery service"
+          },
+          {
+            "code": "310161006",
+            "display": "Orthopedic service"
+          },
+          {
+            "code": "310162004",
+            "display": "Pancreatic surgery service"
+          },
+          {
+            "code": "310160007",
+            "display": "Ophthalmology service"
+          },
+          {
+            "code": "310151004",
+            "display": "Gastrointestinal surgery service"
+          },
+          {
+            "code": "310152006",
+            "display": "General gastrointestinal surgery service"
+          },
+          {
+            "code": "310153001",
+            "display": "Upper gastrointestinal surgery service"
+          },
+          {
+            "code": "310155008",
+            "display": "Colorectal surgery service"
+          },
+          {
+            "code": "310150003",
+            "display": "Endocrine surgery service"
+          },
+          {
+            "code": "310157000",
+            "display": "Hand surgery service"
+          },
+          {
+            "code": "310156009",
+            "display": "General surgical service"
+          },
+          {
+            "code": "310159002",
+            "display": "Neurosurgical service"
+          },
+          {
+            "code": "310158005",
+            "display": "Hepatobiliary surgical service"
+          },
+          {
+            "code": "828301000000108",
+            "display": "Electrocardiography service"
+          },
+          {
+            "code": "310200001",
+            "display": "Cytology service"
+          },
+          {
+            "code": "734920002",
+            "display": "Diabetes mellitus education service"
+          },
+          {
+            "code": "829951000000102",
+            "display": "Industrial therapy service"
+          },
+          {
+            "code": "931821000000105",
+            "display": "School nursing service"
+          },
+          {
+            "code": "893941000000107",
+            "display": "Paediatric dermatology service"
+          },
+          {
+            "code": "892741000000103",
+            "display": "Clinical microbiology service"
+          },
+          {
+            "code": "893211000000100",
+            "display": "Spinal injuries service"
+          },
+          {
+            "code": "92221000000103",
+            "display": "Mental health home treatment team"
+          },
+          {
+            "code": "3621000175101",
+            "display": "Rheumatology service"
+          },
+          {
+            "code": "408451000",
+            "display": "Community learning disabilities team"
+          },
+          {
+            "code": "408452007",
+            "display": "Behavioral intervention team"
+          },
+          {
+            "code": "408458006",
+            "display": "Specialist multidisciplinary team"
+          },
+          {
+            "code": "893341000000106",
+            "display": "Congenital heart disease service"
+          },
+          {
+            "code": "445449000",
+            "display": "Acute care hospice service"
+          },
+          {
+            "code": "1078501000000104",
+            "display": "Health visiting service"
+          },
+          {
+            "code": "893691000000107",
+            "display": "Paediatric transplantation surgery service"
+          },
+          {
+            "code": "892621000000104",
+            "display": "Hepatobiliary and pancreatic surgery service"
+          },
+          {
+            "code": "2421000175108",
+            "display": "Acute care inpatient service"
+          },
+          {
+            "code": "931801000000101",
+            "display": "Community nursing service"
+          },
+          {
+            "code": "699478002",
+            "display": "Surgical oncology service"
+          },
+          {
+            "code": "893791000000100",
+            "display": "Paediatric pain management service"
+          },
+          {
+            "code": "893541000000101",
+            "display": "Prosthetics service"
+          },
+          {
+            "code": "699650006",
+            "display": "Community based physiotherapy service"
+          },
+          {
+            "code": "893891000000108",
+            "display": "Paediatric interventional radiology service"
+          },
+          {
+            "code": "827631000000105",
+            "display": "Emergency ambulance service"
+          },
+          {
+            "code": "827981000000103",
+            "display": "Paediatric cystic fibrosis service"
+          },
+          {
+            "code": "892821000000103",
+            "display": "Critical care medicine service"
+          },
+          {
+            "code": "700435004",
+            "display": "Clinical physiology service"
+          },
+          {
+            "code": "700436003",
+            "display": "Clinical pharmacology service"
+          },
+          {
+            "code": "700434000",
+            "display": "Endocrinology service"
+          },
+          {
+            "code": "700221004",
+            "display": "Care of elderly service"
+          },
+          {
+            "code": "700433006",
+            "display": "Gastroenterology service"
+          },
+          {
+            "code": "700231006",
+            "display": "Critical care physician service"
+          },
+          {
+            "code": "700232004",
+            "display": "General medical service"
+          },
+          {
+            "code": "700241009",
+            "display": "Dermatology service"
+          },
+          {
+            "code": "893061000000109",
+            "display": "Cardiology service"
+          },
+          {
+            "code": "705150003",
+            "display": "Domiciliary physiotherapy service"
+          },
+          {
+            "code": "932241000000105",
+            "display": "Blood banking and transfusion service"
+          },
+          {
+            "code": "3791000175107",
+            "display": "Pediatric nephrology service"
+          },
+          {
+            "code": "892791000000108",
+            "display": "Blood and marrow transplantation service"
+          },
+          {
+            "code": "893641000000102",
+            "display": "Palliative medicine service"
+          },
+          {
+            "code": "431051000124102",
+            "display": "Dialysis service"
+          },
+          {
+            "code": "23951000087100",
+            "display": "Opioid dependence service"
+          },
+          {
+            "code": "1323651000000109",
+            "display": "Cardiac physiology service"
+          },
+          {
+            "code": "788126001",
+            "display": "Prosthetic service"
+          },
+          {
+            "code": "788124003",
+            "display": "Histopathology service"
+          },
+          {
+            "code": "788125002",
+            "display": "Addiction service"
+          },
+          {
+            "code": "788123009",
+            "display": "Radiation oncology service"
+          },
+          {
+            "code": "788122004",
+            "display": "Sexual health service"
+          },
+          {
+            "code": "788128000",
+            "display": "Critical care medicine service"
+          },
+          {
+            "code": "788127005",
+            "display": "Child health service"
+          },
+          {
+            "code": "788121006",
+            "display": "Clinical immunology and allergy service"
+          },
+          {
+            "code": "733921009",
+            "display": "Transplant medicine service"
+          },
+          {
+            "code": "788001008",
+            "display": "Infectious disease service"
+          },
+          {
+            "code": "788002001",
+            "display": "Adult mental health service"
+          },
+          {
+            "code": "788003006",
+            "display": "Nephrology service"
+          },
+          {
+            "code": "788009005",
+            "display": "Nuclear medicine service"
+          },
+          {
+            "code": "788006003",
+            "display": "Genetic laboratory service"
+          },
+          {
+            "code": "788004000",
+            "display": "Clinical genetics service"
+          },
+          {
+            "code": "788005004",
+            "display": "Neurology service"
+          },
+          {
+            "code": "788008002",
+            "display": "Oral and maxillofacial surgery service"
+          },
+          {
+            "code": "788007007",
+            "display": "General practice service"
+          },
+          {
+            "code": "1326391000000100",
+            "display": "FNP (Family Nurse Partnership) service"
+          },
+          {
+            "code": "1186717003",
+            "display": "Intellectual disability psychiatry service"
+          },
+          {
+            "code": "830149003",
+            "display": "Clinical neurophysiology service"
+          },
+          {
+            "code": "224930009",
+            "display": "Services"
+          },
+          {
+            "code": "830039004",
+            "display": "Genitourinary medicine service"
+          },
+          {
+            "code": "830038007",
+            "display": "Clinical allergy service"
+          },
+          {
+            "code": "830037002",
+            "display": "Clinical immunology service"
+          },
+          {
+            "code": "1326421000000106",
+            "display": "Safeguarding children team"
+          },
+          {
+            "code": "1323551000000105",
+            "display": "Inherited metabolic medicine service"
+          },
+          {
+            "code": "28541000087101",
+            "display": "Musculoskeletal service"
+          },
+          {
+            "code": "24271000087103",
+            "display": "Adult chronic pain management service"
+          },
+          {
+            "code": "1240241000000109",
+            "display": "Community sexual and reproductive health service"
+          },
+          {
+            "code": "897188002",
+            "display": "Pediatric hematology service"
+          },
+          {
+            "code": "1323631000000102",
+            "display": "Aviation and space medicine service"
+          },
+          {
+            "code": "1325831000000100",
+            "display": "Post-COVID-19 syndrome service"
+          },
+          {
+            "code": "1323431000000104",
+            "display": "Fetal medicine service"
+          },
+          {
+            "code": "24001000087103",
+            "display": "Paediatric plastic surgery service"
+          },
+          {
+            "code": "24351000087104",
+            "display": "Paediatric chronic pain management service"
+          },
+          {
+            "code": "1323881000000102",
+            "display": "Stroke medicine service"
+          },
+          {
+            "code": "1323531000000103",
+            "display": "Urological physiology service"
+          },
+          {
+            "code": "148621000000100",
+            "display": "School aged immunisation service"
+          },
+          {
+            "code": "24101000087102",
+            "display": "HIV (human immunodeficiency virus) social work service"
+          },
+          {
+            "code": "23911000087104",
+            "display": "Medication review service"
+          },
+          {
+            "code": "1148679005",
+            "display": "Specialist palliative care service"
+          },
+          {
+            "code": "773558007",
+            "display": "Physical medicine service"
+          },
+          {
+            "code": "24051000087102",
+            "display": "Breast surgical oncology service"
+          },
+          {
+            "code": "896974005",
+            "display": "Transgender health service"
+          },
+          {
+            "code": "1323611000000105",
+            "display": "Paediatric inherited metabolic medicine service"
+          },
+          {
+            "code": "1323661000000107",
+            "display": "Paediatric audiovestibular medicine service"
+          },
+          {
+            "code": "24331000087108",
+            "display": "Narcotic addiction service with chronic pain management"
+          },
+          {
+            "code": "1323561000000108",
+            "display": "Gastrointestinal physiology service"
+          },
+          {
+            "code": "34911000087100",
+            "display": "Amputation care service"
+          },
+          {
+            "code": "1231786003",
+            "display": "Refugee healthcare service"
+          },
+          {
+            "code": "1163002007",
+            "display": "Electrocardiography service"
+          },
+          {
+            "code": "1163004008",
+            "display": "Hyperbaric medicine service"
+          },
+          {
+            "code": "1163003002",
+            "display": "Colorectal cancer screening service"
+          },
+          {
+            "code": "1323841000000105",
+            "display": "Paediatric palliative medicine service"
+          },
+          {
+            "code": "1163054002",
+            "display": "Gastroscopy service"
+          },
+          {
+            "code": "1231392007",
+            "display": "Paediatric orthopaedic service"
+          },
+          {
+            "code": "1231391000",
+            "display": "Colonoscopy service"
+          },
+          {
+            "code": "1231393002",
+            "display": "Spirometry service"
+          },
+          {
+            "code": "1231390004",
+            "display": "Hand therapy service"
+          },
+          {
+            "code": "1231394008",
+            "display": "Paediatric urology service"
+          },
+          {
+            "code": "24081000087105",
+            "display": "HIV (human immunodeficiency virus) nurse practitioner service"
+          },
+          {
+            "code": "23941000087103",
+            "display": "Narcotic addiction service"
+          },
+          {
+            "code": "1323641000000106",
+            "display": "Audiovestibular medicine service"
+          },
+          {
+            "code": "840587001",
+            "display": "Aerospace medical service"
+          },
+          {
+            "code": "840586005",
+            "display": "Neonatal service"
+          },
+          {
+            "code": "840585009",
+            "display": "Postnatal service"
+          },
+          {
+            "code": "816075004",
+            "display": "Prosthetic and orthotic service"
+          },
+          {
+            "code": "1323921000000108",
+            "display": "Neuropsychiatry service"
+          },
+          {
+            "code": "24011000087101",
+            "display": "Vascular imaging service"
+          },
+          {
+            "code": "1323691000000101",
+            "display": "General internal medical service"
+          },
+          {
+            "code": "23891000087102",
+            "display": "Adult hematology service"
+          },
+          {
+            "code": "1323821000000103",
+            "display": "Paediatric clinical pharmacology service"
+          },
+          {
+            "code": "789718008",
+            "display": "Cardiology service"
+          },
+          {
+            "code": "789714005",
+            "display": "Pediatric rheumatology service"
+          },
+          {
+            "code": "789715006",
+            "display": "Paediatric respiratory therapy service"
+          },
+          {
+            "code": "789716007",
+            "display": "Pediatric otolaryngology service"
+          },
+          {
+            "code": "789717003",
+            "display": "Paediatric cardiology service"
+          },
+          {
+            "code": "148581000000100",
+            "display": "Personal health record provider service"
+          },
+          {
+            "code": "792849008",
+            "display": "Pediatric clinical genetics service"
+          },
+          {
+            "code": "792847005",
+            "display": "Emergency ambulance service"
+          },
+          {
+            "code": "792848000",
+            "display": "Internal medicine service"
+          },
+          {
+            "code": "1323621000000104",
+            "display": "Medical psychotherapy service"
+          },
+          {
+            "code": "1323871000000104",
+            "display": "Rehabilitation medicine service"
+          },
+          {
+            "code": "1230046007",
+            "display": "Cervical cancer screening service"
+          },
+          {
+            "code": "1230045006",
+            "display": "Cardiac diagnostic service"
+          },
+          {
+            "code": "1230044005",
+            "display": "Cardiac specialist nursing service"
+          },
+          {
+            "code": "1362761000000103",
+            "display": "Adult safeguarding team"
+          },
+          {
+            "code": "1323901000000104",
+            "display": "Rare disease service"
+          },
+          {
+            "code": "1136421000168109",
+            "display": "Sleep medicine service"
+          },
+          {
+            "code": "1323701000000101",
+            "display": "Vascular physiology service"
+          },
+          {
+            "code": "24141000087104",
+            "display": "Spine orthopedic surgery service"
+          },
+          {
+            "code": "1323571000000101",
+            "display": "Orthogeriatric medicine service"
+          },
+          {
+            "code": "1323801000000107",
+            "display": "Paediatric oral and maxillofacial surgery service"
+          },
+          {
+            "code": "23871000087101",
+            "display": "Adult dermatology service"
+          },
+          {
+            "code": "1323601000000108",
+            "display": "Ophthalmic and vision science service"
+          },
+          {
+            "code": "1234796008",
+            "display": "Community nursing service"
+          },
+          {
+            "code": "23901000087101",
+            "display": "Hepatology service"
+          },
+          {
+            "code": "1324191000000107",
+            "display": "Intensive care medicine service"
+          },
+          {
+            "code": "2391000175104",
+            "display": "Bariatric surgery service"
+          },
+          {
+            "code": "1323851000000108",
+            "display": "Paediatric hepatology service"
+          },
+          {
+            "code": "24291000087104",
+            "display": "Geriatric chronic pain management service"
+          },
+          {
+            "code": "1323501000000109",
+            "display": "Special care dentistry service"
+          },
+          {
+            "code": "1423561000000102",
+            "display": "Acute oncology service"
+          }
+        ]
+      }
+    ]
+  }
+}
