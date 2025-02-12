@@ -8,3 +8,5 @@ structuredefinitions/.simplifier/folder.settings.json
 .idea/NHSEngland-FHIR-Programme-ImplementationGuide.iml
 .idea/vcs.xml
 
+fhirpkg.lock.json
+.simplifier/folder.settings.json
