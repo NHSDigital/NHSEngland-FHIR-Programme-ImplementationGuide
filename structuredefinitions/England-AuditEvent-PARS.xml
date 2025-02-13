@@ -98,16 +98,16 @@
       <path value="AuditEvent.agent.who.type" />
       <fixedUri value="PractitionerRole" />
     </element>
-    <element id="AuditEvent.agent:endpoint">
+    <element id="AuditEvent.agent:device">
       <path value="AuditEvent.agent" />
-      <sliceName value="endpoint" />
+      <sliceName value="device" />
       <max value="1" />
     </element>
-    <element id="AuditEvent.agent:endpoint.who.type">
+    <element id="AuditEvent.agent:device.who.type">
       <path value="AuditEvent.agent.who.type" />
       <fixedUri value="Endpoint" />
     </element>
-    <element id="AuditEvent.agent:endpoint.who.identifier">
+    <element id="AuditEvent.agent:device.who.identifier">
       <path value="AuditEvent.agent.who.identifier" />
       <type>
         <code value="Identifier" />
