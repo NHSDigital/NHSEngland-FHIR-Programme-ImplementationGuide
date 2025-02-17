@@ -1,0 +1,17 @@
+<Practitioner xmlns="http://hl7.org/fhir">
+    <!-- Requesting Practitioner -->
+    <id value="9a835acf-d715-4d84-8dcf-a8435f6417fe" />
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
+    </meta>
+    <identifier>
+        <system value="https://fhir.hl7.org.uk/Id/gmc-number" />
+        <value value="C1008215" />
+    </identifier>
+    <name>
+        <use value="official" />
+        <family value="GASKELL" />
+        <given value="Gale" />
+        <prefix value="Dr" />
+    </name>
+</Practitioner>

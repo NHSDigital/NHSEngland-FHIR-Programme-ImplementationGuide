@@ -1,0 +1,33 @@
+<Patient xmlns="http://hl7.org/fhir">
+    <id value="ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
+    <meta>
+        <profile value="http://hl7.eu/fhir/base/StructureDefinition/patient-eu-core" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+    </meta>
+    <identifier>
+        <!--<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
+            <valueCodeableConcept>
+                <coding>
+                    <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatusEngland" />
+                    <code value="01" />
+                    <display value="Number present and verified" />
+                </coding>
+            </valueCodeableConcept>
+        </extension>-->
+        <system value="https://fhir.nhs.uk/Id/nhs-number" />
+        <value value="9727710859" />
+    </identifier>
+    <name>
+        <use value="official" />
+        <family value="MOXEY" />
+        <given value="Judy" />
+    </name>
+    <gender value="female" />
+    <birthDate value="2004-05-06" />
+    <address>
+        <line value="1 CASTLEGATE" />
+        <city value="PICKERING" />
+        <district value="NORTH YORKSHIRE" />
+        <postalCode value="YO18 7AY" />
+    </address>
+</Patient>
