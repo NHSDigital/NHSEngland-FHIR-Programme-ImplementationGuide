@@ -6,7 +6,7 @@
     </meta>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition">
         <valueReference>
-            <reference value="Composition/Pathology-EU-FBC"/>
+            <reference value="Composition/Pathology-EU-WBC"/>
         </valueReference>
     </extension>
     <identifier>
@@ -56,6 +56,6 @@
         <reference value="urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d" />
     </specimen>
     <result>
-        <reference value="urn:uuid:ad717ae8-cb35-4d66-ba51-e22a76b1d158" />
+        <reference value="urn:uuid:f8c185fc-0993-4b80-9d33-4c9ae11c3afe" />
     </result>
 </DiagnosticReport>
