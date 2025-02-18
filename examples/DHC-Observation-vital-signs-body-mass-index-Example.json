@@ -19,7 +19,7 @@
             {
                 "system": "http://snomed.info/sct",
                 "code": "60621009",
-                "display": "Body mass index (BMI) [Ratio]"
+                "display": "Body mass index"
             }
         ],
         "text": "BMI value"

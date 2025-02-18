@@ -19,10 +19,10 @@
             {
                 "system": "http://snomed.info/sct",
                 "code": "27113001",
-                "display": "Body Weight"
+                "display": "Body weight"
             }
         ],
-        "text": "Body Weight in kilograms"
+        "text": "Body weight in kilograms"
     },
     "effectiveDateTime": "2024-07-17T12:12:59+01:00",
     "status": "final",

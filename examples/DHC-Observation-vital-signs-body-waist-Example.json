@@ -19,10 +19,10 @@
                     {
                         "system": "http://snomed.info/sct",
                         "code": "276361009",
-                        "display": "Body Waist"
+                        "display": "Waist circumference"
                     }
                 ],
-                "text": "Body Waist in inches"
+                "text": "Waist circumference in inches"
             },
     "effectiveDateTime": "2024-07-17T12:12:59+01:00",
     "status": "final",

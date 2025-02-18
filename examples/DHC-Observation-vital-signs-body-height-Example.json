@@ -19,10 +19,10 @@
             {
                 "system": "http://snomed.info/sct",
                 "code": "1153637007",
-                "display": "Body Height"
+                "display": "Body height"
             }
         ],
-        "text": "Body Height in centimeters"
+        "text": "Body height in centimeters"
     },
     "effectiveDateTime": "2024-07-17T12:12:59+01:00",
     "status": "final",
