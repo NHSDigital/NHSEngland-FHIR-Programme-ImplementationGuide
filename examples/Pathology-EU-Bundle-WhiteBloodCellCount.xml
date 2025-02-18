@@ -146,6 +146,15 @@
                     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
                 </meta>
                 <identifier>
+                    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatusEngland" />
+                                <code value="01" />
+                                <display value="Number present and verified" />
+                            </coding>
+                        </valueCodeableConcept>
+                    </extension>
                     <system value="https://fhir.nhs.uk/Id/nhs-number" />
                     <value value="9727710859" />
                 </identifier>
