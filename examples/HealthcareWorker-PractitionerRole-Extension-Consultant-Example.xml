@@ -1,0 +1,48 @@
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="HealthcareWorker-PractitionerRole-Extension-Consultant-Example" />
+  <identifier>
+    <system value="https://fhir.nhs.uk/Id/sds-role-profile-id" />
+    <value value="454567759542" />
+  </identifier>
+  <active value="true" />
+  <period>
+    <start value="2024-09-30" />
+  </period>
+  <practitioner>
+    <reference value="https://directoryservice.example.nhs.uk/FHIR/R4/Practitioner/3415870202" />
+    <identifier>
+      <system value="https://fhir.hl7.org.uk/Id/gmc-number" />
+      <value value="C4428981" />
+    </identifier>
+    <display value="Dr Thomas Edwards" />
+  </practitioner>
+  <organization>
+    <reference value="https://directoryservice.example.nhs.uk/FHIR/R4/Organization/RBA" />
+    <identifier>
+      <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+      <value value="RBA" />
+    </identifier>
+    <display value="TAUNTON AND SOMERSET NHS FOUNDATION TRUST" />
+  </organization>
+  <code>
+    <coding>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-JobRoleCode" />
+      <code value="01005" />
+    </coding>
+  </code>
+  <code>
+    <coding>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-SDSJobRoleName" />
+      <code value="R0620" />
+    </coding>
+  </code>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-PractitionerRole.characteristic">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://example.org/business-function" />
+        <code value="consultant" />
+        <display value="Consultant Physician" />
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+</PractitionerRole>

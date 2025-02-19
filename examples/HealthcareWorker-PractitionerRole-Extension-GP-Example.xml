@@ -1,0 +1,50 @@
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="HealthcareWorker-PractitionerRole-Extension-GP-Example" />
+  <identifier>
+    <system value="https://fhir.nhs.uk/Id/sds-role-profile-id" />
+    <value value="125686540025" />
+  </identifier>
+  <active value="true" />
+  <!-- Period -->
+  <period>
+    <start value="2024-09-30" />
+  </period>
+  <practitioner>
+    <reference value="https://directoryservice.example.nhs.uk/FHIR/R4/Practitioner/3415870201" />
+    <identifier>
+      <system value="https://fhir.hl7.org.uk/Id/gmp-number" />
+      <value value="G1234567" />
+    </identifier>
+    <display value="Dr Razia Ali" />
+  </practitioner>
+  <organization>
+    <reference value="https://directoryservice.example.nhs.uk/FHIR/R4/Organization/M85011" />
+    <identifier>
+      <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+      <value value="M85011" />
+    </identifier>
+    <display value="THE SWAN MEDICAL CENTRE" />
+  </organization>
+  <code>
+    <coding>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-JobRoleCode" />
+      <code value="01025" />
+    </coding>
+  </code>
+  <code>
+    <coding>
+      <system value="https://fhir.nhs.uk/England/CodeSystem/England-SDSJobRoleName" />
+      <code value="R0260" />
+    </coding>
+  </code>
+  <!-- New Extension: PractitionerRole.characteristic -->
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-PractitionerRole.characteristic">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://example.org/business-function" />
+        <code value="gp-principal" />
+        <display value="General Practitioner Principal" />
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+</PractitionerRole>
