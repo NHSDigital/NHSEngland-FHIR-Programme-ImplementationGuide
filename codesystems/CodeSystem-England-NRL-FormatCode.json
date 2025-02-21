@@ -29,12 +29,12 @@
   "count": 2,
   "concept": [
     {
-      "code": "routine-calculation",
-      "display": "Routine Calculation"
+      "code": "urn:nhs-ic:record-contact",
+      "display": "Contact details (HTTP Unsecured)"
     },
     {
-      "code": "trial-calculation",
-      "display": "Trial Calculation"
+      "code": "urn:nhs-ic:unstructured",
+      "display": "Unstructured Document"
     }
   ]
 }

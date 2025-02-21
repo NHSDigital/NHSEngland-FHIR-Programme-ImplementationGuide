@@ -29,12 +29,12 @@
   "count": 2,
   "concept": [
     {
-      "code": "routine-calculation",
-      "display": "Routine Calculation"
+      "code": "static",
+      "display": "Static"
     },
     {
-      "code": "trial-calculation",
-      "display": "Trial Calculation"
+      "code": "dynamic",
+      "display": "Dynamic"
     }
   ]
 }
