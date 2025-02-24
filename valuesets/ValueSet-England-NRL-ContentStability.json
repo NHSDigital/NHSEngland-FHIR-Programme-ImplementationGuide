@@ -4,7 +4,7 @@
   "url": "https://fhir.nhs.uk/England/ValueSet/England-NRL-ContentStability",
   "version": "0.1.0",
   "name": "EnglandNRLContentStability",
-  "title": "England NRL ContentStability",
+  "title": "England NRL Content Stability",
   "status": "draft",
   "experimental": false,
   "date": "2025-02-12T00:00:00+00:00",

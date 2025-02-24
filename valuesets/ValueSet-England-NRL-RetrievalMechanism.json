@@ -1,10 +1,10 @@
 {
   "resourceType": "ValueSet",
-  "id": "England-NRL-RecordCategory",
+  "id": "England-NRL-RetrievalMechanism",
   "url": "https://fhir.nhs.uk/England/ValueSet/England-NRL-RetrievalMechanism",
   "version": "0.1.0",
   "name": "EnglandNRLRetrievalMechanism",
-  "title": "England NRL RetrievalMechanism",
+  "title": "England NRL Retrieval Mechanism",
   "status": "draft",
   "experimental": false,
   "date": "2025-02-21T00:00:00+00:00",
