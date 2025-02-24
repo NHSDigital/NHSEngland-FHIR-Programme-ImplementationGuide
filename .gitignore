@@ -2,4 +2,5 @@
 structuredefinitions/package.json
 structuredefinitions/fhirpkg.lock.json
 structuredefinitions/.simplifier/folder.settings.json
+.simplifier/folder.settings.json
 .idea/
