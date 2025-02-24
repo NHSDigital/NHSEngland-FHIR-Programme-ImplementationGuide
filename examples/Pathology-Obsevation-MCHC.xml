@@ -1,0 +1,59 @@
+<Observation xmlns="http://hl7.org/fhir">
+        <!-- MCHC - Mean corpuscular haemoglobin concentration -->
+        <id value="af52170f-763a-40a6-9363-dc58cd72602e" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="2af46949-4938-4c57-bad4-c4363e1965d5" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+            <code value="laboratory" />
+            <display value="Laboratory" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <!-- From PBCL and PaLM observable entity reference sets -->
+            <system value="http://snomed.info/sct" />
+            <code value="1022481000000109" />
+            <display value="MCHC - Mean corpuscular haemoglobin concentration" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
+          <display value="MOXEY, Judy" />
+        </subject>
+        <issued value="2022-02-09T11:17:00+00:00" />
+        <performer>
+          <reference value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />
+          <display value="TD008362 PATH LAB 001" />
+        </performer>
+        <valueQuantity>
+          <value value="307" />
+          <unit value="g/L" />
+          <system value="http://unitsofmeasure.org" />
+          <code value="g/L" />
+        </valueQuantity>
+        <specimen>
+          <reference value="urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d" />
+        </specimen>
+        <referenceRange>
+          <low>
+            <value value="315" />
+            <unit value="g/L" />
+            <system value="http://unitsofmeasure.org" />
+            <code value="g/L" />
+          </low>
+          <high>
+            <value value="345" />
+            <unit value="g/L" />
+            <system value="http://unitsofmeasure.org" />
+            <code value="g/L" />
+          </high>
+        </referenceRange>
+      </Observation>
