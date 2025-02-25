@@ -1,0 +1,1231 @@
+<Bundle xmlns="http://hl7.org/fhir">
+<id value="Pathology-EU-Bundle-FullBloodCount"/>
+    <meta>
+        <profile value="http://hl7.eu/fhir/laboratory/StructureDefinition/Bundle-eu-lab"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122" />
+        <value value="cb45d462-3673-4de5-849a-79e17cdcacd6" />
+    </identifier>
+    <type value="document"/>
+    <timestamp value="2022-02-09T11:17:00+00:00"/>
+    <entry>
+    <fullUrl value="urn:uuid:2c836471-5a47-4e55-806c-735071b9b678"/>
+    <resource>
+    <Composition>
+    <id value="2c836471-5a47-4e55-806c-735071b9b678" />
+    <meta>
+        <profile value="http://hl7.eu/fhir/laboratory/StructureDefinition/Composition-eu-lab" />
+    </meta>
+    <extension url="http://hl7.eu/fhir/StructureDefinition/composition-basedOn-order-or-requisition">
+        <valueReference>
+            <reference value="ServiceRequest/4105cf48-80f9-403d-8d7b-cbdcacc0426a"/>
+        </valueReference>
+    </extension>
+    <extension url="http://hl7.eu/fhir/laboratory/StructureDefinition/composition-diagnosticReportReference">
+        <valueReference>
+            <reference value="DiagnosticReport/35d46ca1-f253-4c97-b7ee-fb5fccdf6c20"/>
+        </valueReference>
+    </extension>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:uuid:8b65920f-ee2f-4166-964a-9a3bc39bf546"/>
+    </identifier>
+    <status value="final"/>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="4241000179101"/>
+            <display value="Laboratory report"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/ab87a3f8-1d37-44a9-804e-5e962598a6e4"/>
+    </subject>
+    <date value="2022-02-09T11:17:00+00:00"/>
+    <author>
+        <reference value="Practitioner/8a6d85b8-9837-4fed-a257-4cf207988338"/>
+    </author>
+    <title value="Full Blood Count Report"/>
+    <section>
+        <title value="FBC - Standard"/>
+        <code>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="26604007" />
+                <display value="Full blood count" />
+            </coding>
+        </code>
+        <entry>
+            <reference value="Observation/ad717ae8-cb35-4d66-ba51-e22a76b1d158"/>
+        </entry>
+        <section>
+            <title value="Haemoglobin (Hb)"/>
+            <code>
+                <coding>
+                    <system value="http://snomed.info/sct" />
+                    <code value="1107511000000100" />
+                    <display value="Haemoglobin mass concentration in blood" />
+                </coding>
+            </code>
+            <entry>
+                <reference value="Observation/b7849f25-3c44-4542-805f-ba769b7cf"/>
+            </entry>
+        </section>
+        <section>
+            <title value="White Blood Count (WBC)" />
+            <code>
+                <coding>
+                    <system value="http://snomed.info/sct" />
+                    <code value="1110441000000100" />
+                    <display value="White blood cell count in blood" />
+                </coding>
+            </code>
+            <entry>
+                <reference value="Observation/35d46ca1-f253-4c97-b7ee-fb5fccdf6c20"/>
+            </entry>
+        </section>
+        <section>
+            <title value="Platelet Count (Plt)" />
+            <code>
+                <coding>
+                    <system value="http://snomed.info/sct" />
+                    <code value="1108041000000107" />
+                    <display value="Platelet count in blood" />
+                </coding>
+            </code>
+            <entry>
+                <reference value="Observation/298306aa-4a5e-4442-8f60-9153c19c6333"/>
+            </entry>
+        </section>
+        <section>
+            <title value="Red Cell Count (RBC)" />
+            <code>
+                <coding>
+                    <system value="http://snomed.info/sct" />
+                    <code value="1022451000000103" />
+                    <display value="Red blood cell count" />
+                </coding>
+            </code>
+            <entry>
+                <reference value="Observation/78afe41f-4689-41a2-b10d-351a991b261a"/>
+            </entry>
+        </section>
+        <section>
+            <title value="Haematocrit (HCT)" />
+            <code>
+                <coding>
+                    <system value="http://snomed.info/sct" />
+                    <code value="1111571000000101" />
+                    <display value="Haematocrit volume fraction of blood" />
+                </coding>
+            </code>
+            <entry>
+                <reference value="Observation/b483a0bf-c332-4dde-b606-ec29aab33583"/>
+            </entry>
+        </section>
+        <section>
+            <title value="Eosinophil count in blood" />
+            <code>
+                <coding>
+                    <system value="http://snomed.info/sct" />
+                    <code value="1107391000000104" />
+                    <display value="Eosinophil count in blood" />
+                </coding>
+            </code>
+            <entry>
+                <reference value="Observation/56f9a606-221b-462b-b134-154c72db9c66"/>
+            </entry>
+        </section>
+        <section>
+            <title value="Mean Cell Haemoglobin (MCH)" />
+            <code>
+                <coding>
+                    <system value="http://snomed.info/sct" />
+                    <code value="1022471000000107" />
+                    <display value="MCH - Mean corpuscular haemoglobin" />
+                </coding>
+            </code>
+            <entry>
+                <reference value="Observation/ba423cce-bf8c-440c-8061-086055a1799b"/>
+            </entry>
+        </section>
+        <section>
+            <title value="Neutrophils" />
+            <code>
+                <coding>
+                    <system value="http://snomed.info/sct" />
+                    <code value="1108071000000101" />
+                    <display value="Neutrophil count in blood" />
+                </coding>
+            </code>
+            <entry>
+                <reference value="Observation/69d08add-5ab8-46a3-be08-fb15e550da75"/>
+            </entry>
+        </section>
+        <section>
+            <title value="Lymphocytes" />
+            <code>
+                <coding>
+                    <system value="http://snomed.info/sct" />
+                    <code value="1107991000000100" />
+                    <display value="Monocyte count in blood" />
+                </coding>
+            </code>
+            <entry>
+                <reference value="Observation/d5995ac0-55d8-4f2f-9058-6235a13fc1fe"/>
+            </entry>
+        </section>
+        <section>
+            <title value="Monocytes" />
+
+            <code>
+                <coding>
+                    <system value="http://snomed.info/sct" />
+                    <code value="1107991000000100" />
+                    <display value="Monocyte count in blood" />
+                </coding>
+            </code>
+            <entry>
+                <reference value="Observation/42d1c079-777a-4878-b568-af6f297dbecb"/>
+            </entry>
+        </section>
+        <section>
+            <title value="Eosinophils" />
+            <code>
+                <coding>
+                    <system value="http://snomed.info/sct" />
+                    <code value="1107391000000104" />
+                    <display value="Eosinophil count in blood" />
+                </coding>
+            </code>
+            <entry>
+                <reference value="Observation/56f9a606-221b-462b-b134-154c72db9c66"/>
+            </entry>
+        </section>
+        <section>
+            <title value="Basophil count in blood" />
+            <code>
+                <coding>
+                    <system value="http://snomed.info/sct" />
+                    <code value="1106091000000103" />
+                    <display value="Basophil count in blood" />
+                </coding>
+            </code>
+            <entry>
+                <reference value="Observation/d719524b-993c-455c-9c18-36e3dfe6f71e"/>
+            </entry>
+        </section>
+    </section>
+</Composition>
+</resource>
+</entry>
+<entry>
+<fullUrl="urn:uuid:35d46ca1-f253-4c97-b7ee-fb5fccdf6c20"/>
+<resource>
+<DiagnosticReport>
+    <id value="35d46ca1-f253-4c97-b7ee-fb5fccdf6c20" />
+    <meta>
+        <profile value="http://hl7.eu/fhir/laboratory/StructureDefinition/DiagnosticReport-eu-lab" />   
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
+    </meta>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition">
+        <valueReference>
+            <reference value="Composition/2c836471-5a47-4e55-806c-735071b9b678"/>
+        </valueReference>
+    </extension>
+    <identifier>
+        <system value="http://Y8J7D-pathlab001.com/report" />
+        <value value="REP-20220209-001369" />
+    </identifier>
+    <basedOn>
+        <reference value="urn:uuid:1c38d507-9ad7-4b49-ba91-7da204842cac" />
+    </basedOn>
+    <status value="final" />
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0074" />
+            <code value="LAB" />
+            <display value="Laboratory" />
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="721981007" />
+            <display value="Diagnostic studies report" />
+        </coding>
+    </code>
+    <subject>
+        <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
+        <display value="MOXEY, Judy" />
+    </subject>
+    <issued value="2022-02-09T11:17:00+00:00" />
+    <performer>
+        <reference value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />
+        <display value="TD008362 PATH LAB 001" />
+    </performer>
+    <specimen>
+        <reference value="urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d" />
+    </specimen>
+    <result>
+        <reference value="urn:uuid:ad717ae8-cb35-4d66-ba51-e22a76b1d158" />
+    </result>
+</DiagnosticReport>
+</resource>
+</entry>
+<entry>
+<fullUrl="ab87a3f8-1d37-44a9-804e-5e962598a6e4"/>
+<resource>
+<Patient>
+    <id value="ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
+    <meta>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+    </meta>
+    <identifier>
+        <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
+            <valueCodeableConcept>
+                <coding>
+                    <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatusEngland" />
+                    <code value="01" />
+                    <display value="Number present and verified" />
+                </coding>
+            </valueCodeableConcept>
+        </extension>
+        <system value="https://fhir.nhs.uk/Id/nhs-number" />
+        <value value="9727710859" />
+    </identifier>
+    <name>
+        <use value="official" />
+        <family value="MOXEY" />
+        <given value="Judy" />
+    </name>
+    <gender value="female" />
+    <birthDate value="2004-05-06" />
+    <address>
+        <line value="1 CASTLEGATE" />
+        <city value="PICKERING" />
+        <district value="NORTH YORKSHIRE" />
+        <postalCode value="YO18 7AY" />
+    </address>
+</Patient>
+</resource>
+</entry>   
+<entry>
+<fullUrl="urn:uuid:d719524b-993c-455c-9c18-36e3dfe6f71e"/>
+<resource>
+<Observation>
+  <id value="d719524b-993c-455c-9c18-36e3dfe6f71e" />
+  <meta>
+    <profile value="http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab" />
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
+  </meta>
+  <identifier>
+    <system value="https://tools.ietf.org/html/rfc4122" />
+    <value value="2af46949-4938-4c57-bad4-c4363e1965d5" />
+  </identifier>
+  <status value="final" />
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+      <code value="laboratory" />
+      <display value="Laboratory" />
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="1022571000000108" />
+      <display value="Basophil count" />
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="1106091000000103" />
+      <display value="Basophil count in blood" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
+    <display value="MOXEY, Judy" />
+  </subject>
+  <effectiveDateTime value="2022-02-08T10:23:00+00:00" />
+  <issued value="2022-02-09T11:17:00+00:00" />
+  <performer>
+    <reference value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />
+    <display value="TD008362 PATH LAB 001" />
+  </performer>
+  <valueQuantity>
+    <value value="0.03" />
+    <unit value="10*9/L" />
+    <system value="http://unitsofmeasure.org" />
+    <code value="10^9/L" />
+  </valueQuantity>
+  <specimen>
+    <reference value="urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d" />
+  </specimen>
+  <referenceRange>
+    <low>
+      <value value="0.01" />
+      <unit value="10*9/L" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="10^9/L" />
+    </low>
+    <high>
+      <value value="0.10" />
+      <unit value="10*9/L" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="10^9/L" />
+    </high>
+  </referenceRange>
+</Observation>
+</resource>
+</entry>   
+<entry>
+<fullUrl="urn:uuid:56f9a606-221b-462b-b134-154c72db9c66"/>
+<resource>
+<Observation>
+  <id value="56f9a606-221b-462b-b134-154c72db9c66" />
+  <meta>
+    <profile value="http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab" />
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
+  </meta>
+  <identifier>
+    <system value="https://tools.ietf.org/html/rfc4122" />
+    <value value="2af46949-4938-4c57-bad4-c4363e1965d5" />
+  </identifier>
+  <status value="final" />
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+      <code value="laboratory" />
+      <display value="Laboratory" />
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="1022561000000101" />
+      <display value="Eosinophil count" />
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="1107391000000104" />
+      <display value="Eosinophil count in blood" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
+    <display value="MOXEY, Judy" />
+  </subject>
+  <effectiveDateTime value="2022-02-08T10:23:00+00:00" />
+  <issued value="2022-02-09T11:17:00+00:00" />
+  <performer>
+    <reference value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />
+    <display value="TD008362 PATH LAB 001" />
+  </performer>
+  <valueQuantity>
+    <value value="0.07" />
+    <unit value="10*9/L" />
+    <system value="http://unitsofmeasure.org" />
+    <code value="10^9/L" />
+  </valueQuantity>
+  <specimen>
+    <reference value="urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d" />
+  </specimen>
+  <referenceRange>
+    <low>
+      <value value="0.02" />
+      <unit value="10*9/L" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="10^9/L" />
+    </low>
+    <high>
+      <value value="0.50" />
+      <unit value="10*9/L" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="10^9/L" />
+    </high>
+  </referenceRange>
+</Observation>
+</resource>
+</entry>   
+<entry>
+<fullUrl="urn:uuid:9e44a75d-e676-4497-aeb3-da72a08a3641"/>
+<resource>
+<Observation>
+        <id value="9e44a75d-e676-4497-aeb3-da72a08a3641" />
+        <meta>
+          <profile value="http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="2af46949-4938-4c57-bad4-c4363e1965d5" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+            <code value="laboratory" />
+            <display value="Laboratory" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1022491000000106" />
+            <display value="MCV - Mean corpuscular volume" />
+          </coding>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1491000237105" />
+            <display value="Erythrocytes MCV (mean corpuscular volume) in blood" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
+          <display value="MOXEY, Judy" />
+        </subject>
+        <effectiveDateTime value="2022-02-08T10:23:00+00:00" />
+        <issued value="2022-02-09T11:17:00+00:00" />
+        <performer>
+          <reference value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />
+          <display value="TD008362 PATH LAB 001" />
+        </performer>
+        <valueQuantity>
+          <value value="97.0" />
+          <unit value="fL" />
+          <system value="http://unitsofmeasure.org" />
+          <code value="fL" />
+        </valueQuantity>
+        <specimen>
+          <reference value="urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d" />
+        </specimen>
+        <referenceRange>
+          <low>
+            <value value="80.0" />
+            <unit value="fL" />
+            <system value="http://unitsofmeasure.org" />
+            <code value="fL" />
+          </low>
+          <high>
+            <value value="100.0" />
+            <unit value="fL" />
+            <system value="http://unitsofmeasure.org" />
+            <code value="fL" />
+          </high>
+        </referenceRange>
+      </Observation>
+</resource>
+</entry>   
+<entry>
+<fullUrl="urn:uuid:ad717ae8-cb35-4d66-ba51-e22a76b1d158"/>
+<resource>
+<Observation>
+        <id value="ad717ae8-cb35-4d66-ba51-e22a76b1d158" />
+        <meta>
+          <profile value="http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Group-Lab" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="2af46949-4938-4c57-bad4-c4363e1965d5" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+            <code value="laboratory" />
+            <display value="Laboratory" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="26604007" />
+            <display value="Full blood count" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
+          <display value="MOXEY, Judy" />
+        </subject>
+        <effectiveDateTime value="2022-02-08T10:23:00+00:00" />
+        <issued value="2022-02-09T11:17:00+00:00" />
+        <performer>
+          <reference value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />
+          <display value="TD008362 PATH LAB 001" />
+        </performer>
+        <specimen>
+          <reference value="urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d" />
+        </specimen>
+        <hasMember>
+          <reference value="urn:uuid:f8c185fc-0993-4b80-9d33-4c9ae11c3afe" />
+        </hasMember>
+        <hasMember>
+          <reference value="urn:uuid:78afe41f-4689-41a2-b10d-351a991b261a" />
+        </hasMember>
+        <hasMember>
+          <reference value="urn:uuid:b7849f25-3c44-4542-805f-ba769b7cfe04" />
+        </hasMember>
+        <hasMember>
+          <reference value="urn:uuid:b483a0bf-c332-4dde-b606-ec29aab33583" />
+        </hasMember>
+        <hasMember>
+          <reference value="urn:uuid:9e44a75d-e676-4497-aeb3-da72a08a3641" />
+        </hasMember>
+        <hasMember>
+          <reference value="urn:uuid:ba423cce-bf8c-440c-8061-086055a1799b" />
+        </hasMember>
+        <hasMember>
+          <reference value="urn:uuid:af52170f-763a-40a6-9363-dc58cd72602e" />
+        </hasMember>
+        <hasMember>
+          <reference value="urn:uuid:298306aa-4a5e-4442-8f60-9153c19c6333" />
+        </hasMember>
+        <hasMember>
+          <reference value="urn:uuid:69d08add-5ab8-46a3-be08-fb15e550da75" />
+        </hasMember>
+        <hasMember>
+          <reference value="urn:uuid:d5995ac0-55d8-4f2f-9058-6235a13fc1fe" />
+        </hasMember>
+        <hasMember>
+          <reference value="urn:uuid:42d1c079-777a-4878-b568-af6f297dbecb" />
+        </hasMember>
+        <hasMember>
+          <reference value="urn:uuid:56f9a606-221b-462b-b134-154c72db9c66" />
+        </hasMember>
+        <hasMember>
+          <reference value="urn:uuid:d719524b-993c-455c-9c18-36e3dfe6f71e" />
+        </hasMember>
+      </Observation>
+</resource>
+</entry>   
+<entry>
+<fullUrl="urn:uuid:b483a0bf-c332-4dde-b606-ec29aab33583"/>
+<resource>
+<Observation> 
+        <id value="b483a0bf-c332-4dde-b606-ec29aab33583" />
+        <meta>
+          <profile value="http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="2af46949-4938-4c57-bad4-c4363e1965d5" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+            <code value="laboratory" />
+            <display value="Laboratory" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1022291000000105" />
+            <display value="Haematocrit" />
+          </coding>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1111571000000101" />
+            <display value="Haematocrit volume fraction of blood" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
+          <display value="MOXEY, Judy" />
+        </subject>
+        <effectiveDateTime value="2022-02-08T10:23:00+00:00" />
+        <issued value="2022-02-09T11:17:00+00:00" />
+        <performer>
+          <reference value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />
+          <display value="TD008362 PATH LAB 001" />
+        </performer>
+        <valueQuantity>
+          <value value="0.352" />
+          <unit value="l/l" />
+          <system value="http://unitsofmeasure.org" />
+          <code value="%" />
+        </valueQuantity>
+        <specimen>
+          <reference value="urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d" />
+        </specimen>
+        <referenceRange>
+          <low>
+            <value value="0.360" />
+            <unit value="l/l" />
+            <system value="http://unitsofmeasure.org" />
+            <code value="%" />
+          </low>
+          <high>
+            <value value="0.460" />
+            <unit value="l/l" />
+            <system value="http://unitsofmeasure.org" />
+            <code value="%" />
+          </high>
+        </referenceRange>
+      </Observation>
+</resource>
+</entry>   
+<entry>
+<fullUrl="urn:uuid:b7849f25-3c44-4542-805f-ba769b7cfe04"/>
+<resource>
+<Observation>
+        <id value="b7849f25-3c44-4542-805f-ba769b7cfe04" />
+        <meta>
+          <profile value="http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="2af46949-4938-4c57-bad4-c4363e1965d5" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+            <code value="laboratory" />
+            <display value="Laboratory" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1022431000000105" />
+            <display value="Haemoglobin estimation" />
+          </coding>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1107511000000100" />
+            <display value="Haemoglobin mass concentration in blood" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
+          <display value="MOXEY, Judy" />
+        </subject>
+        <effectiveDateTime value="2022-02-08T10:23:00+00:00" />
+        <issued value="2022-02-09T11:17:00+00:00" />
+        <performer>
+          <reference value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />
+          <display value="TD008362 PATH LAB 001" />
+        </performer>
+        <valueQuantity>
+          <value value="108" />
+          <unit value="g/L" />
+          <system value="http://unitsofmeasure.org" />
+          <code value="g/L" />
+        </valueQuantity>
+        <specimen>
+          <reference value="urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d" />
+        </specimen>
+        <referenceRange>
+          <low>
+            <value value="120" />
+            <unit value="g/L" />
+            <system value="http://unitsofmeasure.org" />
+            <code value="g/L" />
+          </low>
+          <high>
+            <value value="150" />
+            <unit value="g/L" />
+            <system value="http://unitsofmeasure.org" />
+            <code value="g/L" />
+          </high>
+        </referenceRange>
+      </Observation>
+</resource>
+</entry>   
+<entry>
+<fullUrl="urn:uuid:d5995ac0-55d8-4f2f-9058-6235a13fc1fe"/>
+<resource>
+<Observation> 
+        <id value="d5995ac0-55d8-4f2f-9058-6235a13fc1fe" />
+        <meta>
+          <profile value="http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="2af46949-4938-4c57-bad4-c4363e1965d5" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+            <code value="laboratory" />
+            <display value="Laboratory" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1022581000000105" />
+            <display value="Lymphocyte count" />
+          </coding>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="67541000237108" />
+            <display value="Lymphocyte count in blood" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
+          <display value="MOXEY, Judy" />
+        </subject>
+        <effectiveDateTime value="2022-02-08T10:23:00+00:00" />
+        <issued value="2022-02-09T11:17:00+00:00" />
+        <performer>
+          <reference value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />
+          <display value="TD008362 PATH LAB 001" />
+        </performer>
+        <valueQuantity>
+          <value value="0.70" />
+          <unit value="10*9/L" />
+          <system value="http://unitsofmeasure.org" />
+          <code value="10^9/L" />
+        </valueQuantity>
+        <specimen>
+          <reference value="urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d" />
+        </specimen>
+        <referenceRange>
+          <low>
+            <value value="1.00" />
+            <unit value="10*9/L" />
+            <system value="http://unitsofmeasure.org" />
+            <code value="10^9/L" />
+          </low>
+          <high>
+            <value value="3.00" />
+            <unit value="10*9/L" />
+            <system value="http://unitsofmeasure.org" />
+            <code value="10^9/L" />
+          </high>
+        </referenceRange>
+      </Observation>
+</resource>
+</entry>   
+<entry>
+<fullUrl="urn:uuid:ba423cce-bf8c-440c-8061-086055a1799b"/>
+<resource>
+<Observation>
+        <id value="ba423cce-bf8c-440c-8061-086055a1799b" />
+        <meta>
+          <profile value="http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="2af46949-4938-4c57-bad4-c4363e1965d5" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+            <code value="laboratory" />
+            <display value="Laboratory" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1022471000000107" />
+            <display value="MCH - Mean corpuscular haemoglobin" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
+          <display value="MOXEY, Judy" />
+        </subject>
+        <effectiveDateTime value="2022-02-08T10:23:00+00:00" />
+        <issued value="2022-02-09T11:17:00+00:00" />
+        <performer>
+          <reference value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />
+          <display value="TD008362 PATH LAB 001" />
+        </performer>
+        <valueQuantity>
+          <value value="29.8" />
+          <unit value="pg" />
+          <system value="http://unitsofmeasure.org" />
+          <code value="pg" />
+        </valueQuantity>
+        <specimen>
+          <reference value="urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d" />
+        </specimen>
+        <referenceRange>
+          <low>
+            <value value="27.0" />
+            <unit value="pg" />
+            <system value="http://unitsofmeasure.org" />
+            <code value="pg" />
+          </low>
+          <high>
+            <value value="32.0" />
+            <unit value="pg" />
+            <system value="http://unitsofmeasure.org" />
+            <code value="pg" />
+          </high>
+        </referenceRange>
+      </Observation>
+</resource>
+</entry>   
+<entry>
+<fullUrl="urn:uuid:42d1c079-777a-4878-b568-af6f297dbecb"/>
+<resource>
+<Observation>
+        <id value="42d1c079-777a-4878-b568-af6f297dbecb" />
+        <meta>
+          <profile value="http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="2af46949-4938-4c57-bad4-c4363e1965d5" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+            <code value="laboratory" />
+            <display value="Laboratory" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1022591000000107" />
+            <display value="Monocyte count" />
+          </coding>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1107991000000100" />
+            <display value="Monocyte count in blood" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
+          <display value="MOXEY, Judy" />
+        </subject>
+        <effectiveDateTime value="2022-02-08T10:23:00+00:00" />
+        <issued value="2022-02-09T11:17:00+00:00" />
+        <performer>
+          <reference value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />
+          <display value="TD008362 PATH LAB 001" />
+        </performer>
+        <valueQuantity>
+          <value value="1.30" />
+          <unit value="10*9/L" />
+          <system value="http://unitsofmeasure.org" />
+          <code value="10^9/L" />
+        </valueQuantity>
+        <specimen>
+          <reference value="urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d" />
+        </specimen>
+        <referenceRange>
+          <low>
+            <value value="0.20" />
+            <unit value="10*9/L" />
+            <system value="http://unitsofmeasure.org" />
+            <code value="10^9/L" />
+          </low>
+          <high>
+            <value value="1.00" />
+            <unit value="10*9/L" />
+            <system value="http://unitsofmeasure.org" />
+            <code value="10^9/L" />
+          </high>
+        </referenceRange>
+      </Observation>
+</resource>
+</entry>   
+<entry>
+<fullUrl="urn:uuid:69d08add-5ab8-46a3-be08-fb15e550da75"/>
+<resource>
+<Observation>
+        <id value="69d08add-5ab8-46a3-be08-fb15e550da75" />
+        <meta>
+          <profile value="http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="2af46949-4938-4c57-bad4-c4363e1965d5" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+            <code value="laboratory" />
+            <display value="Laboratory" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1022551000000104" />
+            <display value="Neutrophil count" />
+          </coding>         
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1108071000000101" />
+            <display value="Neutrophil count in blood" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
+          <display value="MOXEY, Judy" />
+        </subject>
+        <effectiveDateTime value="2022-02-08T10:23:00+00:00" />
+        <issued value="2022-02-09T11:17:00+00:00" />
+        <performer>
+          <reference value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />
+          <display value="TD008362 PATH LAB 001" />
+        </performer>
+        <valueQuantity>
+          <value value="2.66" />
+          <unit value="10*9/L" />
+          <system value="http://unitsofmeasure.org" />
+          <code value="10^9/L" />
+        </valueQuantity>
+        <specimen>
+          <reference value="urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d" />
+        </specimen>
+        <referenceRange>
+          <low>
+            <value value="2.00" />
+            <unit value="10*9/L" />
+            <system value="http://unitsofmeasure.org" />
+            <code value="10^9/L" />
+          </low>
+          <high>
+            <value value="7.00" />
+            <unit value="10*9/L" />
+            <system value="http://unitsofmeasure.org" />
+            <code value="10^9/L" />
+          </high>
+        </referenceRange>
+      </Observation>
+</resource>
+</entry>   
+<entry>
+<fullUrl="urn:uuid:298306aa-4a5e-4442-8f60-9153c19c6333"/>
+<resource>
+<Observation>
+        <id value="298306aa-4a5e-4442-8f60-9153c19c6333" />
+        <meta>
+          <profile value="http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab" />
+          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="2af46949-4938-4c57-bad4-c4363e1965d5" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+            <code value="laboratory" />
+            <display value="Laboratory" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1022651000000100" />
+            <display value="Platelet count" />
+          </coding>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1108041000000107" />
+            <display value="Platelet count in blood" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
+          <display value="MOXEY, Judy" />
+        </subject>
+        <effectiveDateTime value="2022-02-08T10:23:00+00:00" />
+        <issued value="2022-02-09T11:17:00+00:00" />
+        <performer>
+          <reference value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />
+          <display value="TD008362 PATH LAB 001" />
+        </performer>
+        <valueQuantity>
+          <value value="143" />
+          <unit value="10*9/L" />
+          <system value="http://unitsofmeasure.org" />
+          <code value="10^9/L" />
+        </valueQuantity>
+        <specimen>
+          <reference value="urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d" />
+        </specimen>
+        <referenceRange>
+          <low>
+            <value value="140" />
+            <unit value="10*9/L" />
+            <system value="http://unitsofmeasure.org" />
+            <code value="10^9/L" />
+          </low>
+          <high>
+            <value value="400" />
+            <unit value="10*9/L" />
+            <system value="http://unitsofmeasure.org" />
+            <code value="10^9/L" />
+          </high>
+        </referenceRange>
+      </Observation>
+</resource>
+</entry>   
+<entry>
+<fullUrl="urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d"/>
+<resource>
+<Specimen>
+  <id value="bab0eaec-1ec5-4598-b660-90bb38a1030d" />
+  <meta>
+    <profile value="http://hl7.eu/fhir/laboratory/StructureDefinition/Specimen-eu-lab" />
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen" />
+  </meta>
+  <identifier>
+    <system value="http://B82033-pickeringmedicalpractice.com/specimen" />
+    <value value="SPC-REQ-20220208-000016" />
+  </identifier>
+  <accessionIdentifier>
+    <system value="http://Y8J7D-pathlab001.com/specimen" />
+    <value value="SPC-LAB-20220208-001397" />
+  </accessionIdentifier>
+  <status value="available" />
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="122555007" />
+      <display value="Venous blood specimen" />
+    </coding>
+  </type>
+  <subject>
+    <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
+    <display value="MOXEY, Judy" />
+  </subject>
+  <receivedTime value="2022-02-08T16:03:00+00:00" />
+  <request>
+    <reference value="urn:uuid:1c38d507-9ad7-4b49-ba91-7da204842cac" />
+  </request>
+  <collection>
+    <collectedDateTime value="2022-02-08T10:23:00+00:00" />
+  </collection>
+</Specimen>
+</resource>
+</entry>   
+<entry>
+<fullUrl="urn:uuid:1c38d507-9ad7-4b49-ba91-7da204842cac"/>
+<resource>
+<ServiceRequest>
+    <id value="1c38d507-9ad7-4b49-ba91-7da204842cac" />
+    <meta>
+        <profile value="http://hl7.eu/fhir/laboratory/StructureDefinition/ServiceRequest-eu-lab" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest-Lab" />
+    </meta>
+    <identifier>
+        <system value="http://B82033-pickeringmedicalpractice.com/labrequest" />
+        <value value="REQ-20220129-000012" />
+    </identifier>
+    <status value="active" />
+    <intent value="order" />
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="26604007" />
+            <display value="Complete blood count" />
+        </coding>
+    </code>
+    <subject>
+        <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
+        <display value="MOXEY, Judy" />
+    </subject>
+    <authoredOn value="2022-02-07T09:17:00+00:00" />
+    <requester>
+        <reference value="urn:uuid:9a835acf-d715-4d84-8dcf-a8435f6417fe" />
+        <display value="GASKELL, Dr Gale" />
+    </requester>
+    <performer>
+        <reference value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />
+        <display value="TD008362 PATH LAB 001" />
+    </performer>
+    <reasonCode>
+        <text value="Tired all the time, shortness of breath, arrhythmia" />
+    </reasonCode>
+</ServiceRequest>
+</resource>
+</entry>   
+<entry>
+<fullUrl="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338"/>
+<resource>
+<Organization>
+<id value="8a6d85b8-9837-4fed-a257-4cf207988338" />
+<meta>
+    <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-uv-ips" />
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+</meta>
+<identifier>
+    <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+    <value value="Y8J7D" />
+</identifier>
+<name value="TD008362 PATH LAB 001" />
+<address>
+    <line value="PATHOLOGY LAB" />
+    <line value="7-8 WELLINGTON PLACE" />
+    <city value="LEEDS" />
+    <district value="WEST YORKSHIRE" />
+    <postalCode value="LS1 4AP" />
+</address>
+</Organization>
+</resource>
+</entry>   
+<entry>
+<fullUrl="urn:uuid:3c43b5b3-06d6-445f-ae9a-48d5f05df434"/>
+<resource>
+<Organization>
+    <id value="3c43b5b3-06d6-445f-ae9a-48d5f05df434" />
+    <meta>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-uv-ips" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+    </meta>
+    <identifier>
+        <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+        <value value="B82033" />
+    </identifier>
+    <name value="PICKERING MEDICAL PRACTICE" />
+    <address>
+        <line value="SOUTHGATE" />
+        <city value="PICKERING" />
+        <district value="NORTH YORKSHIRE" />
+        <postalCode value="YO18 8BL" />
+    </address>
+</Organization>
+</resource>
+</entry>   
+<entry>
+<fullUrl="urn:uuid:9a835acf-d715-4d84-8dcf-a8435f6417fe"/>
+<resource>
+<Practitioner>
+    <id value="9a835acf-d715-4d84-8dcf-a8435f6417fe" />
+    <meta>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Practitioner-uv-ips" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
+    </meta>
+    <identifier>
+        <system value="https://fhir.hl7.org.uk/Id/gmc-number" />
+        <value value="C1008215" />
+    </identifier>
+    <name>
+        <use value="official" />
+        <family value="GASKELL" />
+        <given value="Gale" />
+        <prefix value="Dr" />
+    </name>
+</Practitioner>
+</resource>
+</entry>   
