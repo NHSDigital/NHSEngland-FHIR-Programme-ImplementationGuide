@@ -1,7 +1,7 @@
 <Patient xmlns="http://hl7.org/fhir">
     <id value="ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
     <meta>
-        <profile value="http://hl7.eu/fhir/base/StructureDefinition/patient-eu-core" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
     </meta>
     <identifier>
