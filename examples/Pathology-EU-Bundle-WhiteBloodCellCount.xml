@@ -47,7 +47,8 @@
                     </coding>
                 </category>
                 <subject>
-                    <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4"/>
+                    <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
+                    <display value="MOXEY, Judy" />
                 </subject>
                 <date value="2022-02-09T11:17:00+00:00"/>
                 <author>
@@ -57,11 +58,11 @@
                 <section>
                     <title value="White Blood Cell Count Report"/>
                     <code>
-    <coding>
-      <system value="http://snomed.info/sct" />
-      <code value="1110441000000100" />
-      <display value="White blood cell count in blood" />
-    </coding>
+                        <coding>
+                            <system value="http://snomed.info/sct" />
+                            <code value="1110441000000100" />
+                            <display value="White blood cell count in blood" />
+                        </coding>
                     </code>
                     <entry>
                         <reference value="urn:uuid:f8c185fc-0993-4b80-9d33-4c9ae11c3afe"/>
