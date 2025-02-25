@@ -1,34 +1,33 @@
 <Specimen xmlns="http://hl7.org/fhir">
-        <id value="bab0eaec-1ec5-4598-b660-90bb38a1030d" />
-        <meta>
-        <profile value="http://hl7.eu/fhir/laboratory/StructureDefinition/Specimen-eu-lab" />
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen" />
-        </meta>
-        <identifier>
-          <system value="http://B82033-pickeringmedicalpractice.com/specimen" />
-          <value value="SPC-REQ-20220208-000016" />
-        </identifier>
-        <accessionIdentifier>
-          <system value="http://Y8J7D-pathlab001.com/specimen" />
-          <value value="SPC-LAB-20220208-001397" />
-        </accessionIdentifier>
-        <status value="available" />
-        <type>
-          <coding>
-            <system value="http://snomed.info/sct" />
-            <code value="122555007" />
-            <display value="Venous blood specimen" />
-          </coding>
-        </type>
-        <subject>
-          <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
-          <display value="MOXEY, Judy" />
-        </subject>
-        <receivedTime value="2022-02-08T16:03:00+00:00" />
-        <request>
-          <reference value="urn:uuid:1c38d507-9ad7-4b49-ba91-7da204842cac" />
-        </request>
-        <collection>
-          <collectedDateTime value="2022-02-08T10:23:00+00:00" />
-        </collection>
-      </Specimen>
+  <id value="bab0eaec-1ec5-4598-b660-90bb38a1030d" />
+  <meta>
+    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen" />
+  </meta>
+  <identifier>
+    <system value="http://B82033-pickeringmedicalpractice.com/specimen" />
+    <value value="SPC-REQ-20220208-000016" />
+  </identifier>
+  <accessionIdentifier>
+    <system value="http://Y8J7D-pathlab001.com/specimen" />
+    <value value="SPC-LAB-20220208-001397" />
+  </accessionIdentifier>
+  <status value="available" />
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="122555007" />
+      <display value="Venous blood specimen" />
+    </coding>
+  </type>
+  <subject>
+    <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
+    <display value="MOXEY, Judy" />
+  </subject>
+  <receivedTime value="2022-02-08T16:03:00+00:00" />
+  <request>
+    <reference value="urn:uuid:1c38d507-9ad7-4b49-ba91-7da204842cac" />
+  </request>
+  <collection>
+    <collectedDateTime value="2022-02-08T10:23:00+00:00" />
+  </collection>
+</Specimen>
