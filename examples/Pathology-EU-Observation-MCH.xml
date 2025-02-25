@@ -27,6 +27,7 @@
           <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
           <display value="MOXEY, Judy" />
         </subject>
+        <effectiveDateTime value="2022-02-08T10:23:00+00:00" />
         <issued value="2022-02-09T11:17:00+00:00" />
         <performer>
           <reference value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />
