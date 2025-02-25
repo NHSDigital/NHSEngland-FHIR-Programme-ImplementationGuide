@@ -23,7 +23,6 @@
       <display value="Eosinophil count" />
     </coding>
     <coding>
-
       <system value="http://snomed.info/sct" />
       <code value="1107391000000104" />
       <display value="Eosinophil count in blood" />

@@ -23,7 +23,6 @@
       <display value="Basophil count" />
     </coding>
     <coding>
-
       <system value="http://snomed.info/sct" />
       <code value="1106091000000103" />
       <display value="Basophil count in blood" />
