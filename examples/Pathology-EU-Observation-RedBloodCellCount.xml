@@ -1,4 +1,4 @@
-<Observation>
+<Observation xmlns="http://hl7.org/fhir">
     <!-- Red blood cell count -->
     <id value="78afe41f-4689-41a2-b10d-351a991b261a" />
     <meta>
