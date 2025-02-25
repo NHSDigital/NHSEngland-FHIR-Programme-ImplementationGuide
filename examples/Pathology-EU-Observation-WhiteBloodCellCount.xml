@@ -1,6 +1,7 @@
 <Observation xmlns="http://hl7.org/fhir">
   <id value="f8c185fc-0993-4b80-9d33-4c9ae11c3afe" />
   <meta>
+    <profile value="http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab" />
     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
   </meta>
   <identifier>

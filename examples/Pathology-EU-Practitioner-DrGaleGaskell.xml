@@ -1,6 +1,7 @@
 <Practitioner xmlns="http://hl7.org/fhir">
     <id value="9a835acf-d715-4d84-8dcf-a8435f6417fe" />
     <meta>
+        <profile value="http://hl7.eu/fhir/base/StructureDefinition/practitioner-eu-core" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
     </meta>
     <identifier>
