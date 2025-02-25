@@ -1,5 +1,4 @@
 <Observation xmlns="http://hl7.org/fhir">
-        <!-- Haemoglobin mass concentration in blood -->
         <id value="b7849f25-3c44-4542-805f-ba769b7cfe04" />
         <meta>
           <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />

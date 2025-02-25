@@ -1,5 +1,4 @@
 <Observation xmlns="http://hl7.org/fhir"> 
-        <!-- Lymphocyte count in blood -->
         <id value="d5995ac0-55d8-4f2f-9058-6235a13fc1fe" />
         <meta>
           <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
