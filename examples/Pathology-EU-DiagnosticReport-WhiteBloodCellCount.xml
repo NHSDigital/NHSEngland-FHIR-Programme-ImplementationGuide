@@ -1,9 +1,14 @@
 <DiagnosticReport xmlns="http://hl7.org/fhir">
     <id value="35d46ca1-f253-4c97-b7ee-fb5fccdf6c20" />
     <meta>
-        <profile value="http://hl7.eu/fhir/laboratory/StructureDefinition/DiagnosticReport-eu-lab" />  
+        <profile value="http://hl7.eu/fhir/laboratory/StructureDefinition/DiagnosticReport-eu-lab" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport-Lab" />
     </meta>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition">
+        <valueReference>
+            <reference value="Composition/Pathology-EU-WBC"/>
+        </valueReference>
+    </extension>
     <identifier>
         <system value="http://Y8J7D-pathlab001.com/report" />
         <value value="REP-20220209-001369" />
