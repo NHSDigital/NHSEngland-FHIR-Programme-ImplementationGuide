@@ -1,5 +1,4 @@
 <Organization xmlns="http://hl7.org/fhir">
-    <!-- Requesting Organisation -->
     <id value="3c43b5b3-06d6-445f-ae9a-48d5f05df434" />
     <meta>
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />

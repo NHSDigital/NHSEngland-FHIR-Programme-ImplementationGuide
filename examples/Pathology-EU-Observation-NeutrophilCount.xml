@@ -1,5 +1,4 @@
 <Observation xmlns="http://hl7.org/fhir">
-        <!-- Neutrophil count in blood -->
         <id value="69d08add-5ab8-46a3-be08-fb15e550da75" />
         <meta>
           <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
@@ -17,16 +16,12 @@
           </coding>
         </category>
         <code>
-          <!-- Equivalent codes from the PBCL and PaLM SNOMED CT reference sets are used in this example. -->
-          <!-- In practice, it is likely that only a code from one reference set will be carried. -->
           <coding>
-            <!-- From PBCL observable entity reference set -->
             <system value="http://snomed.info/sct" />
             <code value="1022551000000104" />
             <display value="Neutrophil count" />
           </coding>         
           <coding>
-            <!-- From PaLM observable entity reference set -->
             <system value="http://snomed.info/sct" />
             <code value="1108071000000101" />
             <display value="Neutrophil count in blood" />

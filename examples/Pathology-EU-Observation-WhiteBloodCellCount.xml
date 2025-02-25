@@ -1,5 +1,4 @@
 <Observation xmlns="http://hl7.org/fhir">
-  <!-- White blood cell count in blood -->
   <id value="f8c185fc-0993-4b80-9d33-4c9ae11c3afe" />
   <meta>
     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
@@ -17,16 +16,12 @@
     </coding>
   </category>
   <code>
-    <!-- Equivalent codes from the PBCL and PaLM SNOMED CT reference sets are used in this example. -->
-    <!-- In practice, it is likely that only a code from one reference set will be carried. -->
     <coding>
-      <!-- From PBCL observable entity reference set -->
       <system value="http://snomed.info/sct" />
       <code value="1022541000000102" />
       <display value="Total white cell count" />
     </coding>
     <coding>
-      <!-- From PaLM observable entity reference set -->
       <system value="http://snomed.info/sct" />
       <code value="1110441000000100" />
       <display value="White blood cell count in blood" />

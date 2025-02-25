@@ -12,7 +12,6 @@
     <intent value="order" />
     <code>
         <coding>
-            <!-- From PaLM procedure reference set -->
             <system value="http://snomed.info/sct" />
             <code value="767002" />
             <display value="White blood cell count" />

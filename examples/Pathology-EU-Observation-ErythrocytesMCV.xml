@@ -1,5 +1,4 @@
 <Observation xmlns="http://hl7.org/fhir">
-        <!-- Erythrocytes MCV (mean corpuscular volume) in blood -->
         <id value="9e44a75d-e676-4497-aeb3-da72a08a3641" />
         <meta>
           <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
@@ -17,16 +16,12 @@
           </coding>
         </category>
         <code>
-          <!-- Equivalent codes from the PBCL and PaLM SNOMED CT reference sets are used in this example. -->
-          <!-- In practice, it is likely that only a code from one reference set will be carried. -->
           <coding>
-            <!-- From PBCL observable entity reference set -->
             <system value="http://snomed.info/sct" />
             <code value="1022491000000106" />
             <display value="MCV - Mean corpuscular volume" />
           </coding>
           <coding>
-            <!-- From PaLM observable entity reference set -->
             <system value="http://snomed.info/sct" />
             <code value="1491000237105" />
             <display value="Erythrocytes MCV (mean corpuscular volume) in blood" />

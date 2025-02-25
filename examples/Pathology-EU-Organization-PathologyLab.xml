@@ -1,5 +1,4 @@
 <Organization xmlns="http://hl7.org/fhir">
-<!-- Performing Laboratory -->
 <id value="8a6d85b8-9837-4fed-a257-4cf207988338" />
 <meta>
     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />

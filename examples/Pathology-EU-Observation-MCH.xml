@@ -1,5 +1,4 @@
 <Observation xmlns="http://hl7.org/fhir">
-        <!-- MCH - Mean corpuscular haemoglobin -->
         <id value="ba423cce-bf8c-440c-8061-086055a1799b" />
         <meta>
           <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation-Lab" />
@@ -18,7 +17,6 @@
         </category>
         <code>
           <coding>
-            <!-- From PBCL and PaLM observable entity reference sets -->
             <system value="http://snomed.info/sct" />
             <code value="1022471000000107" />
             <display value="MCH - Mean corpuscular haemoglobin" />

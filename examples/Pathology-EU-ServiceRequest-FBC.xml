@@ -11,7 +11,6 @@
     <intent value="order" />
     <code>
         <coding>
-            <!-- From PaLM procedure reference set -->
             <system value="http://snomed.info/sct" />
             <code value="26604007" />
             <display value="Complete blood count" />
