@@ -1,6 +1,7 @@
 <Organization xmlns="http://hl7.org/fhir">
 <id value="8a6d85b8-9837-4fed-a257-4cf207988338" />
 <meta>
+    <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-uv-ips" />
     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
 </meta>
 <identifier>
