@@ -1,16 +1,16 @@
 <Bundle xmlns="http://hl7.org/fhir">
-<id value="Pathology-EU-Bundle-FullBloodCount"/>
+<id value="Pathology-EU-Bundle-FullBloodCount" />
     <meta>
-        <profile value="http://hl7.eu/fhir/laboratory/StructureDefinition/Bundle-eu-lab"/>
+        <profile value="http://hl7.eu/fhir/laboratory/StructureDefinition/Bundle-eu-lab" />
     </meta>
     <identifier>
         <system value="https://tools.ietf.org/html/rfc4122" />
         <value value="cb45d462-3673-4de5-849a-79e17cdcacd6" />
     </identifier>
-    <type value="document"/>
-    <timestamp value="2022-02-09T11:17:00+00:00"/>
+    <type value="document" />
+    <timestamp value="2022-02-09T11:17:00+00:00" />
     <entry>
-    <fullUrl value="urn:uuid:2c836471-5a47-4e55-806c-735071b9b678"/>
+    <fullUrl value="urn:uuid:2c836471-5a47-4e55-806c-735071b9b678" />
     <resource>
     <Composition>
     <id value="2c836471-5a47-4e55-806c-735071b9b678" />
@@ -19,36 +19,36 @@
     </meta>
     <extension url="http://hl7.eu/fhir/StructureDefinition/composition-basedOn-order-or-requisition">
         <valueReference>
-            <reference value="ServiceRequest/4105cf48-80f9-403d-8d7b-cbdcacc0426a"/>
+            <reference value="ServiceRequest/4105cf48-80f9-403d-8d7b-cbdcacc0426a" />
         </valueReference>
     </extension>
     <extension url="http://hl7.eu/fhir/laboratory/StructureDefinition/composition-diagnosticReportReference">
         <valueReference>
-            <reference value="DiagnosticReport/35d46ca1-f253-4c97-b7ee-fb5fccdf6c20"/>
+            <reference value="DiagnosticReport/35d46ca1-f253-4c97-b7ee-fb5fccdf6c20" />
         </valueReference>
     </extension>
     <identifier>
-        <system value="urn:ietf:rfc:3986"/>
-        <value value="urn:uuid:8b65920f-ee2f-4166-964a-9a3bc39bf546"/>
+        <system value="urn:ietf:rfc:3986" />
+        <value value="urn:uuid:8b65920f-ee2f-4166-964a-9a3bc39bf546" />
     </identifier>
-    <status value="final"/>
+    <status value="final" />
     <type>
         <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="4241000179101"/>
-            <display value="Laboratory report"/>
+            <system value="http://snomed.info/sct" />
+            <code value="4241000179101" />
+            <display value="Laboratory report" />
         </coding>
     </type>
     <subject>
-        <reference value="Patient/ab87a3f8-1d37-44a9-804e-5e962598a6e4"/>
+        <reference value="Patient/ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
     </subject>
-    <date value="2022-02-09T11:17:00+00:00"/>
+    <date value="2022-02-09T11:17:00+00:00" />
     <author>
-        <reference value="Practitioner/8a6d85b8-9837-4fed-a257-4cf207988338"/>
+        <reference value="Practitioner/8a6d85b8-9837-4fed-a257-4cf207988338" />
     </author>
-    <title value="Full Blood Count Report"/>
+    <title value="Full Blood Count Report" />
     <section>
-        <title value="FBC - Standard"/>
+        <title value="FBC - Standard" />
         <code>
             <coding>
                 <system value="http://snomed.info/sct" />
@@ -57,10 +57,10 @@
             </coding>
         </code>
         <entry>
-            <reference value="Observation/ad717ae8-cb35-4d66-ba51-e22a76b1d158"/>
+            <reference value="Observation/ad717ae8-cb35-4d66-ba51-e22a76b1d158" />
         </entry>
         <section>
-            <title value="Haemoglobin (Hb)"/>
+            <title value="Haemoglobin (Hb)" />
             <code>
                 <coding>
                     <system value="http://snomed.info/sct" />
@@ -69,7 +69,7 @@
                 </coding>
             </code>
             <entry>
-                <reference value="Observation/b7849f25-3c44-4542-805f-ba769b7cf"/>
+                <reference value="Observation/b7849f25-3c44-4542-805f-ba769b7cf" />
             </entry>
         </section>
         <section>
@@ -82,7 +82,7 @@
                 </coding>
             </code>
             <entry>
-                <reference value="Observation/35d46ca1-f253-4c97-b7ee-fb5fccdf6c20"/>
+                <reference value="Observation/35d46ca1-f253-4c97-b7ee-fb5fccdf6c20" />
             </entry>
         </section>
         <section>
@@ -95,7 +95,7 @@
                 </coding>
             </code>
             <entry>
-                <reference value="Observation/298306aa-4a5e-4442-8f60-9153c19c6333"/>
+                <reference value="Observation/298306aa-4a5e-4442-8f60-9153c19c6333" />
             </entry>
         </section>
         <section>
@@ -108,7 +108,7 @@
                 </coding>
             </code>
             <entry>
-                <reference value="Observation/78afe41f-4689-41a2-b10d-351a991b261a"/>
+                <reference value="Observation/78afe41f-4689-41a2-b10d-351a991b261a" />
             </entry>
         </section>
         <section>
@@ -121,7 +121,7 @@
                 </coding>
             </code>
             <entry>
-                <reference value="Observation/b483a0bf-c332-4dde-b606-ec29aab33583"/>
+                <reference value="Observation/b483a0bf-c332-4dde-b606-ec29aab33583" />
             </entry>
         </section>
         <section>
@@ -134,7 +134,7 @@
                 </coding>
             </code>
             <entry>
-                <reference value="Observation/56f9a606-221b-462b-b134-154c72db9c66"/>
+                <reference value="Observation/56f9a606-221b-462b-b134-154c72db9c66" />
             </entry>
         </section>
         <section>
@@ -147,7 +147,7 @@
                 </coding>
             </code>
             <entry>
-                <reference value="Observation/ba423cce-bf8c-440c-8061-086055a1799b"/>
+                <reference value="Observation/ba423cce-bf8c-440c-8061-086055a1799b" />
             </entry>
         </section>
         <section>
@@ -160,7 +160,7 @@
                 </coding>
             </code>
             <entry>
-                <reference value="Observation/69d08add-5ab8-46a3-be08-fb15e550da75"/>
+                <reference value="Observation/69d08add-5ab8-46a3-be08-fb15e550da75" />
             </entry>
         </section>
         <section>
@@ -173,7 +173,7 @@
                 </coding>
             </code>
             <entry>
-                <reference value="Observation/d5995ac0-55d8-4f2f-9058-6235a13fc1fe"/>
+                <reference value="Observation/d5995ac0-55d8-4f2f-9058-6235a13fc1fe" />
             </entry>
         </section>
         <section>
@@ -187,7 +187,7 @@
                 </coding>
             </code>
             <entry>
-                <reference value="Observation/42d1c079-777a-4878-b568-af6f297dbecb"/>
+                <reference value="Observation/42d1c079-777a-4878-b568-af6f297dbecb" />
             </entry>
         </section>
         <section>
@@ -200,7 +200,7 @@
                 </coding>
             </code>
             <entry>
-                <reference value="Observation/56f9a606-221b-462b-b134-154c72db9c66"/>
+                <reference value="Observation/56f9a606-221b-462b-b134-154c72db9c66" />
             </entry>
         </section>
         <section>
@@ -213,7 +213,7 @@
                 </coding>
             </code>
             <entry>
-                <reference value="Observation/d719524b-993c-455c-9c18-36e3dfe6f71e"/>
+                <reference value="Observation/d719524b-993c-455c-9c18-36e3dfe6f71e" />
             </entry>
         </section>
     </section>
@@ -221,7 +221,7 @@
 </resource>
 </entry>
 <entry>
-<fullUrl="urn:uuid:35d46ca1-f253-4c97-b7ee-fb5fccdf6c20"/>
+<fullUrl="urn:uuid:35d46ca1-f253-4c97-b7ee-fb5fccdf6c20" />
 <resource>
 <DiagnosticReport>
     <id value="35d46ca1-f253-4c97-b7ee-fb5fccdf6c20" />
@@ -231,7 +231,7 @@
     </meta>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition">
         <valueReference>
-            <reference value="Composition/2c836471-5a47-4e55-806c-735071b9b678"/>
+            <reference value="Composition/2c836471-5a47-4e55-806c-735071b9b678" />
         </valueReference>
     </extension>
     <identifier>
@@ -275,7 +275,7 @@
 </resource>
 </entry>
 <entry>
-<fullUrl="ab87a3f8-1d37-44a9-804e-5e962598a6e4"/>
+<fullUrl="ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
 <resource>
 <Patient>
     <id value="ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
@@ -313,7 +313,7 @@
 </resource>
 </entry>   
 <entry>
-<fullUrl="urn:uuid:d719524b-993c-455c-9c18-36e3dfe6f71e"/>
+<fullUrl="urn:uuid:d719524b-993c-455c-9c18-36e3dfe6f71e" />
 <resource>
 <Observation>
   <id value="d719524b-993c-455c-9c18-36e3dfe6f71e" />
@@ -382,7 +382,7 @@
 </resource>
 </entry>   
 <entry>
-<fullUrl="urn:uuid:56f9a606-221b-462b-b134-154c72db9c66"/>
+<fullUrl="urn:uuid:56f9a606-221b-462b-b134-154c72db9c66" />
 <resource>
 <Observation>
   <id value="56f9a606-221b-462b-b134-154c72db9c66" />
@@ -451,7 +451,7 @@
 </resource>
 </entry>   
 <entry>
-<fullUrl="urn:uuid:9e44a75d-e676-4497-aeb3-da72a08a3641"/>
+<fullUrl="urn:uuid:9e44a75d-e676-4497-aeb3-da72a08a3641" />
 <resource>
 <Observation>
         <id value="9e44a75d-e676-4497-aeb3-da72a08a3641" />
@@ -520,7 +520,7 @@
 </resource>
 </entry>   
 <entry>
-<fullUrl="urn:uuid:ad717ae8-cb35-4d66-ba51-e22a76b1d158"/>
+<fullUrl="urn:uuid:ad717ae8-cb35-4d66-ba51-e22a76b1d158" />
 <resource>
 <Observation>
         <id value="ad717ae8-cb35-4d66-ba51-e22a76b1d158" />
@@ -603,7 +603,7 @@
 </resource>
 </entry>   
 <entry>
-<fullUrl="urn:uuid:b483a0bf-c332-4dde-b606-ec29aab33583"/>
+<fullUrl="urn:uuid:b483a0bf-c332-4dde-b606-ec29aab33583" />
 <resource>
 <Observation> 
         <id value="b483a0bf-c332-4dde-b606-ec29aab33583" />
@@ -672,7 +672,7 @@
 </resource>
 </entry>   
 <entry>
-<fullUrl="urn:uuid:b7849f25-3c44-4542-805f-ba769b7cfe04"/>
+<fullUrl="urn:uuid:b7849f25-3c44-4542-805f-ba769b7cfe04" />
 <resource>
 <Observation>
         <id value="b7849f25-3c44-4542-805f-ba769b7cfe04" />
@@ -741,7 +741,7 @@
 </resource>
 </entry>   
 <entry>
-<fullUrl="urn:uuid:d5995ac0-55d8-4f2f-9058-6235a13fc1fe"/>
+<fullUrl="urn:uuid:d5995ac0-55d8-4f2f-9058-6235a13fc1fe" />
 <resource>
 <Observation> 
         <id value="d5995ac0-55d8-4f2f-9058-6235a13fc1fe" />
@@ -810,7 +810,7 @@
 </resource>
 </entry>   
 <entry>
-<fullUrl="urn:uuid:ba423cce-bf8c-440c-8061-086055a1799b"/>
+<fullUrl="urn:uuid:ba423cce-bf8c-440c-8061-086055a1799b" />
 <resource>
 <Observation>
         <id value="ba423cce-bf8c-440c-8061-086055a1799b" />
@@ -874,7 +874,7 @@
 </resource>
 </entry>   
 <entry>
-<fullUrl="urn:uuid:42d1c079-777a-4878-b568-af6f297dbecb"/>
+<fullUrl="urn:uuid:42d1c079-777a-4878-b568-af6f297dbecb" />
 <resource>
 <Observation>
         <id value="42d1c079-777a-4878-b568-af6f297dbecb" />
@@ -943,7 +943,7 @@
 </resource>
 </entry>   
 <entry>
-<fullUrl="urn:uuid:69d08add-5ab8-46a3-be08-fb15e550da75"/>
+<fullUrl="urn:uuid:69d08add-5ab8-46a3-be08-fb15e550da75" />
 <resource>
 <Observation>
         <id value="69d08add-5ab8-46a3-be08-fb15e550da75" />
@@ -1012,7 +1012,7 @@
 </resource>
 </entry>   
 <entry>
-<fullUrl="urn:uuid:298306aa-4a5e-4442-8f60-9153c19c6333"/>
+<fullUrl="urn:uuid:298306aa-4a5e-4442-8f60-9153c19c6333" />
 <resource>
 <Observation>
         <id value="298306aa-4a5e-4442-8f60-9153c19c6333" />
@@ -1081,7 +1081,7 @@
 </resource>
 </entry>   
 <entry>
-<fullUrl="urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d"/>
+<fullUrl="urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d" />
 <resource>
 <Specimen>
   <id value="bab0eaec-1ec5-4598-b660-90bb38a1030d" />
@@ -1120,7 +1120,7 @@
 </resource>
 </entry>   
 <entry>
-<fullUrl="urn:uuid:1c38d507-9ad7-4b49-ba91-7da204842cac"/>
+<fullUrl="urn:uuid:1c38d507-9ad7-4b49-ba91-7da204842cac" />
 <resource>
 <ServiceRequest>
     <id value="1c38d507-9ad7-4b49-ba91-7da204842cac" />
@@ -1161,7 +1161,7 @@
 </resource>
 </entry>   
 <entry>
-<fullUrl="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338"/>
+<fullUrl="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />
 <resource>
 <Organization>
 <id value="8a6d85b8-9837-4fed-a257-4cf207988338" />
@@ -1185,7 +1185,7 @@
 </resource>
 </entry>   
 <entry>
-<fullUrl="urn:uuid:3c43b5b3-06d6-445f-ae9a-48d5f05df434"/>
+<fullUrl="urn:uuid:3c43b5b3-06d6-445f-ae9a-48d5f05df434" />
 <resource>
 <Organization>
     <id value="3c43b5b3-06d6-445f-ae9a-48d5f05df434" />
@@ -1208,7 +1208,7 @@
 </resource>
 </entry>   
 <entry>
-<fullUrl="urn:uuid:9a835acf-d715-4d84-8dcf-a8435f6417fe"/>
+<fullUrl="urn:uuid:9a835acf-d715-4d84-8dcf-a8435f6417fe" />
 <resource>
 <Practitioner>
     <id value="9a835acf-d715-4d84-8dcf-a8435f6417fe" />

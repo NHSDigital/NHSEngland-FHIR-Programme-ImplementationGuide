@@ -6,7 +6,7 @@
     </meta>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition">
         <valueReference>
-            <reference value="Composition/Pathology-EU-WBC"/>
+            <reference value="Composition/Pathology-EU-WBC" />
         </valueReference>
     </extension>
     <identifier>

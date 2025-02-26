@@ -5,36 +5,36 @@
     </meta>
     <extension url="http://hl7.eu/fhir/StructureDefinition/composition-basedOn-order-or-requisition">
         <valueReference>
-            <reference value="ServiceRequest/4105cf48-80f9-403d-8d7b-cbdcacc0426a"/>
+            <reference value="ServiceRequest/4105cf48-80f9-403d-8d7b-cbdcacc0426a" />
         </valueReference>
     </extension>
     <extension url="http://hl7.eu/fhir/laboratory/StructureDefinition/composition-diagnosticReportReference">
         <valueReference>
-            <reference value="DiagnosticReport/35d46ca1-f253-4c97-b7ee-fb5fccdf6c20"/>
+            <reference value="DiagnosticReport/35d46ca1-f253-4c97-b7ee-fb5fccdf6c20" />
         </valueReference>
     </extension>
     <identifier>
-        <system value="urn:ietf:rfc:3986"/>
-        <value value="urn:uuid:8b65920f-ee2f-4166-964a-9a3bc39bf546"/>
+        <system value="urn:ietf:rfc:3986" />
+        <value value="urn:uuid:8b65920f-ee2f-4166-964a-9a3bc39bf546" />
     </identifier>
-    <status value="final"/>
+    <status value="final" />
     <type>
         <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="4241000179101"/>
-            <display value="Laboratory report"/>
+            <system value="http://snomed.info/sct" />
+            <code value="4241000179101" />
+            <display value="Laboratory report" />
         </coding>
     </type>
     <subject>
-        <reference value="Patient/ab87a3f8-1d37-44a9-804e-5e962598a6e4"/>
+        <reference value="Patient/ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
     </subject>
-    <date value="2022-02-09T11:17:00+00:00"/>
+    <date value="2022-02-09T11:17:00+00:00" />
     <author>
-        <reference value="Practitioner/8a6d85b8-9837-4fed-a257-4cf207988338"/>
+        <reference value="Practitioner/8a6d85b8-9837-4fed-a257-4cf207988338" />
     </author>
-    <title value="Full Blood Count Report"/>
+    <title value="Full Blood Count Report" />
     <section>
-        <title value="FBC - Standard"/>
+        <title value="FBC - Standard" />
         <code>
             <coding>
                 <system value="http://snomed.info/sct" />
@@ -43,10 +43,10 @@
             </coding>
         </code>
         <entry>
-            <reference value="Observation/ad717ae8-cb35-4d66-ba51-e22a76b1d158"/>
+            <reference value="Observation/ad717ae8-cb35-4d66-ba51-e22a76b1d158" />
         </entry>
         <section>
-            <title value="Haemoglobin (Hb)"/>
+            <title value="Haemoglobin (Hb)" />
             <code>
                 <coding>
                     <system value="http://snomed.info/sct" />
@@ -55,7 +55,7 @@
                 </coding>
             </code>
             <entry>
-                <reference value="Observation/b7849f25-3c44-4542-805f-ba769b7cf"/>
+                <reference value="Observation/b7849f25-3c44-4542-805f-ba769b7cf" />
             </entry>
         </section>
         <section>
@@ -68,7 +68,7 @@
                 </coding>
             </code>
             <entry>
-                <reference value="Observation/35d46ca1-f253-4c97-b7ee-fb5fccdf6c20"/>
+                <reference value="Observation/35d46ca1-f253-4c97-b7ee-fb5fccdf6c20" />
             </entry>
         </section>
         <section>
@@ -81,7 +81,7 @@
                 </coding>
             </code>
             <entry>
-                <reference value="Observation/298306aa-4a5e-4442-8f60-9153c19c6333"/>
+                <reference value="Observation/298306aa-4a5e-4442-8f60-9153c19c6333" />
             </entry>
         </section>
         <section>
@@ -94,7 +94,7 @@
                 </coding>
             </code>
             <entry>
-                <reference value="Observation/78afe41f-4689-41a2-b10d-351a991b261a"/>
+                <reference value="Observation/78afe41f-4689-41a2-b10d-351a991b261a" />
             </entry>
         </section>
         <section>
@@ -107,7 +107,7 @@
                 </coding>
             </code>
             <entry>
-                <reference value="Observation/b483a0bf-c332-4dde-b606-ec29aab33583"/>
+                <reference value="Observation/b483a0bf-c332-4dde-b606-ec29aab33583" />
             </entry>
         </section>
         <section>
@@ -120,7 +120,7 @@
                 </coding>
             </code>
             <entry>
-                <reference value="Observation/56f9a606-221b-462b-b134-154c72db9c66"/>
+                <reference value="Observation/56f9a606-221b-462b-b134-154c72db9c66" />
             </entry>
         </section>
         <section>
@@ -133,7 +133,7 @@
                 </coding>
             </code>
             <entry>
-                <reference value="Observation/ba423cce-bf8c-440c-8061-086055a1799b"/>
+                <reference value="Observation/ba423cce-bf8c-440c-8061-086055a1799b" />
             </entry>
         </section>
         <section>
@@ -146,7 +146,7 @@
                 </coding>
             </code>
             <entry>
-                <reference value="Observation/69d08add-5ab8-46a3-be08-fb15e550da75"/>
+                <reference value="Observation/69d08add-5ab8-46a3-be08-fb15e550da75" />
             </entry>
         </section>
         <section>
@@ -159,7 +159,7 @@
                 </coding>
             </code>
             <entry>
-                <reference value="Observation/d5995ac0-55d8-4f2f-9058-6235a13fc1fe"/>
+                <reference value="Observation/d5995ac0-55d8-4f2f-9058-6235a13fc1fe" />
             </entry>
         </section>
         <section>
@@ -173,7 +173,7 @@
                 </coding>
             </code>
             <entry>
-                <reference value="Observation/42d1c079-777a-4878-b568-af6f297dbecb"/>
+                <reference value="Observation/42d1c079-777a-4878-b568-af6f297dbecb" />
             </entry>
         </section>
         <section>
@@ -186,7 +186,7 @@
                 </coding>
             </code>
             <entry>
-                <reference value="Observation/56f9a606-221b-462b-b134-154c72db9c66"/>
+                <reference value="Observation/56f9a606-221b-462b-b134-154c72db9c66" />
             </entry>
         </section>
         <section>
@@ -199,7 +199,7 @@
                 </coding>
             </code>
             <entry>
-                <reference value="Observation/d719524b-993c-455c-9c18-36e3dfe6f71e"/>
+                <reference value="Observation/d719524b-993c-455c-9c18-36e3dfe6f71e" />
             </entry>
         </section>
     </section>

@@ -1,16 +1,16 @@
 <Bundle xmlns="http://hl7.org/fhir">
-    <id value="Pathology-EU-Bundle-WhiteBloodCellCount"/>
+    <id value="Pathology-EU-Bundle-WhiteBloodCellCount" />
     <meta>
-        <profile value="http://hl7.eu/fhir/laboratory/StructureDefinition/Bundle-eu-lab"/>
+        <profile value="http://hl7.eu/fhir/laboratory/StructureDefinition/Bundle-eu-lab" />
     </meta>
     <identifier>
         <system value="https://tools.ietf.org/html/rfc4122" />
         <value value="737618c9-c89d-4698-8882-e2e5df1183d1" />
     </identifier>
-    <type value="document"/>
-    <timestamp value="2022-02-09T11:17:00+00:00"/>
+    <type value="document" />
+    <timestamp value="2022-02-09T11:17:00+00:00" />
     <entry>
-        <fullUrl value ="urn:uuid:01951881-bbbe-7c31-a958-30946967c241"/>
+        <fullUrl value ="urn:uuid:01951881-bbbe-7c31-a958-30946967c241" />
         <resource>
             <Composition>
                 <id value="01951881-bbbe-7c31-a958-30946967c241" />
@@ -19,24 +19,24 @@
                 </meta>
                 <extension url="http://hl7.eu/fhir/StructureDefinition/composition-basedOn-order-or-requisition">
                     <valueReference>
-                        <reference value="urn:uuid:4105cf48-80f9-403d-8d7b-cbdcacc0426a"/>
+                        <reference value="urn:uuid:4105cf48-80f9-403d-8d7b-cbdcacc0426a" />
                     </valueReference>
                 </extension>
                 <extension url="http://hl7.eu/fhir/laboratory/StructureDefinition/composition-diagnosticReportReference">
                     <valueReference>
-                        <reference value="urn:uuid:35d46ca1-f253-4c97-b7ee-fb5fccdf6c20"/>
+                        <reference value="urn:uuid:35d46ca1-f253-4c97-b7ee-fb5fccdf6c20" />
                     </valueReference>
                 </extension>
                 <identifier>
                     <system value="http://Y8J7D-pathlab001.com/report" />
                     <value value="REP-20220209-001369" />
                 </identifier>
-                <status value="final"/>
+                <status value="final" />
                 <type>
                     <coding>
-                        <system value="http://loinc.org"/>
-                        <code value="11502-2"/>
-                        <display value="Laboratory report"/>
+                        <system value="http://loinc.org" />
+                        <code value="11502-2" />
+                        <display value="Laboratory report" />
                     </coding>
                 </type>
                 <category>
@@ -50,13 +50,13 @@
                     <reference value="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
                     <display value="MOXEY, Judy" />
                 </subject>
-                <date value="2022-02-09T11:17:00+00:00"/>
+                <date value="2022-02-09T11:17:00+00:00" />
                 <author>
-                    <reference value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338"/>
+                    <reference value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />
                 </author>
-                <title value="White Blood Cell Count Report"/>
+                <title value="White Blood Cell Count Report" />
                 <section>
-                    <title value="White Blood Cell Count Report"/>
+                    <title value="White Blood Cell Count Report" />
                     <code>
                         <coding>
                             <system value="http://snomed.info/sct" />
@@ -65,14 +65,14 @@
                         </coding>
                     </code>
                     <entry>
-                        <reference value="urn:uuid:f8c185fc-0993-4b80-9d33-4c9ae11c3afe"/>
+                        <reference value="urn:uuid:f8c185fc-0993-4b80-9d33-4c9ae11c3afe" />
                     </entry>
                 </section>
             </Composition>
         </resource>
     </entry>
     <entry>
-        <fullUrl value ="urn:uuid:35d46ca1-f253-4c97-b7ee-fb5fccdf6c20"/>
+        <fullUrl value ="urn:uuid:35d46ca1-f253-4c97-b7ee-fb5fccdf6c20" />
         <resource>
             <DiagnosticReport>
                 <id value="35d46ca1-f253-4c97-b7ee-fb5fccdf6c20" />
@@ -82,7 +82,7 @@
                 </meta>
                 <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition">
                     <valueReference>
-                        <reference value="urn:uuid:01951881-bbbe-7c31-a958-30946967c241"/>
+                        <reference value="urn:uuid:01951881-bbbe-7c31-a958-30946967c241" />
                     </valueReference>
                 </extension>
                 <identifier>
@@ -138,7 +138,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value ="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4"/>
+        <fullUrl value ="urn:uuid:ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
         <resource>
             <Patient>
                 <id value="ab87a3f8-1d37-44a9-804e-5e962598a6e4" />
@@ -175,7 +175,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value ="urn:uuid:f8c185fc-0993-4b80-9d33-4c9ae11c3afe"/>
+        <fullUrl value ="urn:uuid:f8c185fc-0993-4b80-9d33-4c9ae11c3afe" />
         <resource>
             <Observation>
                 <id value="f8c185fc-0993-4b80-9d33-4c9ae11c3afe" />
@@ -208,8 +208,8 @@
                     </coding>
                     <coding>
                         <system value="http://loinc.org" />
-                        <code value ="6690-2"/>
-                        <display value="Leukocytes [#/volume] in Blood by Automated count"/>
+                        <code value ="6690-2" />
+                        <display value="Leukocytes [#/volume] in Blood by Automated count" />
                     </coding>
                 </code>
                 <subject>
@@ -249,7 +249,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value ="urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d"/>
+        <fullUrl value ="urn:uuid:bab0eaec-1ec5-4598-b660-90bb38a1030d" />
         <resource>
             <Specimen>
                 <id value="bab0eaec-1ec5-4598-b660-90bb38a1030d" />
@@ -288,7 +288,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value ="urn:uuid:4105cf48-80f9-403d-8d7b-cbdcacc0426a"/>
+        <fullUrl value ="urn:uuid:4105cf48-80f9-403d-8d7b-cbdcacc0426a" />
         <resource>
             <ServiceRequest>
                 <id value="4105cf48-80f9-403d-8d7b-cbdcacc0426a" />
@@ -329,7 +329,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338"/>
+        <fullUrl value="urn:uuid:8a6d85b8-9837-4fed-a257-4cf207988338" />
         <resource>
             <Organization>
                 <id value="8a6d85b8-9837-4fed-a257-4cf207988338" />
@@ -352,7 +352,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="urn:uuid:9a835acf-d715-4d84-8dcf-a8435f6417fe"/>
+        <fullUrl value="urn:uuid:9a835acf-d715-4d84-8dcf-a8435f6417fe" />
         <resource>
             <Practitioner>
                 <id value="9a835acf-d715-4d84-8dcf-a8435f6417fe" />
