@@ -6,7 +6,7 @@
     <title value="England Flag Category Patient" />
     <status value="draft" />
     <experimental value="false" />
-    <date value="2024-02-14" />
+    <date value="2024-03-03" />
   <publisher value="NHS England" />
    <contact>
     <name value="NHS England" />
@@ -30,6 +30,11 @@
             <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
             <code value="female-genital-mutilation-flag" />
             <display value="Female Genital Mutilation Flag" />
+        </contains>
+		<contains>
+            <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
+            <code value="child-protection-information-system-flag" />
+            <display value="Child Protection Information System Flag" />
         </contains>
     </expansion>
 </ValueSet>
