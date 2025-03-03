@@ -5,12 +5,12 @@
     <div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">NRAF<a name="England-FlagCategoryPatient-NRAF"> </a></td><td>National Reasonable Adjustments Flag</td></tr><tr><td style="white-space:nowrap">FGM<a name="England-FlagCategoryPatient-FGM"> </a></td><td>Female Genital Mutilation Flag</td></tr></table></div>
   </text>
   <url value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
-  <version value="0.4.0" />
+  <version value="0.5.0" />
   <name value="EnglandFlagCategoryPatient" />
   <title value="England Flag Category Patient" />
   <status value="draft" />
   <experimental value="false" />
-  <date value="2024-02-14" />
+  <date value="2024-03-03" />
   <publisher value="NHS England" />
   <contact>
     <name value="NHS England" />
@@ -34,5 +34,9 @@
   <concept>
     <code value="female-genital-mutilation-flag" />
     <display value="Female Genital Mutilation Flag" />
+  </concept>
+  <concept>
+    <code value="child-protection-information-system-flag" />
+    <display value="Child Protection Information System Flag" />
   </concept>
 </CodeSystem>
