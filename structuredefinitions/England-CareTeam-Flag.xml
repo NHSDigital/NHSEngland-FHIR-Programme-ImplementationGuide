@@ -40,12 +40,12 @@
             <path value="CareTeam.id" />
             <mustSupport value="true" />
         </element>
-        <element id="CareTeam.name">
-            <path value="CareTeam.name" />
-            <mustSupport value="true" />
-        </element>
         <element id="CareTeam.status">
             <path value="CareTeam.status" />
+            <mustSupport value="true" />
+        </element>
+		 <element id="CareTeam.name">
+            <path value="CareTeam.name" />
             <mustSupport value="true" />
         </element>
         <element id="CareTeam.participant">
@@ -60,12 +60,12 @@
             <path value="CareTeam.participant.member" />
             <mustSupport value="true" />
         </element>
-        <element id="CareTeam.telecom">
-            <path value="CareTeam.telecom" />
-            <mustSupport value="true" />
-        </element>
         <element id="CareTeam.managingOrganization">
             <path value="CareTeam.managingOrganization" />
+            <mustSupport value="true" />
+        </element>
+		 <element id="CareTeam.telecom">
+            <path value="CareTeam.telecom" />
             <mustSupport value="true" />
         </element>
     </differential>
