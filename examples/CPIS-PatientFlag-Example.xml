@@ -30,7 +30,7 @@
     <extension xmlns="http://hl7.org/fhir"
      url="http://hl7.org/fhir/StructureDefinition/flag-detail" >
         <valueReference>
-            <reference value="CareTeam/LocalAuthoritySafeguardingTeam" />
+            <reference value="CareTeam/CareTeam-Flag-Example" />
         </valueReference>
     </extension>
 </Flag>
