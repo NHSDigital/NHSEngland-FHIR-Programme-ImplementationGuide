@@ -1,0 +1,37 @@
+<CareTeam xmlns="http://hl7.org/fhir">
+    <id value="CareTeam-Flag-Example" />
+    <meta>
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-CareTeam-Flag" />
+    </meta>
+    <status value="active" />
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/careteam-category" />
+            <code value="safeguard" />
+            <display value="Safeguarding Team" />
+        </coding>
+    </category>
+    <name value="Local Authority Safeguarding Team" />
+     <participant>
+        <role>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="106289002" />
+                <display value="Social Worker" />
+            </coding>
+        </role>
+        <member>
+            <reference value="Practitioner/123456" />
+            <display value="John Doe (Lead Social Worker)" />
+        </member>
+    </participant>
+    <managingOrganization>
+        <reference value="Organization/LocalAuthority-456" />
+        <display value="Local Authority Name" />
+    </managingOrganization>
+    <telecom>
+        <system value="phone" />
+        <value value="+44 1234 567890" />
+        <use value="work" />
+    </telecom>
+</CareTeam>
