@@ -7,15 +7,15 @@
     <category>
         <coding>
             <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
-            <code value="child-protection-plan" />
-            <display value="Child Protection Plan Flag" />
+            <code value="child-protection-information-system-flag" />
+            <display value="Child Protection Information System Flag" />
         </coding>
     </category>
     <code>
         <coding>
             <system value="http://snomed.info/sct" />
             <code value="342191000000101" />
-            <display value="Child is on a Child Protection Plan (CPP)" />
+            <display value="Subject to child protection plan" />
         </coding>
     </code>
     <subject>
