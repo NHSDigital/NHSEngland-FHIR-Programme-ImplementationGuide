@@ -15,8 +15,8 @@
      <participant>
         <role>
             <coding>
-                <system value="http://snomed.info/sct" />
-                <code value="106289002" />
+                <system value="http://terminology.hl7.org/CodeSystem/participant-role" />
+                <code value="social-worker" />
                 <display value="Social Worker" />
             </coding>
         </role>
