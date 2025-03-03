@@ -44,7 +44,7 @@
             <path value="CareTeam.status" />
             <mustSupport value="true" />
         </element>
-		 <element id="CareTeam.name">
+     <element id="CareTeam.name">
             <path value="CareTeam.name" />
             <mustSupport value="true" />
         </element>
@@ -64,7 +64,7 @@
             <path value="CareTeam.managingOrganization" />
             <mustSupport value="true" />
         </element>
-		 <element id="CareTeam.telecom">
+     <element id="CareTeam.telecom">
             <path value="CareTeam.telecom" />
             <mustSupport value="true" />
         </element>

@@ -31,7 +31,7 @@
             <code value="female-genital-mutilation-flag" />
             <display value="Female Genital Mutilation Flag" />
         </contains>
-		<contains>
+    <contains>
             <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
             <code value="child-protection-information-system-flag" />
             <display value="Child Protection Information System Flag" />
