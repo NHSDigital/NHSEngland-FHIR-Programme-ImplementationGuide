@@ -53,7 +53,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://fhir.hl7.org.uk/StructureDefinition/Extension-England-RetrievalMechanism"
+        "fixedUri": "https://fhir.nhs.uk/England/StructureDefinition/Extension-England-RetrievalMechanism"
       },
       {
         "id": "Extension.value[x]",
