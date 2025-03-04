@@ -37,7 +37,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "Encounter"
+      "expression": "DocumentReference"
     }
   ],
   "type": "Extension",
@@ -48,20 +48,18 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "An extension used indicate the status of a patient on discharge from an Emergency Care Department",
-        "definition": "An extension used indicate the status of a patient on discharge from an Emergency Care Department",
         "max": "1"
       },
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EmergencyCareDischargeStatus"
+        "fixedUri": "https://fhir.hl7.org.uk/StructureDefinition/Extension-England-RetrievalMechanism"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
-        "short": "The status of a patient on discharge from an Emergency Care Department",
-        "definition": "The status of a patient on discharge from an Emergency Care Department.",
+        "short": "The retrieval mechanism required to return content referenced by a DocumentReference.",
+        "definition": "The retrieval mechanism required to return content referenced by a DocumentReference.",
         "min": 1,
         "type": [
           {
@@ -69,10 +67,24 @@
           }
         ],
         "binding": {
-          "strength": "preferred",
-          "description": "The status of a patient on discharge from an Emergency Care Department",
-          "valueSet": "https://fhir.hl7.org.uk/ValueSet/UKCore-EmergencyCareDischargeStatus"
+          "strength": "required",
+          "valueSet": "https://fhir.nhs.uk/England/ValueSet/England-NRL-RetrievalMechanism"
         }
+      },
+      {
+        "id": "Extension.value[x].coding.system",
+        "path": "Extension.value[x].coding.system",
+        "min": 1
+      },
+      {
+        "id": "Extension.value[x].coding.code",
+        "path": "Extension.value[x].coding.code",
+        "min": 1
+      },
+      {
+        "id": "Extension.value[x].coding.display",
+        "path": "Extension.value[x].coding.display",
+        "min": 1
       }
     ]
   }

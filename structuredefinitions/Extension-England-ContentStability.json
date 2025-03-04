@@ -37,7 +37,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "Encounter"
+      "expression": "DocumentReference"
     }
   ],
   "type": "Extension",
@@ -53,7 +53,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EmergencyCareDischargeStatus"
+        "fixedUri": "https://fhir.hl7.org.uk/StructureDefinition/Extension-England-ContentStability"
       },
       {
         "id": "Extension.value[x]",
@@ -68,7 +68,6 @@
         ],
         "binding": {
           "strength": "required",
-          "description": "The status of a patient on discharge from an Emergency Care Department",
           "valueSet": "https://fhir.nhs.uk/England/ValueSet/England-NRL-ContentStability"
         }
       },
