@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "Extension-England-RetrievalMechanism",
-  "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-England-RetrievalMechanism",
+  "url": "https://fhir.nhs.uk/StructureDefinition/Extension-England-RetrievalMechanism",
   "version": "0.1.0",
   "name": "ExtensionEnglandRetrievalMechanism",
   "title": "Extension England Retrieval Mechanism",
