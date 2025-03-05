@@ -23,8 +23,8 @@
         <include>
             <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
             <concept>
-                <code value="national-reasonable-adjustments-flag" />
-                <display value="National Reasonable Adjustments Flag" />
+                <code value="national-reasonable-adjustment-flag" />
+                <display value="National Reasonable Adjustment Flag" />
             </concept>
             <concept>
                 <code value="female-genital-mutilation-flag" />
