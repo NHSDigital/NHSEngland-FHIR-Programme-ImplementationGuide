@@ -1,7 +1,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <id value="England-CareTeam-Flag" />
     <url value="https://fhir.nhs.uk/England/StructureDefinition/England-CareTeam-Flag" />
-    <version value="1.0.0" />
+    <version value="0.1.0" />
     <name value="EnglandCareTeamFlag" />
     <title value="England Care Team Flag" />
     <status value="draft" />
