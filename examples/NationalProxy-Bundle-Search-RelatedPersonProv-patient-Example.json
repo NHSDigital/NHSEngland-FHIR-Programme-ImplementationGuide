@@ -15,10 +15,6 @@
             "resource": {
                 "resourceType": "RelatedPerson",
                 "id": "RelatedPerson-NHS-9100000009",
-                "text": {
-                    "status": "generated",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RelatedPerson_RelatedPerson-NHS-9100000009\"></a><p class=\"res-header-id\"><b>Generated Narrative: RelatedPerson RelatedPerson-NHS-9100000009</b></p><a name=\"RelatedPerson-NHS-9100000009\"></a><a name=\"hcRelatedPerson-NHS-9100000009\"></a><a name=\"RelatedPerson-NHS-9100000009-en-US\"></a><p><b>identifier</b>: <code>https://fhir.nhs.uk/Id/nhs-number</code>/91000000009</p><p><b>active</b>: true</p><p><b>patient</b>: Jane Marie Anne Smith (Identifier: <code>https://fhir.nhs.uk/Id/nhs-number</code>/9000000017)</p><p><b>relationship</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode NMTH}\">Natural Mother</span></p><p><b>name</b>: Jayne Smith (Official)</p><p><b>birthDate</b>: 1916-12-05</p></div>"
-                },
                 "identifier": [
                     {
                         "system": "https://fhir.nhs.uk/Id/nhs-number",
@@ -41,8 +37,7 @@
                                 "code": "NMTH",
                                 "display": "natural mother"
                             }
-                        ],
-                        "text": "Natural Mother"
+                        ]
                     }
                 ],
                 "name": [
@@ -112,9 +107,9 @@
                                 "who": {
                                     "identifier": {
                                         "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                                        "value": "X**"
+                                        "value": "XDC"
                                     },
-                                    "display": "General Registry Office"
+                                    "display": "Office for National Statistics (ONS)"
                                 }
                             }
                         ]
@@ -135,5 +130,5 @@
             "url": "https://example.nhs.uk/FHIR/R4/RelatedPerson?patient:identifier=9000000017&_total=accurate&_count=10&_skip=0&_revinclude=Provenance:target"
         }
     ],
-    "id": "fc8b697e-f7af-4b34-bac8-8c9a740ec81f"
+    "id": "NationalProxy-Bundle-Search-RelatedPersonProv-patient-Example"
 }
