@@ -81,7 +81,7 @@
                 <telecom>
                     <system value="phone" />
                     <value value="07133973581" />
-                    <use value="emergency" />
+                    <use value="mobile" />
                 </telecom>
             </CareTeam>
         </resource>
