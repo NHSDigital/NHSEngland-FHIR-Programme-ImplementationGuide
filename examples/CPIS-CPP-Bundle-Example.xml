@@ -30,7 +30,7 @@
                 <extension url="http://hl7.org/fhir/StructureDefinition/flag-detail">
                     <valueReference>
                         <reference value="urn:uuid:b2d7d1b8-3c2e-4b55-aafe-9b8fd3ea9483" />
-                        <display value="Child Protection Plan for CHARLOTTE BRESSINGTON" />
+                        <display value="Child Protection Plan for Alan Mann" />
                     </valueReference>
                 </extension>
             </Flag>
