@@ -4,10 +4,10 @@
 
     <!-- Flag Resource -->
     <entry>
-        <fullUrl value="urn:uuid:5e3b6c26-8a27-4a41-b5fc-8b6df86a8c2e" />
+        <fullUrl value="Flag/CPIS-Flag-Example" />
         <resource>
             <Flag>
-                <id value="5e3b6c26-8a27-4a41-b5fc-8b6df86a8c2e" />
+                <id value="CPIS-Flag-Example" />
                 <meta>
                     <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag" />
                 </meta>
@@ -29,7 +29,7 @@
                 </period>
                 <extension url="http://hl7.org/fhir/StructureDefinition/flag-detail">
                     <valueReference>
-                        <reference value="urn:uuid:b2d7d1b8-3c2e-4b55-aafe-9b8fd3ea9483" />
+                        <reference value="CarePlan/CPIS-CarePlan-Example" />
                         <display value="Child Protection Plan for Alan Mann" />
                     </valueReference>
                 </extension>
@@ -39,10 +39,10 @@
 
     <!-- CarePlan Resource -->
     <entry>
-        <fullUrl value="urn:uuid:b2d7d1b8-3c2e-4b55-aafe-9b8fd3ea9483" />
+        <fullUrl value="CarePlan/CPIS-CarePlan-Example" />
         <resource>
             <CarePlan>
-                <id value="b2d7d1b8-3c2e-4b55-aafe-9b8fd3ea9483" />
+                <id value="CPIS-CarePlan-Example" />
                 <meta>
                     <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-CarePlan-Flag" />
                 </meta>
@@ -64,7 +64,7 @@
                     <end value="2024-12-30T09:00:00+00:00" />
                 </period>
                 <careTeam>
-                    <reference value="urn:uuid:9a67e5f4-2c1e-48a2-9c52-f5a1d8c3f751" />
+                    <reference value="CareTeam/CPIS-CareTeam-Example" />
                     <display value="SFD1 - SHEFFIELD CITY COUNCIL" />
                 </careTeam>
             </CarePlan>
@@ -73,10 +73,10 @@
 
     <!-- CareTeam Resource -->
     <entry>
-        <fullUrl value="urn:uuid:9a67e5f4-2c1e-48a2-9c52-f5a1d8c3f751" />
+        <fullUrl value="CareTeam/CPIS-CareTeam-Example" />
         <resource>
             <CareTeam>
-                <id value="9a67e5f4-2c1e-48a2-9c52-f5a1d8c3f751" />
+                <id value="CPIS-CareTeam-Example" />
                 <meta>
                     <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-CareTeam-Flag" />
                 </meta>
