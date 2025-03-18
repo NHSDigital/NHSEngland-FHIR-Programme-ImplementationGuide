@@ -59,7 +59,7 @@
                 </period>
                 <careTeam>
                     <reference value="CareTeam/CPIS-CareTeam-Example" />
-                    <display value="SFD1 - SHEFFIELD CITY COUNCIL" />
+                    <display value="SHEFFIELD CITY COUNCIL" />
                 </careTeam>
             </CarePlan>
         </resource>
