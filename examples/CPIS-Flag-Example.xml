@@ -1,0 +1,28 @@
+<Flag xmlns="http://hl7.org/fhir">
+    <id value="CPIS-Flag-Example"/>
+    <meta>
+        <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag"/>
+    </meta>
+    <status value="active"/>
+    <code>
+        <coding>
+            <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient"/>
+            <code value="child-protection-information-system-flag"/>
+            <display value="Child Protection Information System Flag"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/PatientFlag-AlanMann-Example"/>
+        <display value="Alan Mann"/>
+    </subject>
+    <period>
+        <start value="2024-07-22T09:00:00+00:00"/>
+        <end value="2024-12-30T09:00:00+00:00"/>
+    </period>
+    <extension url="http://hl7.org/fhir/StructureDefinition/flag-detail">
+        <valueReference>
+            <reference value="CarePlan/CPIS-CarePlan-example"/>
+            <display value="Child Protection Plan for Alan Mann"/>
+        </valueReference>
+    </extension>
+</Flag>
