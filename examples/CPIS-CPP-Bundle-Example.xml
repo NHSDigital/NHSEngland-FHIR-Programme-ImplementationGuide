@@ -34,7 +34,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="urn:uuid:CPP-062572"/>
+        <fullUrl value="urn:uuid:CPP-062572" />
         <resource>
             <CarePlan>
                 <id value="CPP-062572" />
@@ -66,7 +66,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="urn:uuid:SFD1"/>
+        <fullUrl value="urn:uuid:SFD1" />
         <resource>
             <CareTeam>
                 <id value="SFD1" />
