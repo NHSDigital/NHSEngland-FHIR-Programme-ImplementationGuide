@@ -1,0 +1,99 @@
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="CPIS-CPP-Bundle-Example"/>
+    <type value="collection"/>
+
+    <!-- Flag Resource -->
+    <entry>
+        <fullUrl value="urn:uuid:5e3b6c26-8a27-4a41-b5fc-8b6df86a8c2e"/>
+        <resource>
+            <Flag>
+                <id value="5e3b6c26-8a27-4a41-b5fc-8b6df86a8c2e"/>
+                <meta>
+                    <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag"/>
+                </meta>
+                <status value="active"/>
+                <code>
+                    <coding>
+                        <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient"/>
+                        <code value="child-protection-information-system-flag"/>
+                        <display value="Child Protection Information System Flag"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/PatientFlag-AlanMann-Example"/>
+                    <display value="Alan Mann"/>
+                </subject>
+                <period>
+                    <start value="2024-07-22T09:00:00+00:00"/>
+                    <end value="2024-12-30T09:00:00+00:00"/>
+                </period>
+                <extension url="http://hl7.org/fhir/StructureDefinition/flag-detail">
+                    <valueReference>
+                        <reference value="urn:uuid:b2d7d1b8-3c2e-4b55-aafe-9b8fd3ea9483"/>
+                        <display value="Child Protection Plan for CHARLOTTE BRESSINGTON"/>
+                    </valueReference>
+                </extension>
+            </Flag>
+        </resource>
+    </entry>
+
+    <!-- CarePlan Resource -->
+    <entry>
+        <fullUrl value="urn:uuid:b2d7d1b8-3c2e-4b55-aafe-9b8fd3ea9483"/>
+        <resource>
+            <CarePlan>
+                <id value="b2d7d1b8-3c2e-4b55-aafe-9b8fd3ea9483"/>
+                <meta>
+                    <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-CarePlan-Flag"/>
+                </meta>
+                <status value="active"/>
+                <intent value="plan"/>
+                <category>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="342191000000101"/>
+                        <display value="Subject to child protection plan"/>
+                    </coding>
+                </category>
+                <subject>
+                    <reference value="Patient/PatientFlag-AlanMann-Example"/>
+                    <display value="Alan Mann"/>
+                </subject>
+                <period>
+                    <start value="2024-07-22T09:00:00+00:00"/>
+                    <end value="2024-12-30T09:00:00+00:00"/>
+                </period>
+                <careTeam>
+                    <reference value="urn:uuid:9a67e5f4-2c1e-48a2-9c52-f5a1d8c3f751"/>
+                    <display value="SFD1 - SHEFFIELD CITY COUNCIL"/>
+                </careTeam>
+            </CarePlan>
+        </resource>
+    </entry>
+
+    <!-- CareTeam Resource -->
+    <entry>
+        <fullUrl value="urn:uuid:9a67e5f4-2c1e-48a2-9c52-f5a1d8c3f751"/>
+        <resource>
+            <CareTeam>
+                <id value="9a67e5f4-2c1e-48a2-9c52-f5a1d8c3f751"/>
+                <meta>
+                    <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-CareTeam-Flag"/>
+                </meta>
+                <status value="active"/>
+                <name value="SFD1 - SHEFFIELD CITY COUNCIL"/>
+                <telecom>
+                    <system value="phone"/>
+                    <value value="01133973581"/>
+                    <use value="work"/>
+                </telecom>
+                <telecom>
+                    <system value="phone"/>
+                    <value value="07133973581"/>
+                    <use value="mobile"/>
+                </telecom>
+            </CareTeam>
+        </resource>
+    </entry>
+
+</Bundle>
