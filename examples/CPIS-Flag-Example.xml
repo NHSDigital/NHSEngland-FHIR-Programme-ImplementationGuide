@@ -17,7 +17,6 @@
     </subject>
     <period>
         <start value="2024-07-22T09:00:00+00:00" />
-        <end value="2024-12-30T09:00:00+00:00" />
     </period>
     <extension url="http://hl7.org/fhir/StructureDefinition/flag-detail">
         <valueReference>
