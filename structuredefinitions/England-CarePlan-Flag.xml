@@ -18,7 +18,7 @@
     </contact>
     <description value="Defines the structure for the CarePlan resource associated with the Flag resource, representing safeguarding plans such as Child Protection Plans (CPP)." />
     <purpose value="This profile provides a structured representation of a CarePlan in the Flag system, detailing the safeguarding status of a child under CP-IS, including Looked After Child (LAC), Child Protection Plan (CPP), and Unborn Child Protection (UCP)." />
-    <copyright value="Copyright &#169; 2025 NHS England. Licensed under the Apache License, Version 2.0 (the &amp;quot;License&amp;quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0. Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &amp;quot;AS IS&amp;quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at https://www.hl7.org/fhir/license.html." />
+    <copyright value="Copyright &#169; 2025 NHS England. Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0. Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7&#174; FHIR&#174; standard Copyright &#169; 2011+ HL7 The HL7&#174; FHIR&#174; standard is used under the FHIR license. You may obtain a copy of the FHIR license at https://www.hl7.org/fhir/license.html." />
     <fhirVersion value="4.0.1" />
     <mapping>
         <identity value="rim" />
@@ -36,6 +36,27 @@
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
     <derivation value="constraint" />
     <differential>
+        <element id="CarePlan.contained">
+            <path value="CarePlan.contained" />
+            <slicing>
+                <discriminator>
+                    <type value="type" />
+                    <path value="$this" />
+                </discriminator>
+                <rules value="open" />
+            </slicing>
+            <mustSupport value="true" />
+        </element>
+        <element id="CarePlan.contained:provenance">
+            <path value="CarePlan.contained" />
+            <sliceName value="provenance" />
+            <max value="1" />
+            <type>
+                <code value="Provenance" />
+                <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
+            </type>
+            <mustSupport value="true" />
+        </element>
         <element id="CarePlan.id">
             <path value="CarePlan.id" />
             <mustSupport value="true" />
