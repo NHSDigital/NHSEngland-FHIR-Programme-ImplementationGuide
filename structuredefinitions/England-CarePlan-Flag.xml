@@ -36,27 +36,6 @@
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
     <derivation value="constraint" />
     <differential>
-        <element id="CarePlan.contained">
-            <path value="CarePlan.contained" />
-            <slicing>
-                <discriminator>
-                    <type value="type" />
-                    <path value="$this" />
-                </discriminator>
-                <rules value="open" />
-            </slicing>
-            <mustSupport value="true" />
-        </element>
-        <element id="CarePlan.contained:provenance">
-            <path value="CarePlan.contained" />
-            <sliceName value="provenance" />
-            <max value="1" />
-            <type>
-                <code value="Provenance" />
-                <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
-            </type>
-            <mustSupport value="true" />
-        </element>
         <element id="CarePlan.id">
             <path value="CarePlan.id" />
             <mustSupport value="true" />
