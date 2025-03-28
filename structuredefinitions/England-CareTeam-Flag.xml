@@ -51,22 +51,6 @@
             <min value="1" />
       <mustSupport value="true" />
         </element>
-        <element id="CareTeam.participant">
-            <path value="CareTeam.participant" />
-            <max value="1" />
-        </element>
-        <element id="CareTeam.participant.role">
-            <path value="CareTeam.participant.role" />
-            <min value="1" />
-        </element>
-        <element id="CareTeam.participant.member">
-            <path value="CareTeam.participant.member" />
-            <min value="1" />
-        </element>
-        <element id="CareTeam.managingOrganization">
-            <path value="CareTeam.managingOrganization" />
-            <max value="1" />
-        </element>
         <element id="CareTeam.telecom">
             <path value="CareTeam.telecom" />
             <min value="1" />
