@@ -53,7 +53,7 @@
         </element>
         <element id="CareTeam.participant">
             <path value="CareTeam.participant" />
-            <min value="1" />
+            <max value="1" />
         </element>
         <element id="CareTeam.participant.role">
             <path value="CareTeam.participant.role" />
