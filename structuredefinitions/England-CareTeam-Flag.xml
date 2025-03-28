@@ -38,18 +38,18 @@
     <differential>
         <element id="CareTeam.id">
             <path value="CareTeam.id" />
-			<min value="1" />
+      <min value="1" />
             <mustSupport value="true" />
         </element>
         <element id="CareTeam.status">
             <path value="CareTeam.status" />
             <min value="1" />
-			<mustSupport value="true" />
+      <mustSupport value="true" />
         </element>
         <element id="CareTeam.name">
             <path value="CareTeam.name" />
             <min value="1" />
-			<mustSupport value="true" />
+      <mustSupport value="true" />
         </element>
         <element id="CareTeam.participant">
             <path value="CareTeam.participant" />
