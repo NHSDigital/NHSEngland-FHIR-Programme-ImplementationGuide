@@ -65,7 +65,7 @@
         </element>
         <element id="CareTeam.managingOrganization">
             <path value="CareTeam.managingOrganization" />
-            <min value="1" />
+            <max value="1" />
         </element>
         <element id="CareTeam.telecom">
             <path value="CareTeam.telecom" />
