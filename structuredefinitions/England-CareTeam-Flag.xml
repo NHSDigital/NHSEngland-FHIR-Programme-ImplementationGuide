@@ -35,25 +35,23 @@
     <type value="CareTeam" />
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
     <derivation value="constraint" />
-    <differential>
-        <element id="CareTeam.id">
-            <path value="CareTeam.id" />
-      <min value="1" />
-            <mustSupport value="true" />
-        </element>
-        <element id="CareTeam.status">
-            <path value="CareTeam.status" />
-            <min value="1" />
-      <mustSupport value="true" />
-        </element>
-        <element id="CareTeam.name">
-            <path value="CareTeam.name" />
-            <min value="1" />
-      <mustSupport value="true" />
-        </element>
-        <element id="CareTeam.telecom">
-            <path value="CareTeam.telecom" />
-            <min value="1" />
-        </element>
-    </differential>
+ <differential>
+    <element id="CareTeam.id">
+        <path value="CareTeam.id" />
+        <mustSupport value="true" />
+    </element>
+    <element id="CareTeam.status">
+        <path value="CareTeam.status" />
+        <mustSupport value="true" />
+    </element>
+    <element id="CareTeam.name">
+        <path value="CareTeam.name" />
+        <min value="1" />
+        <mustSupport value="true" />
+    </element>
+    <element id="CareTeam.telecom">
+        <path value="CareTeam.telecom" />
+        <min value="1" />
+    </element>
+ </differential>
 </StructureDefinition>
