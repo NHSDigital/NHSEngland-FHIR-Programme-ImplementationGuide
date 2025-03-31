@@ -35,42 +35,33 @@
     <type value="CarePlan" />
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
     <derivation value="constraint" />
-    <differential>
-        <element id="CarePlan.id">
-            <path value="CarePlan.id" />
-            <min value="1" />
-      <mustSupport value="true" />
-        </element>
-        <element id="CarePlan.status">
-            <path value="CarePlan.status" />
-            <min value="1" />
-            <max value="1" />
-      <mustSupport value="true" />
-        </element>
-        <element id="CarePlan.intent">
-            <path value="CarePlan.intent" />
-            <min value="1" />
-        </element>
-        <element id="CarePlan.category">
-            <path value="CarePlan.category" />
-            <min value="1" />
-      <mustSupport value="true" />
-        </element>
-        <element id="CarePlan.subject">
-            <path value="CarePlan.subject" />
-            <min value="1" />
-            <max value="1" />
-      <mustSupport value="true" />
-        </element>
-        <element id="CarePlan.period">
-            <path value="CarePlan.period" />
-            <min value="1" />
-      <mustSupport value="true" />
-        </element>
-        <element id="CarePlan.careTeam">
-            <path value="CarePlan.careTeam" />
-            <min value="1" />
-      <mustSupport value="true" />
-        </element>
-    </differential>
+   <differential>
+    <element id="CarePlan.id">
+        <path value="CarePlan.id" />
+        <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.status">
+        <path value="CarePlan.status" />
+        <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.category">
+        <path value="CarePlan.category" />
+        <min value="1" />
+        <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.subject">
+        <path value="CarePlan.subject" />
+        <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.period">
+        <path value="CarePlan.period" />
+        <min value="1" />
+        <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.careTeam">
+        <path value="CarePlan.careTeam" />
+        <min value="1" />
+        <mustSupport value="true" />
+    </element>
+</differential>
 </StructureDefinition>
