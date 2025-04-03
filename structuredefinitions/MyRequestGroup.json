@@ -1,0 +1,58 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://example.org/fhir/StructureDefinition/MyRequestGroup",
+  "name": "MyRequestGroup",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "RequestGroup",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/RequestGroup",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "RequestGroup.action.code",
+        "path": "RequestGroup.action.code",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "coding.system"
+            },
+            {
+              "type": "value",
+              "path": "coding.code"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "RequestGroup.action.code:guidanceReason",
+        "path": "RequestGroup.action.code",
+        "sliceName": "guidanceReason"
+      },
+      {
+        "id": "RequestGroup.action.code:guidanceStatus",
+        "path": "RequestGroup.action.code",
+        "sliceName": "guidanceStatus"
+      },
+      {
+        "id": "RequestGroup.action.code:guidanceSuitabilityRuleType",
+        "path": "RequestGroup.action.code",
+        "sliceName": "guidanceSuitabilityRuleType"
+      },
+      {
+        "id": "RequestGroup.action.code:guidanceSuitabilityRuleReason",
+        "path": "RequestGroup.action.code",
+        "sliceName": "guidanceSuitabilityRuleReason"
+      },
+      {
+        "id": "RequestGroup.action.code:guidanceActionConditionType",
+        "path": "RequestGroup.action.code",
+        "sliceName": "guidanceActionConditionType"
+      }
+    ]
+  }
+}
