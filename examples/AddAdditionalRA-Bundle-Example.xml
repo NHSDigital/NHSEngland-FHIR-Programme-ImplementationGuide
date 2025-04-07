@@ -1,5 +1,5 @@
 <Bundle xmlns="http://hl7.org/fhir">
-    <id value="AddAdditionalRA-Example-Bundle" />
+    <id value="AddAdditionalRA-Bundle-Example" />
     <type value="transaction" />
 
     <!-- New RA Condition -->
