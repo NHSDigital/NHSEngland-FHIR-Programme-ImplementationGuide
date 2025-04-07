@@ -1,8 +1,6 @@
 <Bundle xmlns="http://hl7.org/fhir">
     <id value="AddAdditionalRA-Bundle-Example" />
     <type value="transaction" />
-
-    <!-- New RA Condition -->
     <entry>
         <fullUrl value="urn:uuid:e18a2226-c0ab-480d-b80a-b6561fe8f9c4" />
         <resource>
@@ -13,7 +11,7 @@
                 </meta>
                 <contained>
                     <Provenance>
-                        <id value="9a6b18a7-c077-49da-929f-a8dd38468f79" />
+                        <id value="prov-condition-1" />
                         <meta>
                             <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
                         </meta>
@@ -82,26 +80,24 @@
             <url value="Condition" />
         </request>
     </entry>
-
-    <!-- New RA Adjustment Flag -->
     <entry>
-        <fullUrl value="urn:uuid:a18a2226-c0ab-480d-b80a-b6561fe8f9c4" />
+        <fullUrl value="Flag/RA-Flag-Example" />
         <resource>
             <Flag>
-                <id value="RA-Flag-MobilitySupport" />
+                <id value="RA-Flag-Example" />
                 <meta>
                     <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag-Adjustment" />
                 </meta>
                 <contained>
                     <Provenance>
-                        <id value="7a6b18a7-c077-49da-929f-a8dd38468f79" />
+                        <id value="873a38eb-0f9c-4a66-a4e9-8e4be2350d6b" />
                         <meta>
                             <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
                         </meta>
                         <target>
                             <reference value="#" />
                         </target>
-                        <recorded value="2025-04-07T10:00:00+00:00" />
+                        <recorded value="2024-01-01T11:00:00+00:00" />
                         <activity>
                             <coding>
                                 <system value="http://terminology.hl7.org/CodeSystem/v3-DataOperation" />
@@ -118,17 +114,17 @@
                                 </coding>
                             </role>
                             <who>
-                                <reference value="https://sds.spineservices.nhs.uk/Practitioner/abc123" />
+                                <reference value="https://sds.spineservices.nhs.uk/Practitioner/2ee4tr6a9" />
                             </who>
                             <onBehalfOf>
-                                <reference value="https://directory.spineservices.nhs.uk/Organization/org456" />
+                                <reference value="https://directory.spineservices.nhs.uk/Organization/a3e5i7" />
                             </onBehalfOf>
                         </agent>
                     </Provenance>
                 </contained>
                 <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-FlagNotes">
                     <valueAnnotation>
-                        <text value="Patient requires wheelchair access to all clinical areas." />
+                        <text value="Example of flag notes extension text in adjustment flag" />
                     </valueAnnotation>
                 </extension>
                 <status value="active" />
@@ -142,15 +138,15 @@
                 <category>
                     <coding>
                         <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryRA" />
-                        <code value="physical-access" />
-                        <display value="Physical access" />
+                        <code value="communication-support" />
+                        <display value="Communication support" />
                     </coding>
                 </category>
                 <code>
                     <coding>
                         <system value="https://snomed.info/sct" />
-                        <code value="1082531000000101" />
-                        <display value="Requires wheelchair access" />
+                        <code value="1082681000000103" />
+                        <display value="Requires support for receptive communication needs" />
                     </coding>
                 </code>
                 <subject>
