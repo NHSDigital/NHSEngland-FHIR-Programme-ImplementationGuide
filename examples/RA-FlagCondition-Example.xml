@@ -2,9 +2,13 @@
   <id value="RA-FlagCondition-Example"/>
   <type value="searchset"/>
   <total value="2"/>
+  <link>
+    <relation value="self"/>
+    <url value="https://fhir.example.org/FlagCondition?subject=Patient/PatientFlag-AlanMann-Example"/>
+  </link>
 
   <entry>
-     <fullUrl value="urn:uuid:12345678-1234-5678-1234-567812345678"/>
+    <fullUrl value="urn:uuid:12345678-1234-5678-1234-567812345678"/>
     <resource>
       <Flag>
         <id value="RA-Flag-Example"/>
@@ -77,10 +81,13 @@
         </subject>
       </Flag>
     </resource>
+    <search>
+      <mode value="match"/>
+    </search>
   </entry>
 
   <entry>
-     <fullUrl value="urn:uuid:42345678-1234-5678-1234-567812345678"/>
+    <fullUrl value="urn:uuid:42345678-1234-5678-1234-567812345678"/>
     <resource>
       <Condition>
         <id value="RA-Condition-Example"/>
@@ -153,5 +160,8 @@
         </subject>
       </Condition>
     </resource>
+    <search>
+      <mode value="match"/>
+    </search>
   </entry>
 </Bundle>
