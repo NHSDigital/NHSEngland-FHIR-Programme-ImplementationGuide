@@ -2,10 +2,11 @@
   <id value="PatientFlag-Bundle-Example"/>
   <type value="searchset"/>
   <total value="3"/>
-
-  <entry>
-     <fullUrl value="urn:uuid:22345678-1234-5678-1234-567812345678"/>
-    <resource>
+  <link>
+    <relation value="self"/>
+    <url value="https://fhirserver.example.org/Flag?patient=PatientFlag-AlanMann-Example"/>
+  </link>
+ <resource>
       <Flag xmlns="http://hl7.org/fhir">
         <id value="RA-PatientFlag-Example"/>
         <meta>
@@ -64,10 +65,9 @@
       </Flag>
     </resource>
   </entry>
-
   <entry>
-     <fullUrl value="urn:uuid:32345678-1234-5678-1234-567812345678"/>
-    <resource>
+    <fullUrl value="urn:uuid:32345678-1234-5678-1234-567812345678"/>
+        <resource>
       <Flag xmlns="http://hl7.org/fhir">
         <id value="FGM-PatientFlag-Example"/>
         <meta>
@@ -125,11 +125,13 @@
         </subject>
       </Flag>
     </resource>
+    <search>
+      <mode value="match"/>
+    </search>
   </entry>
-
   <entry>
     <fullUrl value="urn:uuid:42345678-1234-5678-1234-567812345678"/>
-    <resource>
+     <resource>
       <Flag xmlns="http://hl7.org/fhir">
         <id value="CPIS-Flag-Example"/>
         <meta>
@@ -192,5 +194,8 @@
         </period>
       </Flag>
     </resource>
+    <search>
+      <mode value="match"/>
+    </search>
   </entry>
 </Bundle>
