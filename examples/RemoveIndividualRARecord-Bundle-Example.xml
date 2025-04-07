@@ -1,8 +1,8 @@
 <Bundle xmlns="http://hl7.org/fhir">
-    <id value="RemoveRARecord-Bundle-Example" />
+    <id value="RemoveIndividualRARecord-Bundle-Example" />
     <type value="transaction" />
 
-    <!-- Delete RA Adjustment Flag -->
+    <!-- Delete a specific RA Adjustment Flag -->
     <entry>
         <request>
             <method value="DELETE" />
@@ -10,15 +10,7 @@
         </request>
     </entry>
 
-    <!-- Delete RA Consent -->
-    <entry>
-        <request>
-            <method value="DELETE" />
-            <url value="Consent/RA-Consent-Example" />
-        </request>
-    </entry>
-
-    <!-- Delete RA Condition -->
+    <!-- Delete a specific RA Condition -->
     <entry>
         <request>
             <method value="DELETE" />
@@ -26,11 +18,11 @@
         </request>
     </entry>
 
-    <!-- Delete Main RA Patient Flag -->
+    <!-- Optional: Delete associated RA Consent -->
     <entry>
         <request>
             <method value="DELETE" />
-            <url value="Flag/RA-PatientFlag-Example" />
+            <url value="Consent/RA-Consent-Example" />
         </request>
     </entry>
 </Bundle>
