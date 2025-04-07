@@ -4,6 +4,7 @@
   <total value="2"/>
 
   <entry>
+     <fullUrl value="urn:uuid:12345678-1234-5678-1234-567812345678"/>
     <resource>
       <Flag>
         <id value="RA-Flag-Example"/>
@@ -79,6 +80,7 @@
   </entry>
 
   <entry>
+     <fullUrl value="urn:uuid:42345678-1234-5678-1234-567812345678"/>
     <resource>
       <Condition>
         <id value="RA-Condition-Example"/>
