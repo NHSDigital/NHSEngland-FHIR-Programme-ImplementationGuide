@@ -7,6 +7,7 @@
     <url value="https://fhirserver.example.org/Flag?patient=PatientFlag-AlanMann-Example"/>
   </link>
 <entry>
+ <fullUrl value="urn:uuid:82345678-1234-5678-1234-567812345678"/>
  <resource>
       <Flag xmlns="http://hl7.org/fhir">
         <id value="RA-PatientFlag-Example"/>
