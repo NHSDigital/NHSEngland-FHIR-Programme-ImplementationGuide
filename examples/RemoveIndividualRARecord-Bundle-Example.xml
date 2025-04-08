@@ -1,5 +1,5 @@
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="RemoveIndividualRA-Bundle-Example" />
+  <id value="RemoveIndividualRARecord-Bundle-Example" />
   <type value="transaction" />
   <entry>
     <fullUrl value="Flag/RA-PatientFlag-Example" />
