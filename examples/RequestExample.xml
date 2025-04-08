@@ -1,0 +1,85 @@
+<RequestGroup xmlns="http://hl7.org/fhir">
+  <id value="RequestGroupExample"/>
+  <meta>
+    <profile value="https://example.org/fhir/StructureDefinition/MyRequestGroup" />
+  </meta>
+  <identifier>
+    <value value="0001"/>
+  </identifier>
+  <basedOn>
+    <reference value="GuidanceResponse/1234"/>
+  </basedOn>
+  <status value="completed"/>
+  <intent value="proposal"/>
+  <subject>
+    <reference value="Patient/1234567890"/>
+  </subject>
+  <action>
+    <code>
+      <coding>
+        <system value="http://fhir.nhs.uk/CodeSystem/guidanceSuitabilityRuleType"/>
+        <code value="S"/>
+        <display value="Suppress"/>
+      </coding>
+    </code>
+    <code>
+      <coding>
+        <system value="http://fhir.nhs.uk/CodeSystem/guidanceSuitabilityRuleReason"/>
+        <code value="LivingInCareSetting"/>
+        <display value="Living in a care setting"/>
+      </coding>
+    </code>
+    <code>
+      <coding>
+        <system value="http://fhir.nhs.uk/CodeSystem/guidanceStatus"/>
+        <code value="NotActionable"/>
+        <display value="Not Actionable - Individual is eligible but is not able to perform the actions by themself"/>
+      </coding>
+    </code>
+    <code>
+      <coding>
+        <system value="http://fhir.nhs.uk/CodeSystem/guidanceActionConditionType"/>
+        <code value="RSV"/>
+        <display value="Respiratory syncytial virus"/>
+      </coding>
+    </code>
+      <action>
+        <code>
+          <coding>
+            <system value="http://fhir.nhs.uk/CodeSystem/guidanceReason"/>
+            <code value="flu_coded_eligibility"/>
+            <display value="Our records indicate that you might be at a higher risk of illness if you were to catch Flu."/>
+          </coding>
+        </code>
+        <code>
+          <coding>
+            <system value="http://fhir.nhs.uk/CodeSystem/guidanceStatus"/>
+            <code value="Actionable"/>
+            <display value="Actionable - Individual is eligible and we suggest that they follow one or more of the provided actions"/>
+          </coding>
+        </code>
+        <resource>
+          <reference value="Task/0001"/>
+        </resource>
+      </action>
+      <action>
+        <code>
+          <coding>
+            <system value="http://fhir.nhs.uk/CodeSystem/guidanceReason"/>
+            <code value="flu_65+_autumnwinter2023"/>
+            <display value="Our records indicate you are over 65"/>
+          </coding>
+        </code>
+        <code>
+          <coding>
+            <system value="http://fhir.nhs.uk/CodeSystem/guidanceStatus"/>
+            <code value="Actionable"/>
+            <display value="Actionable - Individual is eligible and we suggest that they follow one or more of the provided actions"/>
+          </coding>
+        </code>
+        <resource>
+          <reference value="Task/0001"/>
+        </resource>
+      </action>
+  </action>
+</RequestGroup>
