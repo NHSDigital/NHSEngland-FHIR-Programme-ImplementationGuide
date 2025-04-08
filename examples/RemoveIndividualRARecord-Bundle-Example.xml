@@ -17,12 +17,4 @@
             <url value="Condition/RA-Condition-Example" />
         </request>
     </entry>
-
-    <!-- Optional: Delete associated RA Consent -->
-    <entry>
-        <request>
-            <method value="DELETE" />
-            <url value="Consent/RA-Consent-Example" />
-        </request>
-    </entry>
 </Bundle>
