@@ -1,0 +1,206 @@
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="PatientFlag-Bundle-Example"/>
+  <type value="searchset"/>
+  <total value="3"/>
+  <link>
+    <relation value="self"/>
+    <url value="https://fhirserver.example.org/Flag?patient=PatientFlag-AlanMann-Example"/>
+  </link>
+<entry>
+ <fullUrl value="urn:uuid:82345678-1234-5678-1234-567812345678"/>
+ <resource>
+      <Flag xmlns="http://hl7.org/fhir">
+        <id value="RA-PatientFlag-Example"/>
+        <meta>
+          <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag"/>
+        </meta>
+        <contained>
+          <Provenance>
+            <id value="c4e2e862-3bf4-4176-a186-9f1732938260"/>
+            <meta>
+              <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag"/>
+            </meta>
+            <target>
+              <reference value="#"/>
+            </target>
+            <recorded value="2024-01-01T11:00:00+00:00"/>
+            <activity>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-DataOperation"/>
+                <code value="CREATE"/>
+                <display value="create"/>
+              </coding>
+            </activity>
+            <agent>
+              <role>
+                <coding>
+                  <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"/>
+                  <code value="R0260"/>
+                  <display value="General Medical Practitioner"/>
+                </coding>
+              </role>
+              <who>
+                <reference value="https://sds.spineservices.nhs.uk/Practitioner/2ee4tr6a9"/>
+              </who>
+              <onBehalfOf>
+                <reference value="https://directory.spineservices.nhs.uk/Organization/a3e5i7"/>
+              </onBehalfOf>
+            </agent>
+          </Provenance>
+        </contained>
+        <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-FlagNotes">
+          <valueAnnotation>
+            <text value="Example of flag notes extension text in patient flag"/>
+          </valueAnnotation>
+        </extension>
+        <status value="active"/>
+        <code>
+          <coding>
+            <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient"/>
+            <code value="national-reasonable-adjustment-flag"/>
+            <display value="National Reasonable Adjustments Flag"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/PatientFlag-AlanMann-Example"/>
+        </subject>
+      </Flag>
+    </resource>
+   <search>
+      <mode value="match"/>
+  </search>
+ </entry>
+  <entry>
+    <fullUrl value="urn:uuid:32345678-1234-5678-1234-567812345678"/>
+        <resource>
+      <Flag xmlns="http://hl7.org/fhir">
+        <id value="FGM-PatientFlag-Example"/>
+        <meta>
+          <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag"/>
+        </meta>
+        <contained>
+          <Provenance>
+            <id value="3fc83fd8-4a6d-48e4-91ab-12bb10a4a834"/>
+            <meta>
+              <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag"/>
+            </meta>
+            <target>
+              <reference value="#"/>
+            </target>
+            <recorded value="2024-01-01T11:00:00+00:00"/>
+            <activity>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-DataOperation"/>
+                <code value="CREATE"/>
+                <display value="create"/>
+              </coding>
+            </activity>
+            <agent>
+              <role>
+                <coding>
+                  <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"/>
+                  <code value="R0260"/>
+                  <display value="General Medical Practitioner"/>
+                </coding>
+              </role>
+              <who>
+                <reference value="https://sds.spineservices.nhs.uk/Practitioner/2ee4tr6a9"/>
+              </who>
+              <onBehalfOf>
+                <reference value="https://directory.spineservices.nhs.uk/Organization/a3e5i7"/>
+              </onBehalfOf>
+            </agent>
+          </Provenance>
+        </contained>
+        <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-FlagNotes">
+          <valueAnnotation>
+            <text value="Example of flag notes extension text in patient flag"/>
+          </valueAnnotation>
+        </extension>
+        <status value="active"/>
+        <code>
+          <coding>
+            <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient"/>
+            <code value="female-genital-mutilation-flag"/>
+            <display value="Female Genital Mutilation Flag"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/PatientFlag-AlanMann-Example"/>
+        </subject>
+      </Flag>
+    </resource>
+    <search>
+      <mode value="match"/>
+    </search>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:42345678-1234-5678-1234-567812345678"/>
+     <resource>
+      <Flag xmlns="http://hl7.org/fhir">
+        <id value="CPIS-Flag-Example"/>
+        <meta>
+          <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag"/>
+        </meta>
+        <contained>
+          <Provenance>
+            <id value="1fc83fd8-4a6d-48e4-91ab-12bb10a4a834"/>
+            <meta>
+              <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag"/>
+            </meta>
+            <target>
+              <reference value="#"/>
+            </target>
+            <recorded value="2024-07-22T09:00:00+00:00"/>
+            <activity>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-DataOperation"/>
+                <code value="CREATE"/>
+                <display value="create"/>
+              </coding>
+            </activity>
+            <agent>
+              <role>
+                <coding>
+                  <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"/>
+                  <code value="R0260"/>
+                  <display value="General Medical Practitioner"/>
+                </coding>
+              </role>
+              <who>
+                <reference value="https://sds.spineservices.nhs.uk/Practitioner/2ee4tr6a9"/>
+              </who>
+              <onBehalfOf>
+                <reference value="https://directory.spineservices.nhs.uk/Organization/a3e5i7"/>
+              </onBehalfOf>
+            </agent>
+          </Provenance>
+        </contained>
+        <extension url="http://hl7.org/fhir/StructureDefinition/flag-detail">
+          <valueReference>
+            <reference value="CarePlan/CPIS-CarePlan-example"/>
+            <display value="Child Protection Plan for Alan Mann"/>
+          </valueReference>
+        </extension>
+        <status value="active"/>
+        <code>
+          <coding>
+            <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient"/>
+            <code value="child-protection-information-system-flag"/>
+            <display value="Child Protection Information System Flag"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/PatientFlag-AlanMann-Example"/>
+          <display value="Alan Mann"/>
+        </subject>
+        <period>
+          <start value="2024-07-22T09:00:00+00:00"/>
+        </period>
+      </Flag>
+    </resource>
+    <search>
+      <mode value="match"/>
+    </search>
+  </entry>
+</Bundle>
