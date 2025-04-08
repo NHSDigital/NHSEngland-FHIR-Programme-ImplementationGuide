@@ -9,15 +9,7 @@
             <url value="Flag/RA-Flag-Example" />
         </request>
     </entry>
-
-    <!-- Delete RA Consent -->
-    <entry>
-        <request>
-            <method value="DELETE" />
-            <url value="Consent/RA-Consent-Example" />
-        </request>
-    </entry>
-
+    
     <!-- Delete RA Condition -->
     <entry>
         <request>
