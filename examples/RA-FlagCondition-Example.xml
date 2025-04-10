@@ -1,12 +1,56 @@
 <Bundle xmlns="http://hl7.org/fhir">
   <id value="RA-FlagCondition-Example" />
   <type value="searchset" />
-  <total value="2" />
+  <total value="3" />
   <link>
     <relation value="self" />
     <url value="https://fhir.example.org/FlagCondition?subject=Patient/PatientFlag-AlanMann-Example" />
   </link>
 
+  <!-- Main Patient Flag -->
+  <entry>
+    <resource>
+      <Flag>
+        <id value="RA-PatientFlag-Example" />
+        <meta>
+          <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag" />
+        </meta>
+        <extension url="http://hl7.org/fhir/StructureDefinition/flag-detail">
+          <valueReference>
+            <reference value="Condition/RA-Condition-Example" />
+            <type value="Condition" />
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/flag-detail">
+          <valueReference>
+            <reference value="Flag/RA-Flag-Example" />
+            <type value="Flag" />
+          </valueReference>
+        </extension>
+        <extension url="https://fhir.nhs.uk/England/StructureDefinition/Extension-FlagNotes">
+          <valueAnnotation>
+            <text value="Example of flag notes extension text in patient flag" />
+          </valueAnnotation>
+        </extension>
+        <status value="active" />
+        <code>
+          <coding>
+            <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
+            <code value="national-reasonable-adjustment-flag" />
+            <display value="National Reasonable Adjustments Flag" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/PatientFlag-AlanMann-Example" />
+        </subject>
+      </Flag>
+    </resource>
+    <search>
+      <mode value="match" />
+    </search>
+  </entry>
+
+  <!-- Associated Flag: Adjustment -->
   <entry>
     <fullUrl value="urn:uuid:12345678-1234-5678-1234-567812345678" />
     <resource>
@@ -86,6 +130,7 @@
     </search>
   </entry>
 
+  <!-- Associated Condition: Underlying issue -->
   <entry>
     <fullUrl value="urn:uuid:42345678-1234-5678-1234-567812345678" />
     <resource>
