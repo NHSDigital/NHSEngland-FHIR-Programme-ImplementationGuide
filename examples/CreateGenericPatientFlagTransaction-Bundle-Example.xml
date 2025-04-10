@@ -73,7 +73,7 @@
           <coding>
             <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
             <code value="female-genital-mutilation-flag" />
-            <display value="General Patient Flag" />
+            <display value="Female Genital Mutilation Flag" />
           </coding>
         </code>
         <subject>
