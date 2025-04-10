@@ -9,6 +9,7 @@
 
   <!-- Main Patient Flag -->
   <entry>
+    <fullUrl value="urn:uuid:42345678-1234-5678-1234-567812345678" />
     <resource>
       <Flag>
         <id value="RA-PatientFlag-Example" />
