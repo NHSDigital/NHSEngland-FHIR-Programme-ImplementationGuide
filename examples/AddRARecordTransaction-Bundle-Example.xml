@@ -1,37 +1,6 @@
 <Bundle xmlns="http://hl7.org/fhir">
     <id value="AddRARecordTransaction-Bundle-Example" />
     <type value="transaction" />
-
-    <!-- Patient Resource -->
-    <entry>
-        <fullUrl value="Patient/PatientFlag-AlanMann-Example" />
-        <resource>
-            <Patient>
-                <id value="PatientFlag-AlanMann-Example" />
-                <meta>
-                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
-                </meta>
-                <identifier>
-                    <system value="https://fhir.nhs.uk/Id/nhs-number" />
-                    <value value="9912003888" />
-                </identifier>
-                <active value="true" />
-                <name>
-                    <use value="official" />
-                    <family value="Mann" />
-                    <given value="Alan" />
-                </name>
-                <gender value="male" />
-                <birthDate value="1970-01-01" />
-            </Patient>
-        </resource>
-        <request>
-            <method value="POST" />
-            <url value="Patient/PatientFlag-AlanMann-Example" />
-        </request>
-    </entry>
-
-    <!-- Condition Resource -->
     <entry>
         <fullUrl value="Condition/RA-Condition-Example" />
         <resource>
@@ -111,8 +80,6 @@
             <url value="Condition/RA-Condition-Example" />
         </request>
     </entry>
-
-    <!-- Main Patient Flag Resource -->
     <entry>
         <fullUrl value="Flag/RA-PatientFlag-Example" />
         <resource>
@@ -168,12 +135,6 @@
                 </extension>
                 <extension url="http://hl7.org/fhir/StructureDefinition/flag-detail">
                     <valueReference>
-                        <reference value="Consent/RA-Consent-Example" />
-                        <type value="Consent" />
-                    </valueReference>
-                </extension>
-                <extension url="http://hl7.org/fhir/StructureDefinition/flag-detail">
-                    <valueReference>
                         <reference value="Flag/RA-Flag-Example" />
                         <type value="Flag" />
                     </valueReference>
@@ -196,8 +157,6 @@
             <url value="Flag/RA-PatientFlag-Example" />
         </request>
     </entry>
-
-    <!-- Adjustment Flag Resource -->
     <entry>
         <fullUrl value="Flag/RA-Flag-Example" />
         <resource>
