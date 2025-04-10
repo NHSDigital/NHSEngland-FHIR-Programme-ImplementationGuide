@@ -53,7 +53,7 @@
 
   <!-- Associated Flag: Adjustment -->
   <entry>
-    <fullUrl value="urn:uuid:12345678-1234-5678-1234-567812345678" />
+    <fullUrl value="Flag/RA-Flag-Example" />
     <resource>
       <Flag>
         <id value="RA-Flag-Example" />
@@ -133,7 +133,7 @@
 
   <!-- Associated Condition: Underlying issue -->
   <entry>
-    <fullUrl value="urn:uuid:42345678-1234-5678-1234-567812345678" />
+    <fullUrl value="Condition/RA-Condition-Example" />
     <resource>
       <Condition>
         <id value="RA-Condition-Example" />
