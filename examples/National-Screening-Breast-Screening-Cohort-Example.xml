@@ -58,7 +58,7 @@
         <communication>
 			<language>
 			  <coding>
-				<system value="https://fhir.hl7.org.uk/ValueSet/UKCore-HumanLanguage"/>
+				<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
 				<code value="en"/>
 				<display value="English"/>
 			  </coding>
@@ -145,7 +145,10 @@
 		    </coding>
 		  </valueCodeableConcept>
         </extension>
-        <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PriorityReason">
+        <status value="completed" />
+        <intent value="order" />
+        <priority value="routine">
+		<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PriorityReason">
             <valueCodeableConcept>
 				<coding>
 				  <system value="https://fhir.nhs.uk/England/CodeSystem/England-EpisodeType" />
@@ -154,9 +157,7 @@
 				</coding>
 			</valueCodeableConcept>
 		  </extension>
-        <status value="completed" />
-        <intent value="order" />
-        <priority value="routine"/>
+		 </priority>
         <code>
           <coding>
             <system value="http://snomed.info/sct" />
@@ -192,6 +193,7 @@
         <performedDateTime value="2025-04-24T09:30:00+00:00" />
         <outcome>
             <coding>
+				<system value="https://fhir.nhs.uk/England/CodeSystem/England-ProcedureOutcomeCode" />
                 <code value="S+,A+,Cabn,W+,H-" />
             </coding>
         </outcome>
@@ -302,6 +304,34 @@
     </request> 
     </entry>
 	<entry>
+        <fullUrl value="urn:uuid:c1f6c9be-fd9a-4a73-9e65-d9fbb5676d04" />
+        <resource>
+            <Practitioner>
+                <meta>
+                    <lastUpdated value="2021-10-11T15:23:30.8185338+00:00" />
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
+                </meta>
+                <identifier>
+                    <system value="https://fhir.nhs.uk/Id/sds-role-profile-id" />
+                    <value value="G823658" />
+                </identifier>
+                <name>
+                    <family value="Smith" />
+                    <given value="John" />
+                </name>
+                <telecom>
+                    <system value="phone" />
+                    <value value="0205663859" />
+                    <use value="work" />
+                </telecom>
+            </Practitioner>
+        </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Practitioner"/> 
+    </request> 
+    </entry>
+	<entry>
         <fullUrl value="urn:uuid:26937fbc-f94a-4d9f-9426-c88ce9cd6f31" />
         <resource>
 			<AuditEvent xmlns="http://hl7.org/fhir">
@@ -312,18 +342,22 @@
 			</type> 
 			<recorded value="2012-10-25T22:04:27+11:00"/> 
 			<agent>
+                <who>
+                    <reference value="urn:uuid:c1f6c9be-fd9a-4a73-9e65-d9fbb5676d04"/>
+                </who>
 			    <requestor value="false"/>
 			</agent> 
 			<source> 
 				<site value="Development"/> 
-			<observer> 
-				<reference value="urn:uuid:b5e27389-3ca5-4cbc-9173-73f0c74915d9" /> 
-			</observer> 
-			<type> 
-				<system value="http://dicom.nema.org/resources/ontology/DCM"/> 
-				<code value="110122"/> 
-				<display value="Login"/> 
-			</type> 
+				<observer> 
+					<reference value="urn:uuid:b5e27389-3ca5-4cbc-9173-73f0c74915d9" />
+					<display value="John Smith"/>
+				</observer> 
+				<type> 
+					<system value="http://dicom.nema.org/resources/ontology/DCM"/> 
+					<code value="110122"/> 
+					<display value="Login"/> 
+				</type> 
 			</source>
 			</AuditEvent>
 		</resource>
