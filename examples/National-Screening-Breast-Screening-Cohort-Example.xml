@@ -9,26 +9,26 @@
   <entry>
     <fullUrl value="urn:uuid:b6a8126d-4558-48ca-99fc-cc56aa49beb9" />
     <resource>
-    	<Group>
-		<id value="b6a8126d-4558-48ca-99fc-cc56aa49beb9"/>
-		<identifier>  
-			<value value="bso_batch_id"/> 
-		</identifier>
-		<type value="person"/>
-		<actual value="true"/>
-		<managingEntity>
-			<reference value="urn:uuid:b5e27389-3ca5-4cbc-9173-73f0c74915d9"/><!-- bso_organisation_code -->
-		</managingEntity>
-		<member>
+      <Group>
+    <id value="b6a8126d-4558-48ca-99fc-cc56aa49beb9" />
+    <identifier>  
+      <value value="bso_batch_id" /> 
+    </identifier>
+    <type value="person" />
+    <actual value="true" />
+    <managingEntity>
+      <reference value="urn:uuid:b5e27389-3ca5-4cbc-9173-73f0c74915d9" /><!-- bso_organisation_code -->
+    </managingEntity>
+    <member>
           <entity><!-- Reference to the Patient -->
-            <reference value="urn:uuid:70b15eae-bada-4668-9fb0-c99572bca201"/>
+            <reference value="urn:uuid:70b15eae-bada-4668-9fb0-c99572bca201" />
           </entity>
         </member>
-		</Group>
+    </Group>
     </resource>
     <request>
-      <method value="POST"/>
-      <url value="Group"/> 
+      <method value="POST" />
+      <url value="Group" /> 
     </request> 
   </entry>  
   <entry>
@@ -56,29 +56,29 @@
         <gender value="female" />
         <birthDate value="1960-05-20" />
         <communication>
-			<language>
-			  <coding>
-				<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
-				<code value="en"/>
-				<display value="English"/>
-			  </coding>
-			</language>
-		</communication>
-		<generalPractitioner>
+      <language>
+        <coding>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage" />
+        <code value="en" />
+        <display value="English" />
+        </coding>
+      </language>
+    </communication>
+    <generalPractitioner>
         <reference value="urn:uuid:b5e27389-3ca5-4cbc-9173-73f0c74915d9" />
-		</generalPractitioner>
+    </generalPractitioner>
       </Patient>
     </resource>
     <request>
-      <method value="POST"/>
-      <url value="Patient"/> 
+      <method value="POST" />
+      <url value="Patient" /> 
     </request> 
   </entry>
   <entry>
     <fullUrl value="urn:uuid:abb47f27-601a-4222-b5af-bbafee99d6d6" />
     <resource>
       <Encounter>
-		<extension url="http://hl7.org/fhir/StructureDefinition/encounter-reasonCancelled">
+    <extension url="http://hl7.org/fhir/StructureDefinition/encounter-reasonCancelled">
             <valueCodeableConcept>
               <coding>
                 <system value="https://fhir.hl7.org.uk/CodeSystem/NBSSreasoncancelled" />
@@ -88,12 +88,12 @@
             </valueCodeableConcept>
           </extension>
         <status value="finished" />
-		<statusHistory> 
-			<status value="finished"/> 
-			<period> 
-				<start value="2025-04-24"/><!-- end_code_last_updated -->
-			</period> 
-		</statusHistory> 
+    <statusHistory> 
+      <status value="finished" /> 
+      <period> 
+        <start value="2025-04-24" /><!-- end_code_last_updated -->
+      </period> 
+    </statusHistory> 
         <class>
           <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
           <code value="AMB" />
@@ -109,8 +109,8 @@
       </Encounter>
     </resource>
     <request>
-      <method value="POST"/>
-      <url value="Encounter"/> 
+      <method value="POST" />
+      <url value="Encounter" /> 
     </request> 
   </entry>
     <entry>
@@ -129,8 +129,8 @@
       </Appointment>
     </resource>
     <request>
-      <method value="POST"/>
-      <url value="Appointment"/> 
+      <method value="POST" />
+      <url value="Appointment" /> 
     </request> 
   </entry>
     <entry>
@@ -138,26 +138,26 @@
     <resource>
       <ServiceRequest>
       <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-SourceOfServiceRequest">
-        	<valueCodeableConcept>
-		    <coding>
-		      <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
-		      <code value="B82033" />
-		    </coding>
-		  </valueCodeableConcept>
+          <valueCodeableConcept>
+        <coding>
+          <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+          <code value="B82033" />
+        </coding>
+      </valueCodeableConcept>
         </extension>
         <status value="completed" />
         <intent value="order" />
         <priority value="routine">
-		<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PriorityReason">
+    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PriorityReason">
             <valueCodeableConcept>
-				<coding>
-				  <system value="https://fhir.nhs.uk/England/CodeSystem/England-EpisodeType" />
-				  <code value="C" />
-				  <display value="Call" />
-				</coding>
-			</valueCodeableConcept>
-		  </extension>
-		 </priority>
+        <coding>
+          <system value="https://fhir.nhs.uk/England/CodeSystem/England-EpisodeType" />
+          <code value="C" />
+          <display value="Call" />
+        </coding>
+      </valueCodeableConcept>
+      </extension>
+     </priority>
         <code>
           <coding>
             <system value="http://snomed.info/sct" />
@@ -171,8 +171,8 @@
       </ServiceRequest>
     </resource>
     <request>
-      <method value="POST"/>
-      <url value="ServiceRequest"/> 
+      <method value="POST" />
+      <url value="ServiceRequest" /> 
     </request> 
   </entry>
     <entry>
@@ -193,15 +193,15 @@
         <performedDateTime value="2025-04-24T09:30:00+00:00" />
         <outcome>
             <coding>
-				<system value="https://fhir.nhs.uk/England/CodeSystem/England-ProcedureOutcomeCode" />
+        <system value="https://fhir.nhs.uk/England/CodeSystem/England-ProcedureOutcomeCode" />
                 <code value="S+,A+,Cabn,W+,H-" />
             </coding>
         </outcome>
       </Procedure>
     </resource>
     <request>
-      <method value="POST"/>
-      <url value="Procedure"/> 
+      <method value="POST" />
+      <url value="Procedure" /> 
     </request> 
   </entry>
   <entry>
@@ -211,23 +211,23 @@
       <status value="completed" />
       <intent value="plan" />
       <category>
-		  <coding>
-		    <system value="https://fhir.nhs.uk/England/CodeSystem/England-EpisodeFinalAction" />
-		    <code value="RR" />
-		    <display value="Routine Call" />
-		  </coding>      
+      <coding>
+        <system value="https://fhir.nhs.uk/England/CodeSystem/England-EpisodeFinalAction" />
+        <code value="RR" />
+        <display value="Routine Call" />
+      </coding>      
       </category>
       <subject>
         <reference value="urn:uuid:70b15eae-bada-4668-9fb0-c99572bca201" />
       </subject>
-	  <encounter>
+    <encounter>
         <reference value="urn:uuid:abb47f27-601a-4222-b5af-bbafee99d6d6" />
       </encounter>
     </CarePlan>
   </resource>
     <request>
-      <method value="POST"/>
-      <url value="CarePlan"/> 
+      <method value="POST" />
+      <url value="CarePlan" /> 
     </request> 
 </entry>
 <entry>
@@ -236,11 +236,11 @@
     <Flag>
       <status value="active" />
       <category>
-		  <coding>
-		    <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningCategoryFlag" />
-		    <code value="subject-status" />
-		    <display value="Subject Status" />
-		  </coding>    
+      <coding>
+        <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningCategoryFlag" />
+        <code value="subject-status" />
+        <display value="Subject Status" />
+      </coding>    
       </category>
       <code>
         <coding>
@@ -255,8 +255,8 @@
     </Flag>
   </resource>
     <request>
-      <method value="POST"/>
-      <url value="Flag"/> 
+      <method value="POST" />
+      <url value="Flag" /> 
     </request> 
 </entry>
   <entry>
@@ -275,17 +275,17 @@
           <reference value="urn:uuid:70b15eae-bada-4668-9fb0-c99572bca201" />
         </subject>
         <valueCodeableConcept>
-		    <coding>
-		      <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningGeneCode" />
-		      <code value="BRCA1" />
-		      <display value="Breast Cancer gene 1" />
-		    </coding>
-	    </valueCodeableConcept>          
+        <coding>
+          <system value="https://fhir.nhs.uk/England/CodeSystem/England-ScreeningGeneCode" />
+          <code value="BRCA1" />
+          <display value="Breast Cancer gene 1" />
+        </coding>
+      </valueCodeableConcept>          
       </Observation>
     </resource>
     <request>
-      <method value="POST"/>
-      <url value="Observation"/> 
+      <method value="POST" />
+      <url value="Observation" /> 
     </request> 
   </entry>
   <entry>
@@ -299,11 +299,11 @@
             </Organization>
         </resource>
     <request>
-      <method value="POST"/>
-      <url value="Organization"/> 
+      <method value="POST" />
+      <url value="Organization" /> 
     </request> 
     </entry>
-	<entry>
+  <entry>
         <fullUrl value="urn:uuid:c1f6c9be-fd9a-4a73-9e65-d9fbb5676d04" />
         <resource>
             <Practitioner>
@@ -327,43 +327,43 @@
             </Practitioner>
         </resource>
     <request>
-      <method value="POST"/>
-      <url value="Practitioner"/> 
+      <method value="POST" />
+      <url value="Practitioner" /> 
     </request> 
     </entry>
-	<entry>
+  <entry>
         <fullUrl value="urn:uuid:26937fbc-f94a-4d9f-9426-c88ce9cd6f31" />
         <resource>
-			<AuditEvent xmlns="http://hl7.org/fhir">
-			<type> 
-				<system value="http://dicom.nema.org/resources/ontology/DCM"/> 
-				<code value="110100"/> 
-				<display value="Application Activity"/> 
-			</type> 
-			<recorded value="2012-10-25T22:04:27+11:00"/> 
-			<agent>
+      <AuditEvent xmlns="http://hl7.org/fhir">
+      <type> 
+        <system value="http://dicom.nema.org/resources/ontology/DCM" /> 
+        <code value="110100" /> 
+        <display value="Application Activity" /> 
+      </type> 
+      <recorded value="2012-10-25T22:04:27+11:00" /> 
+      <agent>
                 <who>
-                    <reference value="urn:uuid:c1f6c9be-fd9a-4a73-9e65-d9fbb5676d04"/>
+                    <reference value="urn:uuid:c1f6c9be-fd9a-4a73-9e65-d9fbb5676d04" />
                 </who>
-			    <requestor value="false"/>
-			</agent> 
-			<source> 
-				<site value="Development"/> 
-				<observer> 
-					<reference value="urn:uuid:b5e27389-3ca5-4cbc-9173-73f0c74915d9" />
-					<display value="John Smith"/>
-				</observer> 
-				<type> 
-					<system value="http://dicom.nema.org/resources/ontology/DCM"/> 
-					<code value="110122"/> 
-					<display value="Login"/> 
-				</type> 
-			</source>
-			</AuditEvent>
-		</resource>
+          <requestor value="false" />
+      </agent> 
+      <source> 
+        <site value="Development" /> 
+        <observer> 
+          <reference value="urn:uuid:b5e27389-3ca5-4cbc-9173-73f0c74915d9" />
+          <display value="John Smith" />
+        </observer> 
+        <type> 
+          <system value="http://dicom.nema.org/resources/ontology/DCM" /> 
+          <code value="110122" /> 
+          <display value="Login" /> 
+        </type> 
+      </source>
+      </AuditEvent>
+    </resource>
     <request>
-      <method value="POST"/>
-      <url value="AuditEvent"/> 
+      <method value="POST" />
+      <url value="AuditEvent" /> 
     </request> 
     </entry>
   </Bundle>
