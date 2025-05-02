@@ -1,6 +1,5 @@
 <Bundle xmlns="http://hl7.org/fhir">
     <id value="AddRARecordTransaction-Bundle-Example" />
-    <type value="transaction" />
     <entry>
         <fullUrl value="Condition/RA-Condition-Example" />
         <resource>
