@@ -75,10 +75,6 @@
                 </subject>
             </Condition>
         </resource>
-        <request>
-            <method value="POST" />
-            <url value="Condition/RA-Condition-Example" />
-        </request>
     </entry>
     <entry>
         <fullUrl value="Flag/RA-PatientFlag-Example" />
@@ -152,10 +148,6 @@
                 </subject>
             </Flag>
         </resource>
-        <request>
-            <method value="POST" />
-            <url value="Flag/RA-PatientFlag-Example" />
-        </request>
     </entry>
     <entry>
         <fullUrl value="Flag/RA-Flag-Example" />
@@ -228,9 +220,5 @@
                 </subject>
             </Flag>
         </resource>
-        <request>
-            <method value="POST" />
-            <url value="Flag/RA-Flag-Example" />
-        </request>
     </entry>
 </Bundle>
