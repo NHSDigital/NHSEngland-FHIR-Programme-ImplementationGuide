@@ -1,90 +1,83 @@
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="CreateGenericPatientFlagTransaction-Bundle-Example" />
-  <type value="transaction" />
-  <entry>
-    <fullUrl value="urn:uuid:12345678-1234-5678-1234-567812345678" />
-    <resource>
-      <Patient>
-        <meta>
-          <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
-        </meta>
-        <identifier>
-          <system value="https://fhir.nhs.uk/Id/nhs-number" />
-          <value value="9912003888" />
-        </identifier>
-        <active value="true" />
-        <name>
-          <use value="official" />
-          <family value="Mann" />
-          <given value="Alan" />
-        </name>
-        <gender value="male" />
-        <birthDate value="1970-01-01" />
-      </Patient>
-    </resource>
-    <request>
-      <method value="POST" />
-      <url value="Patient" />
-    </request>
-  </entry>
-  <entry>
-    <fullUrl value="urn:uuid:22345678-2234-5678-2234-567822345678" />
-    <resource>
-      <Flag>
-        <meta>
-          <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag" />
-        </meta>
-        <contained>
-          <Provenance>
-            <id value="c4e2e862-3bf4-4176-a186-9f1732938260" />
-            <meta>
-              <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
-            </meta>
-            <target>
-              <reference value="#" />
-            </target>
-            <recorded value="2024-01-01T11:00:00+00:00" />
-            <activity>
-              <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/v3-DataOperation" />
-                <code value="CREATE" />
-                <display value="create" />
-              </coding>
-            </activity>
-            <agent>
-              <role>
-                <coding>
-                  <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1" />
-                  <code value="R0260" />
-                  <display value="General Medical Practitioner" />
-                </coding>
-              </role>
-              <who>
-                <reference value="https://sds.spineservices.nhs.uk/Practitioner/2ee4tr6a9" />
-              </who>
-              <onBehalfOf>
-                <reference value="https://directory.spineservices.nhs.uk/Organization/a3e5i7" />
-              </onBehalfOf>
-            </agent>
-          </Provenance>
-        </contained>
-        <status value="active" />
-        <code>
-          <coding>
-            <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
-            <code value="female-genital-mutilation-flag" />
-            <display value="Female Genital Mutilation Flag" />
-          </coding>
-        </code>
-        <subject>
-          <reference value="Patient/PatientFlag-AlanMann-Example" />
-          <display value="Alan Mann" />
-        </subject>
-      </Flag>
-    </resource>
-    <request>
-      <method value="POST" />
-      <url value="Flag" />
-    </request>
-  </entry>
+    <id value="CreateGenericPatientFlag-Bundle-Example" />
+    <type value="collection" />
+    <timestamp value="2024-05-02T00:00:00+00:00" />
+    <entry>
+        <fullUrl value="urn:uuid:12345678-1234-5678-1234-567812345678" />
+        <resource>
+            <Patient>
+                <meta>
+                    <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+                </meta>
+                <identifier>
+                    <system value="https://fhir.nhs.uk/Id/nhs-number" />
+                    <value value="9912003888" />
+                </identifier>
+                <active value="true" />
+                <name>
+                    <use value="official" />
+                    <family value="Mann" />
+                    <given value="Alan" />
+                </name>
+                <gender value="male" />
+                <birthDate value="1970-01-01" />
+            </Patient>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:22345678-2234-5678-2234-567822345678" />
+        <resource>
+            <Flag>
+                <meta>
+                    <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Flag-PatientFlag" />
+                </meta>
+                <contained>
+                    <Provenance>
+                        <id value="c4e2e862-3bf4-4176-a186-9f1732938260" />
+                        <meta>
+                            <profile value="https://fhir.nhs.uk/England/StructureDefinition/England-Provenance-Flag" />
+                        </meta>
+                        <target>
+                            <reference value="#" />
+                        </target>
+                        <recorded value="2024-01-01T11:00:00+00:00" />
+                        <activity>
+                            <coding>
+                                <system value="http://terminology.hl7.org/CodeSystem/v3-DataOperation" />
+                                <code value="CREATE" />
+                                <display value="create" />
+                            </coding>
+                        </activity>
+                        <agent>
+                            <role>
+                                <coding>
+                                    <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1" />
+                                    <code value="R0260" />
+                                    <display value="General Medical Practitioner" />
+                                </coding>
+                            </role>
+                            <who>
+                                <reference value="https://sds.spineservices.nhs.uk/Practitioner/2ee4tr6a9" />
+                            </who>
+                            <onBehalfOf>
+                                <reference value="https://directory.spineservices.nhs.uk/Organization/a3e5i7" />
+                            </onBehalfOf>
+                        </agent>
+                    </Provenance>
+                </contained>
+                <status value="active" />
+                <code>
+                    <coding>
+                        <system value="https://fhir.nhs.uk/England/CodeSystem/England-FlagCategoryPatient" />
+                        <code value="female-genital-mutilation-flag" />
+                        <display value="Female Genital Mutilation Flag" />
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/PatientFlag-AlanMann-Example" />
+                    <display value="Alan Mann" />
+                </subject>
+            </Flag>
+        </resource>
+    </entry>
 </Bundle>
