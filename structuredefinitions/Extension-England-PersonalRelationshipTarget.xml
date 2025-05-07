@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Extension-England-PersonalRelationshipTarget" />
+  <url value="http://hl7.org/fhir/6.0/StructureDefinition/extension-PersonalRelationship.target" />
+  <version value="0.0.1" />
+  <name value="ExtensionEnglandPersonalRelationshipTarget" />
+  <title value="Extension England Personal Relationship Target" />
+  <status value="draft" />
+  <date value="2025-01-09" />
+  <publisher value="NHS England" />
+  <contact>
+    <name value="NHS England" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="Allows the referencing of target within Basic.PersonalRelationship." />
+  <purpose value="This is a use case from TBD to backport the R6 functionality of the new Profile PersonalRelationship" />
+  <copyright value="Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the \&amp;quot;License\&amp;quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \&amp;quot;AS IS\&amp;quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Basic" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://hl7.org/fhir/6.0/StructureDefinition/extension-PersonalRelationship.target" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <short value="The individual that is the the target of the relationship" />
+      <definition value="The target is the individual to which the source is related. In human language, you would say that source is the relationshipType of target." />
+      <comment value="For example, if the relationship is daughter, then the individual that is the .source is the daughter of the .target." />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="Patient" />
+        <targetProfile value="RelatedPerson" />
+        <targetProfile value="Person" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

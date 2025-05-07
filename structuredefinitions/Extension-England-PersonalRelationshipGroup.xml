@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Extension-England-PersonalRelationshipGroup" />
+  <url value="http://hl7.org/fhir/6.0/StructureDefinition/extension-PersonalRelationship.group" />
+  <version value="0.0.1" />
+  <name value="ExtensionEnglandPersonalRelationshipGroup" />
+  <title value="Extension England Personal Relationship Group" />
+  <status value="draft" />
+  <date value="2025-01-09" />
+  <publisher value="NHS England" />
+  <contact>
+    <name value="NHS England" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="Allows the referencing of group within Basic.PersonalRelationship." />
+  <purpose value="This is a use case from TBD to backport the R6 functionality of the new Profile PersonalRelationship" />
+  <copyright value="Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the \&amp;quot;License\&amp;quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \&amp;quot;AS IS\&amp;quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Basic" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://hl7.org/fhir/5.0/StructureDefinition/extension-PersonalRelationship.group" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <short value="This relationship is applicable to the referenced group(s)" />
+      <definition value="Some relationships are applicable within the context of a specific group. Such as a caregiver within a specific household." />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="Group" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

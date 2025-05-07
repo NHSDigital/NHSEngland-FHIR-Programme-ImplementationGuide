@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="England-Basic-PersonalRelationship" />
+  <url value="https://fhir.nhs.uk/England/StructureDefinition/England-Basic-PersonalRelationship" />
+  <version value="0.0.1" />
+  <name value="EnglandBasicPersonalRelationship" />
+  <title value="England Basic Personal Relationship" />
+  <status value="draft" />
+  <date value="2025-01-09" />
+  <publisher value="NHS England" />
+  <contact>
+    <name value="NHS England" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="Details about the relationship between 2 individuals. This is a backport of [PersonalRelationship](https://build.fhir.org/personalrelationship.profile.xml.html)" />
+  <purpose value="Need to track relationships between individuals along with the attributes of that&#xD;&#xA;   relationship such as:&#xD;&#xA;* Represent relationship between two members&#xD;&#xA;* Represent the certainty of the relationship&#xD;&#xA;* Represent the temporal nature of the relationship (e.g., father/daughter is mostly&#xD;&#xA;   persistent, but resident in household is very transient).&#xD;&#xA;* Represent the role of the person within a group (e.g., the head of the household&#xD;&#xA;   is the decision maker)" />
+  <copyright value="Copyright © 2023+ NHS England Licensed under the Apache License, Version 2.0 (the \&amp;quot;License\&amp;quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \&amp;quot;AS IS\&amp;quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Basic" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Basic" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Basic">
+      <path value="Basic" />
+      <short value="A relationship between two indiduals" />
+      <definition value="The details of a direct relationship between two individuals. It does not contain information about the individuals themselves, just the relationship itself." />
+      <comment value="Need to track relationships between individuals along with the attributes of that relationship such as:&#xD;&#xA;&#xD;&#xA;    Represent relationship between two members&#xD;&#xA;    Represent the certainty of the relationship&#xD;&#xA;    Represent the temporal nature of the relationship (e.g., father/daughter is mostly persistent, but resident in household is very transient).&#xD;&#xA;    Represent the role of the person within a group (e.g., the head of the household is the decision maker)" />
+    </element>
+    <element id="Basic.extension">
+      <path value="Basic.extension" />
+      <min value="3" />
+    </element>
+    <element id="Basic.extension:englandPersonalRelationshipsouce">
+      <path value="Basic.extension" />
+      <sliceName value="englandPersonalRelationshipsouce" />
+      <short value="The individual that is the the source of the relationship" />
+      <definition value="For example, if the relationship is daughter, then the individual that is the .source is the daughter of the .target." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/6.0/StructureDefinition/extension-PersonalRelationship.source" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="Basic.extension:extensionPersonalRelationshiprelationshipType">
+      <path value="Basic.extension" />
+      <sliceName value="extensionPersonalRelationshiprelationshipType" />
+      <short value="The relationship between the source and the target individuals" />
+      <definition value="The relationship the source has with the target." />
+      <comment value="For example, if the relationship is daughter, then the individual that is the .source is the daughter of the .target. The terminology is a heirarchy so can use :is-a and other terminology style relationships in search. (i.e. a son is a form of a child)" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-PersonalRelationship.relationshipType" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="Basic.extension:extensionPersonalRelationshiprelationshipType.url">
+      <path value="Basic.extension.url" />
+      <fixedUri value="http://hl7.org/fhir/5.0/StructureDefinition/extension-PersonalRelationship.relationshipType" />
+    </element>
+    <element id="Basic.extension:extensionPersonalRelationshiptarget">
+      <path value="Basic.extension" />
+      <sliceName value="extensionPersonalRelationshiptarget" />
+      <short value="The individual that is the the target of the relationship" />
+      <definition value="The target is the individual to which the source is related. In human language, you would say that source is the relationshipType of target." />
+      <comment value="For example, if the relationship is daughter, then the individual that is the .source is the daughter of the .target." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/6.0/StructureDefinition/extension-PersonalRelationship.target" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="Basic.extension:extensionPersonalRelationshipperiod">
+      <path value="Basic.extension" />
+      <sliceName value="extensionPersonalRelationshipperiod" />
+      <short value="The period of time during which the relationship is active" />
+      <definition value="The period of time during which this relationship is or was active. If there are no dates defined, then the interval is unknown." />
+      <comment value="If an individual has a relationship with a patient over multiple, non-adjacent periods, there should be a distinct PersonalRelationship instance for each period. For example, if a person is a roommate for a period of time, moves out, and is later a roommate with the same person again, you would have two PersonalRelationship instances.&#xD;&#xA;&#xD;&#xA;Most social relationships are dynamic. For example, an on-again/off-again relationship could be represented as a single PersonalRelationship with multiple periods describing the &quot;on-again&quot; periods. Some relationships, such as biological relationships, may often be considered permanent (ignoring situations where paternity may be disputed). In cases where the relationships is considered permanent, the .period should be omitted." />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-PersonalRelationship.period" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="Basic.extension:extensionPersonalRelationshipperiod.url">
+      <path value="Basic.extension.url" />
+      <fixedUri value="http://hl7.org/fhir/5.0/StructureDefinition/extension-PersonalRelationship.period" />
+    </element>
+    <element id="Basic.extension:extensionPersonalRelationshipconfidence">
+      <path value="Basic.extension" />
+      <sliceName value="extensionPersonalRelationshipconfidence" />
+      <short value="The confidence level of this relationship" />
+      <definition value="A coded representation of the confidence in the validity of the relationship." />
+      <requirements value="Sometimes relationship data is externally observed/reported and might not be of high quality. The confidence provides the level of certainty that the asserter had of the relationship." />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-PersonalRelationship.confidence" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="Basic.extension:extensionPersonalRelationshipconfidence.url">
+      <path value="Basic.extension.url" />
+      <fixedUri value="http://hl7.org/fhir/5.0/StructureDefinition/extension-PersonalRelationship.confidence" />
+    </element>
+    <element id="Basic.extension:extensionPersonalRelationshipasserter">
+      <path value="Basic.extension" />
+      <sliceName value="extensionPersonalRelationshipasserter" />
+      <short value="Who has asserted the details of the relationship" />
+      <definition value="The asserter of the relationship. Typically is the source of the relationship information. (The relationship was reported by ...)." />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-PersonalRelationship.asserter" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="Basic.extension:extensionPersonalRelationshipasserter.url">
+      <path value="Basic.extension.url" />
+      <fixedUri value="http://hl7.org/fhir/5.0/StructureDefinition/extension-PersonalRelationship.asserter" />
+    </element>
+    <element id="Basic.extension:extensionPersonalRelationshipGroup">
+      <path value="Basic.extension" />
+      <sliceName value="extensionPersonalRelationshipGroup" />
+      <short value="This relationship is applicable to the referenced group(s)" />
+      <definition value="Some relationships are applicable within the context of a specific group. Such as a caregiver within a specific household." />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-PersonalRelationship.group" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="Basic.extension:extensionPersonalRelationshipGroup.url">
+      <path value="Basic.extension.url" />
+      <fixedUri value="http://hl7.org/fhir/5.0/StructureDefinition/extension-PersonalRelationship.group" />
+    </element>
+  </differential>
+</StructureDefinition>
