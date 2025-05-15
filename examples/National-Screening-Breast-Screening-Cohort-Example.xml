@@ -58,8 +58,8 @@
         <communication>
       <language>
         <coding>
-        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage" />
-        <code value="en" />
+        <system value="urn:ietf:bcp:47" />
+        <code value="en-GB" />
         <display value="English" />
         </coding>
       </language>
