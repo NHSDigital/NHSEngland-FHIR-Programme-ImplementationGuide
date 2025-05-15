@@ -349,14 +349,8 @@
                       <system value="https://fhir.hl7.org.uk/Id/gmp-number" />
                       <value value="G823658" />
                     </identifier>
+                    <type value="Practitioner" />
                 </who>
-          <type>
-            <coding>
-              <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass" /> 
-              <code value="PROV" /> 
-              <display value="healthcare provider" /> 
-            </coding>
-          </type>
           <requestor value="false" />
       </agent> 
       <source> 
