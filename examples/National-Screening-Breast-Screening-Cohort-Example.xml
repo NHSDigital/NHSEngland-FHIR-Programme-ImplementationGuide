@@ -340,11 +340,23 @@
         <code value="110100" /> 
         <display value="Application Activity" /> 
       </type> 
+      <action value="C" />
       <recorded value="2012-10-25T22:04:27+11:00" /> 
       <agent>
                 <who>
                     <reference value="urn:uuid:c1f6c9be-fd9a-4a73-9e65-d9fbb5676d04" />
+                    <identifier>
+                      <system value="https://fhir.hl7.org.uk/Id/gmp-number" />
+                      <value value="G823658" />
+                    </identifier>
                 </who>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass" /> 
+              <code value="PROV" /> 
+              <display value="healthcare provider" /> 
+            </coding>
+          </type>
           <requestor value="false" />
       </agent> 
       <source> 
