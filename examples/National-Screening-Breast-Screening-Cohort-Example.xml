@@ -312,7 +312,7 @@
                     <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
                 </meta>
                 <identifier>
-                    <system value="https://fhir.nhs.uk/Id/sds-role-profile-id" />
+                    <system value="https://fhir.hl7.org.uk/Id/gmp-number" />
                     <value value="G823658" />
                 </identifier>
                 <name>
