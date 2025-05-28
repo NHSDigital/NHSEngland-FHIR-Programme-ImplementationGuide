@@ -35,12 +35,11 @@
   },
   "performer": [
     {
-      "reference": "https://fhir.nhs.uk/England/spine/RelatedPerson/RelatedPerson-NHS-9100000009",
-      "type": "RelatedPerson",
       "identifier": {
         "system": "https://fhir.nhs.uk/Id/nhs-number",
         "value": "9100000009"
-      }
+      },
+	  "display": "Jayne Smith"
     },
     {
       "type": "Practitioner",
